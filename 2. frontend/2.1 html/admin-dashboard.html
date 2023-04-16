@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard | Office-App</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+
+    <h2>Facility Manager</h2>
+    <ul>
+        <li>Hinzufügen eines neuen Facility Managers</li>
+        <form>
+            <label for="fm-name">Name:</label>
+            <input type="text" id="fm-name" name="fm-name">
+            <br>
+            <label for="fm-email">E-Mail:</label>
+            <input type="email" id="fm-email" name="fm-email">
+            <br>
+            <label for="fm-password">Passwort:</label>
+            <input type="password" id="fm-password" name="fm-password">
+            <br><br>
+            <button type="submit">Hinzufügen</button>
+        </form>
+        <br>
+        <li>Deaktivieren eines Facility Managers</li>
+        <form>
+            <label for="fm-deactivate">E-Mail des Facility Managers:</label>
+            <input type="email" id="fm-deactivate" name="fm-deactivate">
+            <br><br>
+            <button type="submit">Deaktivieren</button>
+        </form>
+    </ul>
+
+    <h2>Feedback-Kommentare</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>E-Mail</th>
+                <th>Zone</th>
+                <th>Temperatur</th>
+                <th>Lärmpegel</th>
+                <th>Luftqualität</th>
+                <th>Gesamterlebnis</th>
+                <th>Kommentar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Max Mustermann</td>
+                <td>max.mustermann@example.com</td>
+                <td>Zone 2</td>
+                <td>Kalt</td>
+                <td>Laut</td>
+                <td>Schlecht</td>
+                <td>Neutral</td>
+                <td>Die Lüftung in meiner Zone funktioniert nicht richtig.</td>
+            </tr>
+            <tr>
+                <td>Maria Musterfrau</td>
+                <td>maria.musterfrau@example.com</td>
+                <td>Zone 5</td>
+                <td>Angenehm</td>
+                <td>Angenehm</td>
+                <td>Gut</td>
+                <td>Sehr angenehm</td>
+                <td>Mein Schreibtischstuhl ist kaputt und muss ersetzt werden.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

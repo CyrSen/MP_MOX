@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Feedback | Office-App</title>
+</head>
+
+<body>
+  <h1>Feedback geben</h1>
+  <form>
+    <label>Für welche Zone gibst du Feedback?</label>
+    <br>
+    <input type="radio" id="zone1" name="zone" value="zone1">
+    <label for="zone1">Zone 1</label>
+    <input type="radio" id="zone2" name="zone" value="zone2">
+    <label for="zone2">Zone 2</label>
+    <input type="radio" id="zone3" name="zone" value="zone3">
+    <label for="zone3">Zone 3</label>
+    <input type="radio" id="zone4" name="zone" value="zone4">
+    <label for="zone4">Zone 4</label>
+    <input type="radio" id="zone5" name="zone" value="zone5">
+    <label for="zone5">Zone 5</label>
+    <br><br>
+
+    <label>Wie ist die Temperatur in deiner Zone?</label>
+    <br>
+    <input type="radio" id="temp1" name="temperature" value="zu_kalt">
+    <label for="temp1">Zu kalt</label>
+    <input type="radio" id="temp2" name="temperature" value="kalt">
+    <label for="temp2">Kalt</label>
+    <input type="radio" id="temp3" name="temperature" value="angenehm">
+    <label for="temp3">Angenehm</label>
+    <input type="radio" id="temp4" name="temperature" value="warm">
+    <label for="temp4">Warm</label>
+    <input type="radio" id="temp5" name="temperature" value="zu_warm">
+    <label for="temp5">Zu warm</label>
+    <br><br>
+
+    <label>Wie ist der Lärmpegel in deiner Zone?</label>
+    <br>
+    <input type="radio" id="noise1" name="noise" value="zu_laut">
+    <label for="noise1">Zu laut</label>
+    <input type="radio" id="noise2" name="noise" value="laut">
+    <label for="noise2">Laut</label>
+    <input type="radio" id="noise3" name="noise" value="angenehm">
+    <label for="noise3">Angenehm</label>
+    <input type="radio" id="noise4" name="noise" value="leise">
+    <label for="noise4">Leise</label>
+    <input type="radio" id="noise5" name="noise" value="zu_leise">
+    <label for="noise5">Zu leise</label>
+    <br><br>
+
+    <label>Wie ist die Luftqualität in deiner Zone?</label>
+    <br>
+    <input type="radio" id="air1" name="air_quality" value="schlecht">
+    <label for="air1">Schlecht</label>
+    <input type="radio" id="air2" name="air_quality" value="ungenügend">
+    <label for="air2">ungenügend</label>
+    <input type="radio" id="air3" name="air_quality" value="befriedigend">
+    <label for="air3">Befriedigend</label>
+    <input type="radio" id="air4" name="air_quality" value="gut">
+    <label for="air4">Gut</label>
+    <input type="radio" id="air5" name="air_quality" value="ausgezeichnet">
+    <label for="air5">Ausgezeichnet</label>
+    <br><br>
+    
+        <label>Wie ist dein Gesamterlebnis in deiner Zone?</label>
+        <br>
+        <input type="radio" id="exp1" name="overall_experience" value="sehr unangenehm">
+        <label for="exp1">Sehr unangenehm</label>
+        <br>
+        <input type="radio" id="exp2" name="overall_experience" value="eher unangenehm">
+        <label for="exp2">Eher unangenehm</label>
+        <br>
+        <input type="radio" id="exp3" name="overall_experience" value="neutral">
+        <label for="exp3">Neutral</label>
+        <br>
+        <input type="radio" id="exp4" name="overall_experience" value="eher angenehm">
+        <label for="exp4">Eher angenehm</label>
+        <br>
+        <input type="radio" id="exp5" name="overall_experience" value="sehr angenehm">
+        <label for="exp5">Sehr angenehm</label>
+        <br><br>
+    
+    <button type="submit" id="feedback-submit">Feedback geben und Ende</button>
+    <button type="button" id="feedback-tips">Feedback und Tipps</button>
+  </form>
+</div>
+
+<script src="js/app.js"></script>

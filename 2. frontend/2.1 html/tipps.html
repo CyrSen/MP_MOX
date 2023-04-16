@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tipps | Office-App</title>
+</head>
+<body>
+  <h1>Tipps zur Verbesserung deiner Arbeitsbedingungen</h1>
+  <p>Bitte gib an, ob die folgenden Tipps nützlich für dich waren:</p>
+  <form>
+    <h2>Temperatur</h2>
+    <ul>
+      <li>Stelle den Ventilator so ein, dass er in deine Richtung bläst</li>
+      <li>Trage leichte, atmungsaktive Kleidung</li>
+      <li>Trinke viel Wasser, um deinen Körper kühl zu halten</li>
+    </ul>
+    <label for="temp-feedback">War dieser Tipp nützlich?</label>
+    <br>
+    <input type="radio" id="temp-feedback-yes" name="temp_feedback" value="ja">
+    <label for="temp-feedback-yes">Ja</label>
+    <input type="radio" id="temp-feedback-no" name="temp_feedback" value="nein">
+    <label for="temp-feedback-no">Nein</label>
+    <br><br>
+
+    <h2>Lärm</h2>
+    <ul>
+      <li>Trage Ohrenstöpsel, um Lärm zu reduzieren</li>
+      <li>Verwende eine Geräuschunterdrückungsmaschine</li>
+      <li>Bitte deine Kollegen, leiser zu sprechen</li>
+    </ul>
+    <label for="noise-feedback">War dieser Tipp nützlich?</label>
+    <br>
+    <input type="radio" id="noise-feedback-yes" name="noise_feedback" value="ja">
+    <label for="noise-feedback-yes">Ja</label>
+    <input type="radio" id="noise-feedback-no" name="noise_feedback" value="nein">
+    <label for="noise-feedback-no">Nein</label>
+    <br><br>
+
+    <h2>Luftqualität</h2>
+    <ul>
+      <li>Öffne das Fenster für frische Luft</li>
+      <li>Verwende eine Luftreinigungsanlage</li>
+      <li>Vermeide den Einsatz von Aerosolsprays</li>
+    </ul>
+    <label for="air-feedback">War dieser Tipp nützlich?</label>
+    <br>
+    <input type="radio" id="air-feedback-yes" name="air_feedback" value="ja">
+    <label for="air-feedback-yes">Ja</label>
+    <input type="radio" id="air-feedback-no" name="air_feedback" value="nein">
+    <label for="air-feedback-no">Nein</label>
+    <br><br>
+
+    <h2>Gesamterlebnis</h2>
+    <ul>
+      <li>Sorge für ausreichend Pausen und Bewegung</li>
+      <li>Gestalte deinen Arbeitsplatz ergonomisch</li>
+      <li>Kommuniziere mit deinen Kollegen, um eine angenehme Atmosphäre zu schaffen</li>
+      <li>Vermeide Multitasking und konzentriere dich auf eine Aufgabe</li>
+      <li>Nimm regelmäßig an Schulungen und Weiterbildungen teil, um deine Fähigkeiten zu verbessern</li>
+    </ul>
+    <br>
+    <label for="helpful">Waren die Tipps hilfreich?</label>
+    <br>
+    <input type="radio" id="helpful-yes" name="helpful" value="yes">
+    <label for="helpful-yes">Ja</label>
+    <input type="radio" id="helpful-no" name="helpful" value="no">
+    <label for="helpful-no">Nein</label>
+    <br><br>
+    <label for="comments">Weitere Kommentare oder Verbesserungsvorschläge:</label>
+    <br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    <br><br>
+    <button type="submit" id="tips-submit">Feedback senden</button>
+  </form>
+</div>
+<script src="js/app.js"></script>
