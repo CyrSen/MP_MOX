@@ -15,9 +15,13 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-8 bg-info">Placeholder</div>
     </div>
 </div>
 @endsection
