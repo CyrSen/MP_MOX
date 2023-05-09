@@ -53,20 +53,20 @@
                                                 <div class="row my-3">
                                                     <div class="col">
                                                         <!-- EXAMPLE POPOVER BS5 TOOLTIP START -->
-                                                        <i class="fa-solid fa-frown fa-2x" data-toggle="tooltip" data-placement="top" title="good" data-value="1"></i>
+                                                        <i class="fa-solid fa-frown fa-2x" data-toggle="tooltip" data-placement="top" title="schlecht" data-value="1"></i>
                                                         <!-- EXAMPLE POPOVER BS5 TOOLTIP STOP -->
                                                     </div>
                                                     <div class="col">
                                                         <i class="fa-solid fa-meh fa-2xl" data-value="2"></i>
                                                     </div>
                                                     <div class="col">
-                                                        <i class="fa-solid fa-smile fa-2xl" data-value="3"></i>
+                                                        <i class="fa-solid fa-smile fa-2xl" data-toggle="tooltip" data-placement="top" title="angemessen" data-value="3"></i>
                                                     </div>
                                                     <div class="col">
                                                         <i class="fa-solid fa-grin fa-2xl" data-value="4"></i>
                                                     </div>
                                                     <div class="col">
-                                                        <i class="fa-solid fa-laugh-squint fa-2xl" data-value="5"></i>
+                                                        <i class="fa-solid fa-laugh-squint fa-2xl" data-toggle="tooltip" data-placement="top" title="super" data-value="5" style="color:red;"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -78,7 +78,7 @@
                         <div class="col-sm-12 mt-3">
                             <div class="row justify-content-center">
                                 <div class="d-flex justify-content-center">
-                                    <button class="btn btn-primary mx-sm-4">Feedback geben und beenden</button>
+                                    <button class="btn btn-primary mx-sm-4" data-toggle="tooltip" data-placement="top" title="super">Feedback geben und beenden</button>
                                     <button class="btn btn-primary ml-sm-4">Feedback geben und Tipps erhalten</button>
                                   </div> 
                             </div>
