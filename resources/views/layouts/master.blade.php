@@ -12,12 +12,13 @@
 
 
     <!-- Iconsevices -->
+    <script src="https://kit.fontawesome.com/d4cbcb96c8.js" crossorigin="anonymous"></script>
     <!-- CSS-Animaitions -->
     <!-- Fonts -->
     <!-- Styles -->
     <!-- Scripts -->
     <!-- Directives -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js']);
+    @vite(['resources/sass/app.scss', 'resources/css/reset.css', 'resources/css/custom.css', 'resources/js/app.js']);
 
 
 
@@ -26,9 +27,15 @@
 
 
 <body>
-    
-    <main class="py-4">
-        @yield('content')
-    </main>
+
+    <header>
+        @include('layouts.navigation')
+    </header>
+
+    <div id="app">
+        <main class="py-4">
+            @yield('content')
+        </main>
+    </div>
 </body>
 </html>
