@@ -52,7 +52,9 @@
                                             <div class="container">
                                                 <div class="row my-3">
                                                     <div class="col">
-                                                        <i class="fa-solid fa-frown fa-2xl" data-value="1"></i>
+                                                        <!-- EXAMPLE POPOVER BS5 TOOLTIP START -->
+                                                        <i class="fa-solid fa-frown fa-2x" data-toggle="tooltip" data-placement="top" title="good" data-value="1"></i>
+                                                        <!-- EXAMPLE POPOVER BS5 TOOLTIP STOP -->
                                                     </div>
                                                     <div class="col">
                                                         <i class="fa-solid fa-meh fa-2xl" data-value="2"></i>
@@ -75,12 +77,6 @@
                         </div>
                         <div class="col-sm-12 mt-3">
                             <div class="row justify-content-center">
-                                {{-- <div class="col-sm-6 text-center">
-                                    <button type="button" class="btn btn-primary">Ohne Feedback zu, Schluss</button>
-                                </div>
-                                <div class="col-sm-6 text-center">
-                                    <button type="button" class="btn btn-primary">Feedback und pers. Tipps</button>
-                                </div> --}}
                                 <div class="d-flex justify-content-center">
                                     <button class="btn btn-primary mx-sm-4">Feedback geben und beenden</button>
                                     <button class="btn btn-primary ml-sm-4">Feedback geben und Tipps erhalten</button>
@@ -171,7 +167,11 @@
         </div>
     </div>
 </div> --}}
-
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+{{--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNSxN9J" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ --}}
 <script>
 
     document.addEventListener("DOMContentLoaded", function() {
@@ -270,6 +270,13 @@
     }
      */
     
+
+    /* Tooltip */
+
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
     </script>
     
 
