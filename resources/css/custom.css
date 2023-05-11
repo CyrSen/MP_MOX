@@ -1,7 +1,22 @@
+
+
+
 body {
-    margin-top:6%;
+    margin-top:2%;
+    
 }
 
 .circleBtn {
     border-radius:50%;
 }
+
+#intro {
+    background: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
+    background-size: cover; 
+}
+
+.custom-tooltip  {
+
+    --bs-tooltip-bg: var(--bs-primary);
+}
+  
