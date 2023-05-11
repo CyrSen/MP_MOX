@@ -6,6 +6,8 @@ body {
     
 }
 
+
+
 .circleBtn {
     border-radius:50%;
 }
@@ -15,8 +17,8 @@ body {
     background-size: cover; 
 }
 
-.custom-tooltip  {
-
-    --bs-tooltip-bg: var(--bs-primary);
+.feedbackQ {
+    font-size:120%;
 }
-  
+
+
