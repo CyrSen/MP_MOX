@@ -1,5 +1,17 @@
 
+.custom-tooltip {
+    /* --bs-tooltip-bg: var(--bs-primary); */
+    --bs-tooltip-color:#110080;
+    --bs-tooltip-bg: #fbff00;
+    --bs-tooltip-border-radius:10px;
+  
+    --bs-tooltip-tooltip-arrow-width:               1.2rem;
+    --bs-tooltip-tooltip-arrow-height:              1rem;
+    
 
+    
+  }
+  
 
 body {
     margin-top:2%;

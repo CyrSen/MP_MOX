@@ -23,7 +23,9 @@
     <!-- Directives -->
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css', 'resources/css/custom.css']);
 
+    <style>
 
+    </style>
 
 </head>
 
@@ -42,7 +44,23 @@
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 @vite(['resources/js/app.js', 'resources/js/custom.js']);
+
+ <script>
+/* $(document).ready(function() {
+    $('[data-bs-toggle="tooltip"]').tooltip();
+}); */
+/* const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)) */
+
+
+
+
+
+
+</script>
+
 </body>
 </html>

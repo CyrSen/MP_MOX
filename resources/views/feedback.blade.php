@@ -80,34 +80,27 @@
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col justify-content-evenly text-center p-3">
-                                                 
-                                                        <!-- EXAMPLE POPOVER BS5 TOOLTIP START -->
-                                                        {{-- <i class="fa-solid fa-frown fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="schlecht" data-bs-value="1"></i>
-                                                        <img class="img-fluid" src="./assets/img/smiley_red_mask.svg" alt="smiley-test"  data-bs-toggle="tooltip" data-bs-placement="top" title="angemessen" />
-                                                         --}}
-                                                        <!-- EXAMPLE POPOVER BS5 TOOLTIP STOP -->
                                                 
                                                         {{-- <i class="fa-solid fa-meh fa-2xl" data-bs-value="2"></i> --}}
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great"  data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!"  data-bs-value="1"/>
+                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip"  data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!"  data-bs-value="1"/>
 
 
                                                         {{-- <img class="img-fluid" src="./assets/img/Subtractsmiley-test.svg" alt="smiley-test"  data-bs-toggle="tooltip" data-bs-placement="top" title="angemessen" /> --}}
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice"  data-bs-toggle="tooltip" data-bs-placement="top" title=""  data-bs-value="2"/>
+                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip"  data-bs-toggle="tooltip" data-bs-placement="top" title="ss"  data-bs-value="2"/>
                                                         
 
                                                         {{-- <i class="fa-solid fa-smile fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="angemessen" data-bs-value="3"></i> --}}
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok"  data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen"  data-bs-value="3"/>
+                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip"  data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen"  data-bs-value="3"/>
                                                         
 
                                                         {{-- <i class="fa-solid fa-grin fa-2xl" data-bs-value="4"></i> --}}
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh"  data-bs-toggle="tooltip" data-bs-placement="top" title=""  data-bs-value="4"/>
+                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip"  data-bs-toggle="tooltip" data-bs-placement="top" title="ss"  data-bs-value="4"/>
                                                         
 
                                                         {{-- <i class="fa-solid fa-laugh-squint fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="super" data-bs-value="5"></i> --}}
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Stinkt ubelst - hazardous!!!"  data-bs-value="5"/>
                                                         
-
-                                        
+                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt ubelst - hazardous!!!"  data-bs-value="5"/>
+                                                       
                                                     </div>
                                                 </div> 
                                             </div>
@@ -119,7 +112,7 @@
                         <div class="col-sm-12 mt-2">
                             <div class="row justify-content-center">
                                 <div class="d-flex justify-content-center mb-3">
-                                    <button class="btn btn-lg btn-primary mx-sm-4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="BEstens">Feedback geben und beenden</button>
+                                    <button class="btn btn-lg btn-primary mx-sm-4" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="BEstens">Feedback geben und beenden</button>
                                     <button class="btn btn-lg btn-success ml-sm-4">Feedback geben und Tipps erhalten</button>
                                 </div> 
                                   
@@ -146,14 +139,5 @@
     </div>
     
 </div>
-
-
- <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>  
-
-<script>
-
-</script>
-        
 
 @endsection

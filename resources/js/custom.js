@@ -100,7 +100,8 @@ document.addEventListener("DOMContentLoaded", function() {
 // START TOOLTIP START ----------------------------------------------------------------//
 
 
-  $(document).ready(function(){
+  $(function(){
     $('[data-bs-toggle="tooltip"]').tooltip();
   });
+  
 // END TOOLTIP END ----------------------------------------------------------------//
