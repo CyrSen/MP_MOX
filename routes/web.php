@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FeedbackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,13 @@ Route::get('/feedback', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::middleware('auth')->group(function () {
+Route::get('/feedback', [FeedbackController::class, 'create'])->name('feedback.create');
+Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
+Route::get('/feedback/commentary', [FeedbackController::class, 'createCommentary'])->name('feedback.commentary.create');
+Route::post('/feedback/commentary', [FeedbackController::class, 'storeCommentary'])->name('feedback.commentary.store');
+});
+

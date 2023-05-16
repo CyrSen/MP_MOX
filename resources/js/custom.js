@@ -1,8 +1,12 @@
 // START LOCATION GET COORDINATES START ----------------------------------------------------------------//
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var image = document.getElementById('image');
-    var xCoordinateFormInput = document.getElementById('x-coordinate');
-    var yCoordinateFormInput = document.getElementById('y-coordinate');
+    var xCoordinateFormInput = document.getElementById('x-coordinates');
+    var yCoordinateFormInput = document.getElementById('y-coordinates');
     var xDisplay = document.getElementById('x-display');
     var yDisplay = document.getElementById('y-display');
   
@@ -26,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
     yCoordinateFormInput.value = yPercentage.toFixed(2) ;
   
     // Display the percentage values
-    xDisplay.textContent = "X coordinate: " + xPercentage.toFixed(2) + '%';
-    yDisplay.textContent = "Y coordinate: " + yPercentage.toFixed(2) + '%';
+    xDisplay.textContent = "X coordinates: " + xPercentage.toFixed(2) + '%';
+    yDisplay.textContent = "Y coordinates: " + yPercentage.toFixed(2) + '%';
   
-    console.log("X coordinate: " + xPercentage.toFixed(2) + '%');
-    console.log("Y coordinate: " + yPercentage.toFixed(2) + '%');
+    console.log("X coordinates: " + xPercentage.toFixed(2) + '%');
+    console.log("Y coordinates: " + yPercentage.toFixed(2) + '%');
   
     // Store the clicked location coordinates in variables
     clickX = xPercentage;
@@ -42,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var emojiClass = getEmojiClass(noiseValue);
   
   // Store data in local storage
-  localStorage.setItem('x-coordinate', xCoordinateFormInput.value);
-  localStorage.setItem('y-coordinate', yCoordinateFormInput.value);
+  localStorage.setItem('x-coordinates', xCoordinateFormInput.value);
+  localStorage.setItem('y-coordinates', yCoordinateFormInput.value);
   localStorage.setItem('noiseValue', noiseValue);
   
   // Create the emoji icon using the stored location coordinates
@@ -105,3 +109,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 // END TOOLTIP END ----------------------------------------------------------------//
+
+

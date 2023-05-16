@@ -55,7 +55,26 @@
 /* const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)) */
 
+/* HIGGE-LEVEL -------------------------------- */
+function setNoiseLevel(value) {
+  document.getElementById('noise-level-input').value = value;
+  console.log('Noise Level:', value);
+}
 
+function setTempLevel(value) {
+  document.getElementById('temperature-level-input').value = value;
+  console.log('Temperature Level:', value);
+}
+
+function setAirQLevel(value) {
+  document.getElementById('air-quality-level-input').value = value;
+  console.log('AirQ Level:', value);
+}
+
+function setHiggeLevel(value) {
+  document.getElementById('higge-level-input').value = value;
+  console.log('Higge Level:', value);
+}
 
 
 
