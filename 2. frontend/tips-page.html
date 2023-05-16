@@ -53,7 +53,8 @@
         Hier bieten wir dir Tipps an, um dein Komforterlebnis selbst und sofort zu verbessern.
       </p>  
     </div>
-  
+
+  <!-- Container thermischer Komfort -->
       <div class="container tips">
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col category-container">
@@ -61,51 +62,58 @@
               <h5 style="font-weight: bold;">Zu heiss oder zu kalt?</h5>
               <a href="#" class="tip-link" onclick="showPopup('Thermischer Komfort')">Tipps für thermischen Komfort</a>
             </div>
-            
-
-
             <div class="category-icon">
               <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
             </div>
           </div>
+
+
+
+
+  <!-- Container akustischer Komfort -->
           <div class="col category-container">
             <div class="category-text">
               <h5 style="font-weight: bold;">Bürolärm?</h5>
               <button id="openPopup" class="btn btn-outline-primary">Tipps für akustischen Komfort</button>
             </div>
-            
-
-
             <div class="category-icon">
               <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
             </div>
           </div>
+
+
+
+
+  <!-- Container Luft Komfort -->
           <div class="col category-container">
             <div class="category-text">
-              <h5 style="font-weight: bold;">Dicke Luft?</h5>
-              <a href="#" class="tip-link" onclick="showPopup('Luft Komfort')">Tipps für komfortable Luft</a>
+              <h5 style="font-weight: bold;">Schlechte Luft?</h5>
+              <button id="openPopupLuft" class="btn btn-outline-primary">Tipps für komfortable Luft</button>
             </div>
-            
+            <div class="category-icon">
+              <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
+            </div>
+          </div>
+          
 
-            
-            <div class="category-icon">
-              <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
-            </div>
-          </div>
-          <div class="col category-container">
-            <div class="category-text">
-              <h5 style="font-weight: bold;">Gesamt Komfort</h5>
-              <a href="#" class="tip-link" onclick="showPopup('Gesamt Komfort')">Tipps für thermischen Komfort</a>
-            </div>
-            
-            <div class="category-icon">
-              <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
-            </div>
-          </div>
+
+
+
+  <!-- Container Gesamt Komfort -->
+  <div class="col category-container">
+    <div class="category-text">
+      <h5 style="font-weight: bold;">Gesamtkomfort</h5>
+      <button id="openPopupGesamtkomfort" class="btn btn-outline-primary">Tipps für Gesamtkomfort</button>
+    </div>
+    <div class="category-icon">
+      <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
+    </div>
+  </div>
+  
+
         </div>
       </div>
       
-
     <div class="container messaging">
       <h2 class="content-title">Nachricht senden.</h2> 
       <div class="row row-cols-1 row-cols-md-2">
@@ -120,20 +128,6 @@
       </div>
     </div>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Pop-up-Fenster Akustik-->
 <div id="popup" class="popup">
   <div class="popup-content">
@@ -154,25 +148,53 @@
   </div>
 </div>
 
-<!-- Weitere HTML-Inhalte hier -->
+<!-- Pop-up-Fenster Luft -->
+<div id="popupLuft" class="popup">
+  <div class="popup-content">
+    <h3>10 Tipps für komfortable Luft</h3>
+    <ol>
+      <li>Regelmäßiges Lüften der Räume</li>
+      <li>Verwendung von Luftreinigern</li>
+      <li>Reduzierung von Luftverschmutzern wie Rauch oder Chemikalien</li>
+      <li>Vermeidung von Schimmelbildung durch ausreichende Belüftung</li>
+      <li>Überprüfung der Luftfeuchtigkeit und gegebenenfalls Verwendung eines Luftbefeuchters oder Entfeuchters</li>
+      <li>Pflanzen aufstellen, die die Luftqualität verbessern</li>
+      <li>Vermeidung von starken Gerüchen durch Lüften oder Verwendung von Luftreinigern</li>
+      <li>Regelmäßige Reinigung der Lüftungsanlagen</li>
+      <li>Verwendung von hochwertigen Luftfiltern</li>
+      <li>Schutz vor allergenen Substanzen wie Pollen oder Staubmilben</li>
+    </ol>
+    <button id="closePopupLuft">Schließen</button>
+  </div>
+</div>
 
-<script>
-  function openPopup() {
-    document.getElementById("popup").style.display = "flex";
-  }
-
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
-
-  document.getElementById("openPopup").addEventListener("click", openPopup);
-  document.getElementById("closePopup").addEventListener("click", closePopup);
-</script>
 
 
 
 
 
+
+
+<!-- Pop-up-Fenster Gesamtkomfort -->
+<div id="popupGesamtkomfort" class="popup">
+    <div class="popup-content">
+      <h3>10 Tipps für Gesamtkomfort</h3>
+      <ol>
+        <li>Sorge für ergonomische Arbeitsplatzgestaltung</li>
+        <li>Halte eine angenehme Raumtemperatur aufrecht</li>
+        <li>Optimiere die Beleuchtung für weniger Augenbelastung</li>
+        <li>Sorge für ausreichende Bewegung und ergonomisches Sitzen</li>
+        <li>Reduziere unnötigen Lärm im Büro</li>
+        <li>Halte die Luftqualität in den Räumen auf einem guten Niveau</li>
+        <li>Ermögliche regelmäßige Pausen für Entspannung und Erholung</li>
+        <li>Fördere den sozialen Austausch und Teamgeist</li>
+        <li>Stelle gesunde Snacks und Getränke bereit</li>
+        <li>Implementiere stressreduzierende Maßnahmen wie Pflanzen oder Entspannungsecken</li>
+      </ol>
+      <button id="closePopupGesamtkomfort">Schließen</button>
+    </div>
+  </div>
+  
 
 </main>
 
@@ -185,15 +207,11 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-  <!-- JavaScript-Code -->
-  <script>
-    function showPopup(title) {
-      var popup = document.getElementById('popup');
-      var popupTitle = document.getElementById('popup-title');
-      popupTitle.innerText = title;
-      popup.classList.add('show');
-    }
-  </script>
+   <!-- Eigenes JavaScript -->
+   <script src="script.js"></script>
+
+
+
 
 </body>
 </html>
