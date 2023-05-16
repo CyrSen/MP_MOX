@@ -12,7 +12,8 @@ class FeedbackController extends Controller
      */
     public function index()
     {
-        //
+        $feedbackMaps = FeedbackMap::all();
+        return view('administration', compact('feedbackMaps'));
     }
 
     /**
@@ -54,11 +55,9 @@ class FeedbackController extends Controller
         $feedbackMap->save();
     
         // Redirect or perform any additional actions as needed
-        return redirect()->route('feedback.commentary.create')->with('feedbackMapId', $feedbackMap->id);
+        return redirect()->route('feedback.create')->with('feedbackMapId', $feedbackMap->id);
     }
     
-    
-
     /**
      * Display the specified resource.
      */
@@ -88,35 +87,42 @@ class FeedbackController extends Controller
      */
     public function destroy(FeedbackMap $feedbackMap)
     {
-        //
+        $feedbackMap->delete();
+
+        return redirect()->route('feedback.administration')->with('success', 'Feedback deleted successfully.');
+    }
+
+        public function createCommentary()
+    {
+        return view('feedback');
     }
 
     /**
- * Store the commentary and critique data.
- */
-public function storeCommentary(Request $request)
-{
-    // Validate the incoming request data
-    $validatedData = $request->validate([
-        'commoncritique' => 'required|in:yes,no',
-        'commentary' => 'nullable|string',
-    ]);
+     * Store the commentary and critique data.
+     */
+    public function storeCommentary(Request $request)
+    {
+        // Validate the incoming request data
+        $validatedData = $request->validate([
+            'commoncritique' => 'required|in:yes,no',
+            'commentary' => 'nullable|string',
+        ]);
 
-    // Retrieve the feedback map ID from the session
-    $feedbackMapId = session('feedbackMapId');
+        // Retrieve the feedback map ID from the session
+        $feedbackMapId = session('feedbackMapId');
 
-    // Retrieve the feedback map from the database
-    $feedbackMap = FeedbackMap::find($feedbackMapId);
+        // Retrieve the feedback map from the database
+        $feedbackMap = FeedbackMap::find($feedbackMapId);
 
-    // Update the feedback map with the commentary and commoncritique data
-    $feedbackMap->commoncritique = $validatedData['commoncritique'];
-    $feedbackMap->commentary = $validatedData['commentary'];
+        // Update the feedback map with the commentary and commoncritique data
+        $feedbackMap->commoncritique = $validatedData['commoncritique'];
+        $feedbackMap->commentary = $validatedData['commentary'];
 
-    // Save the feedback map
-    $feedbackMap->save();
+        // Save the feedback map
+        $feedbackMap->save();
 
-    // Redirect or perform any additional actions as needed
-    return redirect()->route('feedback.create')->with('success', 'Commentary and critique stored successfully.');
-}
+        // Redirect or perform any additional actions as needed
+        return redirect()->route('feedback.create')->with('success', 'Commentary and critique stored successfully.');
+    }
 
 }

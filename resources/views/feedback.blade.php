@@ -5,10 +5,10 @@
 @section('content')
 
 
-<div class="container-fluid px-5">
-    <div class="card shadow-2-strong shadow  mb-0 bg-body">
-        <div class="row justify-content-center px-5 pt-3">
-            <div class="card col-sm-12 m-2 p-3 shadow p-3 bg-body">
+<div class="container px-0 mx-auto">
+    <div class="card shadow-2-strong shadow mb-0 bg-body">
+        <div class="row justify-content-center m-3 px-1 pt-3">
+            <div class="card col-sm-11 my-2 p-3 shadow p-3 bg-body">
                 <p class="h5 my-3"><strong>An dieser Stelle hast du die Möglickkeit für deinen Arbeitsplatz ein Feedback abzugeben:</strong></p>
             </div>
         </div>
@@ -28,7 +28,7 @@
                                             <img class="" src="./assets/img/numbers_in_circle/number_one_circle.svg" alt="number_five">
                                         </div>
                                         <div class="col-sm-10 my-3 text-start p-0">
-                                            <p class="{{-- feedbackQ --}} my-3">Klicke auf dem Grundriss auf die Zone, für die du Feedback geben möchtest.</p>
+                                            <p class="feedbackQ my-3">Klicke auf dem Grundriss auf die Zone, für die du Feedback geben möchtest.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@
                                             <img class="" src="./assets/img/numbers_in_circle/number_three_circle.svg" alt="number_three">
                                         </div>
                                         <div class="col-sm-2 text-start p-0">
-                                            <p class="feedbackQ my-3">Temperaturempfinden mitteilen.</p>
+                                            <p class="feedbackQ my-3">Gefühlte Temperatur.</p>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="container">
