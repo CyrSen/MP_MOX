@@ -54,66 +54,160 @@
       </p>  
     </div>
 
-  <!-- Container thermischer Komfort -->
-      <div class="container tips">
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col category-container">
-            <div class="category-text">
-              <h5 style="font-weight: bold;">Zu heiss oder zu kalt?</h5>
-              <a href="#" class="tip-link" onclick="showPopup('Thermischer Komfort')">Tipps für thermischen Komfort</a>
-            </div>
-            <div class="category-icon">
-              <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
-            </div>
-          </div>
+<!-- Container Tipps -->
+<div class="container tips">
+    <div class="row row-cols-1 row-cols-md-2">
 
-
-
-
-  <!-- Container akustischer Komfort -->
-          <div class="col category-container">
-            <div class="category-text">
-              <h5 style="font-weight: bold;">Bürolärm?</h5>
-              <button id="openPopup" class="btn btn-outline-primary">Tipps für akustischen Komfort</button>
-            </div>
-            <div class="category-icon">
-              <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
-            </div>
-          </div>
-
-
-
-
-  <!-- Container Luft Komfort -->
-          <div class="col category-container">
-            <div class="category-text">
-              <h5 style="font-weight: bold;">Schlechte Luft?</h5>
-              <button id="openPopupLuft" class="btn btn-outline-primary">Tipps für komfortable Luft</button>
-            </div>
-            <div class="category-icon">
-              <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
-            </div>
-          </div>
-          
-
-
-
-
-  <!-- Container Gesamt Komfort -->
-  <div class="col category-container">
-    <div class="category-text">
-      <h5 style="font-weight: bold;">Gesamtkomfort</h5>
-      <button id="openPopupGesamtkomfort" class="btn btn-outline-primary">Tipps für Gesamtkomfort</button>
-    </div>
-    <div class="category-icon">
-      <img src="https://img.icons8.com/emoji/48/000000/smiling-face.png" alt="Smiling Emoji" />
-    </div>
-  </div>
   
+
+
+<!-- Container Zu kalt? -->
+<div class="col category-container">
+  <div class="category-text">
+    <h5 style="font-weight: bold;">Zu kalt?</h5>
+    <button class="btn btn-outline-primary" onclick="showPopup('popupZuKalt')">Tipps gegen Kälte</button>
+  </div>
+  <div class="category-icon">
+    <img src="https://img.icons8.com/emoji/48/000000/cold-face.png" alt="Cold Emoji" />
+  </div>
+</div>
+
+<!-- Pop-up-Fenster Zu kalt -->
+<div id="popupZuKalt" class="popup">
+  <div class="popup-content">
+    <h3>10 Tipps bei Kälte im Büro</h3>
+    <ol>
+      <li>Kleide dich in Schichten, um dich wärmer zu halten.</li>
+      <li>Verwende eine Heizdecke oder einen Heizlüfter.</li>
+      <li>Halte dich in Bewegung, um die Durchblutung zu fördern.</li>
+      <li>Trinke warme Getränke, um dich von innen aufzuwärmen.</li>
+      <li>Verwende eine Tastatur- und Maus-Handwärmer.</li>
+      <li>Platziere eine Raumheizung in deiner Nähe.</li>
+      <li>Verwende wärmende Kissen oder Wärmflaschen.</li>
+      <li>Decke dich mit einer warmen Decke ab.</li>
+      <li>Halte deine Füße warm mit dicken Socken oder Fußwärmern.</li>
+      <li>Sprich mit dem Büroverwalter über mögliche Lösungen.</li>
+    </ol>
+    <button onclick="closePopup('popupZuKalt')">Schließen</button>
+  </div>
+</div>
+
+
+
+
+<!-- Container Zu heiss? -->
+<div class="col category-container">
+  <div class="category-text">
+    <h5 style="font-weight: bold;">Zu heiss?</h5>
+    <button class="btn btn-outline-primary" onclick="showPopup('popupZuHeiss')">Tipps gegen Hitze</button>
+  </div>
+  <div class="category-icon">
+    <img src="https://img.icons8.com/emoji/48/000000/hot-face.png" alt="Hot Emoji" />
+  </div>
+</div>
+
+<!-- Pop-up-Fenster Zu heiss -->
+<div id="popupZuHeiss" class="popup">
+  <div class="popup-content">
+    <h3>10 Tipps bei Hitze im Büro</h3>
+    <ol>
+      <li>Verwende einen Ventilator oder eine Klimaanlage.</li>
+      <li>Kleide dich in leichte, luftige Kleidung.</li>
+      <li>Trinke viel Wasser, um hydratisiert zu bleiben.</li>
+      <li>Verwende kühlende Pads oder Eisbeutel.</li>
+      <li>Halte dich in schattigen Bereichen auf.</li>
+      <li>Vermeide direkte Sonneneinstrahlung durch Jalousien oder Vorhänge.</li>
+      <li>Nimm regelmäßig kurze Abkühlungspausen.</li>
+      <li>Platziere eine Wassersprühflasche in der Nähe, um dich zu erfrischen.</li>
+      <li>Reduziere die Verwendung von elektronischen Geräten, die Wärme abgeben.</li>
+      <li>Sprich mit dem Büroverwalter über Möglichkeiten zur Verbesserung der Kühlung.</li>
+    </ol>
+    <button onclick="closePopup('popupZuHeiss')">Schließen</button>
+  </div>
+</div>
+
+  
+
+
+
+
+
+<!-- Container Bürolärm -->
+<div class="col category-container">
+  <div class="category-text">
+    <h5 style="font-weight: bold;">Bürolärm?</h5>
+    <button class="btn btn-outline-primary" onclick="showPopup('popupBuerolaerm')">Tipps für akustischen Komfort</button>
+  </div>
+  <div class="category-icon">
+    <img src="https://img.icons8.com/emoji/48/000000/loudly-crying-face.png" alt="Loudly Crying Face Emoji" />
+  </div>
+</div>
+
+<!-- Pop-up-Fenster Bürolärm -->
+<div id="popupBuerolaerm" class="popup">
+  <div class="popup-content">
+    <h3>10 Tipps für akustischen Komfort im Büro</h3>
+    <ol>
+      <li>Verwende Kopfhörer oder Ohrstöpsel, um Geräusche zu dämpfen.</li>
+      <li>Platziere Schallschutzwände oder Raumteiler zwischen Arbeitsbereichen.</li>
+      <li>Verwende schallabsorbierende Materialien wie Teppiche oder Vorhänge.</li>
+      <li>Halte Türen und Fenster geschlossen, um Außengeräusche zu minimieren.</li>
+      <li>Implementiere einen "Quiet Zone" Bereich, in dem Ruhe eingehalten wird.</li>
+      <li>Regelmäßige Wartung der Lüftungs- und Klimaanlagen, um Lärm zu reduzieren.</li>
+      <li>Vermeide laute Gespräche am Arbeitsplatz und halte die Stimmlautstärke niedrig.</li>
+      <li>Verwende schallabsorbierende Decken- und Wandpaneele.</li>
+      <li>Organisiere Besprechungen in ruhigen Räumen oder mit Schallschutzvorrichtungen.</li>
+      <li>Ermutige zu respektvollem Umgang und Rücksichtnahme auf die Lautstärke.</li>
+    </ol>
+    <button onclick="closePopup('popupBuerolaerm')">Schließen</button>
+  </div>
+</div>
+
+
+
+  <!-- Container Schlechte Luft -->
+<div class="col category-container">
+  <div class="category-text">
+    <h5 style="font-weight: bold;">Schlechte Luft?</h5>
+    <button class="btn btn-outline-primary" onclick="showPopup('popupSchlechteLuft')">Tipps für komfortable Luft</button>
+  </div>
+  <div class="category-icon">
+    <img src="https://img.icons8.com/emoji/48/000000/dizzy-face.png" alt="Dizzy Face Emoji" />
+  </div>
+</div>
+
+<!-- Pop-up-Fenster Schlechte Luft -->
+<div id="popupSchlechteLuft" class="popup">
+  <div class="popup-content">
+    <h3>10 Tipps für komfortable Luft im Büro</h3>
+    <ol>
+      <li>Regelmäßiges Lüften der Räume, um frische Luft hereinzulassen.</li>
+      <li>Verwendung von Luftreinigern, um Schadstoffe zu reduzieren.</li>
+      <li>Vermeidung von Luftverschmutzern wie Rauch oder Chemikalien.</li>
+      <li>Überprüfung und Wartung der Lüftungsanlagen für eine gute Luftzirkulation.</li>
+      <li>Platzierung von luftreinigenden Pflanzen im Büro.</li>
+      <li>Verwendung von Luftbefeuchtern oder Entfeuchtern, um die Luftfeuchtigkeit zu regulieren.</li>
+      <li>Regelmäßige Reinigung der Lüftungsanlagen, um Staub und Schmutz zu entfernen.</li>
+      <li>Verwendung von hochwertigen Luftfiltern, um Partikel aus der Luft zu filtern.</li>
+      <li>Vermeidung von starken Gerüchen durch Lüften oder Verwendung von Luftreinigern.</li>
+      <li>Schutz vor allergenen Substanzen wie Pollen oder Staubmilben.</li>
+    </ol>
+    <button onclick="closePopup('popupSchlechteLuft')">Schließen</button>
+  </div>
+</div>
+
+  
+
+
 
         </div>
       </div>
-      
+
+
+
+
+<!-- Bereich NAchricht senden -->
+
     <div class="container messaging">
       <h2 class="content-title">Nachricht senden.</h2> 
       <div class="row row-cols-1 row-cols-md-2">
@@ -127,46 +221,6 @@
           </form>        </div>
       </div>
     </div>
-    
-<!-- Pop-up-Fenster Akustik-->
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <h3>10 Tipps zur Verbesserung des akustischen Komforts</h3>
-    <ol>
-      <li>Aufstellung von schallabsorbierenden Materialien an den Wänden</li>
-      <li>Verwendung von Teppichen oder Vorlegern auf dem Boden</li>
-      <li>Einsatz von Schallschutzelementen wie Vorhängen oder Akustikpaneelen</li>
-      <li>Reduzierung von reflektierenden Oberflächen wie Glas oder Metall</li>
-      <li>Vermeidung von harten und glatten Oberflächen in der Einrichtung</li>
-      <li>Verwendung von Schallschutzeinrichtungen wie Raumteilern oder Schallschutzvorhängen</li>
-      <li>Regelmäßige Wartung und Überprüfung der Lüftungs- und Klimaanlagen</li>
-      <li>Einbau von schallisolierenden Türen und Fenstern</li>
-      <li>Einrichtung von ruhigen Zonen oder Rückzugsorten</li>
-      <li>Sensibilisierung der Mitarbeiter für einen respektvollen Umgang mit Lautstärke</li>
-    </ol>
-    <button id="closePopup">Schließen</button>
-  </div>
-</div>
-
-<!-- Pop-up-Fenster Luft -->
-<div id="popupLuft" class="popup">
-  <div class="popup-content">
-    <h3>10 Tipps für komfortable Luft</h3>
-    <ol>
-      <li>Regelmäßiges Lüften der Räume</li>
-      <li>Verwendung von Luftreinigern</li>
-      <li>Reduzierung von Luftverschmutzern wie Rauch oder Chemikalien</li>
-      <li>Vermeidung von Schimmelbildung durch ausreichende Belüftung</li>
-      <li>Überprüfung der Luftfeuchtigkeit und gegebenenfalls Verwendung eines Luftbefeuchters oder Entfeuchters</li>
-      <li>Pflanzen aufstellen, die die Luftqualität verbessern</li>
-      <li>Vermeidung von starken Gerüchen durch Lüften oder Verwendung von Luftreinigern</li>
-      <li>Regelmäßige Reinigung der Lüftungsanlagen</li>
-      <li>Verwendung von hochwertigen Luftfiltern</li>
-      <li>Schutz vor allergenen Substanzen wie Pollen oder Staubmilben</li>
-    </ol>
-    <button id="closePopupLuft">Schließen</button>
-  </div>
-</div>
 
 
 
@@ -175,25 +229,21 @@
 
 
 
-<!-- Pop-up-Fenster Gesamtkomfort -->
-<div id="popupGesamtkomfort" class="popup">
-    <div class="popup-content">
-      <h3>10 Tipps für Gesamtkomfort</h3>
-      <ol>
-        <li>Sorge für ergonomische Arbeitsplatzgestaltung</li>
-        <li>Halte eine angenehme Raumtemperatur aufrecht</li>
-        <li>Optimiere die Beleuchtung für weniger Augenbelastung</li>
-        <li>Sorge für ausreichende Bewegung und ergonomisches Sitzen</li>
-        <li>Reduziere unnötigen Lärm im Büro</li>
-        <li>Halte die Luftqualität in den Räumen auf einem guten Niveau</li>
-        <li>Ermögliche regelmäßige Pausen für Entspannung und Erholung</li>
-        <li>Fördere den sozialen Austausch und Teamgeist</li>
-        <li>Stelle gesunde Snacks und Getränke bereit</li>
-        <li>Implementiere stressreduzierende Maßnahmen wie Pflanzen oder Entspannungsecken</li>
-      </ol>
-      <button id="closePopupGesamtkomfort">Schließen</button>
-    </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 </main>

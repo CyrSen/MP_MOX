@@ -447,3 +447,23 @@ body {
     flex-basis: 45%;
   }
   
+  #popupZuKalt {
+    display: none;
+  }
+  
+  #popupZuHeiss {
+    display: none;
+  }
+  
+  #popupBuerolaerm {
+    display: none;
+  }
+  #popupSchlechteLuft {
+  display: none;
+}
+
+
+#popupSchlechteLuft {
+  display: none;
+}
+
