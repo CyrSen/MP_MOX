@@ -467,3 +467,23 @@ body {
   display: none;
 }
 
+
+/* Danke-Seite */
+.container {
+  margin-top: 20px; /* Abstand zum Header */
+}
+
+.text-container {
+  text-align: center; /* Text zentrieren */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Bild horizontal zentrieren */
+  margin-top: 20px; /* Abstand zum oberen Container */
+}
+
+.image-container img {
+  max-width: 60%; /* Bildgröße anpassen */
+  height: auto; /* Automatische Anpassung der Bildhöhe */
+}
