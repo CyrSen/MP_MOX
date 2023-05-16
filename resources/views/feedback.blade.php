@@ -125,8 +125,8 @@
     
             <div class="col-sm-3 m-2">
                 <div id="image-container" class="myContainer col-xs-8">
-                    <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/map_raeffels12_draft_01.png')}}" alt="Office room plan">
-                    <input type="hidden" name="noise" id="noise-input">
+                    <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
+                    {{-- <input type="hidden" name="noise" id="noise-input"> --}}
                   <input id="x-coordinate" type="hidden" name="x-coordinate">
                   <input id="y-coordinate" type="hidden" name="y-coordinate">
                 </div>
