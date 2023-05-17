@@ -65,3 +65,7 @@ body {
     width: 75%;
     right:-12.5%; 
 }
+
+.custom-tooltip {
+    color:yellow;
+}
