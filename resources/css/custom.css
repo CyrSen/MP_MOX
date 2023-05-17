@@ -1,24 +1,21 @@
 
 .custom-tooltip {
-    /* --bs-tooltip-bg: var(--bs-primary); */
+/* --bs-tooltip-bg: var(--bs-primary); */
     --bs-tooltip-color:#110080;
     --bs-tooltip-bg: #fbff00;
     --bs-tooltip-border-radius:10px;
-  
-    --bs-tooltip-tooltip-arrow-width:               1.2rem;
-    --bs-tooltip-tooltip-arrow-height:              1rem;
+    --bs-tooltip-tooltip-arrow-width: 1.2rem;
+    --bs-tooltip-tooltip-arrow-height:1rem;
     
 
-    
-  }
-  
+
+}
+
 
 body {
     margin-top:2%;
     
 }
-
-
 
 .circleBtn {
     border-radius:50%;
@@ -40,6 +37,31 @@ body {
     transform: translate(-50%, -50%);
     color:blue;
     font-size: 2rem;
+    
+    
+    
 }
 
 
+
+#image-container {
+    width: 75%; /* Take up the full width of the parent container */
+    height: auto; /* Automatically adjust the height based on the content */
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+
+  }
+
+#image {
+    justify-content: center;
+  }
+
+  .tooltip {
+  z-index: 9999; /* Ensure the tooltip appears on top of other elements */
+  opacity: 1; /* Make the tooltip visible */
+}
+
+/* Take up the full width of the parent container */ 
+.mapAdmin {
+    width: 75%;
+    right:-12.5%; 
+}

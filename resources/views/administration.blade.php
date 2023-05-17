@@ -12,9 +12,9 @@
 </script>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card mx-auto py-2 ml-4 p-2">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card mapAdmin py-2 ml-4 p-2 d-flex align-items-center">
                 <!-- Your select code here -->
                 <div>
                     <select class="form-select" aria-label="Select By Question" name="" id="">
@@ -27,22 +27,19 @@
                     </select>
                 </div>
                 
-                <div id="image-container" class="myContainer col-xs-8">
-                    <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
-                    {{-- <input type="hidden" name="noise" id="noise-input"> --}}
-                    <h5>Feedback Locations</h5>
-
+                <div id="image-container" class="{{-- myContainer --}} col-xs-8">
+                    <img class="img-fluid {{-- myMapImg --}}" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
                     <input id="x-coordinates" type="hidden" name="x_coordinates">
                     <input id="y-coordinates" type="hidden" name="y_coordinates">
                 </div>
             </div>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-md-8">
             <div class="card mr-4 p-3">
                 <div class="table-responsive">
-                    <!-- Your table code here -->
-                    <h1>Feedback Administration</h1>
+                    <!-- table code here -->
+                    <h1 class="text-center">Feedback Administration</h1>
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
@@ -87,4 +84,12 @@
         </div>
     </div>
 </div>
+
+<script>
+
+// Fetch the feedback map entries from the server-side
+var feedbackMapEntries = {!! json_encode($feedbackMaps) !!};
+
+</script>
+
 @endsection

@@ -17,7 +17,7 @@
 
         @csrf
         <div class="row justify-content-center ">
-            <div class="col-sm-8">
+            <div class="col-sm-8 order-2 order-md-1 order-sm-first">
                 <div class="container-fluid">
                     <div class="row my-2">
                         <div class="col-sm-12 mb-2">
@@ -168,15 +168,15 @@
                                     <button class="btn btn-lg btn-primary mx-sm-4" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="BEstens">Feedback geben und beenden</button>
                                     <button class="btn btn-lg btn-success ml-sm-4" type="submit">Feedback geben und Tipps erhalten</button>
                                 </div> 
-                                  
-                                  
+                                {{-- <i class="fa-solid fa-location-dot"></i> --}}
+ 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
     
-            <div class="col-sm-3 m-2">
+            <div class="col-sm-3 m-2 order-1 order-md-2 order-sm-2">
                 <div id="image-container" class="myContainer col-xs-8">
                     <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
                     {{-- <input type="hidden" name="noise" id="noise-input"> --}}

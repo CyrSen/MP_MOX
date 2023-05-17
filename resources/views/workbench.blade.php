@@ -11,3 +11,11 @@
     <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt ubelst - hazardous!!!"  data-bs-value="5"/>
    
 </div>
+
+<!-- EXAMPLE POPOVER BS5 TOOLTIP START -->
+{{-- <i class="fa-solid fa-frown fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="schlecht" data-bs-value="1"></i>
+<img class="img-fluid" src="./assets/img/smiley_red_mask.svg" alt="smiley-test"  data-bs-toggle="tooltip" data-bs-placement="top" title="angemessen" />
+                                                         --}}
+<!-- EXAMPLE POPOVER BS5 TOOLTIP STOP -->
+
+{{-- <i class="fa-solid fa-location-dot"></i> --}}
