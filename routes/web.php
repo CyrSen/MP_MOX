@@ -50,7 +50,7 @@ Route::get('/feedback', [FeedbackController::class, 'create'])->name('feedback.c
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 Route::delete('/feedback/{feedbackMap}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
 Route::get('/feedback/commentary', [FeedbackController::class, 'createCommentary'])->name('feedback.commentary.create');
-Route::post('/feedback/commentary', [FeedbackController::class, 'storeCommentary'])->name('feedback.commentary.store');
+Route::post('/feedback/{feedbackMap}/commentary', [FeedbackController::class, 'storeCommentary'])->name('feedback.commentary.store');
 
 });
 

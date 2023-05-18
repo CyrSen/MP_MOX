@@ -55,7 +55,9 @@ class FeedbackController extends Controller
         $feedbackMap->save();
     
         // Redirect or perform any additional actions as needed
-        return redirect()->route('feedback.create')->with('feedbackMapId', $feedbackMap->id);
+        return redirect()->route('feedback.commentary.create')->with('feedbackMapId', $feedbackMap->id);
+
+
     }
     
     /**
@@ -92,11 +94,14 @@ class FeedbackController extends Controller
         return redirect()->route('feedback.administration')->with('success', 'Feedback deleted successfully.');
     }
 
-        public function createCommentary()
+    public function createCommentary(Request $request)
     {
-        return view('feedback');
+        $feedbackMapId = $request->session()->get('feedbackMapId');
+        $feedbackMaps = FeedbackMap::all();
+        return view('tipps', compact('feedbackMaps', 'feedbackMapId'));
     }
-
+    
+    
     /**
      * Store the commentary and critique data.
      */
@@ -107,22 +112,23 @@ class FeedbackController extends Controller
             'commoncritique' => 'required|in:yes,no',
             'commentary' => 'nullable|string',
         ]);
-
+    
         // Retrieve the feedback map ID from the session
         $feedbackMapId = session('feedbackMapId');
-
+    
         // Retrieve the feedback map from the database
         $feedbackMap = FeedbackMap::find($feedbackMapId);
-
+    
         // Update the feedback map with the commentary and commoncritique data
-        $feedbackMap->commoncritique = $validatedData['commoncritique'];
         $feedbackMap->commentary = $validatedData['commentary'];
-
+        $feedbackMap->commoncritique = $validatedData['commoncritique'];
+        dd($request->all());
         // Save the feedback map
         $feedbackMap->save();
-
+    
         // Redirect or perform any additional actions as needed
         return redirect()->route('feedback.create')->with('success', 'Commentary and critique stored successfully.');
     }
+    
 
 }

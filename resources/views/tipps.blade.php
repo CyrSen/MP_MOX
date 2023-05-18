@@ -60,23 +60,23 @@
                 <div class="col-md-6 col-lg-5 mb-3 my-4 bg-warning">
                   <h5 class="display">Card 4</h5>
                   <p class="lead">Commentar:</p>
-                    <form action="{{ route('feedback.commentary.store') }}" method="POST">
+                  {{-- <form action="{{ route('feedback.commentary.store', ['feedbackMapId' => $feedbackMap->id]) }}" method="POST"> --}}
+                    <form action="{{ route('feedback.commentary.store', ['feedbackMap' => $feedbackMapId]) }}" method="POST">
                             @csrf
-                        <div class="mb-3">
-
-                            <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                            <label for="floatingTextarea2" class="text-dark">Comments</label>
-                            </div>
-                        </div>
                         <div class="mb-3">
                             <div class="input-group">
                             <span class="input-group-text"><i class="fa-regular fa-comment-dots"></i></span>
-                            <textarea class="form-control" aria-label="With textarea" placeholder="Commentary"></textarea>
+                            <textarea  type="text" name="commentary" class="form-control" aria-label="With textarea" placeholder="Commentary"></textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Button</button>
                     </form> 
+                </div>
+                <div class="col-sm-3">
+                    {{-- @foreach ($feedbackMaps as $feedbackMap)
+                    <li>{{ $feedbackMap->commentary }}</li>
+                        
+                    @endforeach --}}
                 </div>
               </div>
             </div>

@@ -68,6 +68,7 @@
                                     <td>{{ $feedbackMap->air_quality_level }}</td>                  
                                     <td>{{ $feedbackMap->higge_level }}</td>
                                     <td>{{ $feedbackMap->commentary }}</td>
+
                                     <!-- Add more table cells for other fields as needed -->
                                     <td>
                                         <!-- Delete button -->
