@@ -16,6 +16,9 @@
                 <li class="nav-item">
                     <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/administration') }}">Administration</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') }}">Tipps</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->

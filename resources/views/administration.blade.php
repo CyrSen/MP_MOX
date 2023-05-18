@@ -51,6 +51,7 @@
                                 <th>Temperaturempfinden</th>
                                 <th>Raumluftqualität</th>
                                 <th>Happiness</th>
+                                <th>Commentary</th>
                                 <th>Action</th>
                                 <!-- Add more table headers for other fields as needed -->
                             </tr>
@@ -64,8 +65,9 @@
                                     <td>{{ $feedbackMap->y_coordinates }}</td>
                                     <td>{{ $feedbackMap->noise_level }}</td>
                                     <td>{{ $feedbackMap->temperature_level }}</td>
-                                    <td>{{ $feedbackMap->air_quality_level }}</td>
+                                    <td>{{ $feedbackMap->air_quality_level }}</td>                  
                                     <td>{{ $feedbackMap->higge_level }}</td>
+                                    <td>{{ $feedbackMap->commentary }}</td>
                                     <!-- Add more table cells for other fields as needed -->
                                     <td>
                                         <!-- Delete button -->
