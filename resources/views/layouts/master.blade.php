@@ -13,7 +13,8 @@
     <!-- Iconsevices -->
     <script src="https://kit.fontawesome.com/d4cbcb96c8.js" crossorigin="anonymous"></script>
     <!-- CSS-Animaitions -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- Fonts -->
 
     <!-- Styles -->

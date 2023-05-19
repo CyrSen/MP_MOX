@@ -56,7 +56,7 @@ body {
   }
 
   .tooltip {
-  z-index: 9999; /* Ensure the tooltip appears on top of other elements */
+  z-index: 100; /* Ensure the tooltip appears on top of other elements */
   opacity: 1; /* Make the tooltip visible */
 }
 
@@ -69,3 +69,21 @@ body {
 .custom-tooltip {
     color:yellow;
 }
+
+
+/*  ----------------------------------------------------------------*/
+.icon-element {
+    position: relative;
+  }
+  
+  .overlay-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+ 
+  }
+  
+  .show-overlay {
+    opacity: 1;
+  }

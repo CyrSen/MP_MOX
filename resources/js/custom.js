@@ -183,4 +183,48 @@ document.addEventListener("DOMContentLoaded", function() {
   
 //  TOOLTIP END ----------------------------------------------------------------//
 
+/* function addOverlayIcon(event) {
+  const icon = event.currentTarget;
+  
+  // Check if the icon already has the overlay icon
+  if (!icon.querySelector('.overlay-icon')) {
+    // Create a new overlay icon element
+    const overlayIcon = document.createElement('img');
+    overlayIcon.classList.add('overlay-icon');
+    overlayIcon.src = './assets/img/icons_var/Checkmark_002.svg';
+
+    // Append the overlay icon element as a child of the clicked icon
+    icon.appendChild(overlayIcon);
+  }
+  
+  // Add a class to show the overlay icon
+  icon.querySelector('.overlay-icon').classList.add('show-overlay');
+}
+
+// Attach the click event listener to each icon
+const icons = document.getElementsByClassName('icon-element');
+for (let i = 0; i < icons.length; i++) {
+  icons[i].addEventListener('click', addOverlayIcon);
+} */
+
+function addOverlayIcon(event) {
+  const icon = event.currentTarget;
+  
+  // Check if the icon already has the overlay icon
+  if (!icon.querySelector('.overlay-icon')) {
+    // Create a new overlay icon element
+    const overlayIcon = document.createElement('img');
+    overlayIcon.classList.add('overlay-icon');
+    overlayIcon.src = './assets/img/icons_var/Checkmark_002.svg';
+
+    // Append the overlay icon element as a child of the clicked icon
+    icon.appendChild(overlayIcon);
+  }
+}
+
+// Attach the click event listener to each icon
+const icons = document.getElementsByClassName('icon-element');
+for (let i = 0; i < icons.length; i++) {
+  icons[i].addEventListener('click', addOverlayIcon);
+}
 

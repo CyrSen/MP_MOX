@@ -37,6 +37,10 @@ Route::get('/tipps', function () {
     return view('tipps');
 });
 
+Route::get('/thankyou', function () {
+    return view('thankyou');
+});
+
 
 Auth::routes();
 
