@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card mr-4 p-3">
                 <div class="table-responsive">
                     <!-- table code here -->

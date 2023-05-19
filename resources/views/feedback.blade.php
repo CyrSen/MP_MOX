@@ -13,7 +13,7 @@
             </div>
         </div>
 
-    <form action="{{ route('feedback.store') }}" method="POST">
+    <form action="{{ route('feedback.store') }}" method="POST"> 
 
         @csrf
         <div class="row justify-content-center ">

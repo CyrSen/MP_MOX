@@ -19,7 +19,6 @@ class FeedbackMap extends Model
         'temperature_level',
         'airquality_level',
         'higge_level',
-        'commoncritique',
         'commentary',
     ];
 

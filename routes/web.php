@@ -45,21 +45,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::middleware('auth')->group(function () {
-Route::get('/administration', [FeedbackController::class, 'index'])->name('feedback.administration');
+    
+Route::get('/administration', [FeedbackController::class, 'index'])->name('feedback.administration');   
 Route::get('/feedback', [FeedbackController::class, 'create'])->name('feedback.create');
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 Route::delete('/feedback/{feedbackMap}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
-Route::get('/feedback/commentary', [FeedbackController::class, 'createCommentary'])->name('feedback.commentary.create');
-Route::post('/feedback/{feedbackMap}/commentary', [FeedbackController::class, 'storeCommentary'])->name('feedback.commentary.store');
-
+Route::get('/tipps/{feedbackMapId}', [FeedbackController::class, 'createCommentary'])->name('feedback.tipps');
+Route::post('/tipps/{feedbackMapId}', [FeedbackController::class, 'storeCommentary'])->name('feedback.storeCommentary');
 });
-
-// web.php
-/* Route::middleware('auth')->group(function () {
-    Route::get('/feedback', [FeedbackController::class, 'create'])->name('feedback.create');
-    Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
-    Route::get('/feedback/commentary', [FeedbackController::class, 'createCommentary'])->name('feedback.commentary.create');
-    Route::post('/feedback/commentary', [FeedbackController::class, 'storeCommentary'])->name('feedback.commentary.store');
-    Route::get('/feedback/administration', [FeedbackController::class, 'index'])->name('feedback.administration');
-    Route::delete('/feedback/{feedbackMap}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
-}); */

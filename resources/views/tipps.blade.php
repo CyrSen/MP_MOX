@@ -59,9 +59,10 @@
                 </div>
                 <div class="col-md-6 col-lg-5 mb-3 my-4 bg-warning">
                   <h5 class="display">Card 4</h5>
-                  <p class="lead">Commentar:</p>
-                  {{-- <form action="{{ route('feedback.commentary.store', ['feedbackMapId' => $feedbackMap->id]) }}" method="POST"> --}}
-                    <form action="{{ route('feedback.commentary.store', ['feedbackMap' => $feedbackMapId]) }}" method="POST">
+                  <p class="lead">Commentary:</p>
+          
+                      <form action="{{ route('feedback.storeCommentary', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
+
                             @csrf
                         <div class="mb-3">
                             <div class="input-group">

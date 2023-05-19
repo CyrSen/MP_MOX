@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var temperatureLevel = entry.temperature_level;
     var airQualityLevel = entry.air_quality_level;
     var higgeLevel = entry.higge_level;
+    var commentary = entry.commentary;
 
     // Calculate the position of the icon based on the entry coordinates
     var xPercentage = parseFloat(x).toFixed(2);
@@ -157,7 +158,8 @@ document.addEventListener("DOMContentLoaded", function() {
                       'Noise Level: ' + noiseLevel + '<br>' +
                       'Temperature Level: ' + temperatureLevel + '<br>' +
                       'Air Quality Level: ' + airQualityLevel + '<br>' +
-                      'Higge Level: ' + higgeLevel);
+                      'Higge Level: ' + higgeLevel + '<br>' +
+                      'Kommentar: ' + commentary);
     /* icon.setAttribute('data-bs-value', '1'); */ // Replace '1' with the desired value
 
     // Add the icon to the map container
