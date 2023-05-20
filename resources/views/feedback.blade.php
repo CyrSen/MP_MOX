@@ -48,15 +48,27 @@
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col justify-content-evenly text-center p-3">
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setNoiseLevel(1)">
+                                                        
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setNoiseLevel(1)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setNoiseLevel(2)">
+                                                        </div>
+                                                        
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setNoiseLevel(3)">
+                                                        </div>
+                                                        
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setNoiseLevel(4)">
+                                                        </div>
+                                                        
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setNoiseLevel(5)">
+                                                        </div>
                                                     
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setNoiseLevel(2)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setNoiseLevel(3)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setNoiseLevel(4)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setNoiseLevel(5)">
                                                     </div>
                                                     <input type="hidden" name="noise_level" id="noise-level-input">
                                                 </div> 
@@ -80,15 +92,27 @@
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col justify-content-evenly text-center p-3">
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setTempLevel(1)">
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setTempLevel(1)">
+                                                        </div>
                                                     
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setTempLevel(2)">
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setTempLevel(2)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setTempLevel(3)">
+                                                        </div>
+                                            
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setTempLevel(4)">
+                                                        </div>
+                                
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setTempLevel(5)">
+                                                        </div>
                                                     
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setTempLevel(3)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setTempLevel(4)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setTempLevel(5)">
                                                     </div>
                                                     <input type="hidden" name="temperature_level" id="temperature-level-input">
                                                 </div> 
@@ -112,15 +136,27 @@
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col justify-content-evenly text-center p-3">
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setAirQLevel(1)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setAirQLevel(2)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setAirQLevel(3)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setAirQLevel(4)">
-                                                    
-                                                        <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_mask.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setAirQLevel(5)">
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setAirQLevel(1)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setAirQLevel(2)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setAirQLevel(3)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setAirQLevel(4)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_mask.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setAirQLevel(5)">
+                                                        </div>
+
                                                     </div>
                                                     <input type="hidden" name="air_quality_level" id="air-quality-level-input">
                                                 </div> 
@@ -144,17 +180,27 @@
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col justify-content-evenly text-center p-3">
-                                                        <img class="img-fluid px-3 icon-element" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setHiggeLevel(1)">
-                                                        
-                                                        <img class="img-fluid px-3 icon-element" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setHiggeLevel(2)">
-                                                        
-                                                        <img class="img-fluid px-3 icon-element" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setHiggeLevel(3)">
-                                                        
-                                                        <img class="img-fluid px-3 icon-element" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setHiggeLevel(4)">
-                                                        
-                                                        <img class="px-3 icon-element" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setHiggeLevel(5)">
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setHiggeLevel(1)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setHiggeLevel(2)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setHiggeLevel(3)">
+                                                        </div>
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setHiggeLevel(4)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setHiggeLevel(5)">
+                                                        </div>
+
                                                     </div>
-                                                    
                                                     <input type="hidden" name="higge_level" id="higge-level-input">
                                                 </div> 
                                             </div>

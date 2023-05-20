@@ -215,7 +215,11 @@ function addOverlayIcon(event) {
     // Create a new overlay icon element
     const overlayIcon = document.createElement('img');
     overlayIcon.classList.add('overlay-icon');
-    overlayIcon.src = './assets/img/icons_var/Checkmark_002.svg';
+    overlayIcon.classList.add('animate__animated'); // Add the second class name here
+    overlayIcon.classList.add('animate__zoomIn'); // Add the second class name here
+
+
+    overlayIcon.src = './assets/img/icons_var/checkmark_small_001.svg';
 
     // Append the overlay icon element as a child of the clicked icon
     icon.appendChild(overlayIcon);

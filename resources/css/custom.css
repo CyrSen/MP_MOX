@@ -72,7 +72,7 @@ body {
 
 
 /*  ----------------------------------------------------------------*/
-.icon-element {
+/* .icon-element {
     position: relative;
   }
   
@@ -86,4 +86,22 @@ body {
   
   .show-overlay {
     opacity: 1;
-  }
+  } */
+/*----------------------------------------------------------------*/
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    width:fit-content;
+    height:fit-content;
+    }
+
+.overlay-icon {
+    position: absolute;
+    left:70%;
+    bottom: 0;
+    z-index: 2;
+    size: 50px; /* Set width and height to 50px */
+}
+    
+  /*----------------------------------------------------------------*/
+ 
