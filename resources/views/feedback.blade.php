@@ -212,12 +212,9 @@
                         <div class="col-sm-12 mt-2">
                             <div class="row justify-content-center">
                                 <div class="d-flex justify-content-center mb-3">
-                                    <img class="img-fluid show-overlay" src="./assets/img/icons_var/Checkmark_003.svg">
                                     <button class="btn btn-lg btn-primary mx-sm-4" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="BEstens">Feedback geben und beenden</button>
                                     <button class="btn btn-lg btn-success ml-sm-4" type="submit">Feedback geben und Tipps erhalten</button>
                                 </div> 
-                                {{-- <i class="fa-solid fa-location-dot"></i> --}}
- 
                             </div>
                         </div>
                     </div>

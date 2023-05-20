@@ -52,13 +52,13 @@
                 </div>
               </div>
               <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5 mb-3 my-4 bg-info">
-                  <h5 class="display">Card 3</h5>
+                <div class="col-md-6 col-lg-5 mb-3 my-4">
+                  <h5 class="display">{{-- Card 3 --}}</h5>
                   <p class="lead">ALL GOOD? NOT? Give Commentary or EFF OFF...jk...lol</p>
-                  <i class="fa-regular fa-comment-dots"></i>
+                  {{-- <i class="fa-regular fa-comment-dots"></i> --}}
                 </div>
-                <div class="col-md-6 col-lg-5 mb-3 my-4 bg-warning">
-                  <h5 class="display">Card 4</h5>
+                <div class="col-md-6 col-lg-5 mb-3 my-4">
+                  <h5 class="display">{{-- Card 4 --}}</h5>
                   <p class="lead">Commentary:</p>
           
                       <form action="{{ route('feedback.storeCommentary', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
@@ -70,13 +70,16 @@
                             <textarea  type="text" name="commentary" class="form-control" aria-label="With textarea" placeholder="Commentary"></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Button</button>
+
+                        <div class="text-end pe-2 pt-2 pb-3">
+                          <button type="submit" class="btn btn-primary">Button</button>
+                        </div>
+                        
                     </form> 
                 </div>
                 <div class="col-sm-3">
                     {{-- @foreach ($feedbackMaps as $feedbackMap)
                     <li>{{ $feedbackMap->commentary }}</li>
-                        
                     @endforeach --}}
                 </div>
               </div>
@@ -159,8 +162,4 @@
             </div>
           </div>
         
-  
- 
-    
-
 @endsection

@@ -1,3 +1,7 @@
+body {
+    margin-top:2%;
+    
+}
 
 .custom-tooltip {
 /* --bs-tooltip-bg: var(--bs-primary); */
@@ -6,15 +10,6 @@
     --bs-tooltip-border-radius:10px;
     --bs-tooltip-tooltip-arrow-width: 1.2rem;
     --bs-tooltip-tooltip-arrow-height:1rem;
-    
-
-
-}
-
-
-body {
-    margin-top:2%;
-    
 }
 
 .circleBtn {

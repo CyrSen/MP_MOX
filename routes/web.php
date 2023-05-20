@@ -54,6 +54,6 @@ Route::get('/administration', [FeedbackController::class, 'index'])->name('feedb
 Route::get('/feedback', [FeedbackController::class, 'create'])->name('feedback.create');
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 Route::delete('/feedback/{feedbackMap}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
-Route::get('/tipps/{feedbackMapId}', [FeedbackController::class, 'createCommentary'])->name('feedback.tipps');
-Route::post('/tipps/{feedbackMapId}', [FeedbackController::class, 'storeCommentary'])->name('feedback.storeCommentary');
+Route::get('/tipps/{feedbackMapId?}', [FeedbackController::class, 'createCommentary'])->name('feedback.tipps');
+Route::post('/tipps/{feedbackMapId?}', [FeedbackController::class, 'storeCommentary'])->name('feedback.storeCommentary');
 });

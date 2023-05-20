@@ -98,6 +98,7 @@ class FeedbackController extends Controller
     {
 
         return view('tipps', ['feedbackMapId' => $feedbackMapId]);
+        /* return view('tipps', compact('feedbackMapId')); */
     }
         
     
@@ -123,7 +124,7 @@ class FeedbackController extends Controller
         $feedbackMap->save();
     
         // Redirect or perform any additional actions as needed
-        return redirect()->back();
+        return redirect('/thankyou');
     }
     
 
