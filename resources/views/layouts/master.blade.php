@@ -35,12 +35,13 @@
 <body>
 
     <header>
-        @include('layouts.navigation')
+        @include('layouts.navigation', ['feedbackMapId' => session('feedbackMapId')])
     </header>
 
     <div id="app">
         <main class="py-4">
             @yield('content')
+
         </main>
     </div>
 

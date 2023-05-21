@@ -4,6 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\FeedbackMap;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+
+
+/* // Get all session data
+$sessionData = Session::all();
+
+// Display the session data
+dd($sessionData); */
 
 class FeedbackController extends Controller
 {
@@ -53,6 +61,10 @@ class FeedbackController extends Controller
         //dd($request->all());
         // Save the feedback map to the database
         $feedbackMap->save();
+
+        // Store the feedbackMapId in the session
+        session(['feedbackMapId' => $feedbackMap->id]);
+
     
         // Redirect or perform any additional actions as needed
         return redirect()->route('feedback.tipps', ['feedbackMapId' => $feedbackMap->id]);
@@ -94,7 +106,7 @@ class FeedbackController extends Controller
     }
 
 
-     public function createCommentary(Request $request, $feedbackMapId)
+     public function createCommentary(Request $request, FeedbackMap  $feedbackMapId)
     {
 
         return view('tipps', ['feedbackMapId' => $feedbackMapId]);

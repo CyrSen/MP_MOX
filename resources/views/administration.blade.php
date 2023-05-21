@@ -1,15 +1,9 @@
+<!DOCTYPE html>
 @extends('layouts.master')
 
 @section('title', 'ChapsChat')
 
 @section('content')
-
-<script>
-    // Reload the page after 1 second (1000 milliseconds)
-/*     setTimeout(function() {
-        location.reload();
-    }, 1000); */
-</script>
 
 <div class="container">
     <div class="row justify-content-center">
@@ -26,6 +20,9 @@
                         <option value="">Happiness</option>
                     </select>
                 </div>
+
+                
+
                 
                 <div id="image-container" class="{{-- myContainer --}} col-xs-8">
                     <img class="img-fluid {{-- myMapImg --}}" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
@@ -40,6 +37,14 @@
                 <div class="table-responsive">
                     <!-- table code here -->
                     <h1 class="text-center">Feedback Administration</h1>
+                    @if (session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
+                    
+                    
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
@@ -88,11 +93,12 @@
     </div>
 </div>
 
+@endsection
+
+
 <script>
 
-// Fetch the feedback map entries from the server-side
-var feedbackMapEntries = {!! json_encode($feedbackMaps) !!};
-
+    // Fetch the feedback map entries from the server-side
+    var feedbackMapEntries = {!! json_encode($feedbackMaps) !!};
+    
 </script>
-
-@endsection

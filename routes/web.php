@@ -33,7 +33,7 @@ Route::get('/administration', function () {
     return view('administration');
 });
 
-Route::get('/tipps', function () {
+Route::get('/tipps/{feedbackMapId?}', function () {
     return view('tipps');
 });
 
