@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 @extends('layouts.master')
 
 @section('title', 'ChapsChat')

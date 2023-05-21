@@ -32,8 +32,6 @@ class FeedbackController extends Controller
         return view('feedback');
     }
 
-    
-
     /**
      * Store a newly created resource in storage.
      */
@@ -113,7 +111,7 @@ class FeedbackController extends Controller
         /* return view('tipps', compact('feedbackMapId')); */
     }
         
-    
+   
     /**
      * Store the commentary and critique data.
      */
