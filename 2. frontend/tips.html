@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tipps myOfficeX</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/mdb.min.css?ver=1.1.0" rel="stylesheet">
+  <style>
+
+    #info {
+      display: flex;
+      align-items: stretch;
+      min-height: 100vh;
+      background: url("img/open-window.jpg") no-repeat center center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .rgba-black-strong {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Deckkraft hier ändern */
+      z-index: -1;
+    }
+
+    .card.mb-5.wow.fadeInUp[data-wow-delay=".4s"] {
+      flex: 1;
+    }
+
+    .card-body.p-5 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .top-nav-collapse {
+      background-color: #3949ab !important;
+    }
+
+    .navbar:not(.top-nav-collapse) {
+      background: transparent !important;
+    }
+
+    @media (max-width: 768px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #3949ab !important;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .margins {
+        margin-right: 1rem;
+        margin-left: 1rem;
+      }
+    }
+
+    footer {
+      position: sticky;
+      bottom: 0;
+    }
+ 
+    
+    #popup .modal-dialog-centered {
+        margin: 0 auto;
+      }
+
+      .modal-header.bg-indigo {
+        background-color: #3949ab;
+        color: #ffffff;
+      }
+
+      .modal-body {
+        padding: 1.5rem;
+      }
+
+      .btn-secondary {
+        background-color: #3949ab;
+        color: #ffffff;
+      }
+
+      .modal.shadow {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+ 
+</style>
+
+</head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+        <div class="container"><a class="navbar-brand" href="about.html"><strong>myOfficeX</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link active" href="about.html">Über</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+              <li class="nav-item"><a class="nav-link" href="tips.html">Tipps</a></li>
+              <li class="nav-item"><a class="nav-link" href="/about.html#contact">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Tips -->
+      <section id="info">
+        <div class="rgba-black-strong"></div>
+        <div class="container py-5">
+          <div class="wow fadeIn">
+            <h2 class="h1 text-white pt-5 pb-3 text-center">Tipps</h2>
+            <p class="text-white px-5 mb-5 pb-3 lead text-center">
+              Hier sind einige sofort umsetzbare Tipps, mit denen du dein Komforterlebnis selbst verbessern kannst!
+            </p>
+          </div>
+          <div class="row mb-lg-4 center-on-small-only">
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
+              <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="img/worried 150.png" alt="worried emoji"/></div>
+              <div class="col-md-6 float-right">
+                <div class="h4 text-white ">Zu kalt?</div>
+                <p class="text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-kalt')">Tipps bei Kälte</button>
+
+
+    
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
+              <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="img/worried 150.png" alt="worried emoji"/></div>
+              <div class="col-md-6 float-right">
+                <div class="h4 text-white ">Zu heiss?</div>
+                <p class="text-white t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>               
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-heiss')">Tipps bei Hitze</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="row center-on-small-only">
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
+              <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="img/worried 150.png" alt="worried emoji"/></div>
+              <div class="col-md-6 float-right">
+                <div class="h4 text-white ">Zu laut?</div>
+                <p class="text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>              
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-laerm')">Tipps bei Lärm</button>
+
+
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
+              <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="img/worried 150.png" alt="worried emoji"/></div>
+              <div class="col-md-6 float-right">
+                <div class="h4 text-white ">Schlechte Luft?</div>
+                <p class="text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>              
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-luft')">Tipps für gute Luft</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!--Popup Kalt-->
+<div id="popup-kalt" class="modal shadow">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-indigo text-white">
+        <h5 class="modal-title">Tipps gegen Frieren im Büro</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>Kleidungsschichten tragen</li>
+          <li>Wärmende Getränke genießen</li>
+          <li>Wärmende Snacks essen</li>
+          <li>Handwärmer verwenden</li>
+          <li>Isolierbecher für Getränke</li>
+          <li>Bewegungspausen einlegen</li>
+          <li>Footwärmer verwenden</li>
+          <li>Raumtemperatur anpassen</li>
+          <li>Wärmende Accessoires tragen</li>
+          <li>Sich in eine Decke einwickeln</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo" data-dismiss="modal">Schliessen</button>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<!--Popup Heiss-->
+<div id="popup-heiss" class="modal shadow">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-indigo text-white">
+        <h5 class="modal-title">Tipps bei Hitze im Büro</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>Trinken Sie ausreichend Wasser</li>
+          <li>Verwenden Sie einen Ventilator oder eine Klimaanlage</li>
+          <li>Tragen Sie leichte und luftige Kleidung</li>
+          <li>Vermeiden Sie koffeinhaltige Getränke</li>
+          <li>Nehmen Sie regelmäßige Pausen</li>
+          <li>Kühlen Sie sich mit einem kalten Tuch ab</li>
+          <li>Vermeiden Sie schwere Mahlzeiten</li>
+          <li>Schützen Sie sich vor direkter Sonneneinstrahlung</li>
+          <li>Richten Sie Ihre Arbeitszeiten nach den kühleren Stunden des Tages aus</li>
+          <li>Überprüfen Sie die Raumtemperatur und passen Sie sie gegebenenfalls an</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo" data-dismiss="modal">Schliessen</button>
+      </div>      
+    </div>
+  </div>
+</div>
+
+
+<!--Popup Lärm-->
+<div id="popup-laerm" class="modal shadow">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-indigo text-white">
+        <h5 class="modal-title">Tipps gegen Lärm im Büro</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>Geräuschunterdrückende Kopfhörer verwenden</li>
+          <li>Lärmschutzvorrichtungen anbringen</li>
+          <li>Arbeitsplatz an einen ruhigeren Ort verlegen</li>
+          <li>Besprechungsräume für telefonische Gespräche nutzen</li>
+          <li>Arbeitszeiten flexibel gestalten, um ruhigere Phasen zu nutzen</li>
+          <li>Den Lärmpegel mit Kollegen besprechen und Lösungen finden</li>
+          <li>Entspannungstechniken wie Meditation oder Atemübungen praktizieren</li>
+          <li>Ohrenstöpsel verwenden</li>
+          <li>Arbeitsplatz ergonomisch gestalten, um Geräusche zu minimieren</li>
+          <li>Geräuscharm arbeitende Geräte und Technologien nutzen</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo" data-dismiss="modal">Schliessen</button>
+      </div>      
+    </div>
+  </div>
+</div>
+
+
+
+<!--Popup Luft-->
+<div id="popup-luft" class="modal shadow">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-indigo text-white">
+        <h5 class="modal-title">Tipps für gute Luft im Büro</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>Raum regelmäßig lüften</li>
+          <li>Pflanzen aufstellen, die die Luft reinigen</li>
+          <li>Luftbefeuchter verwenden</li>
+          <li>Chemikalien und Duftstoffe vermeiden</li>
+          <li>Staub regelmäßig entfernen</li>
+          <li>Reinigungsmittel mit geringer Schadstoffbelastung verwenden</li>
+          <li>Elektronische Geräte nicht dauerhaft im Standby-Modus lassen</li>
+          <li>Auf gute Raumluftqualität bei der Büroeinrichtung achten</li>
+          <li>Natürliche Materialien und Farben verwenden</li>
+          <li>Fensterbänke und Arbeitsflächen regelmäßig reinigen</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo" data-dismiss="modal">Schliessen</button>
+      </div>      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
+      <div class="footer-copyright text-center py-3 font-small">
+        <div class="container-fluid">
+          <div>&copy; myOfficeX </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/popper.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/wow.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/mdb.min.js?ver=1.1.0"></script>
+    <script>new WOW().init();</script>
+
+<script>
+  function openPopup(popupId) {
+    $('#' + popupId).modal('show');
+  }
+</script>
+
+
+  </body>
+</html>

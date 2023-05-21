@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback myOfficeX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+  <link href="css/mdb.min.css?ver=1.1.0" rel="stylesheet">
+  <style>
+    #feedback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: url("img/architecture-4000.jpg") no-repeat center center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .rgba-black-strong {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Deckkraft hier ändern */
+      z-index: -1;
+    }
+
+    .card.mb-5.wow.fadeInLeft[data-wow-delay=".4s"],
+    .card.mb-5.wow.fadeInRight[data-wow-delay=".4s"] {
+      flex: 1;
+    }
+
+    .card-body.p-5 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .top-nav-collapse {
+      background-color: #3949ab !important;
+    }
+
+    .navbar:not(.top-nav-collapse) {
+      background: transparent !important;
+    }
+
+    @media (max-width: 768px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #3949ab !important;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .margins {
+        margin-right: 1rem;
+        margin-left: 1rem;
+      }
+    }
+
+    footer {
+      position: sticky;
+      bottom: 0;
+    }
+
+
+
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="about.html"><strong>myOfficeX</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link active" href="about.html">Über</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+            <li class="nav-item"><a class="nav-link" href="tips.html">Tipps</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about.html#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+              
+    
+ <!-- Feedback -->
+
+ <section id="feedback">
+  <div class="rgba-black-strong"></div>
+  <div class="container py-5">
+    <div class="wow fadeIn">
+      <h2 class="h1 text-white pt-5 pb-3 text-center">Feedback</h2>
+      <p class="text-white px-5 mb-5 pb-3 lead text-center">
+        Wähle zuerst deine Bürozone aus. Teile uns dann dein aktuelles Komforterlebnis mit. Wenn du möchtest, schreib auch gerne eine Nachricht. Vergiss nicht, deinen Namen anzugeben, wenn du eine Rückmeldung wünschst.
+      </p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-5 wow fadeInLeft" data-wow-delay=".4s">
+        <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
+          <div class="card-body p-5">
+            <!-- Content of Card 1 -->
+            <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+              <fieldset id="fs-frm-inputs">
+                <div class="form-group">
+                  <label for="full-name">Schritt 1: Wähle deine Bürozone aus dem Grundriss aus indem du darauf klickst. .</label>
+                </div>
+                <div class="form-group">
+                  <label for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
+                  <select name="timely" id="timely" class="form-control" required="">
+                    <option value="" selected="" disabled="">Auswählen</option>
+                    <option value="1">Viel zu kalt</option>
+                    <option value="3">Zu kalt</option>
+                    <option value="5">Gerade richtig</option>
+                    <option value="7">Zu warm</option>
+                    <option value="9">Viel zu warm</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="timely">Schritt 3: Akustische Behaglichkeit angeben.</label>
+                  <select name="timely" id="timely" class="form-control" required="">
+                    <option value="" selected="" disabled="">Auswählen</option>
+                    <option value="1">Viel zu leise</option>
+                    <option value="3">Zu leise</option>
+                    <option value="5">Gerade richtig</option>
+                    <option value="7">Zu laut</option>
+                    <option value="9">Viel zu laut</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="timely">Schritt 4. Luft-Behaglichkeit angeben.</label>
+                  <select name="timely" id="timely" class="form-control" required="">
+                    <option value="" selected="" disabled="">Auswählen</option>
+                    <option value="1">Ausgezeichnete Luftqualität</option>
+                    <option value="3">Gute Luftqualität</option>
+                    <option value="5">Akzeptable Luftqualität</option>
+                    <option value="7">Mässige Luftqualität</option>
+                    <option value="9">Schlechte Luftqualität</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="quality">Schritt 5: Gesamt-Behaglichkeit angeben.</label>
+                  <select name="quality" id="quality" class="form-control" required="">
+                    <option value="" selected="" disabled="">Auswählen</option>
+                    <option value="1">Exzellenter Komfort</option>
+                    <option value="3">Guter Komfort</option>
+                    <option value="5">Akzeptabler Komfort</option>
+                    <option value="7">Mässiger Komfort</option>
+                    <option value="9">Kein Komfort</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Schritt 6: Nachricht senden (optional).</label>
+                  <textarea rows="3" name="message" id="message" class="form-control" placeholder="Deine Mitteilung" required=""></textarea>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+                <div class="text-center">
+                  <button class="btn btn-indigo" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Senden</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5 wow fadeInRight" data-wow-delay=".4s">
+        <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
+          <div class="card-body p-5 d-flex flex-column justify-content-center align-items-center">
+            <!-- Content of Card 2 -->
+            <div class="map-container">
+              <div class="map-rectangle">
+                <img src="img/Grundriss_height-500.png" alt="Grundriss der Bürozone" style="max-width: 100%; max-height: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
+    <div class="footer-copyright text-center py-3 font-small">
+      <div class="container-fluid">
+        <div>&copy; myOfficeX</div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="scripts/jquery.min.js?ver=1.1.0"></script>
+  <script type="text/javascript" src="scripts/popper.min.js?ver=1.1.0"></script>
+  <script type="text/javascript" src="scripts/bootstrap.min.js?ver=1.1.0"></script>
+  <script type="text/javascript" src="scripts/wow.min.js?ver=1.1.0"></script>
+  <script type="text/javascript" src="scripts/mdb.min.js?ver=1.1.0"></script>
+  <script>
+    new WOW().init();
+  </script>
+  </body>
+  </html>
