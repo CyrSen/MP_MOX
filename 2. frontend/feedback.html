@@ -1,3 +1,18 @@
+<!-- Was ist der Plan?
+- Die Karte für die Feedbacks beibehalten.
+- Schritt 1 unverändert.
+- Schritt 2 bis 5: Weisses Feld durch Smileys ersetzen. Smileys Mit Hover Effekt.
+- Die Card wird beibehalten.
+- Der Card body wird beibehalten.
+- Im Card body wird der Content von Card 1 ersetzt.
+- Der zu ersteztende Content der Card 1 ist die Survey Form
+- Die Survey Form wird ersetzt durch ... 
+
+
+
+-->
+
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -118,50 +133,123 @@
                 <div class="form-group">
                   <label for="full-name">Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.</label>
                 </div>
+
                 <div class="form-group">
                   <label for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
-                  <select name="timely" id="timely" class="form-control" required="">
-                    <option value="" selected="" disabled="">Auswählen</option>
-                    <option value="1">Viel zu kalt</option>
-                    <option value="3">Zu kalt</option>
-                    <option value="5">Gerade richtig</option>
-                    <option value="7">Zu warm</option>
-                    <option value="9">Viel zu warm</option>
-                  </select>
+                  <div class="emoji-selection" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-container">
+                      <input type="radio" name="step2" id="emoji-1" value="1" required>
+                      <label for="emoji-1" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Viel zu kalt">😨</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step2" id="emoji-3" value="3">
+                      <label for="emoji-3" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Zu kalt">😬</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step2" id="emoji-5" value="5">
+                      <label for="emoji-5" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Gerade richtig">😊</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step2" id="emoji-7" value="7">
+                      <label for="emoji-7" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Zu warm">😅</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step2" id="emoji-9" value="9">
+                      <label for="emoji-9" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Viel zu warm">😎</label>
+                    </div>
+                  </div>
                 </div>
+                
+                
+                
+                
+                
                 <div class="form-group">
                   <label for="timely">Schritt 3: Akustische Behaglichkeit angeben.</label>
-                  <select name="timely" id="timely" class="form-control" required="">
-                    <option value="" selected="" disabled="">Auswählen</option>
-                    <option value="1">Viel zu leise</option>
-                    <option value="3">Zu leise</option>
-                    <option value="5">Gerade richtig</option>
-                    <option value="7">Zu laut</option>
-                    <option value="9">Viel zu laut</option>
-                  </select>
+                  <div class="emoji-selection" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-container">
+                      <input type="radio" name="step3" id="emoji-1" value="1" required>
+                      <label for="emoji-1" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Viel zu leise">😨</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step3" id="emoji-3" value="3">
+                      <label for="emoji-3" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Zu leise">😬</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step3" id="emoji-5" value="5">
+                      <label for="emoji-5" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Gerade richtig">😊</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step3" id="emoji-7" value="7">
+                      <label for="emoji-7" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Zu laut">😅</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step3" id="emoji-9" value="9">
+                      <label for="emoji-9" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Viel zu laut">😎</label>
+                    </div>
+                  </div>
                 </div>
+
+
+
+
                 <div class="form-group">
-                  <label for="timely">Schritt 4. Luft-Behaglichkeit angeben.</label>
-                  <select name="timely" id="timely" class="form-control" required="">
-                    <option value="" selected="" disabled="">Auswählen</option>
-                    <option value="1">Ausgezeichnete Luftqualität</option>
-                    <option value="3">Gute Luftqualität</option>
-                    <option value="5">Akzeptable Luftqualität</option>
-                    <option value="7">Mässige Luftqualität</option>
-                    <option value="9">Schlechte Luftqualität</option>
-                  </select>
+                  <label for="timely">Schritt 4: Luft-Behaglichkeit angeben.</label>
+                  <div class="emoji-selection" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-container">
+                      <input type="radio" name="step4" id="emoji-1" value="1" required>
+                      <label for="emoji-1" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Ausgezeichnete Luftqualität">😨</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step4" id="emoji-3" value="3">
+                      <label for="emoji-3" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Gute Luftqualität">😬</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step4" id="emoji-5" value="5">
+                      <label for="emoji-5" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Akzeptable Luftqualität">😊</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step4" id="emoji-7" value="7">
+                      <label for="emoji-7" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Mässige Luftqualität">😅</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step4" id="emoji-9" value="9">
+                      <label for="emoji-9" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Schlechte Luftqualität">😎</label>
+                    </div>
+                  </div>
                 </div>
+
+
                 <div class="form-group">
-                  <label for="quality">Schritt 5: Gesamt-Behaglichkeit angeben.</label>
-                  <select name="quality" id="quality" class="form-control" required="">
-                    <option value="" selected="" disabled="">Auswählen</option>
-                    <option value="1">Exzellenter Komfort</option>
-                    <option value="3">Guter Komfort</option>
-                    <option value="5">Akzeptabler Komfort</option>
-                    <option value="7">Mässiger Komfort</option>
-                    <option value="9">Kein Komfort</option>
-                  </select>
+                  <label for="timely">Schritt 5: Gesamt-Behaglichkeit Behaglichkeit angeben.</label>
+                  <div class="emoji-selection" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-container">
+                      <input type="radio" name="step5" id="emoji-1" value="1" required>
+                      <label for="emoji-1" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Exzellenter Komfort">😨</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step5" id="emoji-3" value="3">
+                      <label for="emoji-3" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Guter Komfort">😬</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step5" id="emoji-5" value="5">
+                      <label for="emoji-5" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Akzeptabler Komfort">😊</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step5" id="emoji-7" value="7">
+                      <label for="emoji-7" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Mässiger Komfort">😅</label>
+                    </div>
+                    <div class="emoji-container">
+                      <input type="radio" name="step5" id="emoji-9" value="9">
+                      <label for="emoji-9" class="emoji-label" data-toggle="tooltip" data-placement="top" title="Kein Komfort">😎</label>
+                    </div>
+                  </div>
                 </div>
+
+
+
+
+
                 <div class="form-group">
                   <label for="message">Schritt 6: Nachricht senden (optional).</label>
                   <textarea rows="3" name="message" id="message" class="form-control" placeholder="Deine Mitteilung" required=""></textarea>
