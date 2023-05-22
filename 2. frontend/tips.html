@@ -68,6 +68,7 @@
     }
  
     
+    
     #popup .modal-dialog-centered {
         margin: 0 auto;
       }
@@ -90,6 +91,10 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
+      .modal-dialog.modal-dialog-centered {
+    max-width: 1000px; /* Anpassen der maximalen Breite */
+    margin: 0 auto; /* Zentrierte Ausrichtung */
+  }
  
 </style>
 
@@ -131,8 +136,6 @@
                 <p class="text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
                 <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-kalt')">Tipps bei Kälte</button>
 
-
-    
               </div>
             </div>
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
@@ -153,7 +156,6 @@
                 <p class="text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>              
                 <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-laerm')">Tipps bei Lärm</button>
 
-
               </div>
             </div>
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
@@ -170,7 +172,6 @@
       </div>
     </section>
 
-
 <!--Popup Kalt-->
 <div id="popup-kalt" class="modal shadow">
   <div class="modal-dialog modal-dialog-centered">
@@ -183,16 +184,59 @@
       </div>
       <div class="modal-body">
         <ol>
-          <li>Kleidungsschichten tragen</li>
-          <li>Wärmende Getränke genießen</li>
-          <li>Wärmende Snacks essen</li>
-          <li>Handwärmer verwenden</li>
-          <li>Isolierbecher für Getränke</li>
-          <li>Bewegungspausen einlegen</li>
-          <li>Footwärmer verwenden</li>
-          <li>Raumtemperatur anpassen</li>
-          <li>Wärmende Accessoires tragen</li>
-          <li>Sich in eine Decke einwickeln</li>
+          <li>
+            <h6>Schichten und Accessoires</h6>
+            <ul>
+              <li>Trage mehrere Kleidungsschichten aus natürlichen Materialien wie Wolle oder Kaschmir.</li>
+              <li>Benutze Handwärmer und wärmende Einlegesohlen.</li>
+              <li>Ergänze deine Kleidung mit wärmenden Accessoires wie Schals und warmen Socken.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Essen und Trinken</h6>
+            <ul>
+              <li>Geniesse warme Getränke wie Tee oder Kaffee.</li>
+              <li>Gönn dir warme Snacks wie Suppen.</li>
+              <li>Iss warme Mahlzeiten in der Mittagspause.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Aktive Haltung und Ergonomie</h6>
+            <ul>
+              <li>Sitz aufrecht und aktiv, um dich wärmer zu fühlen.</li>
+              <li>Achte auf eine ergonomische Sitzposition.</li>
+              <li>Arbeite stehend, indem du die Höhe deines Schreibtisches anpasst.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Bewegung und Aufwärmübungen</h6>
+            <ul>
+              <li>Nutze die Treppe anstatt des Lifts.</li>
+              <li>Steh regelmässig auf und mach kurze Bewegungspausen.</li>
+              <li>Bewege deine Finger zu Zehen, um sie warm zu halten.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Fensterlüftung</h6>
+            <ul>
+              <li>Stelle sicher, dass die Fenster gut geschlossen sind und keine kalte Luft hineinströmt.</li>
+              <li>Lüfte nur kurz, um frische Luft hereinzulassen, ohne den Raum auszukühlen.</li>
+              <li>Sprich mit deinen Kolleginnen und Kollegen über Regelungen zur Fensterlüftung.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Optimale Positionierung und Sonnennutzung</h6>
+            <ul>
+              <li>Wechsle, wenn möglich, näher an die Heizung.</li>
+              <li>Suche einen wärmeren Bereich im Büro, falls vorhanden.</li>
+              <li>Setze dich in die Nähe von Fenstern, um von den Sonnenstrahlen gewärmt zu werden.</li>
+            </ul>
+          </li>
         </ol>
       </div>
       <div class="modal-footer">
@@ -214,16 +258,46 @@
       </div>
       <div class="modal-body">
         <ol>
-          <li>Trinken Sie ausreichend Wasser</li>
-          <li>Verwenden Sie einen Ventilator oder eine Klimaanlage</li>
-          <li>Tragen Sie leichte und luftige Kleidung</li>
-          <li>Vermeiden Sie koffeinhaltige Getränke</li>
-          <li>Nehmen Sie regelmäßige Pausen</li>
-          <li>Kühlen Sie sich mit einem kalten Tuch ab</li>
-          <li>Vermeiden Sie schwere Mahlzeiten</li>
-          <li>Schützen Sie sich vor direkter Sonneneinstrahlung</li>
-          <li>Richten Sie Ihre Arbeitszeiten nach den kühleren Stunden des Tages aus</li>
-          <li>Überprüfen Sie die Raumtemperatur und passen Sie sie gegebenenfalls an</li>
+          <li>
+            <h6>Kleidung</h6>
+            <ul>
+              <li>Trage leichte, atmungsaktive Kleidung, um dich kühl zu halten.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Essen und Trinken</h6>
+            <ul>
+              <li>Trinke ausreichend Wasser und kühle Getränke, um hydratisiert zu bleiben.</li>
+              <li>Vermeide koffeinhaltige Getränke, da sie dehydrierend wirken können.</li>
+              <li>Genieße kühlende Snacks wie frisches Obst oder Joghurt.</li>
+              <li>Wähle leichtere Mahlzeiten, um die Verdauung zu erleichtern und eine zusätzliche Hitzeentwicklung zu vermeiden.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Lüften</h6>
+            <ul>
+              <li>Öffne Fenster und Türen in den kühleren Morgen- oder Abendstunden für frische Luft.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Positionierung und Sonne</h6>
+            <ul>
+              <li>Suche nach schattigen Bereichen, um direkte Sonneneinstrahlung zu vermeiden.</li>
+              <li>Arbeite, wenn möglich, an einem kühleren Ort wie einem klimatisierten Raum oder einem schattigen Außenbereich.</li>
+              <li>Schließe Jalousien oder Vorhänge, um das Eindringen von Sonnenlicht und Wärme zu reduzieren.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Elektronische Geräte</h6>
+            <ul>
+              <li>Reduziere die Verwendung von elektronischen Geräten, da sie Wärme abgeben.</li>
+              <li>Vermeide das Sitzen in der Nähe von Computern, Druckern oder anderen elektrischen Geräten, um zusätzliche Wärmeentwicklung zu vermeiden.</li>
+            </ul>
+          </li>
         </ol>
       </div>
       <div class="modal-footer">
@@ -232,7 +306,6 @@
     </div>
   </div>
 </div>
-
 
 <!--Popup Lärm-->
 <div id="popup-laerm" class="modal shadow">
@@ -246,16 +319,42 @@
       </div>
       <div class="modal-body">
         <ol>
-          <li>Geräuschunterdrückende Kopfhörer verwenden</li>
-          <li>Lärmschutzvorrichtungen anbringen</li>
-          <li>Arbeitsplatz an einen ruhigeren Ort verlegen</li>
-          <li>Besprechungsräume für telefonische Gespräche nutzen</li>
-          <li>Arbeitszeiten flexibel gestalten, um ruhigere Phasen zu nutzen</li>
-          <li>Den Lärmpegel mit Kollegen besprechen und Lösungen finden</li>
-          <li>Entspannungstechniken wie Meditation oder Atemübungen praktizieren</li>
-          <li>Ohrenstöpsel verwenden</li>
-          <li>Arbeitsplatz ergonomisch gestalten, um Geräusche zu minimieren</li>
-          <li>Geräuscharm arbeitende Geräte und Technologien nutzen</li>
+          <ul>
+            <li>
+              <h6>Gruppe 1: Tools (Werkzeuge)</h6>
+              <ul>
+                <li>Nutze Kopfhörer: Verwende geräuschunterdrückende Kopfhörer oder höre beruhigende Musik, um den Lärm zu überdecken.</li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <h6>Gruppe 2: Vereinbarungen</h6>
+              <ul>
+                <li>Arbeite gemeinsam an Lärmschutzmaßnahmen: Nutze ruhige Kommunikationsmittel und vereinbare Ruhezeiten mit deinen Kollegen.</li>
+                <li>Stimme dich mit deinen Nachbarn ab: Kommuniziere mit den Nachbarn oder anderen Büros in der Nähe, um gemeinsame Lösungen für Lärmprobleme zu finden.</li>
+                <li>Lege klare Kommunikationsregeln fest: Verwende Nachrichten-Apps anstelle von lauten Gesprächen und definiere klare Regeln, um den Lärmpegel im Büro zu reduzieren.</li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <h6>Gruppe 3: Räumliche Organisation</h6>
+              <ul>
+                <li>Organisiere deinen Arbeitsplatz: Minimiere störende Geräusche, indem du deinen Arbeitsbereich so gestaltest, dass du Abstand zu lauten Geräten hast.</li>
+                <li>Nutze abgeschirmte Telefonkabinen: Führe ungestörte Telefongespräche in abgeschirmten Telefonkabinen oder Ruhezonen.</li>
+                <li>Nutze lärmfreie Zonen: Gehe in spezielle Fokusräume im Büro, in denen du konzentriert arbeiten kannst, ohne gestört zu werden.</li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <h6>Gruppe 4: Zeitliche Organisation</h6>
+              <ul>
+                <li>Nutze lärmfreie Zeiten: Plane deine anspruchsvollsten Aufgaben oder konzentrierte Arbeit in Zeiten mit niedrigem Lärmpegel, wie früh am Morgen oder nach Feierabend.</li>
+                <li>Führe Ruhezeiten ein: Schaffe im Büro Zeiten, in denen laute Gespräche oder Telefonate vermieden werden, um eine ruhigere Arbeitsumgebung zu gewährleisten.</li>
+                <li>Bilde lärmfokussierte Arbeitseinheiten: Arbeite in kleinen Gruppen zusammen, die an ähnlichen Aufgaben arbeiten, um den Lärmpegel zu reduzieren und die Produktivität zu steigern.</li>
+              </ul>
+            </li>
+          </ul>
+          
         </ol>
       </div>
       <div class="modal-footer">
@@ -264,8 +363,6 @@
     </div>
   </div>
 </div>
-
-
 
 <!--Popup Luft-->
 <div id="popup-luft" class="modal shadow">
@@ -279,16 +376,35 @@
       </div>
       <div class="modal-body">
         <ol>
-          <li>Raum regelmäßig lüften</li>
-          <li>Pflanzen aufstellen, die die Luft reinigen</li>
-          <li>Luftbefeuchter verwenden</li>
-          <li>Chemikalien und Duftstoffe vermeiden</li>
-          <li>Staub regelmäßig entfernen</li>
-          <li>Reinigungsmittel mit geringer Schadstoffbelastung verwenden</li>
-          <li>Elektronische Geräte nicht dauerhaft im Standby-Modus lassen</li>
-          <li>Auf gute Raumluftqualität bei der Büroeinrichtung achten</li>
-          <li>Natürliche Materialien und Farben verwenden</li>
-          <li>Fensterbänke und Arbeitsflächen regelmäßig reinigen</li>
+          <li>
+            <h6>Gruppe 1: Essen und Trinken</h6>
+            <ul>
+              <li>Nutze eine Gemeinschaftsküche: Wenn möglich, nutze eine Gemeinschaftsküche oder einen Pausenraum, um Mahlzeiten zuzubereiten und zu essen, anstatt dies direkt in deinem Büro zu tun.</li>
+              <li>Benutze eine Dunstabzugshaube: Falls in der Büroküche eine Dunstabzugshaube vorhanden ist, stelle sicher, dass du sie beim Kochen verwendest, um Gerüche effektiv abzuleiten.</li>
+              <li>Schließe die Tür zur Küche: Falls du stark riechende Gerichte zubereitest oder aufwärmst, schließe die Tür zur Küche, um Gerüche im Raum zu halten.</li>
+              <li>Iss riechende Lebensmittel in der Küche oder einem gut belüfteten Raum: Wenn du riechende Lebensmittel wie Zwiebeln, Knoblauch oder Fisch hast, esse sie am besten in der Küche oder einem anderen geschlossenen Raum mit guter Belüftung oder Fenster.</li>
+              <li>Vereinbare Essenszeiten: Treffe dich mit deinen Kollegen und vereinbart bestimmte Zeiten, in denen das Essen zubereitet und gegessen werden kann, um Konflikte oder Geruchsbelästigungen zu vermeiden.</li>
+              <li>Entsorge Abfall richtig: Entsorge Essensreste und Verpackungen ordnungsgemäß, um Gerüche und Schädlingsbefall zu vermeiden.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Gruppe 2: Fensterlüftung</h6>
+            <ul>
+              <li>Lüfte regelmäßig: Öffne regelmäßig die Fenster, um frische Luft in das Büro zu lassen.</li>
+              <li>Lüfte regelmäßig: Öffne regelmäßig die Fenster, um frische Luft hereinzulassen und verbrauchte Luft abzuführen.</li>
+              <li>Nutze natürliche Lüftung: Wenn möglich, nutze natürliche Lüftungsmöglichkeiten wie Fenster und Türen.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Gruppe 3: Elektronische Geräte</h6>
+            <ul>
+              <li>Platziere elektronische Geräte richtig: Stelle sicher, dass deine elektronischen Geräte ausreichend belüftet sind und nicht zu nah an deinem Arbeitsplatz stehen.</li>
+              <li>Schalte Elektronik aus: Schalte elektronische Geräte wie Drucker oder Kopierer aus, wenn sie nicht in Gebrauch sind, um den Ausstoß von flüchtigen organischen Verbindungen (VOCs) zu reduzieren.</li>
+            </ul>
+          </li>
+          <br>
         </ol>
       </div>
       <div class="modal-footer">
@@ -298,11 +414,7 @@
   </div>
 </div>
 
-
-
-
-
-
+<!-- Footer -->
     <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
       <div class="footer-copyright text-center py-3 font-small">
         <div class="container-fluid">
