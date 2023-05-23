@@ -44,51 +44,7 @@
                                             <img class="" src="./assets/img/numbers_in_circle/number_two_circle.svg" alt="number_two">
                                         </div>
                                         <div class="col-sm-2 text-start p-0">
-                                            <p class="feedbackQ my-3">Lärmempfinden mitteilen. </p>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col justify-content-evenly text-center p-3">
-                                                        
-                                                        <div class="icon-wrapper icon-element">
-                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setNoiseLevel(1)">
-                                                        </div>
-
-                                                        <div class="icon-wrapper icon-element">
-                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setNoiseLevel(2)">
-                                                        </div>
-                                                        
-                                                        <div class="icon-wrapper icon-element">
-                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setNoiseLevel(3)">
-                                                        </div>
-                                                        
-                                                        <div class="icon-wrapper icon-element">
-                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setNoiseLevel(4)">
-                                                        </div>
-                                                        
-                                                        <div class="icon-wrapper icon-element">
-                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setNoiseLevel(5)">
-                                                        </div>
-                                                    
-                                                    </div>
-                                                    <input type="hidden" name="noise_level" id="noise-level-input">
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 mb-2">
-                            <div class="card">
-                                <div class="container">
-                                    <div class="row my-0 p-2">
-                                        <div class="col-sm-2 my-3">
-                                            <img class="" src="./assets/img/numbers_in_circle/number_three_circle.svg" alt="number_three">
-                                        </div>
-                                        <div class="col-sm-2 text-start p-0">
-                                            <p class="feedbackQ my-3">Gefühlte Temperatur.</p>
+                                            <p class="feedbackQ my-3">Schritt 2: Wärme-Behaglichkeit angeben.</p>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="container">
@@ -129,10 +85,54 @@
                                 <div class="container">
                                     <div class="row my-0 p-2">
                                         <div class="col-sm-2 my-3">
+                                            <img class="" src="./assets/img/numbers_in_circle/number_three_circle.svg" alt="number_three">
+                                        </div>
+                                        <div class="col-sm-2 text-start p-0">
+                                            <p class="feedbackQ my-3">Schritt 3: Akustische Behaglichkeit angeben. </p>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col justify-content-evenly text-center p-3">
+                                                        
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Alles OK!" data-bs-value="1" onclick="setNoiseLevel(1)">
+                                                        </div>
+
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_lightgreen_nice.svg" alt="smiley-nice" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="2" onclick="setNoiseLevel(2)">
+                                                        </div>
+                                                        
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_yellow_okay.svg" alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Angemessen" data-bs-value="3" onclick="setNoiseLevel(3)">
+                                                        </div>
+                                                        
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_orange_meh.svg" alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="ss" data-bs-value="4" onclick="setNoiseLevel(4)">
+                                                        </div>
+                                                        
+                                                        <div class="icon-wrapper icon-element">
+                                                            <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_red_normal.svg" alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Stinkt übelst - hazardous!!!" data-bs-value="5" onclick="setNoiseLevel(5)">
+                                                        </div>
+                                                    
+                                                    </div>
+                                                    <input type="hidden" name="noise_level" id="noise-level-input">
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mb-2">
+                            <div class="card">
+                                <div class="container">
+                                    <div class="row my-0 p-2">
+                                        <div class="col-sm-2 my-3">
                                             <img class="" src="./assets/img/numbers_in_circle/number_four_circle.svg" alt="number_four">
                                         </div>
                                         <div class="col-sm-2 text-start p-0">
-                                            <p class="feedbackQ my-3">Luftqualität mitteilen.</p>
+                                            <p class="feedbackQ my-3">Schritt 4: Luft-Behaglichkeit angeben.</p>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="container">
@@ -176,7 +176,7 @@
                                             <img class="" src="./assets/img/numbers_in_circle/number_five_circle.svg" alt="number_five">
                                         </div>
                                         <div class="col-sm-2 text-start p-0">
-                                            <p class="feedbackQ my-3">Gesamterlebnis mitteilen:</p>
+                                            <p class="feedbackQ my-3">Schritt 5: Gesamt-Behaglichkeit Behaglichkeit angeben.</p>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="container">

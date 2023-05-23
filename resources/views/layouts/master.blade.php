@@ -13,16 +13,15 @@
     <!-- Iconsevices -->
     <script src="https://kit.fontawesome.com/d4cbcb96c8.js" crossorigin="anonymous"></script>
     <!-- CSS-Animaitions -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Fonts -->
 
     <!-- Styles -->
-    
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"> --}}
     <!-- Scripts -->
 
     <!-- Directives -->
-    @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css', 'resources/css/custom.css']);
+    @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css','node_modules/mdb-ui-kit/css/mdb.min.css', 'resources/css/custom.css']);
 
     <style>
 
@@ -45,41 +44,38 @@
         </main>
     </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
+
+<!-- MDB -->
+{{-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script> --}}
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 @vite(['resources/js/app.js', 'resources/js/custom.js']);
 
- <script>
-/* $(document).ready(function() {
-    $('[data-bs-toggle="tooltip"]').tooltip();
-}); */
-/* const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)) */
+ <script> 
 
-/* HIGGE-LEVEL -------------------------------- */
+/* NOISE-LEVEL -------------------------------- */
 function setNoiseLevel(value) {
   document.getElementById('noise-level-input').value = value;
   console.log('Noise Level:', value);
 }
+/* TEMP-LEVEL -------------------------------- */
 
 function setTempLevel(value) {
   document.getElementById('temperature-level-input').value = value;
   console.log('Temperature Level:', value);
 }
+/* AIRQ-LEVEL -------------------------------- */
 
 function setAirQLevel(value) {
   document.getElementById('air-quality-level-input').value = value;
   console.log('AirQ Level:', value);
 }
+/* HIGGE-LEVEL -------------------------------- */
 
 function setHiggeLevel(value) {
   document.getElementById('higge-level-input').value = value;
   console.log('Higge Level:', value);
 }
-
-
-
 
 </script>
 
