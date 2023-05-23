@@ -1,4 +1,71 @@
-<!DOCTYPE html>
+@extends('layouts.master')
+
+@section('title', 'ChapsChat')
+
+@section('content')
+
+
+<div class="container d-flex justify-content-center align-items-center vh-100" style="margin-top:-10%;">
+    <div class="row justify-content-center">
+        <div class="col-md-12 m-3 mx-auto mt-5">
+            <h2 class="lead mb-5">OFFICEX Feedback-Form</h2>
+            @guest
+            <h4 class="lead">Login or Register To start Survey!</h4>  
+            @endguest
+
+            @auth
+            <div class="text-center pt-3">
+                <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">
+                    <button class="btn btn-lg btn-primary">
+                        Umfrage Wiederholen
+                    </button>
+                </a>
+            </div>
+            @endauth
+            <div class="text-center mt-3">
+                <ul class="navbar-nav me-auto">
+                    @if (Route::has('login'))
+                    @auth
+                    <li class="nav-item">
+                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
+                    </li>            
+                    @else
+                    <li class="nav-item">
+                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+                    </li>
+                    @if (Route::has('register'))
+                    <li class="nav-item">
+                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                    </li>
+                    @endif
+                    @endauth
+                    @endif
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    
+@endsection
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- @include('layouts.sectionIntro') --}}
+
+
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -16,6 +83,8 @@
         </style>
     </head>
     <body class="antialiased">
+        
+
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
@@ -134,7 +203,10 @@
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
+
+        
     </body>
 </html>
+ --}}
