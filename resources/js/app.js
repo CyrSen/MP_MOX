@@ -4,7 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 import 'jquery';
+/* import 'mdb-ui-kit'; */ // lib
 import './bootstrap'; 
+
 import { createApp } from 'vue';
 
 /**
