@@ -10,9 +10,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav me-auto">
-                <li><a class="{{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">Feedback</a></li>
+                <li class="nav-item">
+                    <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/administration') }}">Administration</a>
+                </li>
+                <li class="nav-item">
+                    {{-- <a class="nav-link {{ (request()->is('/tipps')) ? 'active' : '' }}" aria-current="page" href="{{ route('feedback.tipps', ['feedbackMapId' => 3]) }}">Tipps</a> --}}
+                    {{-- <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') }}">Tipps</a> --}}
+                    <a class="nav-link {{ (request()->is('/tipps')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') . '/' . session('feedbackMapId') }}">Tipps</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('feedback.tipps', ['feedbackMapId' => session('feedbackMapId')]) }}">Go to Tipps</a>
+                </li>
             </ul>
 
+
+           
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ms-auto">
                 <!-- Authentication Links -->
