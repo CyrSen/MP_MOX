@@ -11,11 +11,12 @@
     <div class="card shadow-2-strong shadow mb-0 bg-body">
         <div class="row justify-content-center m-3 px-1 pt-3">
             <div class="card col-sm-11 my-2 p-3 shadow p-3 bg-body">
+                <h3>Hallo {{ Auth::user()->name }}!</h3>
                 <p class="h5 my-3"><strong>An dieser Stelle hast du die Möglickkeit für deinen Arbeitsplatz ein Feedback abzugeben:</strong></p>
             </div>
         </div>
 
-    <form action="{{ route('feedback.store') }}" method="POST"> 
+    <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST"> 
 
         @csrf
         <div class="row justify-content-center ">
@@ -27,7 +28,7 @@
                                 <div class="container">
                                     <div class="row my-0 p-2">
                                         <div class="col-sm-2 my-3">
-                                            <img class="" src="./assets/img/numbers_in_circle/number_one_circle.svg" alt="number_five">
+                                            <img class="" src="./assets/img/numbers_in_circle/number_one_circle.svg" alt="number_one">
                                         </div>
                                         <div class="col-sm-10 my-3 text-start p-0">
                                             <p class="feedbackQ my-3">Klicke auf dem Grundriss auf die Zone, für die du Feedback geben möchtest.</p>
@@ -211,11 +212,27 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-12 mb-2">
+                            <div class="card">
+                                <div class="container">
+                                    <div class="row my-0 p-2 justify-content-center">
+                                        <div class="col-sm-10 my-3 text-start p-0">
+                                            <p class="feedbackQ my-3 p-3">Schritt 6: Nachricht senden (optional).</p>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="input-group">
+                                            <span class="input-group-text"><i class="fa-regular fa-comment-dots"></i></span>
+                                            <textarea  type="text" name="commentary" class="form-control" aria-label="With textarea" placeholder="Commentary"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-sm-12 mt-2">
                             <div class="row justify-content-center">
                                 <div class="d-flex justify-content-center mb-3">
-                                    <button class="btn btn-lg btn-primary mx-sm-4" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="BEstens">Feedback geben und beenden</button>
-                                    <button class="btn btn-lg btn-success ml-sm-4" type="submit">Feedback geben und Tipps erhalten</button>
+                                    <button class="btn btn-lg btn-success ml-sm-4" type="submit">Senden</button>
                                 </div> 
                             </div>
                         </div>

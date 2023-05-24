@@ -27,9 +27,11 @@ class FeedbackController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create( FeedbackMap  $feedbackMapId)
     {
-        return view('feedback');
+        /* return view('feedback'); */
+        return view('feedback', ['feedbackMapId' => $feedbackMapId]);
+
     }
 
     /**
@@ -45,6 +47,7 @@ class FeedbackController extends Controller
             'temperature_level' => 'required|integer|min:1|max:5',
             'air_quality_level' => 'required|integer|min:1|max:5',
             'higge_level' => 'required|integer|min:1|max:5',
+            'commentary' => 'nullable|string',
         ]);
     
         // Create a new instance of the FeedbackMap model and populate its properties
@@ -56,6 +59,7 @@ class FeedbackController extends Controller
         $feedbackMap->temperature_level = $validatedData['temperature_level'];
         $feedbackMap->air_quality_level = $validatedData['air_quality_level'];
         $feedbackMap->higge_level = $validatedData['higge_level'];
+        $feedbackMap->commentary = $validatedData['commentary'];
         //dd($request->all());
         // Save the feedback map to the database
         $feedbackMap->save();

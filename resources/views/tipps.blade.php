@@ -53,37 +53,39 @@
                 </div>
               </div>
               <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5 mb-3 my-4">
+                <div class="col-md-6 col-lg-5 mb-3 my-4 text-center">
                   <h5 class="display">{{-- Card 3 --}}</h5>
-                  <p class="lead">ALL GOOD? NOT? Give Commentary or EFF OFF...jk...lol</p>
-                  {{-- <i class="fa-regular fa-comment-dots"></i> --}}
+                  <p class="lead">Danke <strong>{{ Auth::user()->name }}</strong> für deine Teilnahme an dieser Umfrage.</p>
+                  <div>
+                    <h5 class="display"></h5>
+                    
+                    <a class="btn btn-lg btn-primary" href="{{ url('/thankyou') }}">Umfrage Schliessen</a>
+                  </div>
                 </div>
-                <div class="col-md-6 col-lg-5 mb-3 my-4">
-                  <h5 class="display">{{-- Card 4 --}}</h5>
-                  <p class="lead">Commentary:</p>
-          
-                      <form action="{{ route('feedback.storeCommentary', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
 
-                            @csrf
-                        <div class="mb-3">
-                            <div class="input-group">
-                            <span class="input-group-text"><i class="fa-regular fa-comment-dots"></i></span>
-                            <textarea  type="text" name="commentary" class="form-control" aria-label="With textarea" placeholder="Commentary"></textarea>
+<!------------ OPTIONAL STORE COMENTARY FORM ON TIPS PAGE PLEASE NOT DELETE--------------------------------------START-->
+                    {{-- <div class="col-md-6 col-lg-5 mb-3 my-4">
+                      <h5 class="display"></h5>
+                      <p class="lead">Commentary:</p>
+              
+                          <form action="{{ route('feedback.storeCommentary', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
+
+                                @csrf
+                            <div class="mb-3">
+                                <div class="input-group">
+                                <span class="input-group-text"><i class="fa-regular fa-comment-dots"></i></span>
+                                <textarea  type="text" name="commentary" class="form-control" aria-label="With textarea" placeholder="Commentary"></textarea>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="text-end pe-2 pt-2 pb-3">
-                          <button type="submit" class="btn btn-primary">Button</button>
-                        </div>
-                        
-                    </form> 
-                </div>
-                <div class="col-sm-3">
-                    {{-- @foreach ($feedbackMaps as $feedbackMap)
-                    <li>{{ $feedbackMap->commentary }}</li>
-                    @endforeach --}}
-                </div>
-              </div>
+                            <div class="text-end pe-2 pt-2 pb-3">
+                              <button type="submit" class="btn btn-primary">Button</button>
+                            </div>
+                            
+                        </form> 
+                    </div> --}}
+<!------------ OPTIONAL STORE COMENTARY FORM ON TIPS PAGE PLEASE NOT DELETE--------------------------------------END-->
+
             </div>
           </div>
         </div>

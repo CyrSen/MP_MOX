@@ -12,13 +12,12 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">Feedback</a>
+                    {{-- <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') . '/' . session('feedbackMapId') }}">Feedback</a> --}}
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/administration') }}">Administration</a>
                 </li>
                 <li class="nav-item">
-                    {{-- <a class="nav-link {{ (request()->is('/tipps')) ? 'active' : '' }}" aria-current="page" href="{{ route('feedback.tipps', ['feedbackMapId' => 3]) }}">Tipps</a> --}}
-                    {{-- <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') }}">Tipps</a> --}}
                   <a class="nav-link {{ (request()->is('/tipps')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') . '/' . session('feedbackMapId') }}">Tipps</a>
                 </li>
 
