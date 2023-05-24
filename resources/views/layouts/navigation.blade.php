@@ -18,11 +18,11 @@
                     <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/administration') }}">Administration</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ (request()->is('/tipps')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') . '/' . session('feedbackMapId') }}">Tipps</a>
+                  <a class="nav-link {{ (request()->is('/tips')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tips') . '/' . session('feedbackMapId') }}">Tips</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('feedback.tipps', ['feedbackMapId' => session('feedbackMapId')]) }}">Go to Tipps</a>
+                    <a class="nav-link" href="{{ route('feedback.tips', ['feedbackMapId' => session('feedbackMapId')]) }}">Go to Tips</a>
                 </li>
             </ul>
 
@@ -75,7 +75,7 @@
           <li class="nav-item"><a class="nav-link active" href="about.html">Über</a></li>
           <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
           <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-          <li class="nav-item"><a class="nav-link" href="tips.html">Tipps</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">tips</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
         </ul>
       </div>

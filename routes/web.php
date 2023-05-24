@@ -33,8 +33,8 @@ Route::get('/administration', function () {
     return view('administration');
 });
 
-Route::get('/tipps/{feedbackMapId?}', function () {
-    return view('tipps');
+Route::get('/tips/{feedbackMapId?}', function () {
+    return view('tips');
 });
 
 Route::get('/thankyou', function () {
@@ -51,6 +51,6 @@ Route::get('/administration', [FeedbackController::class, 'index'])->name('feedb
 Route::get('/feedback/{feedbackMapId?}', [FeedbackController::class, 'create'])->name('feedback.create');
 Route::post('/feedback/{feedbackMapId?}', [FeedbackController::class, 'store'])->name('feedback.store');
 Route::delete('/feedback/{feedbackMap}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
-Route::get('/tipps/{feedbackMapId?}', [FeedbackController::class, 'createCommentary'])->name('feedback.tipps');
-Route::post('/tipps/{feedbackMapId?}', [FeedbackController::class, 'storeCommentary'])->name('feedback.storeCommentary');
+Route::get('/tips/{feedbackMapId?}', [FeedbackController::class, 'createCommentary'])->name('feedback.tips');
+Route::post('/tips/{feedbackMapId?}', [FeedbackController::class, 'storeCommentary'])->name('feedback.storeCommentary');
 });

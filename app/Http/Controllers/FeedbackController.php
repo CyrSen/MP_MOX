@@ -69,7 +69,7 @@ class FeedbackController extends Controller
 
     
         // Redirect or perform any additional actions as needed
-        return redirect()->route('feedback.tipps', ['feedbackMapId' => $feedbackMap->id]);
+        return redirect()->route('feedback.tips', ['feedbackMapId' => $feedbackMap->id]);
         
     }
     
@@ -111,8 +111,8 @@ class FeedbackController extends Controller
      public function createCommentary(Request $request, FeedbackMap  $feedbackMapId)
     {
 
-        return view('tipps', ['feedbackMapId' => $feedbackMapId]);
-        /* return view('tipps', compact('feedbackMapId')); */
+        return view('tips', ['feedbackMapId' => $feedbackMapId]);
+        /* return view('tips', compact('feedbackMapId')); */
     }
         
    
