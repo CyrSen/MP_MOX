@@ -1,4 +1,4 @@
-{{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}
@@ -16,21 +16,21 @@
                 <li class="nav-item">
                     <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/administration') }}">Administration</a>
                 </li>
-                <li class="nav-item"> --}}
+                <li class="nav-item">
                     {{-- <a class="nav-link {{ (request()->is('/tipps')) ? 'active' : '' }}" aria-current="page" href="{{ route('feedback.tipps', ['feedbackMapId' => 3]) }}">Tipps</a> --}}
                     {{-- <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') }}">Tipps</a> --}}
-{{--                     <a class="nav-link {{ (request()->is('/tipps')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') . '/' . session('feedbackMapId') }}">Tipps</a>
+                  <a class="nav-link {{ (request()->is('/tipps')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tipps') . '/' . session('feedbackMapId') }}">Tipps</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('feedback.tipps', ['feedbackMapId' => session('feedbackMapId')]) }}">Go to Tipps</a>
                 </li>
-            </ul> --}}
+            </ul>
 
 
            
             <!-- Right Side Of Navbar -->
-{{--             <ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto">
                 <!-- Authentication Links -->
                 @guest
                     @if (Route::has('login'))
@@ -66,9 +66,9 @@
             </ul>
         </div>
     </div>
-</nav> --}}
+</nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+{{-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
     <div class="container"><a class="navbar-brand" href="about.html"><strong>myOfficeX</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarContent">
@@ -81,4 +81,4 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> --}}

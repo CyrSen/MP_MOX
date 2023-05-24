@@ -26,10 +26,7 @@
     <style>
 
     </style>
-
 </head>
-
-
 
 <body>
 
