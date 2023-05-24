@@ -37,8 +37,8 @@ Route::get('/tips/{feedbackMapId?}', function () {
     return view('tips');
 });
 
-Route::get('/thankyou', function () {
-    return view('thankyou');
+Route::get('/danke', function () {
+    return view('danke');
 });
 
 Auth::routes();

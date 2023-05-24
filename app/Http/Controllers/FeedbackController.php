@@ -138,7 +138,7 @@ class FeedbackController extends Controller
         $feedbackMap->save();
     
         // Redirect or perform any additional actions as needed
-        return redirect('/thankyou');
+        return redirect('/danke');
     }
     
 

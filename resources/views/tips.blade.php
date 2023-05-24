@@ -59,7 +59,7 @@
                   <div>
                     <h5 class="display"></h5>
                     
-                    <a class="btn btn-lg btn-primary" href="{{ url('/thankyou') }}">Umfrage Schliessen</a>
+                    <a class="btn btn-lg btn-primary" href="{{ url('/danke') }}">Umfrage Schliessen</a>
                   </div>
                 </div>
 
