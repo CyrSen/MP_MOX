@@ -12,15 +12,19 @@
 
     <!-- Iconsevices -->
     <script src="https://kit.fontawesome.com/d4cbcb96c8.js" crossorigin="anonymous"></script>
-    
+
     <!-- CSS-Animaitions -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"> --}}
+    
     <!-- Scripts -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css">
+    
     <!-- Directives -->
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css','resources/css/css/mdb.min.css', 'resources/css/custom.css'])  
 
@@ -69,7 +73,38 @@
       flex-direction: column;
       justify-content: center;
     }
+/* LOGIN.BLADE.PHP -------------------------------- START*/
+#login {
+      display: flex;
+      align-items: stretch;
+      min-height: 100vh;
+      background: url("img/skyscraper-with-clouds-reflection.jpg") no-repeat center center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
 
+    .rgba-black-strong {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Deckkraft hier ändern */
+      z-index: -1;
+    }
+
+    .card.mb-5.wow.fadeInUp[data-wow-delay=".4s"] {
+      flex: 1;
+    }
+
+    .card-body.p-5 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+/* NAVBAR GENERAL -------------------------------- START*/
     .top-nav-collapse {
       background-color: #3949ab !important;
     }

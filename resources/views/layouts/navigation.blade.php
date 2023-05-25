@@ -50,6 +50,10 @@
             <li class="nav-item">
               <a class="nav-link {{ (request()->is('/tips')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tips') . '/' . session('feedbackMapId') }}">Tips</a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/admin') }}">Administration</a>
+            </li>
             
             <li class="nav-item">
               <a class="nav-link" href="#contact">Kontakt</a>

@@ -48,8 +48,8 @@
                         </div>
                     </div>
                     <div class="text-center">
-                    <button class="btn btn-indigo mb-3" type="submit"><i class="fa-regular fa-paper-plane"></i></i> {{ __('Login') }}</button>
-                    <p>Noch keinen Account? <a class="nav-link" href="{{ route('register') }}">{{ __('Registrieren') }}</a></p>
+                    <button class="btn btn-primary{{-- btn-indigo --}} mb-3" type="submit"><i class="fa-regular fa-paper-plane"></i></i> {{ __('Senden') }}</button>
+                    <p>Noch keinen Account? <a href="{{ route('register') }}">{{ __('Registrieren') }}</a></p>
                     </div>
                 </form>
         <!-- Form end-->
