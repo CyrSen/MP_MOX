@@ -51,7 +51,11 @@
           background: #3949ab !important;
       }
       }
-  
+      /* ml-auto not working, see template*/
+      .navTrick {
+        margin-left: auto !important;
+      }
+
       #intro .h6 {
       font-weight: 300;
       line-height: 1.7;

@@ -4,7 +4,7 @@
       <div class="container"><a class="navbar-brand" href="about.html"><strong>myOfficeX</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto navTrick">
 
             <li class="nav-item">
               <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Home</a>
