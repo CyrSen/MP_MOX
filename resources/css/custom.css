@@ -10,9 +10,9 @@ body {
     --bs-tooltip-tooltip-arrow-height:1rem;
 }
 
-.circleBtn {
+/* .circleBtn {
     border-radius:50%;
-}
+} */
 
 #intro {
     background: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;

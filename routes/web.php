@@ -29,8 +29,8 @@ Route::get('/feedback/{feedbackMapId?}', function () {
     return view('feedback');
 });
 
-Route::get('/administration', function () {
-    return view('administration');
+Route::get('/admin', function () {
+    return view('admin');
 });
 
 Route::get('/tips/{feedbackMapId?}', function () {
@@ -47,7 +47,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware('auth')->group(function () {
     
-Route::get('/administration', [FeedbackController::class, 'index'])->name('feedback.administration');   
+Route::get('/admin', [FeedbackController::class, 'index'])->name('feedback.admin');   
 Route::get('/feedback/{feedbackMapId?}', [FeedbackController::class, 'create'])->name('feedback.create');
 Route::post('/feedback/{feedbackMapId?}', [FeedbackController::class, 'store'])->name('feedback.store');
 Route::delete('/feedback/{feedbackMap}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');

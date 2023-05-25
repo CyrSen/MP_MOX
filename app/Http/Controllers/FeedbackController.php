@@ -20,14 +20,16 @@ class FeedbackController extends Controller
      */
     public function index()
     {
-        $feedbackMaps = FeedbackMap::all();
-        return view('administration', compact('feedbackMaps'));
+        /* $feedbackMaps = FeedbackMap::all(); */
+        $feedbackMaps = FeedbackMap::orderBy('created_at', 'desc')->get();
+
+        return view('admin', compact('feedbackMaps'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create( FeedbackMap  $feedbackMapId)
+    public function create(FeedbackMap  $feedbackMapId)
     {
         /* return view('feedback'); */
         return view('feedback', ['feedbackMapId' => $feedbackMapId]);
@@ -104,7 +106,7 @@ class FeedbackController extends Controller
     {
         $feedbackMap->delete();
 
-        return redirect()->route('feedback.administration')->with('success', 'Feedback deleted successfully.');
+        return redirect()->route('feedback.admin')->with('success', 'Feedback deleted successfully.');
     }
 
 

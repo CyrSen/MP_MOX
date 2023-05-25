@@ -6,7 +6,7 @@
 
 @section('content')
 
-
+<section id="feedback">
 <div class="container px-0 mx-auto">
     <div class="card shadow-2-strong shadow mb-0 bg-body">
         <div class="row justify-content-center m-3 px-1 pt-3">
@@ -223,7 +223,10 @@
                                             <div class="input-group">
                                             <span class="input-group-text"><i class="fa-regular fa-comment-dots"></i></span>
                                             <textarea  type="text" name="commentary" class="form-control" aria-label="With textarea" placeholder="Commentary"></textarea>
-                                            </div>
+                                            @error('commentary')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror    
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -259,7 +262,7 @@
     </div>
     
 </div>
-
+</section>
 
 
 

@@ -21,9 +21,25 @@
     <!-- Scripts -->
 
     <!-- Directives -->
-    @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css','node_modules/mdb-ui-kit/css/mdb.min.css', 'resources/css/custom.css']);
+    @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css','resources/css/css/mdb.min.css', 'resources/css/custom.css'])  
 
     <style>
+/*       body {
+        background-image: url('public/assets/img/architecture.jpg');
+        z-index: 1;
+            height: 100vh
+      } */
+      #feedback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: url('public/assets/img/architecture.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+
 
     </style>
 </head>
@@ -31,21 +47,13 @@
 <body>
 
     <header>
-       {{--  @include('layouts.navigation', ['feedbackMapId' => session('feedbackMapId')]) --}}
-       {{-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
-    <div class="container"><a class="navbar-brand" href="about.html"><strong>myOfficeX</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link active" href="about.html">Über</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-          <li class="nav-item"><a class="nav-link" href="tips.html">tips</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> --}}
+      <!-- Navbar-->
+        @include('layouts.navigation', ['feedbackMapId' => session('feedbackMapId')])
+
+
+       
+
+
     </header>
 
     <div id="app">
@@ -60,7 +68,7 @@
 {{-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script> --}}
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-@vite(['resources/js/app.js', 'resources/js/custom.js']);
+@vite(['resources/js/app.js','resources/js/mdb.min.js', 'resources/js/custom.js']);
 
  <script> 
 
