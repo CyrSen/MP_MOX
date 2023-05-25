@@ -29,6 +29,8 @@
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css','resources/css/css/mdb.min.css', 'resources/css/custom.css'])  
 
   <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
   #intro {
     background: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
     background-size: cover; 
@@ -86,7 +88,7 @@
     </header>
 
     <div id="app">
-        <main class="py-4">
+      <main class="py-0 mt-0">
             @yield('content')
 
         </main>
@@ -96,7 +98,7 @@
     <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
       <div class="footer-copyright text-center py-3 font-small">
         <div class="container-fluid">
-          <div>&copy; myOfficeX</div>
+          <div>&copy; myOffice<span class="highlight2">X</span></div>
         </div>
       </div>
     </footer>
@@ -110,7 +112,7 @@
   new WOW().init();
 </script> --}}
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-@vite(['resources/js/app.js','resources/js/wow.min.js','resources/js/mdb.min.js?ver=1.1.0', 'resources/js/custom.js']);
+@vite(['resources/js/app.js','resources/js/wow.min.js','resources/js/mdb.min.js', 'resources/js/custom.js']);
 
  <script> 
 

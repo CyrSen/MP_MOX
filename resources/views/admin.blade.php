@@ -7,7 +7,7 @@
 
 <div class="container-fluid" style="margin-top:10vh;">
     <div class="row justify-content-center">
-        <div class="col-sm" style="width:34%;">
+        <div class="col" style="width:34%;">
             <div class="card mapAdmin py-2 ml-4 p-2 d-flex align-items-center">
                 <!-- Your select code here -->
                 <div>

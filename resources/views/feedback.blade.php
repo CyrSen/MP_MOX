@@ -26,15 +26,15 @@
           <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
             <div class="card-body p-5">
               <!-- Content of Card 1 -->
-              <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
-                <fieldset id="fs-frm-inputs">
+              {{-- <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+                <fieldset id="fs-frm-inputs"> --}}
                   <div class="form-group">
-                    <label for="full-name">Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.</label>
+                    <label class="mb-2" for="full-name">Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.</label>
                   </div>
   
                   <div class="form-group">
                     <label for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
-                    <div class="emoji-selection" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
                       <div class="icon-wrapper icon-element">
                         <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Viel zu kalt" data-bs-value="1" onclick="setTempLevel(1)">
                       </div>
@@ -60,7 +60,7 @@
                   
                   <div class="form-group">
                     <label for="timely">Schritt 3: Akustische Behaglichkeit angeben.</label>
-                    <div class="emoji-selection" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
                       <div class="icon-wrapper icon-element">
                         <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Viel zu leise" data-bs-value="1" onclick="setNoiseLevel(1)">
                       </div>
@@ -85,7 +85,7 @@
   
                   <div class="form-group">
                     <label for="timely">Schritt 4: Luft-Behaglichkeit angeben.</label>
-                    <div class="emoji-selection" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
                       <div class="icon-wrapper icon-element">
                         <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Ausgezeichnete Luftqualität" data-bs-value="1" onclick="setAirQLevel(1)">
                       </div>
@@ -108,7 +108,7 @@
   
                   <div class="form-group">
                     <label for="timely">Schritt 5: Gesamt-Behaglichkeit Behaglichkeit angeben.</label>
-                    <div class="emoji-selection" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
                       <div class="icon-wrapper icon-element">
                         <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Exzellenter Komfort" data-bs-value="1" onclick="setHiggeLevel(1)">
                       </div>
@@ -130,13 +130,13 @@
   
                   <div class="form-group">
                     <label for="message">Schritt 6: Nachricht senden (optional).</label>
-                    <textarea rows="3" name="commentary" id="message" class="form-control" placeholder="Deine Mitteilung"{{--  required="" --}}></textarea>
+                    <textarea rows="3" name="commentary" id="message" class="form-control mt-2" placeholder="Deine Mitteilung"{{--  required="" --}}></textarea>
                     @error('commentary')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror   
                   </div>
                   {{-- <input type="hidden" name="_subject" id="email-subject" value="Survey Responses"> --}}
-                  <div class="text-center mt-3">
+                  <div class="text-center mt-5">
                     <button class="btn btn-primary p-3" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Senden</button>
                   </div>
                 </fieldset>
@@ -148,11 +148,6 @@
           <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
             <div class="card-body p-5 d-flex flex-column justify-content-center align-items-center">
               <!-- Content of Card 2 -->
-              <div class="map-container">
-                <div class="map-rectangle">
-                  <img src="img/Grundriss_height-500.png" alt="Grundriss der Bürozone" style="max-width: 100%; max-height: 100%;">
-                </div>
-              </div>
 
             <div id="image-container" class="map-container">
                 <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
@@ -163,7 +158,8 @@
 
           </form>
             <!-- FORM END-->
-            <div class="col-sm-3">
+            <!--ADMIN USE -->
+            <div class="col-sm-3" style="display:none;">
               <p id="x-display"></p>
               <p id="y-display"></p>
             </div>
