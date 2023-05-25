@@ -1,10 +1,8 @@
 body {
     margin-top:2%;
-    
 }
 
 .custom-tooltip {
-/* --bs-tooltip-bg: var(--bs-primary); */
     --bs-tooltip-color:#110080;
     --bs-tooltip-bg: #fbff00;
     --bs-tooltip-border-radius:10px;
@@ -12,9 +10,9 @@ body {
     --bs-tooltip-tooltip-arrow-height:1rem;
 }
 
-.circleBtn {
+/* .circleBtn {
     border-radius:50%;
-}
+} */
 
 #intro {
     background: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
@@ -31,31 +29,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color:blue;
-    font-size: 2rem;
-    
-    
-    
+    font-size: 2rem; 
 }
 
-
-
 #image-container {
-    width: 75%; /* Take up the full width of the parent container */
-    height: auto; /* Automatically adjust the height based on the content */
-    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+    width: 75%;
+    height: auto;
+    max-width: 100%;
 
-  }
+}
 
 #image {
     justify-content: center;
-  }
-
-  .tooltip {
-  z-index: 100; /* Ensure the tooltip appears on top of other elements */
-  opacity: 1; /* Make the tooltip visible */
 }
 
-/* Take up the full width of the parent container */ 
+.tooltip {
+  z-index: 100; 
+  opacity: 1;
+}
+ 
 .mapAdmin {
     width: 75%;
     right:-12.5%; 
@@ -67,36 +59,33 @@ body {
 
 
 /*  ----------------------------------------------------------------*/
-/* .icon-element {
-    position: relative;
-  }
-  
-  .overlay-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 101;
- 
-  }
-  
-  .show-overlay {
-    opacity: 1;
-  } */
+
 /*----------------------------------------------------------------*/
 .icon-wrapper {
     position: relative;
     display: inline-block;
     width:fit-content;
     height:fit-content;
-    }
+}
 
 .overlay-icon {
     position: absolute;
     left:70%;
     bottom: 0;
     z-index: 2;
-    size: 50px; /* Set width and height to 50px */
+    size: 50px;
 }
     
-  /*----------------------------------------------------------------*/
+  /*CSS PRODUCTION START----------------------------------------------------------------*/
  
+/*   #feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('/assets/img/architecture.jpg'); 
+    position: no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  } */

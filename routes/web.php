@@ -22,23 +22,23 @@ use Illuminate\Support\Facades\Auth;
  */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('/feedback', function () {
+Route::get('/feedback/{feedbackMapId?}', function () {
     return view('feedback');
 });
 
-Route::get('/administration', function () {
-    return view('administration');
+Route::get('/admin', function () {
+    return view('admin');
 });
 
-Route::get('/tipps/{feedbackMapId?}', function () {
-    return view('tipps');
+Route::get('/tips/{feedbackMapId?}', function () {
+    return view('tips');
 });
 
-Route::get('/thankyou', function () {
-    return view('thankyou');
+Route::get('/danke', function () {
+    return view('danke');
 });
 
 Auth::routes();
@@ -47,10 +47,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware('auth')->group(function () {
     
-Route::get('/administration', [FeedbackController::class, 'index'])->name('feedback.administration');   
-Route::get('/feedback', [FeedbackController::class, 'create'])->name('feedback.create');
-Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
+Route::get('/admin', [FeedbackController::class, 'index'])->name('feedback.admin');   
+Route::get('/feedback/{feedbackMapId?}', [FeedbackController::class, 'create'])->name('feedback.create');
+Route::post('/feedback/{feedbackMapId?}', [FeedbackController::class, 'store'])->name('feedback.store');
 Route::delete('/feedback/{feedbackMap}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
-Route::get('/tipps/{feedbackMapId?}', [FeedbackController::class, 'createCommentary'])->name('feedback.tipps');
-Route::post('/tipps/{feedbackMapId?}', [FeedbackController::class, 'storeCommentary'])->name('feedback.storeCommentary');
+Route::get('/tips/{feedbackMapId?}', [FeedbackController::class, 'createCommentary'])->name('feedback.tips');
+Route::post('/tips/{feedbackMapId?}', [FeedbackController::class, 'storeCommentary'])->name('feedback.storeCommentary');
 });
