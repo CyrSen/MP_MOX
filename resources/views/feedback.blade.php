@@ -6,7 +6,7 @@
 
 @section('content')
 
-<section id="feedback">
+<section id="feedback" {{-- style="background-image: url('/assets/img/architecture.jpg');" --}}>
 <div class="container px-0 mx-auto">
     <div class="card shadow-2-strong shadow mb-0 bg-body">
         <div class="row justify-content-center m-3 px-1 pt-3">

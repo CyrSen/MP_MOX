@@ -25,7 +25,7 @@
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css','resources/css/css/mdb.min.css', 'resources/css/custom.css'])  
 
     <style>
-      #feedback {
+/*       #feedback {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -34,6 +34,66 @@
       background-size: cover;
       position: relative;
       z-index: 1;
+    } */
+
+    /* FEEDBACK.BLADE.PHP -------------------------------- START*/
+    #feedback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: url("img/architecture-4000.jpg") no-repeat center center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .rgba-black-strong {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Deckkraft hier ändern */
+      z-index: -1;
+    }
+
+    .card.mb-5.wow.fadeInLeft[data-wow-delay=".4s"],
+    .card.mb-5.wow.fadeInRight[data-wow-delay=".4s"] {
+      flex: 1;
+    }
+
+    .card-body.p-5 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .top-nav-collapse {
+      background-color: #3949ab !important;
+    }
+
+    .navbar:not(.top-nav-collapse) {
+      background: transparent !important;
+    }
+
+    @media (max-width: 768px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #3949ab !important;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .margins {
+        margin-right: 1rem;
+        margin-left: 1rem;
+      }
+    }
+
+    footer {
+      position: sticky;
+      bottom: 0;
     }
     </style>
 </head>
