@@ -1,4 +1,3 @@
-
 //  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE START ----------------------------------------------------------------//
 
 document.addEventListener("DOMContentLoaded", function() {
