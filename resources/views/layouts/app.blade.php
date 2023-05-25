@@ -70,11 +70,17 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url("img/architecture-4000.jpg") no-repeat center center;
+    background: url("asset/img/architecture-4000.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
     z-index: 1;
     }
+
+    #indexPLACEHOLDER {
+        /*  DAMIT MAN ETWAS SIEHT !!!*/
+        background: url("asset/img/matthieu-gouiffes.jpg") no-repeat center center;
+        min-height: 100vh;
+      }
 
     .rgba-black-strong {
     position: absolute;

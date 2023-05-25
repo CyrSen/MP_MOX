@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section id="index"> <!--*  DAMIT MAN ETWAS SIEHT !!!*/-->
+<section id="indexPLACEHOLDER"> <!--*  DAMIT MAN ETWAS SIEHT !!!*/-->
     <div class="container d-flex justify-content-center align-items-center vh-100" style="margin-top:-10%;">
         <div class="row justify-content-center">
             <div class="col-md-12 m-3 mx-auto mt-5">
