@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css">
 
     <!-- Directives -->
-    @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/reset.css','resources/css/css/mdb.min.css', 'resources/css/custom.css'])  
+    @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/css/mdb.min.css',  'resources/css/reset.css', 'resources/css/custom.css'])  
 
   
 
@@ -103,5 +103,25 @@
             @yield('content')
         </main>
     </div>
-</body>
-</html>
+
+    <!-- Footer-->
+    <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0 md-mt-">
+      <div class="footer-copyright text-center py-3 font-small">
+        <div class="container-fluid">
+          <div>&copy; myOffice<span class="highlight2">X</span></div>
+        </div>
+      </div>
+    </footer>
+
+{{--  <script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
+<script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
+<script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script>
+<script type="text/javascript" src="{{'js/mdb.min.js?ver=1.1.0'}}"></script> --}}
+{{--
+<script>
+  new WOW().init();
+</script> --}}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+@vite(['resources/js/app.js','resources/js/wow.min.js','resources/js/mdb.min.js', 'resources/js/custom.js']);
+
+ <script> 

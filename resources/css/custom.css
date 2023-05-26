@@ -107,6 +107,7 @@ body {
 
     .navbar:not(.top-nav-collapse) {
     background: transparent !important;
+    /* background-color: #3f51b5 !important; */
     }
 
     @media (max-width: 768px) {
@@ -119,6 +120,26 @@ body {
     .navTrick {
       margin-left: auto !important;
     }
+
+    .togglerIconOwn {
+        /* background-image: red !important; */
+        /* color:white !important;
+        border:#ffffff !important */
+    }
+
+    /* .navbar-toggler-icon {
+        color:white !important;
+    }
+
+    .navbar-toggler {
+        color:#ffffff !important;
+        border:#ffffff !important;
+    }
+
+    .navbar-toggler-collapse {
+        color:#ffffff !important;
+        border:#ffffff !important;
+    } */
 
     #intro .h6 {
     font-weight: 300;
@@ -135,23 +156,6 @@ body {
     background: rgba(42, 27, 161, 0.7);
     background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
     }
-
-/*     #feedback {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: url("assets/img/architecture-4000.jpg") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    } */
-/*  DAMIT MAN ETWAS SIEHT !!!*/
-/*     #indexPLACEHOLDER {
-      
-      background: url("assets/img/matthieu-gouiffes.jpg") no-repeat center center;
-      min-height: 100vh;
-    } */
 
     .rgba-black-strong {
     position: absolute;
@@ -188,6 +192,7 @@ body {
     margin-bottom:-10%;
     /* background-color: #3949ab; */
     background-color: #3f51b5;
+    
     }
 
 /*     #login {
