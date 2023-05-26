@@ -63,6 +63,16 @@
     z-index: 1;
   }
 
+  #register {
+      display: flex;
+      align-items: stretch;
+      min-height: 100vh;
+      background: url("./assets/img/matthieu-gouiffes.jpg") no-repeat center center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+
   #info {
     display: flex;
     align-items: stretch;
