@@ -15,8 +15,8 @@
     <!-- CSS-Animaitions -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Scripts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css">
@@ -24,8 +24,9 @@
     <!-- Directives -->
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/css/mdb.min.css',  'resources/css/reset.css', 'resources/css/custom.css'])  
 
-  
-
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
 </head>
 <body>
 
@@ -113,10 +114,10 @@
       </div>
     </footer>
 
-{{--  <script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
-<script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
-<script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script>
-<script type="text/javascript" src="{{'js/mdb.min.js?ver=1.1.0'}}"></script> --}}
+    <script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
+    <script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
+    <script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script>
+    <script type="text/javascript" src="{{'js/mdb.min.js?ver=1.1.0'}}"></script>
 {{--
 <script>
   new WOW().init();

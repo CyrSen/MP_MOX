@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
     
@@ -32,6 +32,11 @@
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+body {
+  background-image: url("assets/img/architecture.jpg") no-repeat center center;
+}
+
   #intro {
     background: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
     background-size: cover; 
@@ -42,7 +47,20 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    margin:0;
     background: url("assets/img/architecture-4000.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+  #tips{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+    background: url("assets/img/architecture.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -52,6 +70,7 @@
     /*  DAMIT MAN ETWAS SIEHT !!!*/
     background: url("assets/img/matthieu-gouiffes.jpg") no-repeat center center;
     min-height: 100vh;
+    margin:0;
   }
 
   #login {
@@ -84,6 +103,7 @@
     z-index: 1;
   }
 
+
   </style>
 
 
@@ -114,16 +134,18 @@
       </div>
     </footer>
 
-<script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
-<script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
-<script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script>
-<script type="text/javascript" src="{{'js/mdb.min.js?ver=1.1.0'}}"></script>
-{{--
+    
+
+    <script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
+    <script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
+    <script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script>
+    <script type="text/javascript" src="{{'js/mdb.min.js?ver=1.1.0'}}"></script>
+
 <script>
   new WOW().init();
-</script> --}}
+</script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-@vite(['resources/js/app.js',/* 'resources/js/wow.min.js','resources/js/mdb.min.js', */ 'resources/js/custom.js']);
+@vite(['resources/js/app.js', 'resources/js/custom.js']);
 
  <script> 
 

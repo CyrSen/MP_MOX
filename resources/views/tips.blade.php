@@ -5,8 +5,16 @@
 
 @section('content')
 
+{{-- @php
+    $urlSegments = request()->segments();
+    $hasTipsSegment = in_array('tips', $urlSegments);
+    $backgroundClass = $hasTipsSegment ? 'tips-background' : '';
+    $tipId = $hasTipsSegment ? end($urlSegments) : '';
+@endphp --}}
 
-<div class="container">
+
+<section id="tips">
+  <div class="container">
     <div class="d-flex justify-content-center align-items-center vh-100" style="margin-top:-2%;">
       <div class="card shadow-2-strong shadow mb-0 bg-body">
         <div class="row justify-content-evenly">
@@ -164,5 +172,8 @@
               </div>
             </div>
           </div>
+
+</section>
+
         
 @endsection
