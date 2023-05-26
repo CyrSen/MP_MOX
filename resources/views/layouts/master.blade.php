@@ -54,17 +54,16 @@ body {
     z-index: 1;
   }
 
-  .tips-background{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin:0;
-    background: url("assets/img/architecture.jpg") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
+#admin{
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background-size: 100% 100%;
+position: relative;
+min-width: 100vw;
+background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
   }
+
 
   #indexPLACEHOLDER {
     /*  DAMIT MAN ETWAS SIEHT !!!*/

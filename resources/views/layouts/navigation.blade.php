@@ -6,9 +6,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ml-auto navTrick">
+
+
+        @auth
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Home</a>
         </li>
+        @endauth
+        
 
         <!-- Authentication Links -->
         @guest
@@ -43,6 +48,8 @@
           </li>
         @endguest
 
+
+        @auth
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/feedback')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">Feedback</a>
         </li>
@@ -54,6 +61,8 @@
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/admin')) ? 'active' : '' }}" aria-current="page" href="{{ url('/admin') }}">Administration</a>
         </li>
+        @endauth
+
 
         <li class="nav-item">
           <a class="nav-link" href="#contact">Kontakt</a>

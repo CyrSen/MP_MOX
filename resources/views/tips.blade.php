@@ -5,7 +5,7 @@
 
 @section('content')
 
-<section id="tips"  style="background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');">
+<section id="tips" style="background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');">
   <div class="rgba-black-strong"></div>
 
   <div class="container">
