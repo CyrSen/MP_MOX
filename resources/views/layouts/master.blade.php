@@ -54,7 +54,7 @@ body {
     z-index: 1;
   }
 
-  #tips{
+  .tips-background{
     display: flex;
     align-items: center;
     justify-content: center;

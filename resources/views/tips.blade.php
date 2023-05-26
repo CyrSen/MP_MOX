@@ -5,15 +5,7 @@
 
 @section('content')
 
-{{-- @php
-    $urlSegments = request()->segments();
-    $hasTipsSegment = in_array('tips', $urlSegments);
-    $backgroundClass = $hasTipsSegment ? 'tips-background' : '';
-    $tipId = $hasTipsSegment ? end($urlSegments) : '';
-@endphp --}}
-
-
-<section id="tips">
+<section id="tips"  style="background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');">
   <div class="container">
     <div class="d-flex justify-content-center align-items-center vh-100" style="margin-top:-2%;">
       <div class="card shadow-2-strong shadow mb-0 bg-body">

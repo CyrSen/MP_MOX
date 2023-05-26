@@ -106,13 +106,14 @@
     </div>
 
     <!-- Footer-->
-    <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0 md-mt-">
+    <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
       <div class="footer-copyright text-center py-3 font-small">
         <div class="container-fluid">
           <div>&copy; myOffice<span class="highlight2">X</span></div>
         </div>
       </div>
     </footer>
+    
 
     <script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
     <script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
