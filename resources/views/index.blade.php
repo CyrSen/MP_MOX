@@ -5,9 +5,10 @@
 @section('content')
 
 <section id="indexPLACEHOLDER"> <!--*  DAMIT MAN ETWAS SIEHT !!!*/-->
-    <div class="container d-flex justify-content-center align-items-center vh-100" style="margin-top:-10%;">
+    <div class="rgba-black-strong"></div>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="row justify-content-center">
-            <div class="col-md-12 m-3 mx-auto mt-5">
+            <div class="col m-3 mx-auto mt-5 bg-primary p-3">
                 <h2 class="lead mb-5">OFFICEX Feedback-Form</h2>
                 @guest
                 <h4 class="lead">Login or Register To start Survey!</h4>  
