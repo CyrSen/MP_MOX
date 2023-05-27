@@ -9,7 +9,7 @@
 <section id="feedback">
     <div class="rgba-black-strong"></div>
     <div class="container py-5">
-      <div class="wow fadeIn">
+      <div class="pt-5{{-- wow fadeIn --}} animate__animated animate__fadeIn">
         <h2 class="h1 text-white pt-5 pb-3 text-center">Feedback</h2>
         <p class="text-white px-5 mb-5 pb-3 lead text-center">
           Wähle zuerst deine Bürozone aus. Teile uns dann dein aktuelles Komforterlebnis mit. Wenn du möchtest, schreib auch gerne eine Nachricht. Vergiss nicht, deinen Namen anzugeben, wenn du eine Rückmeldung wünschst.
@@ -26,9 +26,9 @@
               <!-- Content of Card 1 -->
               {{-- <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
                 <fieldset id="fs-frm-inputs"> --}}
-                  <div class="form-group">
+                  {{-- <div class="form-group">
                     <label class="mb-2" for="full-name">Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.</label>
-                  </div>
+                  </div> --}}
   
                   <div class="form-group">
                     <label for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
@@ -146,7 +146,13 @@
           <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
             <div class="card-body p-5 d-flex flex-column justify-content-center align-items-center">
               <!-- Content of Card 2 -->
-
+              <div class="col">
+                <div class="mt-n5">
+                  Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.
+                </div>
+              </div>
+                
+              
             <div id="image-container" class="map-container">
                 <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
               <input id="x-coordinates" type="hidden" name="x_coordinates">
