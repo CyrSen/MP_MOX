@@ -137,7 +137,7 @@ background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
 
     <script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
     <script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
-   {{--  <script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script> --}}
+    <script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script>
     <script type="text/javascript" src="{{'js/mdb.min.js?ver=1.1.0'}}"></script>
 
 <script>
