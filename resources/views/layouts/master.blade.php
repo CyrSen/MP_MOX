@@ -102,6 +102,47 @@ background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
     z-index: 1;
   }
 
+  #feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("./assets/img/architecture-4000.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#admin {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  position: relative;
+  min-width: 100vw;
+  background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
+  z-index: 1;
+  margin-top:-10%;
+  padding-top:10%;
+}
+
+#tips {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  position: relative;
+  min-width: 100vw;
+  background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
+  z-index: 1;
+  margin-top:-10%;
+  padding-top:10%;
+}
+
+
+
+
+
 
   </style>
 

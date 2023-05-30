@@ -5,14 +5,14 @@
 
 @section('content')
 
-<section id="admin" style="
+<section id="admin" {{-- style="
 align-items: center;
 justify-content: center;
 min-height: 100vh;
 background-size: 100% 100%;
 position: relative;
 min-width: 100vw;
-background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');">
+background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');" --}}>
     <div class="rgba-black-strong"></div>
     <div class="container-fluid" style="margin-top:10vh;">
         <div class="row justify-content-center">
