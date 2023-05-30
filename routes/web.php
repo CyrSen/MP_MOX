@@ -33,6 +33,10 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
+/* Route::middleware('permission:level1,level2,level3')->get('/admin', function () {
+    return view('admin');
+}); */
+
 Route::get('/tips/{feedbackMapId?}', function () {
     return view('tips');
 });
