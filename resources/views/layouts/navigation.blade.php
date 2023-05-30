@@ -6,23 +6,30 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ml-auto navTrick">
+
+
+        {{-- @auth --}}
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Home</a>
         </li>
+        {{-- @endauth --}}
+        
 
         <!-- Authentication Links -->
         @guest
+        
           @if (Route::has('login'))
             <li class="nav-item">
               <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
             </li>
           @endif
-
+          @auth
           @if (Route::has('register'))
             <li class="nav-item">
               <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
             </li>
           @endif
+        @endauth
         @else
           <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -43,6 +50,8 @@
           </li>
         @endguest
 
+
+        {{-- @auth --}}
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/feedback')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">Feedback</a>
         </li>
@@ -50,10 +59,14 @@
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/tips')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tips') . '/' . session('feedbackMapId') }}">Tips</a>
         </li>
-
+        @auth
         <li class="nav-item">
-          <a class="nav-link {{ (request()->is('/admin')) ? 'active' : '' }}" aria-current="page" href="{{ url('/admin') }}">Administration</a>
+          <a class="nav-link {{ (request()->is('/admin')) ? 'active' : '' }}" aria-current="page" href="{{ url('/admin') }}"></a>
         </li>
+        @endauth
+        
+        {{-- @endauth --}}
+
 
         <li class="nav-item">
           <a class="nav-link" href="#contact">Kontakt</a>
