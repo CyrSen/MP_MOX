@@ -1,6 +1,6 @@
   @extends('layouts.master')
 
-  @section('title', 'ChapsChat')
+  @section('title', 'myOfficeX')
 
   @section('content')
 
