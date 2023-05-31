@@ -62,7 +62,7 @@ body {
   background-size: 100% 100%;
   position: relative;
   min-width: 100vw;
-  background-image: url(' ./assets/img/panorama-3094696_1920.jpg');
+  background-image: url( "./assets/img/panorama-3094696_1920.jpg");
   z-index: 1;
   margin-top:-10%;
   padding-top:10%;
@@ -101,11 +101,12 @@ body {
   display: flex;
   align-items: stretch;
   min-height: 100vh;
-  background: url("./assets/img/open-window.jpg") no-repeat center center;
+  background: url("{{ asset('assets/img/open-window.jpg')}}") no-repeat center center;
   background-size: cover;
   position: relative;
   z-index: 1;
 }
+{{ asset('assets/img/open-window.jpg')}}
 
 #tips {
   align-items: center;
@@ -114,7 +115,7 @@ body {
   background-size: 100% 100%;
   position: relative;
   min-width: 100vw;
-  background-image: url("{{ asset('assets/img/panorama-3094696_1920.jpg') }}");
+  background-image: url("{{ asset('assets/img/panorama-3094696_1920.jpg')}}");
   z-index: 1;
   margin-top:-10%;
   padding-top:10%;

@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section id="tips">
+<section id="info">
   <div class="rgba-black-strong"></div>
   <div class="container py-5">
     <div class="wow fadeIn">
@@ -13,54 +13,59 @@
         Hier sind einige sofort umsetzbare Tipps, mit denen du dein Komforterlebnis selbst verbessern kannst!
       </p>
     </div>
+    
     <div class="row mb-lg-4 center-on-small-only">
       <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
-        <div class="col-md-6 float-left"><img src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="worried emoji"/></div>
-        <div class="col-md-6 float-right">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-sm-4"><img class="img-fluid tippsIcons rounded mb-3 p-sm-5 p-md-0 p-lg-0" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" {{-- style="width:50%; height 50%;" --}} alt="worried emoji"/></div>
+          <div class="col-md-6">
           <div class="h4 text-white ">Zu kalt?</div>
           <p class="text-white ">Du möchtest nicht mehr frieren? Hier sind einige Tipps, die dir vielleicht helfen können:</p>
           <button class="btn btn-primary btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-kalt')">Tipps bei Kälte</button>
-
+          </div>
         </div>
       </div>
       <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
-        <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="worried emoji"/></div>
-        <div class="col-md-6 float-right">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-md-4"><img class="img-fluid tippsIcons rounded mb-3 rounded mb-3 p-sm-5 p-md-0 p-lg-0" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="worried emoji"/></div>
+          <div class="col-md-6">
           <div class="h4 text-white ">Zu heiss?</div>
           <p class="text-white t">Ist dir im Büro zu warm? Möglicherweise können dir diese Tipps nützlich sein:</p>               
           <button class="btn btn-primary btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-heiss')">Tipps bei Hitze</button>
-
+          </div>
         </div>
       </div>
     </div>
+
     <div class="row center-on-small-only">
       <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
-        <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="worried emoji"/></div>
-        <div class="col-md-6 float-right">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-md-4"><img class="img-fluid tippsIcons rounded mb-3 rounded mb-3 p-sm-5 p-md-0 p-lg-0" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="worried emoji"/></div>
+          <div class="col-md-6">
           <div class="h4 text-white ">Zu laut?</div>
           <p class="text-white ">Möchtest du die Lärmbelastung im Büro reduzieren? Hier sind einige Tipps, die vielleicht helfen:</p>              
           <button class="btn btn-primary btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-laerm')">Tipps bei Lärm</button>
-
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
-        <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="worried emoji"/></div>
-        <div class="col-md-6 float-right">
-          <div class="h4 text-white ">Schlechte Luft?</div>
-          <p class="text-white ">Dicke Luft im Office? Hier einige Tipps, die helfen können, die Situation zu verbessern: </p>              
-          <button class="btn btn-primary btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-luft')">Tipps für gute Luft</button>
-
         </div>
       </div>
     </div>
+      <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-md-4 float-left"><img class="img-fluid tippsIcons rounded mb-3 rounded mb-3 p-sm-5 p-md-0 p-lg-0" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="worried emoji"/></div>
+          <div class="col-md-6 float-right">
+          <div class="h4 text-white ">Schlechte Luft?</div>
+          <p class="text-white ">Dicke Luft im Office? Hier einige Tipps, die helfen können, die Situation zu verbessern: </p>              
+          <button class="btn btn-primary btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-luft')">Tipps für gute Luft</button>
+        </div>
+      </div>
+    </div>
+
     <div class="row justify-content-center">
       <div class="col-md-6 col-lg-5 mb-3 my-4 text-center">
-        <h5 class="display">{{-- Card 3 --}}</h5>
-        <p class="lead">Danke <strong>{{ Auth::user()->name }}</strong> für deine Teilnahme an dieser Umfrage.</p>
+        <h3 class="text-white">Danke <strong>{{ Auth::user()->name }}</strong> für deine Teilnahme an dieser Umfrage.</h3>
         <div>
-          <h5 class="display"></h5>
           
-          <a class="btn btn-lg btn-primary" href="{{ url('/danke') }}">Umfrage Schliessen</a>
+          
+          <a class="btn btn-lg  btn-rounded btn-primary" href="{{ url('/danke') }}">Umfrage Schliessen</a>
         </div>
       </div>
   </div>
