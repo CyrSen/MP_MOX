@@ -80,14 +80,17 @@ background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');" -
                                         <td>{{ $feedbackMap->commentary }}</td>
     
                                         <!-- Add more table cells for other fields as needed -->
-                                        <td {{-- style="display:none;" --}}>
-                                            <!-- Delete button -->
-                                            <form action="{{ route('feedback.destroy', $feedbackMap) }}" method="POST">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#successModal">Delete</button>
-                                            </form>
+                                        <td>
+                                            @if (Auth::check() && Auth::user()->permissions_level === 'level3')
+                                                <!-- Delete button -->
+                                                <form action="{{ route('feedback.destroy', $feedbackMap) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#successModal">Delete</button>
+                                                </form>
+                                            @endif
                                         </td>
+                                        
                                     </tr>
                                 @endforeach
                             </tbody>

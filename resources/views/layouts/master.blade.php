@@ -64,7 +64,7 @@ body {
   min-width: 100vw;
   background-image: url( "./assets/img/panorama-3094696_1920.jpg");
   z-index: 1;
-  margin-top:-10%;
+  /* margin-top:-10%; */
   padding-top:10%;
 }
 
