@@ -73,9 +73,7 @@
 <div class="modal-content">
 <div class="modal-header bg-primary text-white">
   <h5 class="modal-title">Tipps gegen Frieren im Büro</h5>
-  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
   <ol>
@@ -135,7 +133,8 @@
   </ol>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-primary" data-dismiss="modal">Schliessen</button>
+  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Schliessen</button>
+
 </div>      
 </div>
 </div>
@@ -147,9 +146,7 @@
 <div class="modal-content">
 <div class="modal-header bg-primary text-white">
   <h5 class="modal-title">Tipps bei Hitze im Büro</h5>
-  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
   <ol>
@@ -197,7 +194,7 @@
   </ol>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-primary" data-dismiss="modal">Schliessen</button>
+  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Schliessen</button>
 </div>      
 </div>
 </div>
@@ -209,9 +206,7 @@
 <div class="modal-content">
 <div class="modal-header bg-primary text-white">
   <h5 class="modal-title">Tipps gegen Lärm im Büro</h5>
-  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
   <ol>
@@ -244,7 +239,7 @@
   </ol>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-primary" data-dismiss="modal">Schliessen</button>
+  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Schliessen</button>
 </div>      
 </div>
 </div>
@@ -256,9 +251,7 @@
 <div class="modal-content">
 <div class="modal-header bg-primary text-white">
   <h5 class="modal-title">Tipps für gute Luft im Büro</h5>
-  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
   <ol>
@@ -290,7 +283,7 @@
   </ol>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-primary" data-dismiss="modal">Schliessen</button>
+  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Schliessen</button>
 </div>      
 </div>
 </div>
