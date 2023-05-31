@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-/*     public function up()
+    public function up()
     {
         Schema::table('users', function (Blueprint $table) {
             $table->enum('permissions_level', ['level1', 'level2', 'level3'])->default('level1')->after('name');
@@ -21,5 +21,5 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('permissions_level');
         });
-    } */
+    }
 };

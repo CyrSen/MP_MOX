@@ -13,7 +13,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                <div class="card mb-5  {{-- wow fadeInUp --}} animate__animated animate__fadeInUp" data-wow-delay=".4s" style="max-width: 800px;">
+                <div class="card mb-5 {{-- wow fadeInUp --}} animate__animated animate__fadeInUp" data-wow-delay=".4s" style="max-width: 800px;">
                     <div class="card-body p-3 pt-5">
                 <!-- Form start-->
                 <div class="row justify-content-center">

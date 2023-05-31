@@ -13,21 +13,14 @@ class CheckPermissionLevel
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle($request, Closure $next, ...$levels)
     {
-        return $next($request);
+        $user = $request->user();
+
+        if ($user && in_array($user->permissions_level, $levels)) {
+            return $next($request);
+        }
+
+        abort(403, 'Unauthorized');
     }
-
-        /* public function handle($request, Closure $next, ...$levels)
-        {
-            $user = $request->user();
-        
-            // Check if the user has the required permission level
-            if ($user && in_array($user->permission_level, $levels)) {
-                return $next($request);
-            }
-        
-            abort(403, 'Unauthorized');
-        } */
-
 }
