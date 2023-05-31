@@ -20,6 +20,36 @@
       <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
         @csrf
       <div class="row justify-content-center">
+        <div class="col-md-6 mb-5 wow fadeInRight" data-wow-delay=".4s">
+          <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
+            <div class="card-body p-5 d-flex flex-column justify-content-center align-items-center">
+              <!-- Content of Card 2 -->
+              <div class="col">
+                <div class="mt-n5">
+                  Schritt 1:<br> Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.
+                </div>
+              </div>
+                
+              
+            <div id="image-container" class="map-container">
+                <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
+              <input id="x-coordinates" type="hidden" name="x_coordinates">
+              <input id="y-coordinates" type="hidden" name="y_coordinates">
+            </div>
+
+
+          </form>
+            <!-- FORM END-->
+            <!--ADMIN USE -->
+            <div class="col-sm-3" style="display:none;">
+              <p id="x-display"></p>
+              <p id="y-display"></p>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
         <div class="col-md-6 mb-5 wow fadeInLeft" data-wow-delay=".4s">
           <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
             <div class="card-body p-5">
@@ -32,7 +62,7 @@
   
                   <div class="form-group">
                     <label for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
-                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                       <div class="icon-wrapper icon-element">
                         <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Viel zu kalt" data-bs-value="1" onclick="setTempLevel(1)">
                       </div>
@@ -51,14 +81,10 @@
                     </div>
                     <input type="hidden" name="temperature_level" id="temperature-level-input">
                   </div>
-                  
-                  
-                  
-                  
-                  
+   
                   <div class="form-group">
                     <label for="timely">Schritt 3: Akustische Behaglichkeit angeben.</label>
-                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                       <div class="icon-wrapper icon-element">
                         <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Viel zu leise" data-bs-value="1" onclick="setNoiseLevel(1)">
                       </div>
@@ -77,13 +103,10 @@
                     </div>
                     <input type="hidden" name="noise_level" id="noise-level-input">
                   </div>
-  
-  
-  
-  
+
                   <div class="form-group">
                     <label for="timely">Schritt 4: Luft-Behaglichkeit angeben.</label>
-                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                       <div class="icon-wrapper icon-element">
                         <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Ausgezeichnete Luftqualität" data-bs-value="1" onclick="setAirQLevel(1)">
                       </div>
@@ -102,11 +125,10 @@
                     </div>
                     <input type="hidden" name="air_quality_level" id="air-quality-level-input">
                   </div>
-  
-  
+
                   <div class="form-group">
                     <label for="timely">Schritt 5: Gesamt-Behaglichkeit Behaglichkeit angeben.</label>
-                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 6px; border-radius: 4px; display: flex; justify-content: space-between;">
+                    <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                       <div class="icon-wrapper icon-element">
                         <img class="img-fluid px-3" src="./assets/img/icons_var/smiley_green_successreal_great.svg" alt="smiley-great" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Exzellenter Komfort" data-bs-value="1" onclick="setHiggeLevel(1)">
                       </div>
@@ -142,35 +164,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-5 wow fadeInRight" data-wow-delay=".4s">
-          <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
-            <div class="card-body p-5 d-flex flex-column justify-content-center align-items-center">
-              <!-- Content of Card 2 -->
-              <div class="col">
-                <div class="mt-n5">
-                  Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.
-                </div>
-              </div>
-                
-              
-            <div id="image-container" class="map-container">
-                <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
-              <input id="x-coordinates" type="hidden" name="x_coordinates">
-              <input id="y-coordinates" type="hidden" name="y_coordinates">
-            </div>
-
-
-          </form>
-            <!-- FORM END-->
-            <!--ADMIN USE -->
-            <div class="col-sm-3" style="display:none;">
-              <p id="x-display"></p>
-              <p id="y-display"></p>
-            </div>
-
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
 

@@ -21,7 +21,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
-    <link href="{{'./css/mdb.min.css?ver=1.1.0'}}" rel="stylesheet">
+    <link href="{{asset('css/mdb.min.css?ver=1.1.0')}}" rel="stylesheet">
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"> --}}
 
     <!-- Scripts -->
@@ -34,84 +34,26 @@
 
 
 body {
-  background-image: url("assets/img/architecture.jpg") no-repeat center center;
+  background-image: url("./assets/img/architecture.jpg") no-repeat center center;
 }
 
-  #intro {
-    background: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
-    background-size: cover; 
-  }
-
-  #feedback {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin:0;
-    background: url("assets/img/architecture-4000.jpg") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-  }
-
-#admin{
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-background-size: 100% 100%;
-position: relative;
-min-width: 100vw;
-background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
-  }
-
-
-  #indexPLACEHOLDER {
-    /*  DAMIT MAN ETWAS SIEHT !!!*/
-    background: url("assets/img/matthieu-gouiffes.jpg") no-repeat center center;
-    min-height: 100vh;
-    margin:0;
-  }
-
-  #login {
-    display: flex;
-    align-items: stretch;
-    min-height: 100vh;
-    background: url("./assets/img/skyscraper-with-clouds-reflection.jpg") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-  }
-
-  #register {
-      display: flex;
-      align-items: stretch;
-      min-height: 100vh;
-      background: url("./assets/img/matthieu-gouiffes.jpg") no-repeat center center;
-      background-size: cover;
-      position: relative;
-      z-index: 1;
-    }
-
-  #info {
-    display: flex;
-    align-items: stretch;
-    min-height: 100vh;
-    background: url("./assets/img/open-window.jpg") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-  }
-
-  #feedback {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url("./assets/img/architecture-4000.jpg");
-    background-size: cover;
-    position: relative;
-    z-index: 1;
+#intro {
+  background: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
+  background-size: cover; 
 }
+
+#feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin:0;
+  background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
 
 #admin {
   align-items: center;
@@ -120,10 +62,49 @@ background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
   background-size: 100% 100%;
   position: relative;
   min-width: 100vw;
-  background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
+  background-image: url(' ./assets/img/panorama-3094696_1920.jpg');
   z-index: 1;
   margin-top:-10%;
   padding-top:10%;
+}
+
+
+
+#indexPLACEHOLDER {
+  /*  DAMIT MAN ETWAS SIEHT !!!*/
+  background: url("assets/img/matthieu-gouiffes.jpg") no-repeat center center;
+  min-height: 100vh;
+  margin:0;
+}
+
+#login {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  background: url("./assets/img/skyscraper-with-clouds-reflection.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+#register {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+    background: url("./assets/img/matthieu-gouiffes.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+#info {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  background: url("./assets/img/open-window.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 
 #tips {
@@ -133,7 +114,7 @@ background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
   background-size: 100% 100%;
   position: relative;
   min-width: 100vw;
-  background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
+  background-image: url("{{ asset('assets/img/panorama-3094696_1920.jpg') }}");
   z-index: 1;
   margin-top:-10%;
   padding-top:10%;
@@ -176,15 +157,16 @@ background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');
 
     
 
-    <script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
-    <script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
-    <script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script>
-    <script type="text/javascript" src="{{'js/mdb.min.js?ver=1.1.0'}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('/js/popper.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('js/wow.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('js/mdb.min.js?ver=1.1.0')}}"></script>
 
+    
 <script>
   new WOW().init();
 </script>
-{{-- <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> --}}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 @vite(['resources/js/app.js', 'resources/js/custom.js']);
 
  <script> 
