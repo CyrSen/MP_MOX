@@ -59,11 +59,13 @@
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/tips')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tips') . '/' . session('feedbackMapId') }}">Tips</a>
         </li>
-        @auth
+        {{-- @auth --}}
+        @if (Auth::check() && in_array(Auth::user()->permissions_level, ['level2', 'level3']))
         <li class="nav-item">
-          <a class="nav-link {{ (request()->is('/admin')) ? 'active' : '' }}" aria-current="page" href="{{ url('/admin') }}"></a>
+            <a class="nav-link {{ (request()->is('admin*')) ? 'active' : '' }}" href="{{ url('/admin') }}">Administration</a>
         </li>
-        @endauth
+        @endif
+        {{-- @endauth --}}
         
         {{-- @endauth --}}
 

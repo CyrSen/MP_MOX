@@ -20,7 +20,8 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
-    <link href="{{'css/mdb.min.css?ver=1.1.0'}}" rel="stylesheet">
+    <link href="{{asset('css/mdb.min.css?ver=1.1.0')}}" rel="stylesheet">
+
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"> --}}
 
     <!-- Scripts -->
@@ -36,8 +37,8 @@
 
 <header>
 <!-- Navbar-->
-    {{-- @include('layouts.navigation') --}}
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+    @include('layouts.navigation')
+{{-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
     <div class="container"><a class="navbar-brand" href="about.html"><strong>myOfficeX</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarContent">
@@ -105,7 +106,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> --}}
   
 
     </header>
@@ -126,14 +127,14 @@
     </footer>
     
 
-    <script type="text/javascript" src="{{'js/jquery.min.js?ver=1.1.0'}}"></script>
-    <script type="text/javascript" src="{{'/js/popper.min.js?ver=1.1.0'}}"></script>
-    {{-- <script type="text/javascript" src="{{'js/wow.min.js?ver=1.1.0'}}"></script> --}}
-    <script type="text/javascript" src="{{'js/mdb.min.js?ver=1.1.0'}}"></script>
-{{--
+    <script type="text/javascript" src="{{asset('js/jquery.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('/js/popper.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('js/wow.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('js/mdb.min.js?ver=1.1.0')}}"></script>
+
 <script>
   new WOW().init();
-</script> --}}
+</script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 @vite(['resources/js/app.js','resources/js/wow.min.js','resources/js/mdb.min.js', 'resources/js/custom.js']);
 
