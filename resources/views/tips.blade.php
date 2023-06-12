@@ -263,7 +263,7 @@
     <li>
       <h6>Essen und Trinken</h6>
       <ul>
-        <li>Schliesse die Tür zur Küche: Falls du stark riechende Gerichte zubereitest oder aufwärmst, schließe die Tür zur Küche, um Gerüche im Raum zu halten.</li>
+        <li>Schliesse die Tür zur Küche: Falls du stark riechende Gerichte zubereitest oder aufwärmst, schliesse die Tür zur Küche, um Gerüche im Raum zu halten.</li>
         <li>Iss riechende Lebensmittel wie Zwiebeln, Knoblauch oder Fisch in der Küche oder einem geschlossenen Raum mit guter Belüftung oder Fenster.</li>
         <li>Entsorge Abfall richtig: Entsorge Essensreste und Verpackungen ordnungsgemäss, um Gerüche und Schädlingsbefall zu vermeiden.</li>
       </ul>

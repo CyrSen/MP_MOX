@@ -62,11 +62,60 @@
       }
     }
 
+    .navbar-nav .nav-link {
+      font-weight: 500;
+    }
+
+    .myoffice-text {
+      font-weight: 400;
+      margin-right: 0;
+    }
+
+    .myoffice-x {
+      font-weight: 900;
+      margin-left: -3px;
+    }
+
     footer {
       position: sticky;
       bottom: 0;
     }
  
+    @media (max-width: 767px) {
+    .scroll-buttons {
+      position: fixed;
+      bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 9999;
+      width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .scroll-buttons {
+      display: none;
+    }
+  }
+
+  .scroll-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .scroll-button i {
+    color: #fff;
+    font-size: 1.2rem;
+  }
  
 </style>
 
@@ -74,21 +123,27 @@
 
   <body>
     <header>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
-        <div class="container"><a class="navbar-brand" href="about.html"><strong>myOfficeX</strong></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link active" href="about.html">Über</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-              <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-              <li class="nav-item"><a class="nav-link" href="tips.html">Tipps</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html#contact">Kontakt</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="myoffice-text">myOffice</span>
+        <span class="myoffice-x">X</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">Tipps</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
       <section id="login">
         <div class="rgba-black-strong"></div>
@@ -131,24 +186,32 @@
           </div>
         </div>
       </section>
-      
-    <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
-      <div class="footer-copyright text-center py-3 font-small">
-        <div class="container-fluid">
-          <div>&copy; myOfficeX </div>
+
+      <div class="scroll-buttons">
+        <div class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+          <i class="fa fa-arrow-up"></i>
+        </div>
+        <div class="scroll-button" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
+          <i class="fa fa-arrow-down"></i>
         </div>
       </div>
-    </footer>
-    <script type="text/javascript" src="scripts/jquery.min.js?ver=1.1.0"></script>
-    <script type="text/javascript" src="scripts/popper.min.js?ver=1.1.0"></script>
-    <script type="text/javascript" src="scripts/bootstrap.min.js?ver=1.1.0"></script>
-    <script type="text/javascript" src="scripts/wow.min.js?ver=1.1.0"></script>
-    <script type="text/javascript" src="scripts/mdb.min.js?ver=1.1.0"></script>
-    <script>new WOW().init();</script>
-    <script>
-      $(function () {
-        $('[data-toggle="popover"]').popover();
-      });
-      </script>
-  </body>
-</html>
+
+      <footer class="page-footer indigo darken-2 center-on-small-only p-3 mt-0">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="d-inline-block">
+                <span style="font-weight: 400">&copy; myOfficeX</span> | <a href="impressum.html" style="font-weight: 400">Impressum</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+          <script type="text/javascript" src="scripts/jquery.min.js?ver=1.1.0"></script>
+          <script type="text/javascript" src="scripts/popper.min.js?ver=1.1.0"></script>
+          <script type="text/javascript" src="scripts/bootstrap.min.js?ver=1.1.0"></script>
+          <script type="text/javascript" src="scripts/wow.min.js?ver=1.1.0"></script>
+          <script type="text/javascript" src="scripts/mdb.min.js?ver=1.1.0"></script>
+          <script>new WOW().init();</script>
+        </body>
+      </html>
