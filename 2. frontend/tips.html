@@ -8,146 +8,187 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
     <link href="css/mdb.min.css?ver=1.1.0" rel="stylesheet">
-  <style>
+    <style>
 
-    #info {
-      display: flex;
-      align-items: stretch;
-      min-height: 100vh;
-      background: url("img/open-window.jpg") no-repeat center center;
-      background-size: cover;
-      position: relative;
-      z-index: 1;
-    }
-
-    .rgba-black-strong {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7); /* Deckkraft hier ändern */
-      z-index: -1;
-    }
-
-    .card.mb-5.wow.fadeInUp[data-wow-delay=".4s"] {
-      flex: 1;
-    }
-
-    .card-body.p-5 {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .top-nav-collapse {
-      background-color: #3949ab !important;
-    }
-
-    .navbar:not(.top-nav-collapse) {
-      background: transparent !important;
-    }
-
-    @media (max-width: 768px) {
+      #info {
+        display: flex;
+        align-items: stretch;
+        min-height: 100vh;
+        background: url("img/open-window.jpg") no-repeat center center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+      }
+  
+      .rgba-black-strong {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Deckkraft hier ändern */
+        z-index: -1;
+      }
+  
+      .card.mb-5.wow.fadeInUp[data-wow-delay=".4s"] {
+        flex: 1;
+      }
+  
+      .card-body.p-5 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      .top-nav-collapse {
+        background-color: #3949ab !important;
+      }
+  
       .navbar:not(.top-nav-collapse) {
-        background: #3949ab !important;
+        background: transparent !important;
       }
-    }
-
-    @media (max-width: 450px) {
-      .margins {
-        margin-right: 1rem;
-        margin-left: 1rem;
+  
+      @media (max-width: 768px) {
+        .navbar:not(.top-nav-collapse) {
+          background: #3949ab !important;
+        }
       }
-    }
-
-    .navbar-nav .nav-link {
-      font-weight: 500;
-    }
-
-    .myoffice-text {
-      font-weight: 400;
-      margin-right: 0;
-    }
-
-    .myoffice-x {
-      font-weight: 900;
-      margin-left: -3px;
-    }
-
-    footer {
-      position: sticky;
-      bottom: 0;
-    }
- 
-    
-    
-    #popup .modal-dialog-centered {
-        margin: 0 auto;
+  
+      @media (max-width: 450px) {
+        .margins {
+          margin-right: 1rem;
+          margin-left: 1rem;
+        }
       }
+  
+      .navbar-nav .nav-link {
+        font-weight: 500;
+      }
+  
+      .myoffice-text {
+        font-weight: 400;
+        margin-right: 0;
+      }
+  
+      .myoffice-x {
+        font-weight: 900;
+        margin-left: -3px;
+      }
+  
+      footer {
+        position: sticky;
+        bottom: 0;
+      }
+  
+      body.popup-open {
+  overflow: hidden !important;
+}
 
+.popup-dialog {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 65px;
+  max-width: 1200px;
+  overflow-y: hidden !important; /* Ändern Sie 'hidden' anstelle von 'auto' */
+}
+
+.popup-open {
+  overflow: hidden !important;
+}
+
+
+
+.modal-open {
+  overflow: hidden !important;
+}
+
+
+
+
+
+
+
+
+      @media (max-width: 576px) {
+        .modal-dialog.modal-dialog-centered {
+          margin-left: 5px;
+          margin-right: 5px;         
+          margin-top: 75px; /* Verwendet 10px als oberen Abstand auf mobilen Bildschirmen */
+          max-width: 2000px; /* Maximale Breite von 1200px */
+        }
+      }
+  
       .modal-header.bg-indigo {
         background-color: #3949ab;
         color: #ffffff;
       }
-
+  
       .modal-body {
         padding: 1.5rem;
       }
-
+  
       .btn-secondary {
         background-color: #3949ab;
         color: #ffffff;
       }
-
+  
       .modal.shadow {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
+  
+      @media (max-width: 767px) {
+        .scroll-buttons {
+          position: fixed;
+          bottom: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 9999;
+          width: 100%;
+          padding: 0 1rem;
+          box-sizing: border-box;
+        }
+      }
+  
+      @media (min-width: 768px) {
+        .scroll-buttons {
+          display: none;
+        }
+      }
+  
+      .scroll-button {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+  
+      .scroll-button i {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+  
+      @media (max-width: 767px) {
+        .emoji-large {
+          display: none;
+        }
+      }
+  
+      @media (min-width: 768px) {
+        .emoji-small {
+          display: none;
+        }
+      }
+  
 
-      .modal-dialog.modal-dialog-centered {
-    max-width: 1000px; /* Anpassen der maximalen Breite */
-    margin: 0 auto; /* Zentrierte Ausrichtung */
-  }
- 
 
-  @media (max-width: 767px) {
-    .scroll-buttons {
-      position: fixed;
-      bottom: 0.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 9999;
-      width: 100%;
-      padding: 0 1rem;
-      box-sizing: border-box;
-    }
-  }
 
-  @media (min-width: 768px) {
-    .scroll-buttons {
-      display: none;
-    }
-  }
-
-  .scroll-button {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .scroll-button i {
-    color: #fff;
-    font-size: 1.2rem;
-  }
-
-</style>
+    </style>
 
 </head>
 
@@ -185,53 +226,86 @@
               Hier sind einige sofort umsetzbare Tipps, mit denen du dein Komforterlebnis selbst verbessern kannst!
             </p>
           </div>
+
+
+
           <div class="row mb-lg-4 center-on-small-only">
+
+
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
-              <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="img/worried 150.png" alt="worried emoji"/></div>
-              <div class="col-md-6 float-right">
-                <div class="h4 text-white ">Zu kalt?</div>
-                <p class="text-white ">Du möchtest nicht mehr frieren? Hier sind einige Tipps, die dir vielleicht helfen können:</p>
+              <div class="col-md-4 col-12 float-left justify-content-end text-right d-none d-lg-block">
+                <img class="img-fluid rounded mb-3" src="img/Emoji-cold-100.png" alt="Emoji suffering from cold" style="max-width: 100px;">
+              </div>
+              <div class="col-md-8 col-12 float-right">
+                <div class="h4 text-white pl-1">Zu kalt?</div>
+                <p class="text-white pl-1">Du möchtest nicht mehr frieren? Hier sind einige Tipps, die dir vielleicht helfen können:</p>
                 <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-kalt')">Tipps bei Kälte</button>
-
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
-              <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="img/worried 150.png" alt="worried emoji"/></div>
-              <div class="col-md-6 float-right">
-                <div class="h4 text-white ">Zu heiss?</div>
-                <p class="text-white t">Ist dir im Büro zu warm? Möglicherweise können dir diese Tipps nützlich sein:</p>               
-                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-heiss')">Tipps bei Hitze</button>
+            
+            
+            
+            
 
-              </div>
-            </div>
-          </div>
-          <div class="row center-on-small-only">
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
-              <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="img/worried 150.png" alt="worried emoji"/></div>
-              <div class="col-md-6 float-right">
-                <div class="h4 text-white ">Zu laut?</div>
-                <p class="text-white ">Möchtest du die Lärmbelastung im Büro reduzieren? Hier sind einige Tipps, die vielleicht helfen:</p>              
-                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-laerm')">Tipps bei Lärm</button>
-
+              <div class="col-md-4 col-12 float-left justify-content-end text-right d-none d-lg-block">
+                <img class="img-fluid rounded mb-3" src="img/Emoji-hot-100.png" alt="Emoji suffering from heat" style="max-width: 100px;">
+              </div>
+              <div class="col-md-8 col-12 float-right">
+                <div class="h4 text-white pl-1">Zu heiss?</div>
+                <p class="text-white pl-1">Ist dir im Büro zu warm? Möglicherweise können dir diese Tipps nützlich sein:</p>
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-heiss')">Tipps bei Hitze</button>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
-              <div class="col-md-6 float-left"><img class="img-fluid rounded mb-3" src="img/worried 150.png" alt="worried emoji"/></div>
-              <div class="col-md-6 float-right">
-                <div class="h4 text-white ">Schlechte Luft?</div>
-                <p class="text-white ">Dicke Luft im Office? Hier einige Tipps, die helfen können, die Situation zu verbessern: </p>              
-                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-luft')">Tipps für gute Luft</button>
 
-              </div>
-            </div>
           </div>
+
+
+          <div class="row center-on-small-only">
+
+
+
+
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
+              <div class="col-md-4 col-12 float-left justify-content-end text-right d-none d-lg-block">
+                <img class="img-fluid rounded mb-3 emoji-small" src="img/Emoji-noise-100 (2).png" alt="Emoji suffering from noise" style="max-width: 125px;">
+                <img class="img-fluid rounded mb-3 emoji-large" src="img/Emoji-noise-100 (2).png" alt="Emoji suffering from noise" style="max-width: 125px;">
+              </div>
+              <div class="col-md-8 col-12 float-right">
+                <div class="h4 text-white pl-1">Zu laut?</div>
+                <p class="text-white pl-1">Möchtest du die Lärmbelastung im Büro reduzieren? Hier sind einige Tipps, die vielleicht helfen:</p>
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-laerm')">Tipps bei Lärm</button>
+              </div>
+            </div>
+            
+            
+            
+
+
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
+              <div class="col-md-4 col-12 float-left justify-content-end text-right d-none d-lg-block">
+                <img class="img-fluid rounded mb-3" src="img/Emoji-air-100.png" alt="Emoji suffering from bad air" style="max-width: 100px;">
+              </div>
+              <div class="col-md-8 col-12 float-right">
+                <div class="h4 text-white pl-1">Schlechte Luft?</div>
+                <p class="text-white pl-1">Dicke Luft im Office? Hier einige Tipps, die helfen können, die Situation zu verbessern:</p>
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-luft')">Tipps für gute Luft</button>
+              </div>
+            </div>
+            
+            
+
+
+          </div>
+
+          
         </div>
       </div>
     </section>
 
 <!--Popup Kalt-->
 <div id="popup-kalt" class="modal shadow">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered popup-dialog">
     <div class="modal-content">
       <div class="modal-header bg-indigo text-white">
         <h5 class="modal-title">Tipps gegen Frieren im Büro</h5>
@@ -305,7 +379,7 @@
 
 <!--Popup Heiss-->
 <div id="popup-heiss" class="modal shadow">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered popup-dialog">
     <div class="modal-content">
       <div class="modal-header bg-indigo text-white">
         <h5 class="modal-title">Tipps bei Hitze im Büro</h5>
@@ -367,7 +441,7 @@
 
 <!--Popup Lärm-->
 <div id="popup-laerm" class="modal shadow">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered popup-dialog">
     <div class="modal-content">
       <div class="modal-header bg-indigo text-white">
         <h5 class="modal-title">Tipps gegen Lärm im Büro</h5>
@@ -414,7 +488,7 @@
 
 <!--Popup Luft-->
 <div id="popup-luft" class="modal shadow">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered popup-dialog">
     <div class="modal-content">
       <div class="modal-header bg-indigo text-white">
         <h5 class="modal-title">Tipps für gute Luft im Büro</h5>
