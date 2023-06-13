@@ -9,7 +9,6 @@
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
     <link href="css/mdb.min.css?ver=1.1.0" rel="stylesheet">
     <style>
-
       #info {
         display: flex;
         align-items: stretch;
@@ -82,51 +81,65 @@
       }
   
       body.popup-open {
-  overflow: hidden !important;
+        overflow: hidden !important;
+      }
+  
+      .popup-dialog {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 65px;
+        max-width: 1200px;
+        overflow-y: hidden !important; /* Ändern Sie 'hidden' anstelle von 'auto' */
+      }
+  
+      .popup-open {
+        overflow: hidden !important;
+      }
+  
+      .modal-open {
+        overflow: hidden !important;
+      }
+  
+
+      .modal-dialog {
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.popup-dialog {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 65px;
-  max-width: 1200px;
-  overflow-y: hidden !important; /* Ändern Sie 'hidden' anstelle von 'auto' */
-}
-
-.popup-open {
-  overflow: hidden !important;
-}
-
-
-
-.modal-open {
-  overflow: hidden !important;
-}
-
-
-
-
-
-
-
 
       @media (max-width: 576px) {
         .modal-dialog.modal-dialog-centered {
-          margin-left: 5px;
-          margin-right: 5px;         
-          margin-top: 75px; /* Verwendet 10px als oberen Abstand auf mobilen Bildschirmen */
-          max-width: 2000px; /* Maximale Breite von 1200px */
+          margin-left: min 5px;
+          margin-right: min 5px;         
+          margin-top: 75px; 
+          max-width: 2000px;
         }
       }
   
+
+
+
+
       .modal-header.bg-indigo {
         background-color: #3949ab;
         color: #ffffff;
+
       }
   
-      .modal-body {
+      h6 {
+  font-weight: 400;
+}
+
+.modal-body {
+        font-weight: 400;
         padding: 1.5rem;
       }
+
+
+      .modal-title {
+  font-weight: bold;
+}
+
+
   
       .btn-secondary {
         background-color: #3949ab;
@@ -184,10 +197,22 @@
           display: none;
         }
       }
+    
+      p.lead {
+        font-weight: 400;
+      }
   
+      .btn {
+        font-weight: 500;
+      }
+  
+      .h4.text-white.pl-1 {
+        font-weight: 900;
+      }
 
 
 
+      
     </style>
 
 </head>
@@ -228,8 +253,9 @@
           </div>
 
 
+          <div class="row justify-content-center">
 
-          <div class="row mb-lg-4 center-on-small-only">
+
 
 
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
@@ -239,7 +265,7 @@
               <div class="col-md-8 col-12 float-right">
                 <div class="h4 text-white pl-1">Zu kalt?</div>
                 <p class="text-white pl-1">Du möchtest nicht mehr frieren? Hier sind einige Tipps, die dir vielleicht helfen können:</p>
-                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-kalt')">Tipps bei Kälte</button>
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-kalt')">Tipps Kälte</button>
               </div>
             </div>
             
@@ -254,15 +280,14 @@
               <div class="col-md-8 col-12 float-right">
                 <div class="h4 text-white pl-1">Zu heiss?</div>
                 <p class="text-white pl-1">Ist dir im Büro zu warm? Möglicherweise können dir diese Tipps nützlich sein:</p>
-                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-heiss')">Tipps bei Hitze</button>
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-heiss')">Tipps Hitze</button>
               </div>
             </div>
 
           </div>
 
 
-          <div class="row center-on-small-only">
-
+          <div class="row justify-content-center">
 
 
 
@@ -273,8 +298,8 @@
               </div>
               <div class="col-md-8 col-12 float-right">
                 <div class="h4 text-white pl-1">Zu laut?</div>
-                <p class="text-white pl-1">Möchtest du die Lärmbelastung im Büro reduzieren? Hier sind einige Tipps, die vielleicht helfen:</p>
-                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-laerm')">Tipps bei Lärm</button>
+                <p class="text-white pl-1">Möchtest du die Lärmbelastung im Büro reduzieren? Hier sind einige Tipps:</p>
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-laerm')">Tipps Lärm</button>
               </div>
             </div>
             
@@ -289,7 +314,7 @@
               <div class="col-md-8 col-12 float-right">
                 <div class="h4 text-white pl-1">Schlechte Luft?</div>
                 <p class="text-white pl-1">Dicke Luft im Office? Hier einige Tipps, die helfen können, die Situation zu verbessern:</p>
-                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-luft')">Tipps für gute Luft</button>
+                <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-luft')">Tipps Luft</button>
               </div>
             </div>
             
