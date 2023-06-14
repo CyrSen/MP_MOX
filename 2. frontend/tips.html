@@ -186,12 +186,14 @@
         font-size: 1.2rem;
       }
   
-      @media (max-width: 767px) {
-        .emoji-large {
-          display: none;
-        }
-      }
+
   
+      @media (max-width: 768px) {
+  .emoji-large {
+    display: inline-block !important;
+  }
+}
+
       @media (min-width: 768px) {
         .emoji-small {
           display: none;
@@ -211,7 +213,14 @@
       }
 
 
-
+      @media (max-width: 991.98px) {
+  .row.justify-content-md-center {
+    justify-content: flex-start !important;
+  }
+  .emoji-large {
+    display: none !important;
+  }
+}
       
     </style>
 
@@ -240,7 +249,6 @@
       </div>
     </div>
   </nav>
-
       <!-- Tips -->
       <section id="info">
         <div class="rgba-black-strong"></div>
@@ -248,80 +256,61 @@
           <div class="wow fadeIn">
             <h2 class="h1 text-white pt-5 pb-3 text-center">Tipps</h2>
             <p class="text-white px-5 mb-5 pb-3 lead text-center">
-              Hier sind einige sofort umsetzbare Tipps, mit denen du dein Komforterlebnis selbst verbessern kannst!
+              Hier sind einige sofort umsetzbare Tipps, mit denen du dein Komfort verbessern kannst!
             </p>
           </div>
 
 
-          <div class="row justify-content-center">
-
-
-
-
+          <div class="row justify-content-md-center">
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
               <div class="col-md-4 col-12 float-left justify-content-end text-right d-none d-lg-block">
-                <img class="img-fluid rounded mb-3" src="img/Emoji-cold-100.png" alt="Emoji suffering from cold" style="max-width: 100px;">
+                <img class="img-fluid rounded mb-3 emoji-large" src="img/Emoji-cold-100.png" alt="Emoji suffering from cold" style="max-width: 100px;">
               </div>
               <div class="col-md-8 col-12 float-right">
+
+
                 <div class="h4 text-white pl-1">Zu kalt?</div>
-                <p class="text-white pl-1">Du möchtest nicht mehr frieren? Hier sind einige Tipps, die dir vielleicht helfen können:</p>
+                <h6 class="font-weight-medium text-white pl-1 mb-4">Du möchtest nicht mehr frieren? <br> Hier sind einige Tipps:</h6>                
                 <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-kalt')">Tipps Kälte</button>
               </div>
             </div>
-            
-            
-            
-            
-
+          
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
               <div class="col-md-4 col-12 float-left justify-content-end text-right d-none d-lg-block">
                 <img class="img-fluid rounded mb-3" src="img/Emoji-hot-100.png" alt="Emoji suffering from heat" style="max-width: 100px;">
               </div>
               <div class="col-md-8 col-12 float-right">
                 <div class="h4 text-white pl-1">Zu heiss?</div>
-                <p class="text-white pl-1">Ist dir im Büro zu warm? Möglicherweise können dir diese Tipps nützlich sein:</p>
+                <h6 class="font-weight-medium text-white pl-1 mb-4">Ist dir im Büro zu warm? <br>  Dann lies diese Tipps:</h6>
                 <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-heiss')">Tipps Hitze</button>
               </div>
             </div>
-
-          </div>
-
-
-          <div class="row justify-content-center">
-
-
-
+          
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
               <div class="col-md-4 col-12 float-left justify-content-end text-right d-none d-lg-block">
-                <img class="img-fluid rounded mb-3 emoji-small" src="img/Emoji-noise-100 (2).png" alt="Emoji suffering from noise" style="max-width: 125px;">
+
                 <img class="img-fluid rounded mb-3 emoji-large" src="img/Emoji-noise-100 (2).png" alt="Emoji suffering from noise" style="max-width: 125px;">
               </div>
               <div class="col-md-8 col-12 float-right">
                 <div class="h4 text-white pl-1">Zu laut?</div>
-                <p class="text-white pl-1">Möchtest du die Lärmbelastung im Büro reduzieren? Hier sind einige Tipps:</p>
+                <h6 class="font-weight-medium text-white pl-1 mb-4">Möchtest du weniger Lärmbelastung? <br> Lies diese Tipps:</h6>                
                 <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-laerm')">Tipps Lärm</button>
               </div>
             </div>
-            
-            
-            
-
-
+          
             <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
               <div class="col-md-4 col-12 float-left justify-content-end text-right d-none d-lg-block">
                 <img class="img-fluid rounded mb-3" src="img/Emoji-air-100.png" alt="Emoji suffering from bad air" style="max-width: 100px;">
               </div>
               <div class="col-md-8 col-12 float-right">
                 <div class="h4 text-white pl-1">Schlechte Luft?</div>
-                <p class="text-white pl-1">Dicke Luft im Office? Hier einige Tipps, die helfen können, die Situation zu verbessern:</p>
+                <h6 class="font-weight-medium text-white pl-1 mb-4">Dicke Luft im Office? <br>  Diese Tipps können helfen:</h6>
                 <button class="btn btn-indigo btn-rounded my-0" style="width: 200px;" type="button" onclick="openPopup('popup-luft')">Tipps Luft</button>
               </div>
             </div>
-            
-            
-
-
+          
           </div>
+          
 
           
         </div>
