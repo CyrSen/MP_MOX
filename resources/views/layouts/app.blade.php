@@ -20,14 +20,14 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
-    <link href="{{asset('css/mdb.min.css?ver=1.1.0')}}" rel="stylesheet">
-
-    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"> --}}
+   {{--  <link href="{{asset('./css/mdb.min.css')}}" rel="stylesheet"> --}}
+   <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
 
     <!-- Scripts -->
 
     <!-- Directives -->
-    @vite(['resources/sass/app.scss', 'resources/css/app.css', /* 'resources/css/css/mdb.min.css', */ 'resources/css/custom.css'])  
+    @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/css/mdb.min.css', 'resources/css/custom.css'])  
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -130,12 +130,12 @@
     <script type="text/javascript" src="{{asset('js/jquery.min.js?ver=1.1.0')}}"></script>
     <script type="text/javascript" src="{{asset('/js/popper.min.js?ver=1.1.0')}}"></script>
     <script type="text/javascript" src="{{asset('js/wow.min.js?ver=1.1.0')}}"></script>
-    <script type="text/javascript" src="{{asset('js/mdb.min.js?ver=1.1.0')}}"></script>
+    {{-- <script type="text/javascript" src="{{asset('js/mdb.min.js?ver=1.1.0')}}"></script> --}}
 
 <script>
   new WOW().init();
 </script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-@vite(['resources/js/app.js','resources/js/wow.min.js','resources/js/mdb.min.js', 'resources/js/custom.js']);
+@vite(['resources/js/app.js','resources/js/wow.min.js', 'resources/js/custom.js']);
 
  <script> 

@@ -21,7 +21,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
-    <link href="{{asset('css/mdb.min.css?ver=1.1.0')}}" rel="stylesheet">
+    <link href="{{asset('./css/mdb.min.css')}}" rel="stylesheet">
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"> --}}
 
     <!-- Scripts -->
@@ -56,6 +56,7 @@ body {
 
 
 #admin {
+  margin-top:-20vh;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -65,6 +66,18 @@ body {
   background-image: url( "./assets/img/panorama-3094696_1920.jpg");
   z-index: 1;
   /* margin-top:-10%; */
+  padding-top:10%;
+}
+
+#contact {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  position: relative;
+  min-width: 100vw;
+  background-image: url( "./assets/img/panorama-3094696_1920.jpg");
+  z-index: 1;
   padding-top:10%;
 }
 

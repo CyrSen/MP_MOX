@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
   <div class="container">
     <a class="navbar-brand" href="{{ url('/') }}"><span class="myoffice-text">myOffice</span><span class="myoffice-x"> X</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
         @endguest
 
 
-        {{-- @auth --}}
+        @auth
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/feedback')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">Feedback</a>
         </li>
@@ -59,15 +59,15 @@
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('/tips')) ? 'active' : '' }}" aria-current="page" href="{{ url('/tips') . '/' . session('feedbackMapId') }}">Tips</a>
         </li>
-        {{-- @auth --}}
+        @auth
         @if (Auth::check() && in_array(Auth::user()->permissions_level, ['level2', 'level3']))
         <li class="nav-item">
             <a class="nav-link {{ (request()->is('admin*')) ? 'active' : '' }}" href="{{ url('/admin') }}">Administration</a>
         </li>
         @endif
-        {{-- @endauth --}}
+        @endauth
         
-        {{-- @endauth --}}
+        @endauth
 
 
         <li class="nav-item">
