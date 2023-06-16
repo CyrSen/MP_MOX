@@ -58,7 +58,7 @@
                         <div class="form-group pt-2 mb-4">
                             {{-- <label for="onetimer" class="col-md-4 col-form-label text-md-end">{{ __('Office-Code') }}</label> --}}
                             <label class="mb-1" for="office-code">{{ __('Office-Code') }}
-                                <i class="fa fa-info-circle" data-bs-toggle="popover" data-placement="right" data-content="Der Office Code identifiziert das Büro und ermöglicht nur autorisierten Benutzern den Zugriff auf die App. Bitte schreibe uns über das Kontaktformular, falls du deinen Office-Code nicht kennst."></i>
+                                <i class="fa fa-info-circle" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Der Office Code identifiziert das Büro und ermöglicht nur autorisierten Benutzern den Zugriff auf die App. Bitte schreibe uns über das Kontaktformular, falls du deinen Office-Code nicht kennst."></i>
                             </label>                             
                             <input id="office-code" type="password" class="form-control @error('onetimer') is-invalid @enderror" name="onetimer" required autocomplete="off">
                             @error('onetimer')
