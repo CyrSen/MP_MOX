@@ -20,7 +20,6 @@
 
     <!-- Styles -->
     <link href="{{asset('./css/mdb.min.css')}}" rel="stylesheet">
-    
    <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
 
@@ -37,39 +36,38 @@
 
 <header>
 <!-- Navbar-->
-  @include('layouts.navigation')
+    @include('layouts.navigation')
 
-  </header>
+    </header>
 
-  <div id="app">
-      <main class="py-0 mt-0">
-          @yield('content')
-      </main>
-  </div>
-
-  <!-- Footer-->
-  <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
-    <div class="footer-copyright text-center py-3 font-small">
-      <div class="container-fluid">
-        <div>&copy; myOffice<span class="highlight2">X</span></div>
-      </div>
+    <div id="app">
+        <main class="py-0 mt-0">
+            @yield('content')
+        </main>
     </div>
-  </footer>
+
+    <!-- Footer-->
+    <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
+      <div class="footer-copyright text-center py-3 font-small">
+        <div class="container-fluid">
+          <div>&copy; myOffice<span class="highlight2">X</span></div>
+        </div>
+      </div>
+    </footer>
     
 
-  <script type="text/javascript" src="js/jquery.min.js?ver=1.1.0"></script>
-  <script type="text/javascript" src="js/popper.min.js?ver=1.1.0"></script>
-  <script type="text/javascript" src="js/wow.min.js?ver=1.1.0"></script>
-  <script type="text/javascript" src="js/mdb.min.js?ver=1.1.0"></script>
-    
+    <script type="text/javascript" src="{{asset('js/jquery.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('/js/popper.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('js/wow.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('js/mdb.min.js?ver=1.1.0')}}"></script>
+
 <script>
   new WOW().init();
 
-
-
   $(function(){
     $('[data-bs-toggle="tooltip"]').tooltip();
-    $('[data-bs-toggle="popover"]').popover();
+    $('[data-bs-toggle="popover"]').popover({html:true})
+
     
   });
 </script>
