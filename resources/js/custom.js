@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Create the icon element
     var iconElement = document.createElement('i');
-    iconElement.classList.add('fa', 'fa-solid', 'fa-location-dot', 'locationIcon'); // Add classes for the desired icon
+    iconElement.classList.add('fa', 'fa-solid', 'fa-location-dot', 'locationIcon', 'tooltip-icon'); // Add classes for the desired icon
 
       // Remove existing location dots
   var existingLocationDots = document.getElementsByClassName('locationIcon');
@@ -178,15 +178,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-//  TOOLTIP START ----------------------------------------------------------------//
+//  TOOLTIP/POPOVER START ----------------------------------------------------------------//
 
 
   $(function(){
     $('[data-bs-toggle="tooltip"]').tooltip();
     
   });
-  
-//  TOOLTIP END ----------------------------------------------------------------//
+
+  $(function(){
+    $('[data-bs-toggle="popover"]').popover({html:true})
+     
+  });
+
+//  TOOLTIP/POPOVER END ----------------------------------------------------------------//
 
 /* function addOverlayIcon(event) {
   const icon = event.currentTarget;

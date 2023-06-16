@@ -18,6 +18,10 @@ body {
     --bs-tooltip-tooltip-arrow-height:1rem;
 }
 
+.tooltip-icon {
+    cursor: pointer;
+  }
+
 .feedbackQ {
     font-size:100%;
 }
@@ -51,6 +55,7 @@ body {
 .tooltip {
   z-index: 100; 
   opacity: 1;
+  cursor:pointer;
 }
  
 /*Correct left-right-map-discrepancies map/icon----------------------------------------------------------------*/
