@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 @extends('layouts.master')
 
 @section('title', 'myOfficeX')

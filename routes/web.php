@@ -37,6 +37,10 @@ Route::get('/danke', function () {
     return view('danke');
 });
 
+Route::get('/impressum', function () {
+    return view('impressum');
+});
+
 Auth::routes();
 Route::get('/feedback/{feedbackMapId?}', [FeedbackController::class, 'create'])->name('feedback.create');
 Route::post('/feedback/{feedbackMapId?}', [FeedbackController::class, 'store'])->name('feedback.store');

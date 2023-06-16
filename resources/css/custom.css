@@ -124,7 +124,68 @@ background: transparent !important;
     /* background-color: #3949ab; */
     background-color: #3f51b5;
     }
+
+    .arrow-circle {
+        display: none;
+    }
+
+    .scroll-buttons {
+        position: fixed;
+        bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9999;
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .scroll-buttons {
+        display: none;
+      }
 }
+
+.scroll-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scroll-button i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+    .h6,
+    .wow.fadeInLeft {
+      text-align: left;
+    }
+    .wow.fadeInLeft {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    h4,
+    h5,
+    h6,
+    p {
+      text-align: left;
+    }
+
+    .lead {
+        text-align: left !important;
+    }
+}
+
+
 
 /* ml-auto not working, see template*/
 .navTrick {
@@ -142,6 +203,54 @@ background: transparent !important;
 /* .navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
     color:white !important;
 } */
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+.myoffice-text {
+    font-weight: 400;
+    margin-right: 0;
+}
+
+.myoffice-x {
+    font-weight: 900;
+    margin-left: -3px;
+}
+
+.custom-font-weight {
+    font-weight: 400;
+}
+
+.arrow-circle {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+
+
+.arrow-link {
+color: rgba(255, 255, 255, 0.5);
+font-size: 1.5rem;
+transition: transform 0.3s ease;
+}
+
+.arrow-circle:hover {
+border-color: #fbfcfd;
+}
+
+.arrow-circle:hover .arrow-link {
+transform: scale(1.1);
+color: #fff;
+}
 
 .togglerIconOwn {
     color:white !important;
@@ -163,7 +272,7 @@ background: transparent !important;
 } 
 
 #intro .h6 {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7;
 }
 
@@ -173,10 +282,15 @@ background: transparent !important;
     max-height: 1080px;
 }
 
+/* .hm-gradient .site-bg-img {
+    background: rgba(42, 27, 161, 0.7);
+    background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+} */
+/* NEW */
 .hm-gradient .site-bg-img {
     background: rgba(42, 27, 161, 0.7);
     background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-}
+  }
 
 .rgba-black-strong {
     position: absolute;
@@ -192,14 +306,6 @@ background: transparent !important;
 .card.mb-5.wow.fadeInRight[data-wow-delay=".4s"] {
     flex: 1;
 }
-
-.card-body.p-5 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 
 .tableOwn{
     max-height: 780px !important;
@@ -221,6 +327,11 @@ footer {
     background-color: #3f51b5;
 
 }
+
+/* footer {
+    position: sticky;
+    bottom: 0;
+  } */
 
 .rgba-black-strong {
     position: absolute;
@@ -279,6 +390,35 @@ footer {
     margin: 0 auto;
 }
 
+
+body.popup-open {
+    overflow: hidden !important;
+}
+
+.popup-dialog {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 65px;
+    max-width: 1200px;
+    overflow-y: hidden !important;
+}
+  
+  .popup-open {
+    overflow: hidden !important;
+}
+
+.modal-open {
+    overflow: hidden !important;
+}
+  
+  .modal-dialog {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+
+  
 .modal-header.bg-indigo {
 /* background-color: #3949ab; */
     background-color: #3f51b5;
@@ -287,6 +427,109 @@ footer {
 
 .modal-body {
     padding: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .modal-dialog.modal-dialog-centered {
+      margin-left: min 5px;
+      margin-right: min 5px;
+      margin-top: 75px;
+      max-width: 2000px;
+    }
+}
+
+.modal-header.bg-indigo {
+    background-color: #3949ab;
+    color: #ffffff;
+}
+
+h6 {
+    font-weight: 400;
+}
+  
+.modal-body {
+    font-weight: 400;
+    padding: 1.5rem;
+}
+  
+.modal-title {
+    font-weight: bold;
+}
+
+.modal.shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 767px) {
+    .scroll-buttons {
+      position: fixed;
+      bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 9999;
+      width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+}
+
+p.lead {
+    font-weight: 400;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+.h4.text-white.pl-1 {
+    font-weight: 900;
+}
+  
+@media (max-width: 991.98px) {
+    .emoji-large,
+    .emoji-small {
+      display: none !important;
+    }
+}
+
+.card.transparent {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    display: flex;
+}
+  
+.card.transparent .left-container {
+    flex: 1;
+    max-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+  
+.card.transparent .right-container {
+    flex: 1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+  
+@media (max-width: 991.98px) {
+    .emoji-large,
+    .left-container {
+      display: none !important;
+    }
+}
+
+.btn-secondary {
+    background-color: #3949ab;
+    color: #ffffff;
 }
 
 .btn-secondary {
@@ -301,12 +544,8 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-.modal.shadow {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.modal-dialog.modal-dialog-centered {
-    max-width: 1000px; /* Anpassen der maximalen Breite */
-    margin: 0 auto; /* Zentrierte Ausrichtung */
-}
-
+/* OLD MODAL */
+/* .modal-dialog.modal-dialog-centered {
+    max-width: 1000px; 
+    margin: 0 auto; 
+} */

@@ -27,7 +27,7 @@
     <!-- Scripts -->
 
     <!-- Directives -->
-    @vite(['resources/sass/app.scss', 'resources/css/app.css', /* 'resources/css/css/mdb.min.css',  */ 'resources/css/reset.css', 'resources/css/custom.css'])  
+    @vite(['resources/sass/app.scss', 'resources/css/app.css', /* 'resources/css/css/mdb.min.css',  */ 'resources/css/custom.css'])  
 
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -148,13 +148,24 @@ body {
     </div>
 
 <!-- Footer-->
-    <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
+<footer class="page-footer indigo darken-2 center-on-small-only p-3 mt-0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="d-inline-block">
+          <span style="font-weight: 400">&copy; myOfficeX</span> | <a href="{{ url('/impressum') }}" style="font-weight: 400">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    {{-- <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
       <div class="footer-copyright text-center py-3 font-small">
         <div class="container-fluid">
           <div>&copy; myOffice<span class="highlight2">X</span></div>
         </div>
       </div>
-    </footer>
+    </footer> --}}
 
     
 
