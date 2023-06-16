@@ -71,7 +71,8 @@ class FeedbackController extends Controller
 
     
         // Redirect or perform any additional actions as needed
-        return redirect()->route('feedback.tips', ['feedbackMapId' => $feedbackMap->id]);
+        /* return redirect()->route('feedback.danke', ['feedbackMapId' => $feedbackMap->id]); */
+        return redirect('/danke/' . $feedbackMap->id);
         
     }
     

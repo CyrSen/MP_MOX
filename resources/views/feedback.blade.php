@@ -157,7 +157,7 @@
                   </div>
                   {{-- <input type="hidden" name="_subject" id="email-subject" value="Survey Responses"> --}}
                   <div class="text-center mt-5">
-                    <button class="btn btn-primary p-3" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Senden</button>
+                    <button class="btn btn-indigo text-white p-3" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Senden</button>
                   </div>
                 </fieldset>
               </form>

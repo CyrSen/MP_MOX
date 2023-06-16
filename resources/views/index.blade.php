@@ -33,7 +33,7 @@
                 @auth
                 <div class="text-center pt-3">
                 <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">
-                    <button class="btn btn-lg btn-primary">
+                    <button class="btn btn-lg btn-indigo text-white">
                         Umfrage Wiederholen
                     </button>
                 </a>
