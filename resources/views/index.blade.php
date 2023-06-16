@@ -15,7 +15,7 @@
           <div class="wow fadeInLeft" data-wow-delay="0.3s">
             <h1 class="h1-responsive font-weight-bold mt-sm-5">Unser Ziel: Dein Komfort</h1>
             <div class="h6">
-                Du hast genug von Lärm, unangenehmen Temperaturen und schlechter Luft?<br>Mit myOfficeX gibst du anonym Feedback zu deinem Arbeitsplatzkomfort. Die App nutzt dieses Feedback für kontinuierliche Verbesserungen. Dein Büro wird zu einem Ort, an dem du dich wohlfühlst und optimal arbeiten kannst.
+                Du hast genug von Lärm, unangenehmen Temperaturen und schlechter Luft? Mit myOfficeX gibst du anonym Feedback zu deinem Arbeitsplatzkomfort. Die App nutzt dieses Feedback für kontinuierliche Verbesserungen. Dein Büro wird zu einem Ort, an dem du dich wohlfühlst und optimal arbeiten kannst.
             </div>
           </div>
             </div><br>
@@ -153,7 +153,7 @@
   </div>
 </section>
 <!-- Contact Section -->
-<section id="contact" style="background-image:url{{ asset('assets/img/panorama-3094696_1920.jpg')}}">
+<section id="contact" style="">
   <div class="rgba-black-strong py-5">
     <div class="container">
       <div class="wow fadeIn">
@@ -196,7 +196,7 @@
                   </div>
                 </div>
                 <div class="center-on-small-only mb-4">
-                  <button class="btn btn-indigo ml-0" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Senden</button>
+                  <button class="btn btn-indigo ml-0" type="submit" style="color:white"><i class="fa fa-paper-plane-o mr-2"></i> Senden</button>
                 </div>
               </form>
             </div>
