@@ -56,6 +56,8 @@ body {
 
 
 #admin {
+  /* margin-top:-10rem;
+  margin-bottom:10rem; */
   height:100vh;
   align-items: center;
   justify-content: center;

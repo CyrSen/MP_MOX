@@ -4,17 +4,10 @@
 
 @section('content')
 
-<section id="admin" {{-- style="
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-background-size: 100% 100%;
-position: relative;
-min-width: 100vw;
-background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');" --}}>
+<section id="admin">
     <div class="rgba-black-strong"></div>
     <div class="container-fluid" style="margin-top:10vh;">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="margin-top:-10rem; margin-right:4rem;">
             <div class="col-md-4 mt-3">
                 <div class="card mapAdmin py-2 ml-4 p-2 d-flex align-items-center">
                     <!-- Your select code here -->

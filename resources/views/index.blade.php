@@ -61,7 +61,7 @@
                 </ul> --}}
             </div>      
         </div>  
-        <div class="arrow-circle">
+        <div class="arrow-circle mb-5">
           <a class="arrow-link" href="#nutzen">
             <i class="fa fa-arrow-down"></i>
           </a>
@@ -152,6 +152,7 @@
     </div>
   </div>
 </section>
+
 <!-- Contact Section -->
 <section id="contact" style="">
   <div class="rgba-black-strong py-5">
@@ -218,7 +219,13 @@
       </div>
     </div>
   </div>
+  <div class="arrow-circle">
+    <a class="arrow-link" href="#intro">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+  </div> 
 </section>
+
 
 {{-- <div class="scroll-buttons">
   <div class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
@@ -227,8 +234,8 @@
   <div class="scroll-button" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
     <i class="fa fa-arrow-down"></i>
   </div>
-</div>
- --}}
+</div> --}}
+
 
 
 @endsection

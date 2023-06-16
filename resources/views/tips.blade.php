@@ -92,7 +92,7 @@
         </div>
       </div>
 <!------------ OPTIONAL STORE COMENTARY FORM ON TIPS PAGE PLEASE NOT DELETE--------------------------------------START-->
-                    <div class="col-md-6 col-lg-5 mb-3 my-4">
+                    {{-- <div class="col-md-6 col-lg-5 mb-3 my-4">
                       <h5 class="display"></h5>
                       <p class="lead">Commentary:</p>
               
@@ -111,7 +111,7 @@
                             </div>
                             
                         </form> 
-                    </div>
+                    </div> --}}
 <!------------ OPTIONAL STORE COMENTARY FORM ON TIPS PAGE PLEASE NOT DELETE--------------------------------------END-->
     </div>
   </div>

@@ -71,7 +71,7 @@
 
 
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Kontakt</a>
+          <a class="nav-link" href="{{ url('/') }}#contact">Kontakt</a>
         </li>
       </ul>
     </div>

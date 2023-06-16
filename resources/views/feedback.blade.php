@@ -52,14 +52,7 @@
 
         <div class="col-md-6 mb-5 wow fadeInLeft" data-wow-delay=".4s">
           <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
-            <div class="card-body p-5">
-              <!-- Content of Card 1 -->
-              {{-- <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
-                <fieldset id="fs-frm-inputs"> --}}
-                  {{-- <div class="form-group">
-                    <label class="mb-2" for="full-name">Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.</label>
-                  </div> --}}
-  
+            <div class="card-body p-5">  
                   <div class="form-group">
                     <label for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
                     <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
@@ -167,9 +160,5 @@
         
       </div>
     </section>
-
-
- 
-
 
     @endsection

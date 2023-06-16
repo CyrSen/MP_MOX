@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var iconElement = document.createElement('i');
     iconElement.classList.add('fa', 'fa-solid', 'fa-location-dot', 'locationIcon'); // Add classes for the desired icon
 
+      // Remove existing location dots
+  var existingLocationDots = document.getElementsByClassName('locationIcon');
+  for (var i = 0; i < existingLocationDots.length; i++) {
+    existingLocationDots[i].remove();
+  }
+
     // Set the position of the icon using the clicked coordinates
     iconElement.style.position = 'absolute';
     iconElement.style.left = clickX + '%';
@@ -206,24 +212,49 @@ for (let i = 0; i < icons.length; i++) {
   icons[i].addEventListener('click', addOverlayIcon);
 } */
 
-function addOverlayIcon(event) {
+function addOverlayIcon(event, category) {
   const icon = event.currentTarget;
-  
-  // Check if the icon already has the overlay icon
-  if (!icon.querySelector('.overlay-icon')) {
-    // Create a new overlay icon element
-    const overlayIcon = document.createElement('img');
-    overlayIcon.classList.add('overlay-icon');
-    overlayIcon.classList.add('animate__animated'); // Add the second class name here
-    overlayIcon.classList.add('animate__zoomIn'); // Add the second class name here
+  const categoryWrapper = icon.closest('.emoji-selection');
 
-
-    overlayIcon.src = './assets/img/icons_var/checkmark_small_001.svg';
-
-    // Append the overlay icon element as a child of the clicked icon
-    icon.appendChild(overlayIcon);
+  // Remove existing overlay icons from icons within the same category
+  const categoryIcons = categoryWrapper.getElementsByClassName('icon-element');
+  for (let i = 0; i < categoryIcons.length; i++) {
+    const categoryIcon = categoryIcons[i];
+    const existingOverlayIcons = categoryIcon.querySelectorAll('.overlay-icon');
+    existingOverlayIcons.forEach(function(overlayIcon) {
+      overlayIcon.remove();
+    });
   }
+
+  // Create a new overlay icon element
+  const overlayIcon = document.createElement('img');
+  overlayIcon.classList.add('overlay-icon');
+  overlayIcon.classList.add('animate__animated');
+  overlayIcon.classList.add('animate__zoomIn');
+  overlayIcon.src = './assets/img/icons_var/checkmark_small_001.svg';
+
+  // Append the overlay icon element as a child of the clicked icon
+  icon.appendChild(overlayIcon);
+
+  // Call the appropriate function for the category
+ /*  switch (category) {
+    case 'temperature':
+      setTemperatureLevel(icon.getAttribute('data-bs-value'));
+      break;
+    case 'noise':
+      setNoiseLevel(icon.getAttribute('data-bs-value'));
+      break;
+    case 'air_quality':
+      setNoiseLevel(icon.getAttribute('data-bs-value'));
+      break;
+    case 'higge':
+    setNoiseLevel(icon.getAttribute('data-bs-value'));
+    break;
+      
+  } */
 }
+
+
 
 // Attach the click event listener to each icon
 const icons = document.getElementsByClassName('icon-element');
