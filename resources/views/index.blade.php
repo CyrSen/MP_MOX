@@ -25,7 +25,7 @@
                   <a class="btn btn-white dark-grey-text font-weight-bold ml-0" href="{{ route('login') }}" target="_blank">
                     <i class="fa fa-play mr-1"></i>{{ __(' App nutzen') }}
                   </a>
-                  <a class="btn btn-outline-white font-weight-bold" href="PDF.pdf">PDF</a>
+                  <a class="btn btn-outline-white font-weight-bold" href="{{ asset('assets/documents/whitepaper.pdf')}}">PDF</a>
                 </div>
                 
             @endguest
