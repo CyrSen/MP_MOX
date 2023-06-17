@@ -14,7 +14,7 @@
 
                             <!-- Your select code here -->
                             <div>
-                            <select class="form-select" id="category-select" aria-label="Select By Category" onchange="filterEntriesByDate(this.value)">
+                                <select class="form-select" id="category-select" aria-label="Select By Category" onchange="filterEntriesByCategory(this.value)">
                                 <option selected>Select one</option>
                                 <option value="all">All Entries</option>
                                 <option value="noise_level">Noise</option>

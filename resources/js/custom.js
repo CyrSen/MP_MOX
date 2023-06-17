@@ -62,163 +62,195 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE END ----------------------------------------------------------------//
 
+//  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE START ----------------------------------------------------------------//
+
 document.addEventListener("DOMContentLoaded", function() {
   var image = document.getElementById('image');
   var mapContainer = document.getElementById('image-container');
-
-    // Handle category select change
-var categorySelect = document.getElementById('category-select');
-categorySelect.addEventListener('change', function() {
-  var selectedCategory = this.value;
-
-  // Get the start and end dates from the form inputs
-  var startDateInput = document.getElementById('start-date-input');
-  var endDateInput = document.getElementById('end-date-input');
-  var startDate = new Date(startDateInput.value);
-  var endDate = new Date(endDateInput.value);
-
-  // Call the filterEntriesByDate function with the selected date range and category
-  filterEntriesByDate(startDate, endDate, selectedCategory);
-});
-
-  function filterEntriesByDate(startDate, endDate, category) {
-    // Remove existing location icons
-    var existingLocationIcons = document.getElementsByClassName('locationIcon');
-    while (existingLocationIcons.length > 0) {
-      existingLocationIcons[0].remove();
-    }
-
-    // Loop through the feedback map entries
-    feedbackMapEntries.forEach(function(entry) {
-      // Retrieve the entry data
-      var id = entry.id;
-      var name = entry.user.name;
-      var x = entry.x_coordinates;
-      var y = entry.y_coordinates;
-      var createdAt = entry.created_at;
-      var noiseLevel = entry.noise_level;
-      var temperatureLevel = entry.temperature_level;
-      var airQualityLevel = entry.air_quality_level;
-      var higgeLevel = entry.higge_level;
-      var commentary = entry.commentary;
-
-      // Convert the createdAt string to a Date object
-      var entryDate = new Date(createdAt);
-
-      // Check if the entryDate is within the specified range and matches the selected category
-      if (entryDate >= startDate && entryDate <= endDate && (category === 'all' || entry[category])) {
-        // Calculate the position of the icon based on the entry coordinates
-        var xPercentage = parseFloat(x).toFixed(2);
-        var yPercentage = parseFloat(y).toFixed(2);
-        var left = xPercentage + '%';
-        var top = yPercentage + '%';
-
-        // Create the icon element based on the selected category
-        var icon = document.createElement('i');
-        icon.classList.add('fa-solid');
-        icon.classList.add('locationIcon');
-        icon.style.position = 'absolute';
-        icon.style.textAlign = 'left';
-        icon.style.left = left;
-        icon.style.top = top;
-
-        switch (category) {
-          case 'noise_level':
-            icon.classList.add('fa-volume-high');
-            break;
-          case 'temperature_level':
-            icon.classList.add('fa-temperature-high');
-            break;
-          case 'air_quality_level':
-            icon.classList.add('fa-spray-can-sparkles');
-            break;
-          case 'higge_level':
-            icon.classList.add('fa-face-laugh-wink');
-            break;
-          default:
-            icon.classList.add('fa-map-marker-alt');
-            break;
-        }
-
-        // Set Bootstrap tooltip attributes
-        icon.setAttribute('data-bs-toggle', 'tooltip');
-        if (xPercentage > 50) {
-          icon.setAttribute('data-bs-placement', 'right');
-        } else {
-          icon.setAttribute('data-bs-placement', 'left');
-        }
-        icon.setAttribute('data-bs-custom-class', 'custom-tooltip');
-        icon.setAttribute('data-bs-html', 'true');
-        icon.setAttribute('title', 'ID: ' + id + '<br>' +
-          'Name: ' + name + '<br>' +
-          'X: ' + x + '<br>' +
-          'Y: ' + y + '<br>' +
-          'Noise Level: ' + noiseLevel + '<br>' +
-          'Temperature Level: ' + temperatureLevel + '<br>' +
-          'Air Quality Level: ' + airQualityLevel + '<br>' +
-          'Higge Level: ' + higgeLevel + '<br>' +
-          'created@: ' + createdAt + '<br>' +
-          'Kommentar: ' + commentary);
-  // Build the tooltip content based on the selected category
-  var tooltipContent = 'ID: ' + id + '<br>' +
-    'Name: ' + name + '<br>' +
-    'X: ' + x + '<br>' +
-    'Y: ' + y + '<br>';
-
-  if (category === 'noise_level') {
-    tooltipContent += 'Noise Level: ' + noiseLevel + '<br>';
-  } else if (category === 'temperature_level') {
-    tooltipContent += 'Temperature Level: ' + temperatureLevel + '<br>';
-  } else if (category === 'air_quality_level') {
-    tooltipContent += 'Air Quality Level: ' + airQualityLevel + '<br>';
-  } else if (category === 'higge_level') {
-    tooltipContent += 'Higge Level: ' + higgeLevel + '<br>';
-  }
-
-  tooltipContent += 'created@: ' + createdAt + '<br>' +
-    'Kommentar: ' + commentary;
-
-  icon.setAttribute('title', tooltipContent);
-        // Add the icon to the map container
-        mapContainer.appendChild(icon);
-      }
-    });
-
-    // Initialize Bootstrap tooltips after adding the new icons
-    $('[data-bs-toggle="tooltip"]').tooltip();
-  }
-
-  // Handle filter form submission
-  var filterForm = document.getElementById('filter-form');
-  filterForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-
+  
+  // Handle category select change
+  var categorySelect = document.getElementById('category-select');
+  categorySelect.addEventListener('change', function() {
+    var selectedCategory = this.value;
+  
     // Get the start and end dates from the form inputs
     var startDateInput = document.getElementById('start-date-input');
     var endDateInput = document.getElementById('end-date-input');
     var startDate = new Date(startDateInput.value);
     var endDate = new Date(endDateInput.value);
+  
+      // Call the filterEntriesByDate function with the selected date range and category
+      filterEntriesByDate(startDate, endDate, selectedCategory);
+    });
+  
+    function filterEntriesByDate(startDate, endDate, category) {
+      // Remove existing location images
+      var existingLocationImages = document.querySelectorAll('#image-container img.locationIcon');
+      existingLocationImages.forEach(function(image) {
+        image.remove();
+      });
+      
+      // Loop through the feedback map entries
+      feedbackMapEntries.forEach(function(entry) {
+        // Retrieve the entry data
+        var id = entry.id;
+        var name = entry.user.name;
+        var x = entry.x_coordinates;
+        var y = entry.y_coordinates;
+        var createdAt = entry.created_at;
+        var noiseLevel = entry.noise_level;
+        var temperatureLevel = entry.temperature_level;
+        var airQualityLevel = entry.air_quality_level;
+        var higgeLevel = entry.higge_level;
+        var commentary = entry.commentary;
+  
+        // Convert the createdAt string to a Date object
+        var entryDate = new Date(createdAt);
+  
+        // Format the createdAt date into a localized date string
+        var formattedCreatedAt = entryDate.toLocaleString();
+  
+        // Check if the entryDate is within the specified range and matches the selected category
+        if (entryDate >= startDate && entryDate <= endDate && (category === 'all' || entry[category])) {
+          // Calculate the position of the icon based on the entry coordinates
+          var xPercentage = parseFloat(x).toFixed(2);
+          var yPercentage = parseFloat(y).toFixed(2);
+          var left = xPercentage + '%';
+          var top = yPercentage + '%';
+  
+// Create the img element based on the selected category
+var img = document.createElement('img');
 
-    // Get the selected category from the select input
-    var categorySelect = document.getElementById('category-select');
-    var category = categorySelect.value;
-
-    // Call the filterEntriesByDate function with the selected date range and category
-    filterEntriesByDate(startDate, endDate, category);
-  });
-
-  // Initialize Bootstrap tooltips on page load
-  $('[data-bs-toggle="tooltip"]').tooltip();
-
-// Function to initially display all entries without date filtering
-function displayAllEntries() {
-  filterEntriesByDate(new Date(0), new Date(), 'all');
+// Set the class attribute based on the selected category
+var imgClass;
+switch (category) {
+  case 'noise_level':
+    imgClass = 'svg-noise';
+    break;
+  case 'temperature_level':
+    imgClass = 'svg-temperature';
+    break;
+  case 'air_quality_level':
+    imgClass = 'svg-air-quality';
+    break;
+  case 'higge_level':
+    imgClass = 'svg-higge';
+    break;
+  default:
+    imgClass = 'svg-location';
+    break;
 }
 
-  // Call the displayAllEntries function on page load
-  displayAllEntries();
-});
+// Add the class name to the img element
+img.classList.add('locationIcon', imgClass);
+  
+  // Set the src attribute based on the selected category
+  var imgSrc;
+  switch (category) {
+    case 'noise_level':
+      imgSrc = './assets/img/icons_var/volume-high-solid.svg';
+      break;
+    case 'temperature_level':
+      imgSrc = './assets/img/icons_var/temperature-arrow-down-solid.svg';
+      break;
+    case 'air_quality_level':
+      imgSrc = './assets/img/icons_var/spray-can-sparkles-solid.svg';
+      break;
+    case 'higge_level':
+      imgSrc = './assets/img/icons_var/face-laugh-wink-solid.svg';
+      break;
+    default:
+      imgSrc = './assets/img/icons_var/location-dot-solid.svg';
+      break;
+  }
+  
+  // Set the src attribute
+  img.setAttribute('src', imgSrc);
+  
+  // Apply styling for size
+  img.style.width = '2rem'; // Adjust the width as needed
+  img.style.height = '2rem'; // Adjust the height as needed
+  
+  // Apply other styling properties if needed
+  img.style.position = 'absolute';
+  img.style.textAlign = 'left';
+  img.style.left = left;
+  img.style.top = top;
+  
+  // Set Bootstrap popover attributes
+  img.setAttribute('data-bs-toggle', 'popover');
+  if (xPercentage > 50) {
+    img.setAttribute('data-bs-placement', 'right');
+  } else {
+    img.setAttribute('data-bs-placement', 'left');
+  }
+  img.setAttribute('data-bs-custom-class', 'custom-popover');
+  img.setAttribute('data-bs-html', 'true');
+  
+  // Build the popover content based on the selected category
+  var popoverContent = 'ID: ' + id + '<br>' +
+    'Name: ' + name + '<br>' +
+    'Kommentar: ' + commentary + '<br>' +
+    'time&date@: <br>' + formattedCreatedAt + '<br>';
+  
+  popoverContent += '<button type="button" class="btn-close" aria-label="Close"></button>';
+  
+  if (category === 'noise_level') {
+    popoverContent += 'Noise Level: ' + noiseLevel + '<br>';
+  } else if (category === 'temperature_level') {
+    popoverContent += 'Temperature Level: ' + temperatureLevel + '<br>';
+  } else if (category === 'air_quality_level') {
+    popoverContent += 'Air Quality Level: ' + airQualityLevel + '<br>';
+  } else if (category === 'higge_level') {
+    popoverContent += 'Higge Level: ' + higgeLevel + '<br>';
+  }
+  
+  img.setAttribute('title', popoverContent);
+  
+  // Add the img element to the map container
+  mapContainer.appendChild(img);
+        }
+      });
+  
+      // Initialize Bootstrap popovers after adding the new icons
+      $('[data-bs-toggle="popover"]').popover({html:true})
+    }
+  
+    // Handle filter form submission
+    var filterForm = document.getElementById('filter-form');
+    filterForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      // Get the start and end dates from the form inputs
+      var startDateInput = document.getElementById('start-date-input');
+      var endDateInput = document.getElementById('end-date-input');
+      var startDate = new Date(startDateInput.value);
+      var endDate = new Date(endDateInput.value);
+  
+      // Get the selected category from the select input
+      var categorySelect = document.getElementById('category-select');
+      var category = categorySelect.value;
+  
+      // Call the filterEntriesByDate function with the selected date range and category
+      filterEntriesByDate(startDate, endDate, category);
+    });
+  
+    // Initialize Bootstrap popovers on page load
+    /* $('[data-bs-toggle="popover"]').popover(); */
+    $('[data-bs-toggle="popover"]').popover({html:true})
+  
+    // Function to initially display all entries without date filtering
+    function displayAllEntries() {
+      filterEntriesByDate(new Date(0), new Date(), 'all');
+    }
+  
+    // Call the displayAllEntries function on page load
+    displayAllEntries();
+  });
+//  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE END ----------------------------------------------------------------//
+  
 
+/*----------OVERLAY ICON START --------------------------------------------------------------*/
 
 function addOverlayIcon(event, category) {
   const icon = event.currentTarget;
@@ -233,6 +265,8 @@ function addOverlayIcon(event, category) {
       overlayIcon.remove();
     });
   }
+
+/*----------OVERLAY ICON END --------------------------------------------------------------*/
 
   // Create a new overlay icon element
   const overlayIcon = document.createElement('img');

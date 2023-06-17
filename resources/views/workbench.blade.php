@@ -41,3 +41,5 @@
 <i class="fa-solid fa-face-sad-cry"></i>
 
 <i class="fa-solid fa-face-rolling-eyes"></i>
+
+<i class="fa-solid fa-location-dot"></i>

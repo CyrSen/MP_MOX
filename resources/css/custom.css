@@ -10,6 +10,26 @@ body {
     color:white;
 }
 
+.svg-noise{
+    fill: blue; 
+}
+
+.svg-temperature{
+    fill: yellow;
+}
+
+.svg-air-quality {
+    fill: green;
+}
+
+.svg-higge{
+    fill: orange;
+}
+
+.svg-location {
+    fill: red;
+}
+
 .custom-tooltip {
     --bs-tooltip-color:#110080;
     --bs-tooltip-bg: #fbff00;
@@ -17,6 +37,16 @@ body {
     --bs-tooltip-tooltip-arrow-width: 1.2rem;
     --bs-tooltip-tooltip-arrow-height:1rem;
 }
+
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--bs-primary);
+    --bs-popover-header-bg: var(--bs-primary);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+  }
+  
 
 .tooltip-icon {
     cursor: pointer;
