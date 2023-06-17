@@ -43,3 +43,5 @@
 <i class="fa-solid fa-face-rolling-eyes"></i>
 
 <i class="fa-solid fa-location-dot"></i>
+
+<i class="fa-solid fa-temperature-half"></i>

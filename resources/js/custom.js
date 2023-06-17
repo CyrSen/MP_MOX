@@ -118,31 +118,11 @@ document.addEventListener("DOMContentLoaded", function() {
           var left = xPercentage + '%';
           var top = yPercentage + '%';
   
-// Create the img element based on the selected category
-var img = document.createElement('img');
+        // Create the img element based on the selected category
+  var img = document.createElement('img');
 
-// Set the class attribute based on the selected category
-var imgClass;
-switch (category) {
-  case 'noise_level':
-    imgClass = 'svg-noise';
-    break;
-  case 'temperature_level':
-    imgClass = 'svg-temperature';
-    break;
-  case 'air_quality_level':
-    imgClass = 'svg-air-quality';
-    break;
-  case 'higge_level':
-    imgClass = 'svg-higge';
-    break;
-  default:
-    imgClass = 'svg-location';
-    break;
-}
-
-// Add the class name to the img element
-img.classList.add('locationIcon', imgClass);
+  // Add the class name 'locationIcon' to the img element
+img.classList.add('locationIcon');
   
   // Set the src attribute based on the selected category
   var imgSrc;
@@ -151,7 +131,7 @@ img.classList.add('locationIcon', imgClass);
       imgSrc = './assets/img/icons_var/volume-high-solid.svg';
       break;
     case 'temperature_level':
-      imgSrc = './assets/img/icons_var/temperature-arrow-down-solid.svg';
+      imgSrc = './assets/img/icons_var/temperature-half-solid.svg';
       break;
     case 'air_quality_level':
       imgSrc = './assets/img/icons_var/spray-can-sparkles-solid.svg';
