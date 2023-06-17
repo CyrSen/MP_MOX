@@ -354,17 +354,4 @@
 
 </section>
 
-
-
-<script>new WOW().init();</script>
-
-<script>
-function openPopup(popupId) {
-$('#' + popupId).modal('show');
-}
-</script>
-
-
-
-        
 @endsection
