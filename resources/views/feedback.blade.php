@@ -6,15 +6,15 @@
 
 <!-- Feedback -->
 
-<section id="feedback">
+<section id="feedback" {{-- style="margin-bottom:10rem;" --}}>
     <div class="rgba-black-strong"></div>
-    <div class="container py-5">
-      <div class="pt-5{{-- wow fadeIn --}} animate__animated animate__fadeIn">
+    <div class="container py-1">
+      {{-- <div class="pt-5 wow fadeIn animate__animated animate__fadeIn">
         <h2 class="h1 text-white pt-5 pb-3 text-center">Feedback</h2>
         <p class="text-white px-5 mb-5 pb-3 lead text-center">
           Wähle zuerst deine Bürozone aus. Teile uns dann dein aktuelles Komforterlebnis mit. Wenn du möchtest, schreib auch gerne eine Nachricht. Vergiss nicht, deinen Namen anzugeben, wenn du eine Rückmeldung wünschst.
         </p>
-      </div>
+      </div> --}}
 
       <!-- FORM START-->
       <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
@@ -22,10 +22,10 @@
       <div class="row justify-content-center">
         <div class="col-md-6 mb-5 wow fadeInRight" data-wow-delay=".4s">
           <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
-            <div class="card-body p-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
               <!-- Content of Card 2 -->
               <div class="col">
-                <div class="mt-n5">
+                <div class="px-3">
                   Schritt 1:<br> Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du sie im Grundriss anklickst.
                 </div>
               </div>
@@ -52,7 +52,7 @@
 
         <div class="col-md-6 mb-5 wow fadeInLeft" data-wow-delay=".4s">
           <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
-            <div class="card-body p-5">  
+            <div class="card-body px-5 py-3">  
                   <div class="form-group">
                     <label for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
                     <div class="emoji-selection mt-2 mb-2" style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">

@@ -45,8 +45,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    margin:0;
+    min-height: 105vh;
+    /* margin-bottom:5rem; */
+    margin-top:/* 1rem */;
     background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
