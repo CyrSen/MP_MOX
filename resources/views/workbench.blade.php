@@ -19,3 +19,25 @@
 <!-- EXAMPLE POPOVER BS5 TOOLTIP STOP -->
 
 {{-- <i class="fa-solid fa-location-dot"></i> --}}
+
+<i class="fa-solid fa-temperature-high"></i>
+
+<i class="fa-solid fa-temperature-low"></i>
+
+<i class="fa-solid fa-volume-high"></i>
+
+<i class="fa-solid fa-volume-low"></i>
+
+<i class="fa-solid fa-wind"></i>
+
+<i class="fa-solid fa-temperature-arrow-up"></i>
+
+<i class="fa-solid fa-temperature-arrow-down"></i>
+
+<i class="fa-solid fa-spray-can-sparkles"></i>
+
+<i class="fa-solid fa-face-laugh-wink"></i>
+
+<i class="fa-solid fa-face-sad-cry"></i>
+
+<i class="fa-solid fa-face-rolling-eyes"></i>

@@ -56,10 +56,10 @@
     </footer>
     
 
-    <script type="text/javascript" src="{{asset('js/jquery.min.js?ver=1.1.0')}}"></script>
-    <script type="text/javascript" src="{{asset('/js/popper.min.js?ver=1.1.0')}}"></script>
-    <script type="text/javascript" src="{{asset('js/wow.min.js?ver=1.1.0')}}"></script>
-    <script type="text/javascript" src="{{asset('js/mdb.min.js?ver=1.1.0')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('/js/popper.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/wow.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/mdb.min.js?')}}"></script>
 
 <script>
   new WOW().init();
