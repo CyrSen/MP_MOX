@@ -22,7 +22,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6 mb-5 wow fadeInRight" data-wow-delay=".4s">
           <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0">
               <!-- Content of Card 2 -->
               <div class="col">
                 <div class="px-3">
@@ -32,7 +32,7 @@
                 
               
             <div id="image-container" class="map-container tooltip-icon">
-                <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
+                <img class="img-fluid mapFeedback" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
               <input id="x-coordinates" type="hidden" name="x_coordinates">
               <input id="y-coordinates" type="hidden" name="y_coordinates">
             </div>

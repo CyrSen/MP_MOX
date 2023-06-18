@@ -5,7 +5,7 @@
 <section id="login">
     <div class="rgba-black-strong"></div>
         <div class="container py-5">
-            <div class="{{-- animate__animated animate__fadeInDown --}}">
+            <div class="animate__animated animate__fadeInDown">
                 <h2 class="h1 text-white pt-5 pb-3 text-center">Login</h2>
                 <p class="text-white px-5 mb-4 pb-3 lead text-center">
                 Bitte loge dich ein, um myOffice<span class="">X</span> zu nutzen.
@@ -13,7 +13,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                <div class="card mb-5 {{-- animate__animated animate__fadeInUp --}}" data-wow-delay=".4s" style="max-width: 800px;">
+                <div class="card mb-5 animate__animated animate__fadeInUp" data-wow-delay=".4s" style="max-width: 800px;">
                     <div class="card-body p-3 pb-5 pt-5">
                 <!-- Form start-->
                 <div class="row justify-content-center">

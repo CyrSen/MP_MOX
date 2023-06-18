@@ -5,7 +5,7 @@
 <section id="register">
     <div class="rgba-black-strong"></div>
         <div class="container py-5">
-            <div class="{{-- animate__animated animate__fadeInDown --}}">
+            <div class="animate__animated animate__fadeInDown">
                 <h2 class="h1 text-white pt-5 pb-3 text-center">Registrierung</h2>
                 <p class="text-white px-5 mb-4 pb-3 lead text-center">
                 Die Nutzung von myOfficeX ist anonym. <br> Es werden keine persönlichen Daten von dir erhoben oder gespeichert.
@@ -13,7 +13,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                <div class="card mb-5 {{-- animate__animated animate__fadeInUp --}}" data-wow-delay=".4s" style="max-width: 800px;">
+                <div class="card mb-5 animate__animated animate__fadeInUp" data-wow-delay=".4s" style="max-width: 800px;">
                     <div class="card-body p-3 py-5">
                 <!-- Form start-->
                 <div class="row justify-content-center">
@@ -56,7 +56,6 @@
                         </div>
 
                         <div class="form-group pt-2 mb-4">
-                            {{-- <label for="onetimer" class="col-md-4 col-form-label text-md-end">{{ __('Office-Code') }}</label> --}}
                             <label class="mb-1" for="office-code">{{ __('Office-Code') }}
                                 <i class="fa fa-info-circle tooltip-icon" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Der Office Code identifiziert das Büro und ermöglicht nur autorisierten Benutzern den Zugriff auf die App. 
                                 Bitte schreibe uns über das <a href='http://localhost/#contact'>Kontaktformular</a>, falls du deinen Office-Code nicht kennst."></i>
