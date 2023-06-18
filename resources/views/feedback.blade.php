@@ -33,8 +33,11 @@
 
 
                                 <div id="image-container" class="map-container tooltip-icon">
-                                    <img class="img-fluid mapFeedback" id="image"
+                                    {{-- <img class="img-fluid mapFeedback" id="image"
                                         src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}"
+                                        alt="Office room plan"> --}}
+                                        <img class="img-fluid mapFeedback" id="image"
+                                        src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
                                         alt="Office room plan">
                                     <input id="x-coordinates" type="hidden" name="x_coordinates">
                                     <input id="y-coordinates" type="hidden" name="y_coordinates">
