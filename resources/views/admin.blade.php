@@ -22,19 +22,27 @@
 
                     <!-- Filter -->
 
-                    <div class="card mapAdmin py-2 ml-4 p-2 d-flex align-items-center">
+                    <div class="card mapAdmin mt-5 py-2 ml-4 p-2 d-flex align-items-center">
                         <div>
                             <select class="form-select" id="category-select" aria-label="Select By Category"
                                 onchange="filterEntriesByCategory(this.value)">
-                                <option selected>All Entries</option>
-                                <option value="all">All Entries</option>
+                                {{-- <option selected>All Entries</option> --}}
+                                <option selected value="all">All Entries</option>
                                 <option value="noise_level">Noise</option>
                                 <option value="temperature_level">Temperature</option>
                                 <option value="air_quality_level">Air Quality</option>
                                 <option value="higge_level">Higge Level</option>
                             </select>
                         </div>
-                        <div>
+                        {{-- <div class="btn-group" id="category-select" role="group" aria-label="Toggle buttons">
+                            <button type="button" class="btn btn-outline-primary active" option value="all" onclick="filterEntriesByCategory('all')">All Entries</button>
+                            <button type="button" class="btn btn-outline-primary"  value="noise_level" onclick="filterEntriesByCategory('noise_level')">Noise</button>
+                            <button type="button" class="btn btn-outline-primary" onclick="filterEntriesByCategory('temperature_level')">Temperature</button>
+                            <button type="button" class="btn btn-outline-primary" onclick="filterEntriesByCategory('air_quality_level')">Air Quality</button>
+                            <button type="button" class="btn btn-outline-primary" onclick="filterEntriesByCategory('higge_level')">Higge Level</button>
+                          </div> --}}
+                          
+                        {{-- <div>
                             <form id="filter-form">
                                 <div class="mb-3">
                                     <label for="start-date-input" class="form-label">Start Date</label>
@@ -46,7 +54,29 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary">Filter</button>
                             </form>
-                        </div>
+                        </div> --}}
+                        <div class="row">
+                            <div class="col-md-4">
+                                <form id="filter-form">
+                              <div class="mb-3">
+                                <label for="start-date-input" class="form-label">Start Date</label>
+                                <input type="date" class="form-control" id="start-date-input" required>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="mb-3">
+                                <label for="end-date-input" class="form-label">End Date</label>
+                                <input type="date" class="form-control" id="end-date-input" required>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="mb-3">
+                                <label class="invisible">Filter</label> <!-- Adds spacing for the button alignment -->
+                                <button type="submit" class="btn btn-primary">Filter</button>
+                              </div>
+                            </div>
+                            </form>
+                          </div>
                     </div>
                 </div>
 

@@ -25,6 +25,7 @@
                             <div class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0">
                                 <!-- Content of Card 2 -->
                                 <div class="col">
+                                    <h5 class="mb-0 px-3 pt-3">Auf zu einem besseren Arbeitsplatz<br>Bitte fülle das Formular aus von Schritt 1 bis 5. danke.</h5>
                                     <div class="px-3">
                                         Schritt 1:<br> Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
                                         sie im Grundriss anklickst.
@@ -66,29 +67,29 @@
                             style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
-                                    src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-great"
+                                    src="./assets/img/icons_var/smiley_new_cold.svg" alt="smiley-great"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="Viel zu kalt" data-bs-value="1" onclick="setTempLevel(1)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
-                                    src="./assets/img/icons_var/smiley_new_good.svg" alt="smiley-nice"
+                                    src="./assets/img/icons_var/smiley_new_nottoocold.svg" alt="smiley-nice"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="Zu kalt" data-bs-value="2" onclick="setTempLevel(2)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_average.svg"
+                                <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_excellent.svg"
                                     alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Gerade richtig" data-bs-value="3"
                                     onclick="setTempLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_poor.svg"
+                                <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_nottoohot.svg"
                                     alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Zu warm" data-bs-value="4" onclick="setTempLevel(4)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_worst.svg"
+                                <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_hot_red.svg"
                                     alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Viel zu warm" data-bs-value="5"
                                     onclick="setTempLevel(5)">
@@ -103,20 +104,20 @@
                             style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
-                                    src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-great"
+                                    src="./assets/img/icons_var/smiley_new_silent.svg" alt="smiley-great"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="Viel zu leise" data-bs-value="1" onclick="setNoiseLevel(1)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
-                                    src="./assets/img/icons_var/smiley_new_good.svg" alt="smiley-nice"
+                                    src="./assets/img/icons_var/smiley_new_notloud.svg" alt="smiley-nice"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Zu leise" data-bs-value="2"
                                     onclick="setNoiseLevel(2)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
-                                    src="./assets/img/icons_var/smiley_new_average.svg" alt="smiley-ok"
+                                    src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-ok"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Gerade richtig" data-bs-value="3"
                                     onclick="setNoiseLevel(3)">
@@ -128,7 +129,7 @@
                                     onclick="setNoiseLevel(4)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_worst.svg"
+                                <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_loud_red.svg"
                                     alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Viel zu laut" data-bs-value="5"
                                     onclick="setNoiseLevel(5)">
