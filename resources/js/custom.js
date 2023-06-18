@@ -165,15 +165,13 @@ img.classList.add('locationIcon');
     img.setAttribute('data-bs-placement', 'left');
   }
   img.setAttribute('data-bs-custom-class', 'custom-popover');
-  img.setAttribute('data-bs-html', 'true');
+  /* img.setAttribute('data-bs-html', 'true'); */
   
   // Build the popover content based on the selected category
   var popoverContent = 'ID: ' + id + '<br>' +
     'Name: ' + name + '<br>' +
     'Kommentar: ' + commentary + '<br>' +
     'time&date@: <br>' + formattedCreatedAt + '<br>';
-  
-  popoverContent += '<button type="button" class="btn-close" aria-label="Close"></button>';
   
   if (category === 'noise_level') {
     popoverContent += 'Noise Level: ' + noiseLevel + '<br>';

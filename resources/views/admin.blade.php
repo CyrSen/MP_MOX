@@ -22,7 +22,7 @@
 
                     <!-- Filter -->
 
-                    <div class="card mapAdmin mt-5 py-2 ml-4 p-2 d-flex align-items-center">
+                    <div class="card mapAdmin mt-3 py-2 ml-4 p-2 d-flex align-items-center">
                         
                           {{-- <div class="btn-group" id="category-select" role="group" aria-label="Basic example">
                             <button type="radio" class="btn btn-outline-primary" value="all">All Entries</button>
@@ -32,24 +32,24 @@
                             <button type="radio" class="btn btn-outline-primary" value="higge_level">Higge Level</button>
                           </div> --}}
                         <div class="row justify-content-center">
-                            <div class="col-sm-3 px-sm-2 col-md-6">
+                            <div class="col-sm-3 pt-4 pb-3 px-sm-2 col-md-6">
                                 <form id="filter-form">
                               <div class="mb-3">
                                 <label for="start-date-input" class="form-label">Start Date</label>
                                 <input type="date" class="form-control bg-dark text-white" id="start-date-input" required>
                               </div>
                             </div>
-                            <div class="col-sm-3 px-sm-2 col-md-6">
+                            <div class="col-sm-3 pt-4 pb-3 px-sm-2 col-md-6">
                               <div class="mb-3">
                                 <label for="end-date-input" class="form-label">End Date</label>
                                 <input type="date" class="form-control bg-dark text-white" id="end-date-input" required>
                               </div>
                             </div>
                             
-                            <div class="col-sm-6     mb-3 text-center">
-                                <select class="form-select" id="category-select" aria-label="Select By Category"
-                                    onchange="filterEntriesByCategory(this.value)">
-                                    {{-- <option selected>All Entries</option> --}}
+                            <div class="col-sm-6 mt-2 mb-3 text-center">
+                                <label for="" class="text-start">Chose Cat then Date</label>
+                                <select class="form-select" id="category-select" aria-label="Select By Category" onchange="filterEntries(this.value)">
+                                    <option selected>All Entries/option>
                                     <option selected value="all">All Entries</option>
                                     <option value="noise_level">Noise</option>
                                     <option value="temperature_level">Temperature</option>
