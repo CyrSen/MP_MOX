@@ -9,7 +9,7 @@
   <div class="container py-5">
     <div class="wow fadeIn">
       <h2 class="h1 text-white pt-5 pb-3 text-center">Tipps</h2>
-      <p class="text-white px-5 mb-5 pb-3 lead text-center">
+      <p class="text-white pb-0 mb-2 pb-3 lead text-center">
         Hier sind einige sofort umsetzbare Tipps, mit denen du dein Komfort verbessern kannst!
       </p>
     </div>
@@ -19,7 +19,7 @@
         <div class="card transparent">
           <div class="row">
             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
-              <img class="img-fluid rounded mb-3 emoji-large" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="Emoji suffering from cold" style="max-width: 100px;">
+              <img class="img-fluid rounded mb-3 emoji-tips" src="{{ asset('assets/img/icons_var/smiley_new_cold.svg') }}" alt="Emoji suffering from cold" style="max-width: 100px;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -36,7 +36,7 @@
         <div class="card transparent">
           <div class="row">
             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
-              <img class="img-fluid rounded mb-3 emoji-large" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="Emoji suffering from heat" style="max-width: 100px;">
+              <img class="img-fluid rounded mb-3 emoji-tips" src="{{ asset('assets/img/icons_var/smiley_new_hot.svg') }}" alt="Emoji suffering from heat" style="max-width: 100px;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -52,8 +52,8 @@
       <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
         <div class="card transparent">
           <div class="row">
-            <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
-              <img class="img-fluid rounded mb-3 emoji-large" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="Emoji suffering from noise" style="max-width: 125px;">
+            <div class="col-md-4 loudCol d-flex align-items-center justify-content-end left-container">
+              <img class="img-fluid rounded mb-3 emoji-tipsLoud" src="{{ asset('assets/img/icons_var/smiley_new_loud.svg') }}" alt="Emoji suffering from noise" style=" ">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -70,7 +70,7 @@
         <div class="card transparent">
           <div class="row">
             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
-              <img class="img-fluid rounded mb-3 emoji-large" src="{{ asset('assets/img/icons_var/smiley_green_successreal_great.svg') }}" alt="Emoji suffering from bad air" style="max-width: 100px;">
+              <img class="img-fluid rounded mb-3 emoji-tips" src="{{ asset('assets/img/icons_var/smiley_new_smelly.svg') }}" alt="Emoji suffering from bad air" style="max-width: 100px;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -85,7 +85,7 @@
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-5 mb-3 my-4 text-center">
+      <div class="col-md-6 col-lg-5 mt-0 mb-3 my-4 text-center">
         <h3 class="text-white">Danke <strong>{{ Auth::user()->name }}</strong> für deine Teilnahme an dieser Umfrage.</h3>
         <div>
           <a class="btn btn-lg btn-indigo text-white" href="{{ url('/danke') }}">Umfrage Schliessen</a>

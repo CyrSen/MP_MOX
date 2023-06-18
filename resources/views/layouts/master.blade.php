@@ -55,8 +55,8 @@
   }
 
   #admin {
-    /* margin-top:-10rem;
-    margin-bottom:10rem; */
+    margin-top: -3.5rem;
+    /* margin-bottom:10rem; */
     height:100vh;
     align-items: center;
     justify-content: center;

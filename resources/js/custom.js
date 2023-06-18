@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Create the icon element
     var iconElement = document.createElement('i');
-    iconElement.classList.add('fa', 'fa-solid', 'fa-location-dot', 'locationIcon', 'tooltip-icon'); // Add classes for the desired icon
+    iconElement.classList.add('fa', 'fa-solid', 'fa-location-dot', 'locationIconFeedback', 'tooltip-icon'); // Add classes for the desired icon
 
     // Remove existing location dots
-    var existingLocationDots = document.getElementsByClassName('locationIcon');
+    var existingLocationDots = document.getElementsByClassName('locationIconFeedback');
     for (var i = 0; i < existingLocationDots.length; i++) {
       existingLocationDots[i].remove();
     }

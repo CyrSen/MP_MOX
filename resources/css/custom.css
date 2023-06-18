@@ -10,6 +10,52 @@ body {
     color:white;
 }
 
+/*---FEEDBACKMAP/ADMINMAP--ICONS__MAPS START---------------------------------------------------------------*/
+
+#image-container {
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+}
+
+.mapAdmin {
+    width: 75%;
+    margin-right:5rem;
+    right:-12.5%; 
+}
+
+.mapFeedback {
+    width:100%;
+    height:100%;
+    /* width: calc(100% - 1rem);
+    height: calc(100% - 1rem); */
+    position: relative;
+    right:-5.5%;
+}
+
+.map-container {
+    margin-bottom:0rem;
+}
+.locationIconFeedback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:blue;
+    font-size: 2rem; 
+    padding-bottom:2.5rem;
+    margin-left:1.5rem;
+}
+
+.locationIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:blue;
+    font-size: 2rem; 
+}
+
 .svg-noise{
     fill: blue; 
 }
@@ -46,23 +92,19 @@ body {
     --bs-popover-body-padding-x: 1rem;
     --bs-popover-body-padding-y: .5rem;
   }
-  
 
 .tooltip-icon {
     cursor: pointer;
-  }
+}
 
 .feedbackQ {
     font-size:100%;
 }
 
-
-
 .tippsIcons {
     height:100%;
     width:100%;
-    display:flex;
-    
+    display:flex;  
 }
 
 #image {
@@ -77,49 +119,6 @@ body {
 
 .invalid-feedback {
     margin-top:-1rem;
-}
- 
-/*Correct left-right-map-discrepancies map/icon----------------------------------------------------------------*/
-
-#image-container {
-    width: 70%;
-    height: auto;
-    max-width: 100%;
-}
-
-.mapAdmin {
-    width: 75%;
-    margin-right:5rem;
-    right:-12.5%; 
-}
-
-.mapFeedback {
-    width:100%;
-    height:100%;
-    /* width: calc(100% - 1rem);
-    height: calc(100% - 1rem); */
-    position: relative;
-    right:-5.5%;
-}
-
-.map-container {
-    margin-bottom:0rem;
-}
-.locationIcon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:blue;
-    font-size: 2rem; 
-    padding-bottom:2.5rem;
-    margin-left:1.5rem;
-    /* margin-bottom:-1rem; */
-
-}
-
-.custom-tooltip {
-    color:yellow;
 }
 
 /* ICON OK IMAGE (CHECKMARK)----------------------------------------------------------------*/
@@ -138,8 +137,9 @@ body {
     z-index: 2;
     size: 50px;
 }
-    
-  /*CSS PRODUCTION START----------------------------------------------------------------*/
+/*---FEEDBACKMAP/ADMINMAP--ICONS__MAPS END---------------------------------------------------------------*/
+
+/*CSS PRODUCTION START-----------------------------------------------------------------------------------*/
  
 html {
     scroll-behavior: smooth;
@@ -193,7 +193,7 @@ background: transparent !important;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 9999;
+        z-index: 999;
         width: 100%;
         padding: 0 1rem;
         box-sizing: border-box;
@@ -387,11 +387,6 @@ footer {
 
 }
 
-/* footer {
-    position: sticky;
-    bottom: 0;
-  } */
-
 .rgba-black-strong {
     position: absolute;
     top: 0;
@@ -462,7 +457,7 @@ body.popup-open {
     overflow-y: hidden !important;
 }
   
-  .popup-open {
+.popup-open {
     overflow: hidden !important;
 }
 
@@ -470,14 +465,11 @@ body.popup-open {
     overflow: hidden !important;
 }
   
-  .modal-dialog {
+.modal-dialog {
     margin-left: auto;
     margin-right: auto;
 }
-  
-
-
-  
+ 
 .modal-header.bg-indigo {
 /* background-color: #3949ab; */
     background-color: #3f51b5;
@@ -592,6 +584,20 @@ p.lead {
     padding-left: 10px;
 }
   
+.emoji-tips {
+    width: 100%;
+}
+
+.emoji-tipsLoud {
+    width: 80%;
+    margin-left: -2rem;
+    position: relative;
+}
+
+.loudCol {
+    padding-right: 1rem;
+}
+
 @media (max-width: 991.98px) {
     .emoji-large,
     .left-container {
@@ -616,8 +622,3 @@ p.lead {
     font-family: 'Roboto', sans-serif;
 }
 
-/* OLD MODAL */
-/* .modal-dialog.modal-dialog-centered {
-    max-width: 1000px; 
-    margin: 0 auto; 
-} */
