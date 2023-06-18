@@ -36,7 +36,7 @@
         <div class="card transparent">
           <div class="row">
             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
-              <img class="img-fluid rounded mb-3 emoji-tips" src="{{ asset('assets/img/icons_var/smiley_new_hot.svg') }}" alt="Emoji suffering from heat" style="max-width: 100px;">
+              <img class="img-fluid rounded mb-3 emoji-tips" src="{{ asset('assets/img/icons_var/smiley_new_hot_red.svg') }}" alt="Emoji suffering from heat" style="max-width: 100px;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -53,7 +53,7 @@
         <div class="card transparent">
           <div class="row">
             <div class="col-md-4 loudCol d-flex align-items-center justify-content-end left-container">
-              <img class="img-fluid rounded mb-3 emoji-tipsLoud" src="{{ asset('assets/img/icons_var/smiley_new_loud.svg') }}" alt="Emoji suffering from noise" style=" ">
+              <img class="img-fluid rounded mb-3 emoji-tipsLoud" src="{{ asset('assets/img/icons_var/smiley_new_loud_red.svg') }}" alt="Emoji suffering from noise" style=" ">
             </div>
             <div class="col-md-8">
               <div class="card-body">
