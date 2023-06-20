@@ -55,13 +55,13 @@
   }
 
   #admin {
-    margin-top: -3.5rem;
-    /* margin-bottom:10rem; */
+    margin-top: -8.5rem;
+    margin-bottom:10rem; */
     height:100vh;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     position: relative;
     min-width: 100vw;
     background-image: url( "./assets/img/panorama-3094696_1920.jpg");
