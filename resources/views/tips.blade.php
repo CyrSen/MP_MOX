@@ -84,13 +84,13 @@
       </div>
     </div>
 
-    <div class="row justify-content-center">
+    {{-- <div class="row justify-content-center">
       <div class="col-md-6 col-lg-5 mt-0 mb-3 my-4 text-center">
         <h3 class="text-white">Danke <strong>{{ Auth::user()->name }}</strong> für deine Teilnahme an dieser Umfrage.</h3>
         <div>
           <a class="btn btn-lg btn-indigo text-white" href="{{ url('/danke') }}">Umfrage Schliessen</a>
         </div>
-      </div>
+      </div> --}}
 <!------------ OPTIONAL STORE COMENTARY FORM ON TIPS PAGE PLEASE NOT DELETE--------------------------------------START-->
                     {{-- <div class="col-md-6 col-lg-5 mb-3 my-4">
                       <h5 class="display"></h5>
@@ -113,7 +113,7 @@
                         </form> 
                     </div> --}}
 <!------------ OPTIONAL STORE COMENTARY FORM ON TIPS PAGE PLEASE NOT DELETE--------------------------------------END-->
-    </div>
+    {{-- </div> --}}
   </div>
 </section>
 
@@ -351,7 +351,7 @@
   </div>
 </div>
 
-
 </section>
+
 
 @endsection

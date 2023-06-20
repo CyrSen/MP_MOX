@@ -8,7 +8,7 @@
             <div class="animate__animated animate__fadeInDown">
                 <h2 class="h1 text-white pt-5 pb-3 text-center">Registrierung</h2>
                 <p class="text-white px-5 mb-4 pb-3 lead text-center">
-                Die Nutzung von myOfficeX ist anonym. <br> Es werden keine persönlichen Daten von dir erhoben oder gespeichert.
+                Die Nutzung von myOfficeX ist anonym.
                 </p>
             </div>
             <div class="row justify-content-center">
@@ -19,7 +19,6 @@
                 <div class="row justify-content-center">
                     <form class="col-11 col-md-10" method="POST" action="{{ route('register') }}">
                         @csrf
-
                         <div class="form-group py-2">
                             <label class="mb-1" for="name" class="">{{ __('Benutzername') }}</label>
                             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>

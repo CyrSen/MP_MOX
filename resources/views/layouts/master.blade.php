@@ -152,6 +152,17 @@
           </main>
       </div>
 
+
+
+  <div class="scroll-buttons">
+    <div class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+    <div class="scroll-button" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
+      <i class="fa fa-arrow-down"></i>
+    </div>
+  </div>
+  
   <!-- Footer-->
   <footer class="page-footer indigo darken-2 center-on-small-only p-3 mt-0">
     <div class="container-fluid">

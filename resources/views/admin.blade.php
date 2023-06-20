@@ -7,7 +7,7 @@
 
     <section id="admin">
         <div class="rgba-black-strong"></div>
-        <div class="container-fluid" style="margin-top:10vh;">
+        <div class="container-fluid" style="margin-top:10vh;">  
             <div class="row justify-content-center" style="margin-top:-10rem; margin-right:4rem;">
                 <div class="col-md-4 mt-3">
                     <div class="card mapAdmin py-2 ml-4 p-2 d-flex align-items-center">

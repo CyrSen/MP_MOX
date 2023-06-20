@@ -25,9 +25,9 @@
                             <div class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0">
                                 <!-- Content of Card 2 -->
                                 <div class="col">
-                                    <h5 class="mb-0 px-3 pt-3">Auf zu einem besseren Arbeitsplatz<br>Bitte fülle das Formular aus von Schritt 1 bis 5. danke.</h5>
-                                    <div class="px-3">
-                                        Schritt 1:<br> Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
+                                    <h2 class="h1 mb-3 px-3 pt-3">Feedback geben</h2>
+                                    <div class="feedback-font px-3">
+                                        Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
                                         sie im Grundriss anklickst.
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
             <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                 <div class="card-body px-5 py-3">
                     <div class="form-group">
-                        <label for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
+                        <label class="feedback-font" for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
                         <div class="emoji-selection mt-2 mb-2"
                             style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="timely">Schritt 3: Akustische Behaglichkeit angeben.</label>
+                        <label class="feedback-font" for="timely">Schritt 3: Akustische Behaglichkeit angeben.</label>
                         <div class="emoji-selection mt-2 mb-2"
                             style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
@@ -139,7 +139,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="timely">Schritt 4: Luft-Behaglichkeit angeben.</label>
+                        <label class="feedback-font" for="timely">Schritt 4: Luft-Behaglichkeit angeben.</label>
                         <div class="emoji-selection mt-2 mb-2"
                             style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
@@ -180,7 +180,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="timely">Schritt 5: Gesamt-Behaglichkeit Behaglichkeit angeben.</label>
+                        <label class="feedback-font" for="timely">Schritt 5: Gesamt-Behaglichkeit angeben.</label>
                         <div class="emoji-selection mt-2 mb-2"
                             style="background-color: rgba(233, 228, 224, 0.8); width: 100%; padding: 2px; border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
@@ -221,7 +221,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Schritt 6: Nachricht senden (optional).</label>
+                        <label class="feedback-font" for="message">Schritt 6: Nachricht senden (optional).</label>
                         <textarea rows="3" name="commentary" id="message" class="form-control mt-2"
                             placeholder="Deine Mitteilung"{{--  required="" --}}></textarea>
                         @error('commentary')
@@ -235,7 +235,7 @@
                     </div>
                     </fieldset>
                     </form>
-                </div>
+                </div>  
             </div>
         </div>
 

@@ -167,7 +167,7 @@
         <div class="card-body p-5">
           <div class="row">
             <div class="col-md-8">
-              <form action="https://formspree.io/youremail@example.com" method="POST">
+              <form action="https://formspree.io/f/xdovqjnd" method="POST">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="md-form">
@@ -206,9 +206,9 @@
                 <li class="mt-4"><i class="fa fa-map-marker indigo-text fa-2x"></i>
                   <p class="mt-2">Dufoustrasse 49, 8008 Zürich</p>
                 </li>
-                <li class="mt-4"><i class="fa fa-phone indigo-text fa-2x"></i>
+                {{-- <li class="mt-4"><i class="fa fa-phone indigo-text fa-2x"></i>
                   <p class="mt-2">079 947 10 17</p>
-                </li>
+                </li> --}}
                 <li class="mt-4"><i class="fa fa-envelope indigo-text fa-2x"></i>
                   <p class="mt-2">contact@myofficex.com</p>
                 </li>

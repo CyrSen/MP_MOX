@@ -186,7 +186,9 @@ background: transparent !important;
     .arrow-circle {
         display: none;
     }
+}
 
+@media (max-width: 767px) {
     .scroll-buttons {
         position: fixed;
         bottom: 0.5rem;
@@ -198,10 +200,6 @@ background: transparent !important;
         padding: 0 1rem;
         box-sizing: border-box;
     }
-
-    .scroll-buttons {
-        display: none;
-      }
 }
 
 .scroll-button {
@@ -213,7 +211,14 @@ background: transparent !important;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+} 
+
+@media (min-width: 768px) { 
+    .scroll-buttons {
+        display: none;
+      }
 }
+
 
 .scroll-button i {
     color: #fff;
@@ -243,6 +248,10 @@ background: transparent !important;
     }
 }
 
+.feedback-font {
+    font-weight:500;
+
+}
 
 
 /* ml-auto not working, see template*/
@@ -273,7 +282,7 @@ background: transparent !important;
 
 .myoffice-x {
     font-weight: 900;
-    margin-left: -3px;
+
 }
 
 .custom-font-weight {

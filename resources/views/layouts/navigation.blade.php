@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}"><span class="myoffice-text">myOffice</span><span
-                class="myoffice-x"> X</span></a>
+        <a class="navbar-brand" href="{{ url('/') }}"><span class="myoffice-text">myOffice</span>
+            <span class="myoffice-x"> X</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
             aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
