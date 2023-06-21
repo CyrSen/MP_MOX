@@ -64,9 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE START ----------------------------------------------------------------//
 
-  /// Function to filter and display entries based on the chosen time span
-
-
 
 //  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE END ----------------------------------------------------------------//
   

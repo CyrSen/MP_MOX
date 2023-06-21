@@ -132,6 +132,19 @@
     margin-top:-10%;
     padding-top:10%;
   }
+
+  .emoji-icon {
+    z-index: 999;
+    color: red;
+  }
+  
+.mapContainer{
+position: relative;
+
+}
+.mapContainer img {
+display:block;
+}
   </style>
 
   </head>

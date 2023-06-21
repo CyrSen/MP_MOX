@@ -5,256 +5,211 @@
 
 @section('content')
 
-<section id="admin">
-    <div class="rgba-black-strong"></div>
-    <div class="container-fluid" style="margin-top: 10vh;">
-        <div class="row justify-content-evenly">
-            <!-- Map Views -->
-            <div class="col-3 px-0">
-                <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
-                    <!-- Map 1 -->
-                    {{--   --}}
-                      <div id="noise-map" class="map-container">
-                      <p class="lead" class="text-center">Lärmempfinden</p>
-                      <img class="img-fluid" id="image1" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
-                          alt="Office room plan">
+    <section id="admin">
+        <div class="rgba-black-strong"></div>
+        <div class="container-fluid" style="margin-top: 10vh;">
+            <div class="row justify-content-evenly">
+                <!-- Map Views -->
+                <div class="col-3 px-0">
+                    <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
+                        <!-- Map for noise_level -->
+                        <p class="lead text-center">Lärmempfinden</p>
+                      <!-- Map for noise_level -->
+                        <div id="mapNoise" class="map-container mapAdmin tooltip-icon">
+                          <img class="img-fluid mapFeedback" id="imageNoise" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                          <input id="x-coordinates" type="hidden" name="x_coordinates" />
+                          <input id="y-coordinates" type="hidden" name="y_coordinates" />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3 px-0">
-                <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
-                    <!-- Map 2 -->
-                      <div id="temperature-map" class="map-container">
-                      <p class="lead" class="text-center">Temperaturempfinden</p>
-                      <img class="img-fluid" id="image2" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
-                          alt="Office room plan">
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 px-0">
-                <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
-                    <!-- Map 3 -->
-                      <div id="air-quality-map" class="map-container">
-                      <p class="lead" class="text-center">Raumluftqualität</p>
-                      <img class="img-fluid" id="image3" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
-                          alt="Office room plan">
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 px-0">
-                <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
-                    <!-- Map 4 -->
-                    <div id="higge-map" class="map-container">
-                      <p class="lead" class="text-center">Happiness</p>
-                      <img class="img-fluid" id="image4" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
-                          alt="Office room plan">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Filter and Table -->
-        <div class="row mt-3">
-            <div class="col-3">
-                <div class="card mapAdmin ">
-                    <!-- Filter/Select Div -->
-                      <div class="row justify-content-center">
-                        <div class="col-sm-12 mt-2 mb-3 text-center">
-                          <label for="" class="text-start">Choose Date Range</label>
-                          <div class="row justify-content-center">
-                              <div class="col-sm-6">
-
-                                  <label for="start-date-input" class="form-label">Start Date:</label>
-                                  <input type="date" class="form-control bg-dark text-white" id="start-date-input" required>
-                              </div>
-                              <div class="col-sm-6">
-
-                                  <label for="end-date-input" class="form-label">End Date:</label>
-                                  <input type="date" class="form-control bg-dark text-white" id="end-date-input" required>
-                              </div>
-                          </div>
-                          <div class="text-center mt-3">
-                              <button class="btn btn-primary" onclick="filterEntriesByDate()">Apply Filter</button>
-                          </div>
+                <div class="col-3 px-0">
+                    <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
+                        <!-- Map for temperature_level -->
+                        <p class="lead text-center">Temperature</p>
+                        <!-- Map for temperature_level -->
+                      <div id="mapTemperature" class="map-container mapAdmin tooltip-icon">
+                        <img class="img-fluid mapFeedback" id="imageTemperature" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                        <input id="x-coordinates" type="hidden" name="x_coordinates" />
+                        <input id="y-coordinates" type="hidden" name="y_coordinates" />
                       </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-9">
-                <div class="card mr-4 p-3 mt-3">
-                    <!-- Table -->
-                    <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
-                        <h1 class="text-center">Feedback admin</h1>
-                        @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            {{ session('success') }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                aria-label="Close"></button>
+                <div class="col-3 px-0">
+                    <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
+                        <!-- Map for air_quality_level -->
+                        <p class="lead text-center"></p>
+                      <!-- Map for air_quality_level -->
+                        <div id="mapAirQuality" class="map-container mapAdmin tooltip-icon">
+                          <img class="img-fluid mapFeedback" id="imageAirQuality" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                          <input id="x-coordinates" type="hidden" name="x_coordinates" />
+                          <input id="y-coordinates" type="hidden" name="y_coordinates" />
+                        </div>        
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
+                      <!-- Map for higge_level -->
+                      <p class="lead text-center">Higge</p>
+                        <!-- Map for higge_level -->
+                        <div id="mapHigge" class="map-container mapAdmin tooltip-icon">
+                          <img class="img-fluid mapFeedback" id="imageHigge" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                          <input id="x-coordinates" type="hidden" name="x_coordinates" />
+                          <input id="y-coordinates" type="hidden" name="y_coordinates" />
                         </div>
-                        @endif
+                    </div>
+                </div>
+            </div>
+            <!-- Filter and Table -->
+            <div class="row mt-3">
+                <div class="col-3">
+                    <div class="card mapAdmin ">
+                        <!-- Filter/Select Div -->
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 mt-2 mb-3 text-center">
+                                <label for="" class="text-start">Choose Date Range</label>
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-6">
+                                        <label for="start-date-input" class="form-label">Start Date:</label>
+                                        <input type="date" class="form-control bg-dark text-white" id="start-date-input"
+                                            required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="end-date-input" class="form-label">End Date:</label>
+                                        <input type="date" class="form-control bg-dark text-white" id="end-date-input"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                  <button class="btn btn-primary" onclick="filterEntriesByDate()">Apply Filter</button>
 
-                        <table  id="entries-table" class="table">
-                          <thead class="thead-dark">
-                              <tr>
-                                  <th>ID</th>
-                                  <th>User</th>
-                                  <th>X Coordinates</th>
-                                  <th>Y Coordinates</th>
-                                  <th>Created At</th>
-                                  <th>Noise Level</th>
-                                  <th>Temperature Level</th>
-                                  <th>Air Quality Level</th>
-                                  <th>Higge Level</th>
-                                  <th>Commentary</th>
-                                  <th>Action</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                            <tr id="tableBody"></tr>
-       
-                          </tbody>
-                      </table>
-                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="card mr-4 p-3 mt-3">
+                        <!-- Table -->
+                        <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
+                            <h1 class="text-center">Feedback admin</h1>
+                            <!-- Table to display filtered data -->
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        {{-- <th>x-coordinates</th>
+                                        <th>y-coordinates</th> --}}
+                                        <th>Noise Level</th>
+                                        <th>Temperature Level</th>
+                                        <th>Air Quality Level</th>
+                                        <th>Higge Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  @foreach ($feedbackMaps as $feedbackMap)
+                                  <tr>
+                                      <td>{{ $feedbackMap->created_at }}</td>
+                                      {{-- <td>{{ $feedbackMap->x_coordinates }}</td>
+                                      <td>{{ $feedbackMap->y_coordinates }}</td> --}}
+                                      <td>{{ $feedbackMap->noise_level }}</td>
+                                      <td>{{ $feedbackMap->temperature_level }}</td>
+                                      <td>{{ $feedbackMap->air_quality_level }}</td>
+                                      <td>{{ $feedbackMap->higge_level }}</td>
+                                  </tr>
+                                  @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
 
 @endsection
 
 <script>
-/// Function to filter and display entries based on the chosen time span
 function filterEntriesByDate() {
+  // Get the start and end dates from the input fields
   var startDateInput = document.getElementById('start-date-input');
   var endDateInput = document.getElementById('end-date-input');
   var startDate = new Date(startDateInput.value);
   var endDate = new Date(endDateInput.value);
 
-  // Clear the table rows and map markers
-  var tableBody = document.getElementById('tableBody');
-  tableBody.innerHTML = '';
-  clearMapMarkers('noise-map');
-  clearMapMarkers('temperature-map');
-  clearMapMarkers('air-quality-map');
-  clearMapMarkers('higge-map');
+  // Get the table body element
+  var tableBody = document.querySelector('.tableOwn tbody');
 
-  // Loop through the feedback map entries
-  feedbackMapEntries.forEach(function(entry) {
-    // Retrieve the entry data
-    var id = entry.id;
-    var x = entry.x_coordinates;
-    var y = entry.y_coordinates;
-    var createdAt = entry.created_at;
-    var noiseLevel = entry.noise_level;
-    var temperatureLevel = entry.temperature_level;
-    var airQualityLevel = entry.air_quality_level;
-    var higgeLevel = entry.higge_level;
-    var commentary = entry.commentary;
+  // Get all rows from the table body
+  var rows = tableBody.querySelectorAll('tr');
 
-    // Convert the createdAt string to a Date object
-    var entryDate = new Date(createdAt);
+  // Get the map containers
+  var mapNoise = document.getElementById('mapNoise');
+  var mapTemperature = document.getElementById('mapTemperature');
+  var mapAirQuality = document.getElementById('mapAirQuality');
+  var mapHigge = document.getElementById('mapHigge');
 
-    // Check if the entryDate is within the specified range
-    if (entryDate >= startDate && entryDate <= endDate) {
-      // Create a table row for the entry
-      var row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${id}</td>
-        <td>${x}</td>
-        <td>${y}</td>
-        <td>${noiseLevel}</td>
-        <td>${temperatureLevel}</td>
-        <td>${airQualityLevel}</td>
-        <td>${higgeLevel}</td>
-        <td>${commentary}</td>
-      `;
+  // Clear the map containers
+  mapNoise.innerHTML = '';
+  mapTemperature.innerHTML = '';
+  mapAirQuality.innerHTML = '';
+  mapHigge.innerHTML = '';
 
-      // Add the row to the table body
-      tableBody.appendChild(row);
+  // Loop through each row in the table and check if it falls within the specified date range
+  rows.forEach(function(row) {
+    var dateCell = row.querySelector('td:first-child');
+    var rowDate = new Date(dateCell.textContent);
 
-      // Add markers to the respective maps based on category and level
-      addMarkerToMap('noise-map', 'noise', noiseLevel, x, y);
-      addMarkerToMap('temperature-map', 'temperature', temperatureLevel, x, y);
-      addMarkerToMap('air-quality-map', 'air-quality', airQualityLevel, x, y);
-      addMarkerToMap('higge-map', 'higge', higgeLevel, x, y);
+    if (rowDate >= startDate && rowDate <= endDate) {
+      row.style.display = 'table-row';
+
+      // Get the values from the row
+      var noiseLevel = row.querySelector('td:nth-child(2)').textContent;
+      var temperatureLevel = row.querySelector('td:nth-child(3)').textContent;
+      var airQualityLevel = row.querySelector('td:nth-child(4)').textContent;
+      var higgeLevel = row.querySelector('td:nth-child(5)').textContent;
+
+      // Create an icon element
+      var createIcon = function (level) {
+        var icon = document.createElement('span');
+        icon.classList.add('icon');
+
+        // Set the emoji based on the level
+        switch (level) {
+          case '1':
+            icon.classList.add('fa', 'fa-frown');
+            break;
+          case '2':
+            icon.classList.add('fa', 'fa-meh');
+            break;
+          case '3':
+            icon.classList.add('fa', 'fa-smile');
+            break;
+          case '4':
+            icon.classList.add('fa', 'fa-grin');
+            break;
+          case '5':
+            icon.classList.add('fa', 'fa-laugh-squint');
+            break;
+          default:
+            icon.classList.add('fa', 'fa-comment-medical');
+            break;
+        }
+
+        return icon;
+      };
+
+      // Add the icons to the map containers
+      mapNoise.appendChild(createIcon(noiseLevel));
+      mapTemperature.appendChild(createIcon(temperatureLevel));
+      mapAirQuality.appendChild(createIcon(airQualityLevel));
+      mapHigge.appendChild(createIcon(higgeLevel));
+    } else {
+      row.style.display = 'none';
     }
   });
 }
 
-// Function to add a marker to a map based on the category and level
-function addMarkerToMap(mapId, category, level, x, y) {
-  var mapContainer = document.getElementById(mapId);
 
-  // Calculate the position of the marker based on the entry coordinates
-  var xPercentage = parseFloat(x).toFixed(2);
-  var yPercentage = parseFloat(y).toFixed(2);
-  var left = xPercentage + '%';
-  var top = yPercentage + '%';
-
-  // Create the marker element
-  var marker = document.createElement('div');
-  marker.classList.add('marker');
-  marker.style.left = left;
-  marker.style.top = top;
-
-  // Set the marker's icon based on the level and category
-  var iconClass = getIconClass(category, level);
-  marker.innerHTML = `<i class="${iconClass}"></i>`;
-
-  // Add the marker to the map container
-  mapContainer.appendChild(marker);
-}
-
-// Function to clear all markers from a map
-function clearMapMarkers(mapId) {
-  var mapContainer = document.getElementById(mapId);
-  mapContainer.innerHTML = '';
-}
-
-// Function to get the icon class based on the category and level
-function getIconClass(category, level) {
-  // Define the icon classes for each category and level
-  var iconClasses = {
-    'noise': [
-      'fa-solid fa-question',
-      'fa-solid fa-frown',
-      'fa-solid fa-frown-open',
-      'fa-solid fa-meh',
-      'fa-solid fa-smile-beam',
-      'fa-solid fa-grin'
-    ],
-    'temperature': [
-      'fa-solid fa-question',
-      'fa-solid fa-frown',
-      'fa-solid fa-frown-open',
-      'fa-solid fa-meh',
-      'fa-solid fa-smile-beam',
-      'fa-solid fa-grin'
-    ],
-    'air-quality': [
-      'fa-solid fa-question',
-      'fa-solid fa-frown',
-      'fa-solid fa-frown-open',
-      'fa-solid fa-meh',
-      'fa-solid fa-smile-beam',
-      'fa-solid fa-grin'
-    ],
-    'higge': [
-      'fa-solid fa-question',
-      'fa-solid fa-frown',
-      'fa-solid fa-frown-open',
-      'fa-solid fa-meh',
-      'fa-solid fa-smile-beam',
-      'fa-solid fa-grin'
-    ]
-  };
-
-  // Retrieve the icon class based on the category and level
-  var levelIndex = Math.min(Math.max(level, 0), 5);
-  return iconClasses[category][levelIndex];
-}
 
 </script>
-
