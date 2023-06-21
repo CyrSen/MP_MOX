@@ -12,9 +12,8 @@
                 <!-- Map Views -->
                 <div class="col-3 px-0">
                     <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
-                        <!-- Map for noise_level -->
-                        <p class="lead text-center">Lärmempfinden</p>
                       <!-- Map for noise_level -->
+                      <p class="lead text-center">Lärmempfinden</p>
                         <div id="mapNoise" class="map-container mapAdmin tooltip-icon">
                           <img class="img-fluid mapFeedback" id="imageNoise" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
                           <input id="x-coordinates" type="hidden" name="x_coordinates" />
@@ -24,21 +23,19 @@
                 </div>
                 <div class="col-3 px-0">
                     <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
-                        <!-- Map for temperature_level -->
-                        <p class="lead text-center">Temperature</p>
-                        <!-- Map for temperature_level -->
-                      <div id="mapTemperature" class="map-container mapAdmin tooltip-icon">
-                        <img class="img-fluid mapFeedback" id="imageTemperature" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                        <input id="x-coordinates" type="hidden" name="x_coordinates" />
-                        <input id="y-coordinates" type="hidden" name="y_coordinates" />
-                      </div>
+                    <!-- Map for temperature_level -->
+                    <p class="lead text-center">Temperature</p>
+                        <div id="mapTemperature" class="map-container mapAdmin tooltip-icon">
+                          <img class="img-fluid mapFeedback" id="imageTemperature" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                          <input id="x-coordinates" type="hidden" name="x_coordinates" />
+                          <input id="y-coordinates" type="hidden" name="y_coordinates" />
+                        </div>
                     </div>
                 </div>
                 <div class="col-3 px-0">
                     <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
-                        <!-- Map for air_quality_level -->
-                        <p class="lead text-center"></p>
                       <!-- Map for air_quality_level -->
+                      <p class="lead text-center">Air Quality</p>
                         <div id="mapAirQuality" class="map-container mapAdmin tooltip-icon">
                           <img class="img-fluid mapFeedback" id="imageAirQuality" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
                           <input id="x-coordinates" type="hidden" name="x_coordinates" />
@@ -50,7 +47,6 @@
                     <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
                       <!-- Map for higge_level -->
                       <p class="lead text-center">Higge</p>
-                        <!-- Map for higge_level -->
                         <div id="mapHigge" class="map-container mapAdmin tooltip-icon">
                           <img class="img-fluid mapFeedback" id="imageHigge" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
                           <input id="x-coordinates" type="hidden" name="x_coordinates" />
@@ -92,6 +88,12 @@
                         <!-- Table -->
                         <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
                             <h1 class="text-center">Feedback admin</h1>
+                            @if (session('success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                              {{ session('success') }}
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                            @endif
                             <!-- Table to display filtered data -->
                             <table class="table table-bordered">
                                 <thead>
@@ -115,6 +117,23 @@
                                       <td>{{ $feedbackMap->temperature_level }}</td>
                                       <td>{{ $feedbackMap->air_quality_level }}</td>
                                       <td>{{ $feedbackMap->higge_level }}</td>
+                                      <td>
+                                        @if (Auth::check() && Auth::user()->permissions_level === 'level3')
+                                        <!-- Delete button -->
+                                        <form action="{{ route('feedback.destroy', $feedbackMap) }}" method="POST">
+                                          @csrf
+                                          @method('DELETE')
+                                          <button
+                                            type="submit"
+                                            class="btn btn-danger"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#successModal"
+                                          >
+                                            Delete
+                                          </button>
+                                        </form>
+                                        @endif
+                                      </td>
                                   </tr>
                                   @endforeach
                                 </tbody>
