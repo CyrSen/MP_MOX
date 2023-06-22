@@ -81,10 +81,10 @@ body {
     font-size: 2rem; 
 }
 
-.icon {
+/* .icon {
     z-index: 999;
-    /* color: red; */
-  }
+    color: red;
+  } */
   
 .myContainer {
   position: relative;

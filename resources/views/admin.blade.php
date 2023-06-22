@@ -164,11 +164,10 @@ function filterEntriesByDate() {
   // Get all rows from the table body
   var rows = tableBody.querySelectorAll('tr');
 
-  // Get the img elements
-  var imgNoise = document.getElementById('imgNoise');
-  var imgTemperature = document.getElementById('imgTemperature');
-  var imgAirQuality = document.getElementById('imgAirQuality');
-  var imgHigge = document.getElementById('imgHigge');
+  var mapNoiseContainer = document.getElementById('mapNoise');
+var mapTemperatureContainer = document.getElementById('mapTemperature');
+var mapAirQualityContainer = document.getElementById('mapAirQuality');
+var mapHiggeContainer = document.getElementById('mapHigge');
 
   // Clear the img elements
   imgNoise.innerHTML = '';
@@ -222,16 +221,17 @@ function filterEntriesByDate() {
         icon.style.position = 'absolute';
         icon.style.left = x;
         icon.style.top = y;
-        icon.style.zIndex = '2'; // Adjust the value as needed to position the icons above the image
+        icon.style.zIndex = '10';
 
         return icon;
       };
 
-      // Add the icons after the img elements
-      imgNoise.appendChild(createIcon(noiseLevel, '30.4469%', '25.5046%'));
-      imgTemperature.appendChild(createIcon(temperatureLevel, 'x-coordinate', 'y-coordinate'));
-      imgAirQuality.appendChild(createIcon(airQualityLevel, 'x-coordinate', 'y-coordinate'));
-      imgHigge.appendChild(createIcon(higgeLevel, 'x-coordinate', 'y-coordinate'));
+// Add the icons after the image containers
+mapNoiseContainer.appendChild(createIcon(noiseLevel, '30.4469%', '25.5046%'));
+mapTemperatureContainer.appendChild(createIcon(temperatureLevel, 'x-coordinate', 'y-coordinate'));
+mapAirQualityContainer.appendChild(createIcon(airQualityLevel, 'x-coordinate', 'y-coordinate'));
+mapHiggeContainer.appendChild(createIcon(higgeLevel, 'x-coordinate', 'y-coordinate'));
+
     } else {
       row.style.display = 'none';
     }
