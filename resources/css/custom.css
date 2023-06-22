@@ -61,6 +61,7 @@ body {
 
 
 .mapAdmin {
+    position: relative;
     width: 75%;
     margin-right:5rem;
     right:-12.5%; 
@@ -104,6 +105,12 @@ body {
     color: red;
   } */
   
+.adminView {
+    position:relative;
+    left:10%;
+    top:10%;
+}
+
 .myContainer {
   position: relative;
 
@@ -115,36 +122,41 @@ body {
 .frownie {
     color: #ff0000;
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
   
 .mehie {
     color: #ff6200;
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
 
 .smile {
     color: #ffff00;
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .grin {
     color: #55ff00;
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
 
 .lol {
     color: #00943e;
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 
