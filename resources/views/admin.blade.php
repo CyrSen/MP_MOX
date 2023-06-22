@@ -16,7 +16,7 @@
                         <p class="lead text-center">Lärmempfinden</p>
                         <div id="mapNoise" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid" id="imgNoise"
-                                src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                                src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                                 <input id="x-coordinates-noise" type="hidden" name="x_coordinates">
                                 <input id="y-coordinates-noise" type="hidden" name="y_coordinates">
                         </div>
@@ -28,7 +28,7 @@
                         <p class="lead text-center">Temperature</p>
                         <div id="mapTemperature" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid" id="imgTemperature"
-                                src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                                src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                                 <input id="x-coordinates-temperature" type="hidden" name="x_coordinates">
                                 <input id="y-coordinates-temperature" type="hidden" name="y_coordinates">
                         </div>
@@ -40,7 +40,7 @@
                         <p class="lead text-center">Air Quality</p>
                         <div id="mapAirQuality" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid" id="imgAirQuality"
-                                src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                                src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                                 <input id="x-coordinates-air-quality" type="hidden" name="x_coordinates">
                                 <input id="y-coordinates-air-quality" type="hidden" name="y_coordinates">
                         </div>
@@ -52,7 +52,7 @@
                         <p class="lead text-center">Higge</p>
                         <div id="mapHigge" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid" id="imgHigge"
-                                src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
+                                src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                                 <input id="x-coordinates-higge" type="hidden" name="x_coordinates">
                                 <input id="y-coordinates-higge" type="hidden" name="y_coordinates">
                         </div>
