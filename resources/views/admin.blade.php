@@ -17,8 +17,8 @@
                         <div id="mapNoise" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid mapFeedback" id="imgNoise"
                                 src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                                <input id="x-coordinates" type="hidden" name="x_coordinates">
-                                <input id="y-coordinates" type="hidden" name="y_coordinates">
+                                <input id="x-coordinates-noise" type="hidden" name="x_coordinates">
+                                <input id="y-coordinates-noise" type="hidden" name="y_coordinates">
                         </div>
                     </div>
                 </div>
@@ -29,8 +29,8 @@
                         <div id="mapTemperature" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid mapFeedback" id="imgTemperature"
                                 src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                                <input id="x-coordinates" type="hidden" name="x_coordinates">
-                                <input id="y-coordinates" type="hidden" name="y_coordinates">
+                                <input id="x-coordinates-temperature" type="hidden" name="x_coordinates">
+                                <input id="y-coordinates-temperature" type="hidden" name="y_coordinates">
                         </div>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                         <div id="mapAirQuality" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid mapFeedback" id="imgAirQuality"
                                 src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                                <input id="x-coordinates" type="hidden" name="x_coordinates">
-                                <input id="y-coordinates" type="hidden" name="y_coordinates">
+                                <input id="x-coordinates-air-quality" type="hidden" name="x_coordinates">
+                                <input id="y-coordinates-air-quality" type="hidden" name="y_coordinates">
                         </div>
                     </div>
                 </div>
@@ -53,8 +53,8 @@
                         <div id="mapHigge" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid mapFeedback" id="imgHigge"
                                 src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                                <input id="x-coordinates" type="hidden" name="x_coordinates">
-                                <input id="y-coordinates" type="hidden" name="y_coordinates">
+                                <input id="x-coordinates-higge" type="hidden" name="x_coordinates">
+                                <input id="y-coordinates-higge" type="hidden" name="y_coordinates">
                         </div>
                     </div>
                 </div>
@@ -104,10 +104,10 @@
                                 <thead>
                                     <tr>
                                         <th>Date</th>
-                                        {{-- <th>x-coordinates</th>
-                                        <th>y-coordinates</th> --}}
-                                        <th>Noise Level</th>
+                                        <th>x-coordinates</th>
+                                        <th>y-coordinates</th>
                                         <th>Temperature Level</th>
+                                        <th>Noise Level</th>
                                         <th>Air Quality Level</th>
                                         <th>Higge Level</th>
                                     </tr>
@@ -116,10 +116,10 @@
                                     @foreach ($feedbackMaps as $feedbackMap)
                                         <tr>
                                             <td>{{ $feedbackMap->created_at }}</td>
-                                            {{-- <td>{{ $feedbackMap->x_coordinates }}</td>
-                                            <td>{{ $feedbackMap->y_coordinates }}</td> --}}
-                                            <td>{{ $feedbackMap->noise_level }}</td>
+                                            <td>{{ $feedbackMap->x_coordinates }}</td>
+                                            <td>{{ $feedbackMap->y_coordinates }}</td>
                                             <td>{{ $feedbackMap->temperature_level }}</td>
+                                            <td>{{ $feedbackMap->noise_level }}</td>
                                             <td>{{ $feedbackMap->air_quality_level }}</td>
                                             <td>{{ $feedbackMap->higge_level }}</td>
                                             <td>
@@ -184,10 +184,12 @@ var mapHiggeContainer = document.getElementById('mapHigge');
       row.style.display = 'table-row';
 
       // Get the values from the row
-      var noiseLevel = row.querySelector('td:nth-child(2)').textContent;
-      var temperatureLevel = row.querySelector('td:nth-child(3)').textContent;
-      var airQualityLevel = row.querySelector('td:nth-child(4)').textContent;
-      var higgeLevel = row.querySelector('td:nth-child(5)').textContent;
+      var xCoordinates = row.querySelector('td:nth-child(2)').textContent;
+      var yCoordinates = row.querySelector('td:nth-child(3)').textContent;
+      var temperatureLevel = row.querySelector('td:nth-child(4)').textContent;
+      var noiseLevel = row.querySelector('td:nth-child(5)').textContent;    
+      var airQualityLevel = row.querySelector('td:nth-child(6)').textContent;
+      var higgeLevel = row.querySelector('td:nth-child(7)').textContent;
 
       // Create an icon element
       var createIcon = function(level, x, y) {
@@ -219,18 +221,19 @@ var mapHiggeContainer = document.getElementById('mapHigge');
         icon.classList.add('tooltip-icon');
         // Set the position and z-index of the icon
         icon.style.position = 'absolute';
-        icon.style.left = x;
-        icon.style.top = y;
+        icon.style.left = xCoordinates + '%'; // Use xCoordinates variable instead of 'x-coordinates'
+        icon.style.top = yCoordinates + '%'; // Use yCoordinates variable instead of 'y-coordinates'
         icon.style.zIndex = '10';
 
         return icon;
       };
 
 // Add the icons after the image containers
-mapNoiseContainer.appendChild(createIcon(noiseLevel, '30.4469%', '25.5046%'));
-mapTemperatureContainer.appendChild(createIcon(temperatureLevel, 'x-coordinate', 'y-coordinate'));
-mapAirQualityContainer.appendChild(createIcon(airQualityLevel, 'x-coordinate', 'y-coordinate'));
-mapHiggeContainer.appendChild(createIcon(higgeLevel, 'x-coordinate', 'y-coordinate'));
+mapNoiseContainer.appendChild(createIcon(noiseLevel, xCoordinates, yCoordinates));
+mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates));
+mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
+mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
+
 
     } else {
       row.style.display = 'none';
