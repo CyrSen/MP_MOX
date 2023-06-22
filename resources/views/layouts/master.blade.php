@@ -133,38 +133,7 @@
     padding-top:10%;
   }
 
-.icon {
-    z-index: 999;
-    /* color: red; */
-  }
-  
-.map-container {
-  position: relative;
 
-  }
-.map-container img {
-  display:block;
-  }
-
-.map-container .fa-frown {
-    color: #ff0000;
-  }
-  
-.map-container .fa-meh {
-    color: #ff6200;
-  }
-
-.map-container .fa-smile {
-    color: #ffff00;
-  }
-
-.map-container .fa-grin {
-    color: #55ff00;
-  }
-
-.map-container .fa-laugh-squint {
-    color: #00943e;
-}
 
 
   </style>

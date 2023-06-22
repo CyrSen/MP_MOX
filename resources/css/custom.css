@@ -18,6 +18,30 @@ body {
     max-width: 100%;
 }
 
+#mapNoise {
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+}
+
+#mapTemperature {
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+}
+
+#mapAirQuality {
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+}
+
+#mapHigge {
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+}
+
 .mapAdmin {
     width: 75%;
     margin-right:5rem;
@@ -56,6 +80,55 @@ body {
     color:blue;
     font-size: 2rem; 
 }
+
+.icon {
+    z-index: 999;
+    /* color: red; */
+  }
+  
+.myContainer {
+  position: relative;
+
+  }
+.myContainer img {
+  display:block;
+  }
+
+.frownie {
+    color: #ff0000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+.mehie {
+    color: #ff6200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+.smile {
+    color: #ffff00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.grin {
+    color: #55ff00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+.lol {
+    color: #00943e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 
 .svg-noise{
     fill: blue; 

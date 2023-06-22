@@ -14,11 +14,11 @@
                     <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
                         <!-- Map for noise_level -->
                         <p class="lead text-center">Lärmempfinden</p>
-                        <div id="mapNoise" class="map-container mapAdmin tooltip-icon">
-                            <img class="img-fluid mapFeedback" id="imageNoise"
+                        <div id="mapNoise" class="myContainer mapAdmin tooltip-icon">
+                            <img class="img-fluid mapFeedback" id="imgNoise"
                                 src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                            <input id="x-coordinates" type="hidden" name="x_coordinates" />
-                            <input id="y-coordinates" type="hidden" name="y_coordinates" />
+                                <input id="x-coordinates" type="hidden" name="x_coordinates">
+                                <input id="y-coordinates" type="hidden" name="y_coordinates">
                         </div>
                     </div>
                 </div>
@@ -26,11 +26,11 @@
                     <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
                         <!-- Map for temperature_level -->
                         <p class="lead text-center">Temperature</p>
-                        <div id="mapTemperature" class="map-container mapAdmin tooltip-icon">
-                            <img class="img-fluid mapFeedback" id="imageTemperature"
+                        <div id="mapTemperature" class="myContainer mapAdmin tooltip-icon">
+                            <img class="img-fluid mapFeedback" id="imgTemperature"
                                 src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                            <input id="x-coordinates" type="hidden" name="x_coordinates" />
-                            <input id="y-coordinates" type="hidden" name="y_coordinates" />
+                                <input id="x-coordinates" type="hidden" name="x_coordinates">
+                                <input id="y-coordinates" type="hidden" name="y_coordinates">
                         </div>
                     </div>
                 </div>
@@ -38,11 +38,11 @@
                     <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
                         <!-- Map for air_quality_level -->
                         <p class="lead text-center">Air Quality</p>
-                        <div id="mapAirQuality" class="map-container mapAdmin tooltip-icon">
-                            <img class="img-fluid mapFeedback" id="imageAirQuality"
+                        <div id="mapAirQuality" class="myContainer mapAdmin tooltip-icon">
+                            <img class="img-fluid mapFeedback" id="imgAirQuality"
                                 src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                            <input id="x-coordinates" type="hidden" name="x_coordinates" />
-                            <input id="y-coordinates" type="hidden" name="y_coordinates" />
+                                <input id="x-coordinates" type="hidden" name="x_coordinates">
+                                <input id="y-coordinates" type="hidden" name="y_coordinates">
                         </div>
                     </div>
                 </div>
@@ -50,11 +50,11 @@
                     <div class="card mapAdmin py-2 ml-4 d-flex align-items-center">
                         <!-- Map for higge_level -->
                         <p class="lead text-center">Higge</p>
-                        <div id="mapHigge" class="map-container mapAdmin tooltip-icon">
-                            <img class="img-fluid mapFeedback" id="imageHigge"
+                        <div id="mapHigge" class="myContainer mapAdmin tooltip-icon">
+                            <img class="img-fluid mapFeedback" id="imgHigge"
                                 src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}" alt="Office room plan">
-                            <input id="x-coordinates" type="hidden" name="x_coordinates" />
-                            <input id="y-coordinates" type="hidden" name="y_coordinates" />
+                                <input id="x-coordinates" type="hidden" name="x_coordinates">
+                                <input id="y-coordinates" type="hidden" name="y_coordinates">
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                                         <tr>
                                             <td>{{ $feedbackMap->created_at }}</td>
                                             {{-- <td>{{ $feedbackMap->x_coordinates }}</td>
-                                      <td>{{ $feedbackMap->y_coordinates }}</td> --}}
+                                            <td>{{ $feedbackMap->y_coordinates }}</td> --}}
                                             <td>{{ $feedbackMap->noise_level }}</td>
                                             <td>{{ $feedbackMap->temperature_level }}</td>
                                             <td>{{ $feedbackMap->air_quality_level }}</td>
@@ -151,83 +151,102 @@
 @endsection
 
 <script>
-    function filterEntriesByDate() {
-        // Get the start and end dates from the input fields
-        var startDateInput = document.getElementById('start-date-input');
-        var endDateInput = document.getElementById('end-date-input');
-        var startDate = new Date(startDateInput.value);
-        var endDate = new Date(endDateInput.value);
+function filterEntriesByDate() {
+  // Get the start and end dates from the input fields
+  var startDateInput = document.getElementById('start-date-input');
+  var endDateInput = document.getElementById('end-date-input');
+  var startDate = new Date(startDateInput.value);
+  var endDate = new Date(endDateInput.value);
 
-        // Get the table body element
-        var tableBody = document.querySelector('.tableOwn tbody');
+  // Get the table body element
+  var tableBody = document.querySelector('.tableOwn tbody');
 
-        // Get all rows from the table body
-        var rows = tableBody.querySelectorAll('tr');
+  // Get all rows from the table body
+  var rows = tableBody.querySelectorAll('tr');
 
-        // Get the map containers
-        var mapNoise = document.getElementById('mapNoise');
-        var mapTemperature = document.getElementById('mapTemperature');
-        var mapAirQuality = document.getElementById('mapAirQuality');
-        var mapHigge = document.getElementById('mapHigge');
+  // Get the img elements
+  var imgNoise = document.getElementById('imgNoise');
+  var imgTemperature = document.getElementById('imgTemperature');
+  var imgAirQuality = document.getElementById('imgAirQuality');
+  var imgHigge = document.getElementById('imgHigge');
 
-        // Clear the map containers
-        mapNoise.innerHTML = '';
-        mapTemperature.innerHTML = '';
-        mapAirQuality.innerHTML = '';
-        mapHigge.innerHTML = '';
+  // Clear the img elements
+  imgNoise.innerHTML = '';
+  imgTemperature.innerHTML = '';
+  imgAirQuality.innerHTML = '';
+  imgHigge.innerHTML = '';
 
-        // Loop through each row in the table and check if it falls within the specified date range
-        rows.forEach(function(row) {
-            var dateCell = row.querySelector('td:first-child');
-            var rowDate = new Date(dateCell.textContent);
+  // Loop through each row in the table and check if it falls within the specified date range
+  rows.forEach(function(row) {
+    var dateCell = row.querySelector('td:first-child');
+    var rowDate = new Date(dateCell.textContent);
 
-            if (rowDate >= startDate && rowDate <= endDate) {
-                row.style.display = 'table-row';
+    if (rowDate >= startDate && rowDate <= endDate) {
+      row.style.display = 'table-row';
 
-                // Get the values from the row
-                var noiseLevel = row.querySelector('td:nth-child(2)').textContent;
-                var temperatureLevel = row.querySelector('td:nth-child(3)').textContent;
-                var airQualityLevel = row.querySelector('td:nth-child(4)').textContent;
-                var higgeLevel = row.querySelector('td:nth-child(5)').textContent;
+      // Get the values from the row
+      var noiseLevel = row.querySelector('td:nth-child(2)').textContent;
+      var temperatureLevel = row.querySelector('td:nth-child(3)').textContent;
+      var airQualityLevel = row.querySelector('td:nth-child(4)').textContent;
+      var higgeLevel = row.querySelector('td:nth-child(5)').textContent;
 
-                // Create an icon element
-                var createIcon = function(level) {
-                    var icon = document.createElement('span');
-                    icon.classList.add('icon');
+      // Create an icon element
+      var createIcon = function(level, x, y) {
+        var icon = document.createElement('i');
+        icon.classList.add('fa', 'fa-solid');
 
-                    // Set the emoji based on the level
-                    switch (level) {
-                        case '1':
-                            icon.classList.add('fa', 'fa-frown');
-                            break;
-                        case '2':
-                            icon.classList.add('fa', 'fa-meh');
-                            break;
-                        case '3':
-                            icon.classList.add('fa', 'fa-smile');
-                            break;
-                        case '4':
-                            icon.classList.add('fa', 'fa-grin');
-                            break;
-                        case '5':
-                            icon.classList.add('fa', 'fa-laugh-squint');
-                            break;
-                        default:
-                            icon.classList.add('fa', 'fa-comment-medical');
-                            break;
-                    }
+        // Set the emoji based on the level
+        switch (level) {
+          case '1':
+            icon.classList.add('fa-frown', 'frownie');
+            break;
+          case '2':
+            icon.classList.add('fa-meh', 'mehie');
+            break;
+          case '3':
+            icon.classList.add('fa-smile', 'smile');
+            break;
+          case '4':
+            icon.classList.add('fa-grin', 'grin');
+            break;
+          case '5':
+            icon.classList.add('fa-laugh-squint', 'lol');
+            break;
+          default:
+            icon.classList.add('fa-comment-medical', 'comment-medical');
+            break;
+        }
+        
+        icon.classList.add('tooltip-icon');
+        // Set the position and z-index of the icon
+        icon.style.position = 'absolute';
+        icon.style.left = x;
+        icon.style.top = y;
+        icon.style.zIndex = '2'; // Adjust the value as needed to position the icons above the image
 
-                    return icon;
-                };
+        return icon;
+      };
 
-                // Add the icons to the map containers
-                mapNoise.appendChild(createIcon(noiseLevel));
-                mapTemperature.appendChild(createIcon(temperatureLevel));
-                mapAirQuality.appendChild(createIcon(airQualityLevel));
-                mapHigge.appendChild(createIcon(higgeLevel));
-            } else {
-                row.style.display = 'none';
-            }
-        });
+      // Add the icons after the img elements
+      imgNoise.appendChild(createIcon(noiseLevel, '30.4469%', '25.5046%'));
+      imgTemperature.appendChild(createIcon(temperatureLevel, 'x-coordinate', 'y-coordinate'));
+      imgAirQuality.appendChild(createIcon(airQualityLevel, 'x-coordinate', 'y-coordinate'));
+      imgHigge.appendChild(createIcon(higgeLevel, 'x-coordinate', 'y-coordinate'));
+    } else {
+      row.style.display = 'none';
     }
+  });
+}
+
+
+$(function(){
+  $('[data-bs-toggle="tooltip"]').tooltip();
+  
+});
+
+$(function(){
+  $('[data-bs-toggle="popover"]').popover({html:true})
+   
+});
+
 </script>
