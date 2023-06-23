@@ -58,12 +58,17 @@ document.addEventListener("DOMContentLoaded", function() {
     // Append the icon to the image container
     imageContainer.appendChild(iconElement);
   });
+
+
+
+
+
 });
 
 //  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE END ----------------------------------------------------------------//
 
-//  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE START ----------------------------------------------------------------//
 
+//  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE START ----------------------------------------------------------------//
 
 //  LOCATION GET COORDINATES AND SHOW LOCATION VARIANT 01 IMAGE END ----------------------------------------------------------------//
   
@@ -117,3 +122,4 @@ $(function(){
 });
 
 //  TOOLTIP/POPOVER END ----------------------------------------------------------------//
+

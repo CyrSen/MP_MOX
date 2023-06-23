@@ -49,6 +49,27 @@ body {
     right: -5.5%;
 }
 
+.reloadAdmin {
+    /* text-decoration: none !important; */
+    font-size:1em;
+    
+}
+
+.btn-reload {
+    border-radius: 50% !important;
+    padding:.5rem !important;
+}
+
+.reloadAdminText {
+    font-size:.5rem;
+}
+
+.fa-spin-hover:hover {
+    animation: fa-spin 2s infinite linear;
+}
+@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+
 .myContainer {
     position: relative;
 }
