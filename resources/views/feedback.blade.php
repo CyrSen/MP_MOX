@@ -59,24 +59,24 @@
                                 <img class="img-fluid p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_nottoocold.svg" alt="smiley-nice"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Zu kalt" data-bs-value="2" onclick="setTempLevel(2)">
+                                    title="Zu kalt" data-bs-value="3" onclick="setTempLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_excellent.svg"
                                     alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Gerade richtig" data-bs-value="3"
-                                    onclick="setTempLevel(3)">
+                                    data-bs-placement="top" title="Gerade richtig" data-bs-value="5"
+                                    onclick="setTempLevel(5)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_nottoohot.svg"
                                     alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Zu warm" data-bs-value="4" onclick="setTempLevel(4)">
+                                    data-bs-placement="top" title="Zu warm" data-bs-value="3" onclick="setTempLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_hot_red.svg"
                                     alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Viel zu warm" data-bs-value="5"
-                                    onclick="setTempLevel(5)">
+                                    data-bs-placement="top" title="Viel zu warm" data-bs-value="1"
+                                    onclick="setTempLevel(1)">
                             </div>
                         </div>
                         <input type="hidden" name="temperature_level" id="temperature-level-input">
@@ -90,33 +90,33 @@
                                 <img class="img-fluid p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_silent.svg" alt="smiley-great"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Viel zu leise" data-bs-value="1" onclick="setNoiseLevel(1)">
+                                    title="Viel zu leise" data-bs-value="2" onclick="setNoiseLevel(1)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_notloud.svg" alt="smiley-nice"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Zu leise" data-bs-value="2"
-                                    onclick="setNoiseLevel(2)">
+                                    data-bs-placement="top" title="Zu leise" data-bs-value="3"
+                                    onclick="setNoiseLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-ok"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Gerade richtig" data-bs-value="3"
-                                    onclick="setNoiseLevel(3)">
+                                    data-bs-placement="top" title="Gerade richtig" data-bs-value="5"
+                                    onclick="setNoiseLevel(5)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_poor.svg"
                                     alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Zu laut" data-bs-value="4"
-                                    onclick="setNoiseLevel(4)">
+                                    data-bs-placement="top" title="Zu laut" data-bs-value="3"
+                                    onclick="setNoiseLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_loud_red.svg"
                                     alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Viel zu laut" data-bs-value="5"
-                                    onclick="setNoiseLevel(5)">
+                                    data-bs-placement="top" title="Viel zu laut" data-bs-value="1"
+                                    onclick="setNoiseLevel(1)">
                             </div>
                         </div>
                         <input type="hidden" name="noise_level" id="noise-level-input">
@@ -130,15 +130,15 @@
                                 <img class="img-fluid p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-great"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Ausgezeichnete Luftqualität" data-bs-value="1"
-                                    onclick="setAirQLevel(1)">
+                                    data-bs-placement="top" title="Ausgezeichnete Luftqualität" data-bs-value="5"
+                                    onclick="setAirQLevel(5)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_good.svg" alt="smiley-nice"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Gute Luftqualität" data-bs-value="2"
-                                    onclick="setAirQLevel(2)">
+                                    data-bs-placement="top" title="Gute Luftqualität" data-bs-value="4"
+                                    onclick="setAirQLevel(4)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
@@ -150,14 +150,14 @@
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_poor.svg"
                                     alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Mässige Luftqualität" data-bs-value="4"
-                                    onclick="setAirQLevel(4)">
+                                    data-bs-placement="top" title="Mässige Luftqualität" data-bs-value="2"
+                                    onclick="setAirQLevel(2)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_smelly.svg"
                                     alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Schlechte Luftqualität - Stinkt übelst - hazardous!!!"
-                                    data-bs-value="5" onclick="setAirQLevel(5)">
+                                    data-bs-value="1" onclick="setAirQLevel(1)">
                             </div>
                         </div>
                         <input type="hidden" name="air_quality_level" id="air-quality-level-input">
@@ -171,15 +171,15 @@
                                 <img class="img-fluid p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-great"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Exzellenter Komfort" data-bs-value="1"
-                                    onclick="setHiggeLevel(1)">
+                                    data-bs-placement="top" title="Exzellenter Komfort" data-bs-value="5"
+                                    onclick="setHiggeLevel(5)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_good.svg" alt="smiley-nice"
                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Guter Komfort" data-bs-value="2"
-                                    onclick="setHiggeLevel(2)">
+                                    data-bs-placement="top" title="Guter Komfort" data-bs-value="4"
+                                    onclick="setHiggeLevel(4)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon"
@@ -191,14 +191,14 @@
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_poor.svg"
                                     alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Mässiger Komfort" data-bs-value="4"
-                                    onclick="setHiggeLevel(4)">
+                                    data-bs-placement="top" title="Mässiger Komfort" data-bs-value="2"
+                                    onclick="setHiggeLevel(2)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="img-fluid p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_worst.svg"
                                     alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Kein Komfort" data-bs-value="5"
-                                    onclick="setHiggeLevel(5)">
+                                    data-bs-placement="top" title="Kein Komfort" data-bs-value="1"
+                                    onclick="setHiggeLevel(1)">
                             </div>
                         </div>
                         <input type="hidden" name="higge_level" id="higge-level-input">
