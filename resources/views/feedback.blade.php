@@ -9,47 +9,31 @@
     <section id="feedback" {{-- style="margin-bottom:10rem;" --}}>
         <div class="rgba-black-strong"></div>
         <div class="container py-1">
-            {{-- <div class="pt-5 wow fadeIn animate__animated animate__fadeIn">
-        <h2 class="h1 text-white pt-5 pb-3 text-center">Feedback</h2>
-        <p class="text-white px-5 mb-5 pb-3 lead text-center">
-          Wähle zuerst deine Bürozone aus. Teile uns dann dein aktuelles Komforterlebnis mit. Wenn du möchtest, schreib auch gerne eine Nachricht. Vergiss nicht, deinen Namen anzugeben, wenn du eine Rückmeldung wünschst.
-        </p>
-      </div> --}}
-
-            <!-- FORM START-->
-            <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
+                <!-- FORM START-->
+                <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
                 @csrf
                 <div class="row justify-content-center">
                     <div class="col-md-6 mb-5 wow fadeInRight" data-wow-delay=".4s">
                         <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0">
-                                <!-- Content of Card 2 -->
-                                <div class="col">
-                                    <h2 class="h1 mb-3 px-3 pt-3">Feedback geben</h2>
-                                    <div class="feedback-font px-3">
-                                        Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
-                                        sie im Grundriss anklickst.
-                                    </div>
-                                </div>
-
-
-                                <div id="image-container" class="map-container tooltip-icon">
-                                    {{-- <img class="img-fluid mapFeedback" id="image"
-                                        src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg') }}"
-                                        alt="Office room plan"> --}}
-                                        <img class="img-fluid mapFeedback" id="image"
-                                        src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
-                                        alt="Office room plan">
-                                    <input id="x-coordinates" type="hidden" name="x_coordinates">
-                                    <input id="y-coordinates" type="hidden" name="y_coordinates">
-                                </div>
-                                {{-- <div id="image-container" class="map-container tooltip-icon">
-                                    <img class="img-fluid myMapImg" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
-                                    <input id="x-coordinates" type="hidden" name="x_coordinates">
-                                    <input id="y-coordinates" type="hidden" name="y_coordinates">
-                                </div> --}}
-            </form>
+                    <!-- Content of Card 1 -->
+                    <div class="col">
+                        <h2 class="h1 mb-3 px-3 pt-3">Feedback geben</h2>
+                        <div class="feedback-font px-3">
+                            Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
+                            sie im Grundriss anklickst.
+                        </div>
+                    </div>
+                    <div id="image-container" class="map-container tooltip-icon">
+                            <img class="img-fluid mapFeedback" id="image"
+                            src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
+                            alt="Office room plan">
+                        <input id="x-coordinates" type="hidden" name="x_coordinates">
+                        <input id="y-coordinates" type="hidden" name="y_coordinates">
+                    </div>
+                </form>
             <!-- FORM END-->
+            
             <!--ADMIN USE -->
             <div class="col-sm-3" style="display:none;">
                 <p id="x-display"></p>

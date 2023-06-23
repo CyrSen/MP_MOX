@@ -10,6 +10,10 @@
 
     <title>{{ config('app.name', 'myOﬃceX') }}</title>
 
+
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+
+
     <!-- Iconsevices -->
     <script src="https://kit.fontawesome.com/d4cbcb96c8.js" crossorigin="anonymous"></script>
 
