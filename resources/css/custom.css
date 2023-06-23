@@ -135,38 +135,43 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    font-size:125%;
   }
   
-.mehie {
+.frownopen {
     color: #ff6200;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    font-size:125%;
   }
 
-.smile {
+.mehie {
     color: #ffff00;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    font-size:125%;
 }
 
-.grin {
+.laugh {
     color: #55ff00;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    font-size:125%;
   }
 
-.lol {
+.squint {
     color: #00943e;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    font-size:125%;
 }
 
 

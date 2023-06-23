@@ -219,16 +219,16 @@
                             icon.classList.add('fa-frown', 'frownie');
                             break;
                         case '2':
-                            icon.classList.add('fa-meh', 'mehie');
+                            icon.classList.add('fa-frown-open', 'frownopen');
                             break;
                         case '3':
-                            icon.classList.add('fa-smile', 'smile');
+                            icon.classList.add('fa-meh', 'mehie');
                             break;
                         case '4':
-                            icon.classList.add('fa-grin', 'grin');
+                            icon.classList.add('fa-face-laugh', 'laugh');
                             break;
                         case '5':
-                            icon.classList.add('fa-laugh-squint', 'lol');
+                            icon.classList.add('fa-laugh-squint', 'squint');
                             break;
                         default:
                             icon.classList.add('fa-comment-medical', 'comment-medical');
