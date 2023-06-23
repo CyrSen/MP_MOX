@@ -29,6 +29,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Scripts -->
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/latest/date-picker.min.js"></script>
 
     <!-- Directives -->
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/css/custom.css'])
