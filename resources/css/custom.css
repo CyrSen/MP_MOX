@@ -318,6 +318,10 @@ background: transparent !important;
     .arrow-circle {
         display: none;
     }
+
+    .adressTelNoContact {
+        display:none;
+    }
 }
 
 @media (max-width: 767px) {

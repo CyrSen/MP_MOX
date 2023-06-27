@@ -96,7 +96,7 @@
                                     <i class="fa fa-sync fa-spin-hover fa-3x"></i>
                                     <p class="small" style="font-family:Roboto, sans-serif; font-size:12px;">Synch Now</p>
                                 </a>
-                            <p id="adminParagraph" class="small text-center pt-0">Zum Aktualisiren bitte Synch-Button drücken</p>
+                            <p id="adminParagraph" class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button drücken</p>
 
                             @if (session('success'))
                                 <div class="alert alert-success alert-dismissible fade show" role="alert">

@@ -33,7 +33,7 @@
                 @auth
                 <div class="text-center pt-3">
                 <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="{{ url('/feedback') }}">
-                    <button class="btn btn-lg btn-indigo text-white">
+                    <button class="btn btn-lg btn-indigo text-white" style="display:none">
                         Umfrage Wiederholen
                     </button>
                 </a>
@@ -163,9 +163,9 @@
           Wir freuen uns über dein Interesse! Bitte hinterlasse uns deine Kontaktdaten und eine kurze Nachricht. Wir melden uns so schnell wie möglich bei dir zurück.
         </p>
       </div>
-      <div class="card mb-5 wow fadeInUp" data-wow-delay=".4s">
-        <div class="card-body p-5">
-          <div class="row">
+      <div class="card col-12 mb-5 wow fadeInUp" data-wow-delay=".4s" style="">
+        <div class="card-body p-5 d-flex align-items-center" style="background-color: transparent;">
+          <div class="row justify-content-center">
             <div class="col-md-8">
               <form action="https://formspree.io/f/xdovqjnd" method="POST">
                 <div class="row">
@@ -191,26 +191,31 @@
                   </div>
                   <div class="col-md-12">
                     <div class="md-form">
-                      <textarea class="md-textarea" id="message" name="message" required="required"></textarea>
+                      <textarea class="md-textarea" id="message" name="message" required="required" style="width: 100%;"></textarea>
                       <label for="message">Deine Nachricht</label>
                     </div>
                   </div>
                 </div>
-                <div class="center-on-small-only mb-4">
-                  <button class="btn btn-indigo ml-0" type="submit" style="color:white"><i class="fa fa-paper-plane-o mr-2"></i> Senden</button>
+                <div class="row">
+                  <div class="text-center text-md-start">
+                    <div class="center-on-small-only mb-4">
+                      <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit" style="color:white"><i class="fa fa-paper-plane-o mr-2"></i> Senden</button>
+                    </div>
+                  </div>
                 </div>
+                
               </form>
             </div>
-            <div class="col-md-4">
+            <div class="adressTelNoContact col-md-4" style="position: relative;left: 6rem;">
               <ul class="list-unstyled text-center">
                 <li class="mt-4"><i class="fa fa-map-marker indigo-text fa-2x"></i>
-                  <p class="mt-2">Dufoustrasse 49, 8008 Zürich</p>
+                  <p class="mt-2">Dufoustrasse 49<br> 8008 Zürich</p>
                 </li>
                 {{-- <li class="mt-4"><i class="fa fa-phone indigo-text fa-2x"></i>
                   <p class="mt-2">079 947 10 17</p>
                 </li> --}}
-                <li class="mt-4"><i class="fa fa-envelope indigo-text fa-2x"></i>
-                  <p class="mt-2">contact@myofficex.com</p>
+                <li class="mt-4" style="position: relative; top: 3.7rem;"><i class="fa fa-envelope indigo-text fa-2x"></i>
+                  <p class="mt-2">contact@myofficex.ch</p>
                 </li>
               </ul>
             </div>

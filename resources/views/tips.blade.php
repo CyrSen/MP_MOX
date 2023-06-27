@@ -53,7 +53,7 @@
         <div class="card transparent">
           <div class="row">
             <div class="col-md-4 loudCol d-flex align-items-center justify-content-end left-container">
-              <img class="img-fluid rounded mb-3 emoji-tipsLoud" src="{{ asset('assets/img/icons_var/smiley_new_loud_red.svg') }}" alt="Emoji suffering from noise" style=" ">
+              <img class="img-fluid rounded mb-3 emoji-tipsLoud" src="{{ asset('assets/img/icons_var/smiley_new_loud_red.svg') }}" alt="Emoji suffering from noise" style="position:relative;left:22px;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
