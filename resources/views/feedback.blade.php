@@ -9,31 +9,30 @@
     <section id="feedback" {{-- style="margin-bottom:10rem;" --}}>
         <div class="rgba-black-strong"></div>
         <div class="container py-1">
-                <!-- FORM START-->
-                <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
+            <!-- FORM START-->
+            <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
                 @csrf
                 <div class="row justify-content-center">
                     <div class="col-md-6 mb-5 wow fadeInRight" data-wow-delay=".4s">
                         <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0">
-                    <!-- Content of Card 1 -->
-                    <div class="col">
-                        <h2 class="h1 mb-3 px-3 pt-3">Feedback geben</h2>
-                        <div class="feedback-font px-3">
-                            Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
-                            sie im Grundriss anklickst.
-                        </div>
-                    </div>
-                    <div id="image-container" class="map-container tooltip-icon">
-                            <img class="img-fluid mapFeedback" id="image"
-                            src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
-                            alt="Office room plan">
-                        <input id="x-coordinates" type="hidden" name="x_coordinates">
-                        <input id="y-coordinates" type="hidden" name="y_coordinates">
-                    </div>
-                </form>
+                                <!-- Content of Card 1 -->
+                                <div class="col">
+                                    <h2 class="h1 mb-3 px-3 pt-3">Feedback geben</h2>
+                                    <div class="feedback-font px-3">
+                                        Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
+                                        sie im Grundriss anklickst.
+                                    </div>
+                                </div>
+                                <div id="image-container" class="map-container tooltip-icon">
+                                    <img class="img-fluid mapFeedback" id="image"
+                                        src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
+                                    <input id="x-coordinates" type="hidden" name="x_coordinates">
+                                    <input id="y-coordinates" type="hidden" name="y_coordinates">
+                                </div>
+            </form>
             <!-- FORM END-->
-            
+
             <!--ADMIN USE -->
             <div class="col-sm-3" style="display:none;">
                 <p id="x-display"></p>
@@ -62,21 +61,22 @@
                                     title="Zu kalt" data-bs-value="3" onclick="setTempLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_excellent.svg"
-                                    alt="smiley-ok" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Gerade richtig" data-bs-value="5"
-                                    onclick="setTempLevel(5)">
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-ok"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Gerade richtig" data-bs-value="5" onclick="setTempLevel(5)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_nottoohot.svg"
-                                    alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Zu warm" data-bs-value="3" onclick="setTempLevel(3)">
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_nottoohot.svg" alt="smiley-meh"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Zu warm" data-bs-value="3" onclick="setTempLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_hot_red.svg"
-                                    alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Viel zu warm" data-bs-value="1"
-                                    onclick="setTempLevel(1)">
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_hot_red.svg" alt="smiley-mask"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Viel zu warm" data-bs-value="1" onclick="setTempLevel(1)">
                             </div>
                         </div>
                         <input type="hidden" name="temperature_level" id="temperature-level-input">
@@ -89,8 +89,9 @@
                             <div class="icon-wrapper icon-element">
                                 <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
                                     src="./assets/img/icons_var/smiley_new_silent.svg" alt="smiley-great"
-                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Viel zu leise" data-bs-value="2" onclick="setNoiseLevel(1)">
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Viel zu leise" data-bs-value="2"
+                                    onclick="setNoiseLevel(1)">
                             </div>
                             <div class="icon-wrapper icon-element">
                                 <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
@@ -107,14 +108,16 @@
                                     onclick="setNoiseLevel(5)" style="position: relative; left: 8px;">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_poor.svg"
-                                    alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Zu laut" data-bs-value="3"
-                                    onclick="setNoiseLevel(3)" style="position: relative; left: 13px;">
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_poor.svg" alt="smiley-meh"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Zu laut" data-bs-value="3" onclick="setNoiseLevel(3)"
+                                    style="position: relative; left: 13px;">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_loud_red.svg"
-                                    alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_loud_red.svg" alt="smiley-mask"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Viel zu laut" data-bs-value="1"
                                     onclick="setNoiseLevel(1)" style="position: relative;left: 10px;">
                             </div>
@@ -148,14 +151,16 @@
                                     onclick="setAirQLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_poor.svg"
-                                    alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_poor.svg" alt="smiley-meh"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Mässige Luftqualität" data-bs-value="2"
                                     onclick="setAirQLevel(2)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_smelly.svg"
-                                    alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_smelly.svg" alt="smiley-mask"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Schlechte Luftqualität - Stinkt übelst - hazardous!!!"
                                     data-bs-value="1" onclick="setAirQLevel(1)">
                             </div>
@@ -189,14 +194,16 @@
                                     onclick="setHiggeLevel(3)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_poor.svg"
-                                    alt="smiley-meh" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_poor.svg" alt="smiley-meh"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Mässiger Komfort" data-bs-value="2"
                                     onclick="setHiggeLevel(2)">
                             </div>
                             <div class="icon-wrapper icon-element">
-                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon" src="./assets/img/icons_var/smiley_new_worst.svg"
-                                    alt="smiley-mask" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                    src="./assets/img/icons_var/smiley_new_worst.svg" alt="smiley-mask"
+                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Kein Komfort" data-bs-value="1"
                                     onclick="setHiggeLevel(1)">
                             </div>
@@ -219,7 +226,7 @@
                     </div>
                     </fieldset>
                     </form>
-                </div>  
+                </div>
             </div>
         </div>
 
