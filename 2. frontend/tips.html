@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tipps myOfficeX</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/mdb.min.css?ver=1.1.0" rel="stylesheet">
+    <style>
+      #info {
+        display: flex;
+        align-items: stretch;
+        min-height: 100vh;
+        background: url("img/open-window.jpg") no-repeat center center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+      }
+  
+      .rgba-black-strong {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Deckkraft hier ändern */
+        z-index: -1;
+      }
+  
+      .card.mb-5.wow.fadeInUp[data-wow-delay=".4s"] {
+        flex: 1;
+      }
+  
+      .card-body.p-5 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      .top-nav-collapse {
+        background-color: #3949ab !important;
+      }
+  
+      .navbar:not(.top-nav-collapse) {
+        background: transparent !important;
+      }
+  
+      @media (max-width: 768px) {
+        .navbar:not(.top-nav-collapse) {
+          background: #3949ab !important;
+        }
+      }
+  
+      @media (max-width: 450px) {
+        .margins {
+          margin-right: 1rem;
+          margin-left: 1rem;
+        }
+      }
+  
+      .navbar-nav .nav-link {
+        font-weight: 500;
+      }
+  
+      .myoffice-text {
+        font-weight: 400;
+        margin-right: 0;
+      }
+  
+      .myoffice-x {
+        font-weight: 900;
+        margin-left: -3px;
+      }
+  
+      footer {
+        position: sticky;
+        bottom: 0;
+      }
+  
+      body.popup-open {
+        overflow: hidden !important;
+      }
+  
+      .popup-dialog {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 65px;
+        max-width: 1200px;
+        overflow-y: hidden !important; /* Ändern Sie 'hidden' anstelle von 'auto' */
+      }
+  
+      .popup-open {
+        overflow: hidden !important;
+      }
+  
+      .modal-open {
+        overflow: hidden !important;
+      }
+  
+
+      .modal-dialog {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+      @media (max-width: 576px) {
+        .modal-dialog.modal-dialog-centered {
+          margin-left: min 5px;
+          margin-right: min 5px;         
+          margin-top: 75px; 
+          max-width: 2000px;
+        }
+      }
+  
+
+
+
+
+      .modal-header.bg-indigo {
+        background-color: #3949ab;
+        color: #ffffff;
+
+      }
+  
+      h6 {
+  font-weight: 400;
+}
+
+.modal-body {
+        font-weight: 400;
+        padding: 1.5rem;
+      }
+
+
+      .modal-title {
+  font-weight: bold;
+}
+
+
+  
+      .btn-secondary {
+        background-color: #3949ab;
+        color: #ffffff;
+      }
+  
+      .modal.shadow {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+  
+      @media (max-width: 767px) {
+        .scroll-buttons {
+          position: fixed;
+          bottom: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 9999;
+          width: 100%;
+          padding: 0 1rem;
+          box-sizing: border-box;
+        }
+      }
+  
+      @media (min-width: 768px) {
+        .scroll-buttons {
+          display: none;
+        }
+      }
+  
+      .scroll-button {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+  
+      .scroll-button i {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+  
+
+  
+     
+    
+      p.lead {
+        font-weight: 400;
+      }
+  
+      .btn {
+        font-weight: 500;
+      }
+  
+      .h4.text-white.pl-1 {
+        font-weight: 900;
+      }
+
+
+      @media (max-width: 991.98px) {
+  .emoji-large,
+  .emoji-small {
+    display: none !important;
+  }
+}
+
+
+
+
+.card.transparent {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+}
+
+.card.transparent .left-container {
+  flex: 1;
+  max-width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.card.transparent .right-container {
+  flex: 1;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .emoji-large,
+  .left-container {
+    display: none !important;
+  }
+}
+
+
+    </style>
+
+</head>
+
+  <body>
+    <header>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="myoffice-text">myOffice</span>
+        <span class="myoffice-x">X</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">Tipps</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <!-- Tips -->
+      <section id="info">
+        <div class="rgba-black-strong"></div>
+        <div class="container py-5">
+          <div class="wow fadeIn">
+            <h2 class="h1 text-white pt-5 pb-3 text-center">Tipps</h2>
+            <p class="text-white px-5 mb-5 pb-3 lead text-center">
+              Hier sind einige sofort umsetzbare Tipps, mit denen du dein Komfort verbessern kannst!
+            </p>
+          </div>
+      
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
+              <div class="card transparent">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
+                    <img class="img-fluid rounded mb-3 emoji-large" src="img/Emoji-cold-100.png" alt="Emoji suffering from cold" style="max-width: 100px;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="h4 text-white">Zu kalt?</div>
+                      <h6 class="font-weight-medium text-white mb-4">Du möchtest nicht mehr frieren? Hier sind einige Tipps:</h6>
+                      <button class="btn btn-indigo btn-rounded" type="button" onclick="openPopup('popup-kalt')">Tipps Kälte</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
+              <div class="card transparent">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
+                    <img class="img-fluid rounded mb-3 emoji-large" src="img/Emoji-hot-100.png" alt="Emoji suffering from heat" style="max-width: 100px;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="h4 text-white">Zu heiss?</div>
+                      <h6 class="font-weight-medium text-white mb-4">Ist dir im Büro zu warm? Dann lies diese Tipps:</h6>
+                      <button class="btn btn-indigo btn-rounded" type="button" onclick="openPopup('popup-heiss')">Tipps Hitze</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
+              <div class="card transparent">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
+                    <img class="img-fluid rounded mb-3 emoji-large" src="img/Emoji-noise-100 (2).png" alt="Emoji suffering from noise" style="max-width: 125px;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="h4 text-white">Zu laut?</div>
+                      <h6 class="font-weight-medium text-white mb-4">Möchtest du weniger Lärmbelastung? Lies diese Tipps:</h6>
+                      <button class="btn btn-indigo btn-rounded" type="button" onclick="openPopup('popup-laerm')">Tipps Lärm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay=".3s">
+              <div class="card transparent">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
+                    <img class="img-fluid rounded mb-3 emoji-large" src="img/Emoji-air-100.png" alt="Emoji suffering from bad air" style="max-width: 100px;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="h4 text-white">Schlechte Luft?</div>
+                      <h6 class="font-weight-medium text-white mb-4">Dicke Luft im Office? Diese Tipps können helfen:</h6>
+                      <button class="btn btn-indigo btn-rounded" type="button" onclick="openPopup('popup-luft')">Tipps Luft</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      
+
+<!--Popup Kalt-->
+<div id="popup-kalt" class="modal shadow">
+  <div class="modal-dialog modal-dialog-centered popup-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-indigo text-white">
+        <h5 class="modal-title">Tipps gegen Frieren im Büro</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>
+            <h6>Kleidung</h6>
+            <ul>
+              <li>Trage mehrere Kleidungsschichten aus natürlichen Materialien wie Wolle oder Kaschmir.</li>
+              <li>Benutze Handwärmer und wärmende Einlegesohlen.</li>
+              <li>Ergänze deine Kleidung mit wärmenden Accessoires wie Schals und warmen Socken.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Essen und Trinken</h6>
+            <ul>
+              <li>Geniesse warme Getränke wie Tee oder Kaffee.</li>
+              <li>Gönn dir warme Snacks oder Suppen.</li>
+              <li>Iss warme Mahlzeiten in der Mittagspause.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Aktive Haltung</h6>
+            <ul>
+              <li>Sitz aufrecht und aktiv, um dich wärmer zu fühlen.</li>
+              <li>Achte auf eine ergonomische Sitzposition.</li>
+              <li>Arbeite stehend, indem du die Höhe deines Schreibtisches anpasst.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Bewegung</h6>
+            <ul>
+              <li>Nutze die Treppe anstatt des Lifts.</li>
+              <li>Steh regelmässig auf und mach kurze Bewegungspausen.</li>
+              <li>Bewege deine Finger zu Zehen, um sie warm zu halten.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Fensterlüftung</h6>
+            <ul>
+              <li>Stelle sicher, dass die Fenster gut geschlossen sind und keine kalte Luft hineinströmt.</li>
+              <li>Lüfte nur kurz, um frische Luft hereinzulassen, ohne den Raum auszukühlen.</li>
+              <li>Sprich mit deinen Kolleginnen und Kollegen über Regelungen zur Fensterlüftung.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Positionierung im Büro</h6>
+            <ul>
+              <li>Wechsle, wenn möglich, näher an die Heizung.</li>
+              <li>Suche einen wärmeren Bereich im Büro, falls vorhanden.</li>
+              <li>Setze dich in die Nähe von Fenstern, um von den Sonnenstrahlen gewärmt zu werden.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo" data-dismiss="modal">Schliessen</button>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<!--Popup Heiss-->
+<div id="popup-heiss" class="modal shadow">
+  <div class="modal-dialog modal-dialog-centered popup-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-indigo text-white">
+        <h5 class="modal-title">Tipps bei Hitze im Büro</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>
+            <h6>Kleidung</h6>
+            <ul>
+              <li>Trage leichte, atmungsaktive Kleidung, um dich kühl zu halten.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Essen und Trinken</h6>
+            <ul>
+              <li>Trinke ausreichend Wasser und kühle Getränke, um hydratisiert zu bleiben.</li>
+              <li>Vermeide koffeinhaltige Getränke, da sie dehydrierend wirken können.</li>
+              <li>Geniesse kühlende Snacks wie frisches Obst oder Joghurt.</li>
+              <li>Wähle leichtere Mahlzeiten, um die Verdauung zu erleichtern und eine zusätzliche Hitzeentwicklung zu vermeiden.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Lüften</h6>
+            <ul>
+              <li>Öffne Fenster und Türen in den kühleren Morgen- oder Abendstunden für frische Luft.</li>
+              <li>Falls tagsüber Fensterlüftung erforderlich ist, öffne ein sonnenabgewandtes Fenster, wo die Aussenluft kühler ist.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Positionierung im Büro</h6>
+            <ul>
+              <li>Vermeide direkte Sonneneinstrahlung.</li>
+              <li>Arbeite, wenn möglich, an einem kühleren Ort wie einem klimatisierten Raum oder einem schattigen Aussenbereich.</li>
+              <li>Schliesse Storen, um das Eindringen von Sonnenwärme zu reduzieren.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Elektronische Geräte</h6>
+            <ul>
+              <li>Reduziere die Verwendung von elektronischen Geräten, da sie Wärme abgeben.</li>
+              <li>Vermeide das Sitzen in der Nähe von Computern, Druckern oder anderen elektronischen Geräten, um zusätzliche Wärmeentwicklung zu vermeiden.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo" data-dismiss="modal">Schliessen</button>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<!--Popup Lärm-->
+<div id="popup-laerm" class="modal shadow">
+  <div class="modal-dialog modal-dialog-centered popup-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-indigo text-white">
+        <h5 class="modal-title">Tipps gegen Lärm im Büro</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+            <li>
+              <h6>Vereinbarungen</h6>
+              <ul>
+                <li>Arbeite gemeinsam an Lärmschutzmassnahmen: Nutze ruhige Kommunikationsmittel und vereinbare Ruhezeiten mit deinen Kollegen.</li>
+                <li>Stimme dich ab: Kommuniziere mit den Kolleginnen und Kollegen, um gemeinsame Lösungen für Lärmprobleme zu finden.</li>
+                <li>Lege klare Kommunikationsregeln fest: Versuche mit deinen Kolleginnen und Kollegen klare Regeln zu finden um den Störung im Büro zu reduzieren, die für alle passen.</li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <h6>Lärmfreie Zonen</h6>
+              <ul>
+                <li>Nutze abgeschirmte Telefonkabinen: Führe ungestörte Telefongespräche in abgeschirmten Telefonkabinen oder Fokusräumen.</li>
+                <li>Nutze lärmfreie Zonen: Gehe in spezielle Fokusräume im Büro, in denen du konzentriert arbeiten kannst, ohne gestört zu werden.</li>
+                <li>Bilde lärmfokussierte Arbeitseinheiten: Arbeite in kleinen Gruppen zusammen, die an ähnlich lauten Aufgaben arbeiten, um Lärmströrungen zu reduzieren.</li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <h6>Lärmfreie Zeiten</h6>
+              <ul>
+                <li>Führe lärmbefreite Zeiten ein: Schaffe im Büro Zeiten, in denen laute Gespräche oder Telefonate vermieden werden sollten, um eine ruhigere Arbeitsumgebung zu gewährleisten.</li>
+                <li>Nutze lärmfreie Zeiten: Plane deine anspruchsvollsten Aufgaben oder konzentrierte Arbeit in Zeiten mit niedrigem Lärmpegel, wie früh am Morgen, nach Feierabend oder anderen lärmbefreiten Zeiten.</li>
+              </ul>
+            </li>
+          <br><p>Wenn alles nichts nützt: Verwende geräuschunterdrückende Kopfhörer oder höre beruhigende Musik, um den Lärm zu überdecken.</p>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo" data-dismiss="modal">Schliessen</button>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<!--Popup Luft-->
+<div id="popup-luft" class="modal shadow">
+  <div class="modal-dialog modal-dialog-centered popup-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-indigo text-white">
+        <h5 class="modal-title">Tipps für gute Luft im Büro</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>
+            <h6>Essen und Trinken</h6>
+            <ul>
+              <li>Schliesse die Tür zur Küche: Falls du stark riechende Gerichte zubereitest oder aufwärmst, schliesse die Tür zur Küche, um Gerüche im Raum zu halten.</li>
+              <li>Iss riechende Lebensmittel wie Zwiebeln, Knoblauch oder Fisch in der Küche oder einem geschlossenen Raum mit guter Belüftung oder Fenster.</li>
+              <li>Entsorge Abfall richtig: Entsorge Essensreste und Verpackungen ordnungsgemäss, um Gerüche und Schädlingsbefall zu vermeiden.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Fensterlüftung</h6>
+            <ul>
+              <li>Lüfte regelmässig: Öffne bei Bedarf die Fenster, um frische Luft hereinzulassen und verbrauchte Luft abzuführen.</li>
+              <li>Nutze natürliche Lüftung: Wenn möglich, nutze natürliche Lüftungsmöglichkeiten wie Fenster und Türen.</li>
+            </ul>
+          </li>
+          <br>
+          <li>
+            <h6>Elektronische Geräte</h6>
+            <ul>
+              <li>Schalte Elektronik aus: Schalte elektronische Geräte wie Drucker oder Kopierer aus, wenn sie nicht in Gebrauch sind, um den Ausstoss von flüchtigen organischen Verbindungen (VOCs) zu reduzieren.</li>
+              <li>Platziere elektronische Geräte richtig: Stelle sicher, dass deine elektronischen Geräte ausreichend belüftet sind und nicht zu nah an deinem Arbeitsplatz stehen.</li>
+            </ul>
+          </li>
+          <br>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-indigo" data-dismiss="modal">Schliessen</button>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<div class="scroll-buttons">
+  <div class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    <i class="fa fa-arrow-up"></i>
+  </div>
+  <div class="scroll-button" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
+    <i class="fa fa-arrow-down"></i>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer indigo darken-2 center-on-small-only p-3 mt-0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="d-inline-block">
+          <span style="font-weight: 400">&copy; myOfficeX</span> | <a href="impressum.html" style="font-weight: 400">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script type="text/javascript" src="scripts/jquery.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/popper.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/wow.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/mdb.min.js?ver=1.1.0"></script>
+    <script>new WOW().init();</script>
+
+<script>
+  function openPopup(popupId) {
+    $('#' + popupId).modal('show');
+  }
+</script>
+
+
+  </body>
+</html>
