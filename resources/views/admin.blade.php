@@ -5,108 +5,273 @@
 
 @section('content')
 
-<section id="admin" {{-- style="
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-background-size: 100% 100%;
-position: relative;
-min-width: 100vw;
-background-image: url('{{ asset('assets/img/panorama-3094696_1920.jpg') }}');" --}}>
-    <div class="rgba-black-strong"></div>
-    <div class="container-fluid" style="margin-top:10vh;">
-        <div class="row justify-content-center">
-            <div class="col-md-4 mt-3">
-                <div class="card mapAdmin py-2 ml-4 p-2 d-flex align-items-center">
-                    <!-- Your select code here -->
-                    <div>
-                        <select class="form-select" aria-label="Select By Question" name="" id="">
-                            <option selected>Select one</option>
-                            <option value="">Alle</option>
-                            <option value="">Lärm</option>
-                            <option value="">Temperatur</option>
-                            <option value="">AirQ</option>
-                            <option value="">Happiness</option>
-                        </select>
+    <section id="admin" class="">
+        <div class="rgba-black-strong"></div>
+        <div class="container-fluid" style="margin-top:3vh;">
+            <div class="row justify-content-evenly">
+                <!-- Map Views -->
+                <div class="col-sm-12 col-md-3 px-0">
+                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center">
+                        <!-- Map for temperature_level -->
+                        <p class="lead text-center">Wärme-Behaglichkeit</p>
+                        <div id="mapTemperature" class="myContainer mapAdmin tooltip-icon">
+                            <img class="img-fluid" id="imgTemperature"
+                                src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
+                            <input id="x-coordinates-temperature" type="hidden" name="x_coordinates">
+                            <input id="y-coordinates-temperature" type="hidden" name="y_coordinates">
+                        </div>
                     </div>
-    
-                    <div id="image-container" class="{{-- myContainer --}} col-xs-8">
-                        <img class="img-fluid {{-- myMapImg --}}" id="image" src="{{ asset('assets/img/Map_Raeffel_MP_MOX_transp.svg')}}" alt="Office room plan">
-                        <input id="x-coordinates" type="hidden" name="x_coordinates">
-                        <input id="y-coordinates" type="hidden" name="y_coordinates">
+                </div>
+                <div class="col-sm-12 col-md-3 px-0">
+                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center">
+                        <!-- Map for noise_level -->
+                        <p class="lead text-center">Lärmempfinden</p>
+                        <div id="mapNoise" class="myContainer mapAdmin tooltip-icon">
+                            <img class="img-fluid" id="imgNoise" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
+                                alt="Office room plan">
+                            <input id="x-coordinates-noise" type="hidden" name="x_coordinates">
+                            <input id="y-coordinates-noise" type="hidden" name="y_coordinates">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 px-0">
+                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center">
+                        <!-- Map for air_quality_level -->
+                        <p class="lead text-center">Raumluftempfinden</p>
+                        <div id="mapAirQuality" class="myContainer mapAdmin tooltip-icon">
+                            <img class="img-fluid" id="imgAirQuality"
+                                src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
+                            <input id="x-coordinates-air-quality" type="hidden" name="x_coordinates">
+                            <input id="y-coordinates-air-quality" type="hidden" name="y_coordinates">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 px-0">
+                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center">
+                        <!-- Map for higge_level -->
+                        <p class="lead text-center">Gesamtwahrnehmung (Higge)</p>
+                        <div id="mapHigge" class="myContainer mapAdmin tooltip-icon">
+                            <img class="img-fluid" id="imgHigge" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
+                                alt="Office room plan">
+                            <input id="x-coordinates-higge" type="hidden" name="x_coordinates">
+                            <input id="y-coordinates-higge" type="hidden" name="y_coordinates">
+                        </div>
                     </div>
                 </div>
             </div>
-    
-            <div class="col-md-8">
-                <div class="card mr-4 p-3 mt-3">
-                    <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
-                        <h1 class="text-center">Feedback admin</h1>
-                        @if (session('success'))
-                            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                {{ session('success') }}
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <!-- Filter and Table -->
+            <div class="row mt-3">
+                <div class="col-sm-12 col-md-3 px-0">
+
+                    <!-- Filter/Select Div -->
+                    <div class="row justify-content-center">
+                        <div class="card col-sm-10 m-3 me-n5 text-center">
+                            <label class="form-label mt-2 mb-0 pt-2  text-center" for="">
+                                <p class="lead">Zeitspanne angeben</p>
+                            </label>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6">
+                                    <label for="start-date-input" class="form-label">Startdatum:</label>
+                                    <input type="date" class="form-control bg-dark text-white" id="start-date-input"
+                                        required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="end-date-input" class="form-label">Enddatum:</label>
+                                    <input type="date" class="form-control bg-dark text-white" id="end-date-input"
+                                        required>
+                                </div>
                             </div>
-                        @endif
-    
-                        <!-- table code here -->
-                        <table class="table">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>ID</th>
-                                    <th>User</th>
-                                    {{-- <th>X Coordinate</th>
-                                    <th>Y Coordinate</th> --}}
-                                    <th>Lärmempfinden</th>
-                                    <th>Temperaturempfinden</th>
-                                    <th>Raumluftqualität</th>
-                                    <th>Happiness</th>
-                                    <th>Commentary</th>
-                                    <th>Action</th>
-                                    <!-- Add more table headers for other fields as needed -->
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($feedbackMaps as $feedbackMap)
+                            <div class="text-center mt-3 mb-2">
+                                <button class="btn btn-primary" onclick="filterEntriesByDate()">Filter anwenden</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-9 mt-n3 px-0">
+                    <div class="card p-3 me-md-4 mt-3">
+                        <!-- Table -->
+                        <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
+                            <h3 class="cardAdmiTable card-title text-center">Übersicht Admin/FM alle Feedbacks.</h3>
+                            <a href="{{ url('/admin') }}" class="btn btn-reload reloadAdmin mt-0 mb-2 p-1"
+                                id="refresh-button" class="refresh-end" onclick="refreshContent()">
+                                <i class="fa fa-sync fa-spin-hover fa-3x"></i>
+                                <p class="small" style="font-family:Roboto, sans-serif; font-size:12px;">Synch Now</p>
+                            </a>
+                            <p id="adminParagraph" class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button
+                                drücken</p>
+
+                            @if (session('success'))
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    {{ session('success') }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            @endif
+
+                            <!-- Table to display filtered data -->
+                            <table class="table table-bordered">
+                                <thead>
                                     <tr>
-                                        <td>{{ $feedbackMap->id }}</td>
-                                        <td>{{ $feedbackMap->user->name }}</td>
-                                        {{-- <td>{{ $feedbackMap->x_coordinates }}</td>
-                                        <td>{{ $feedbackMap->y_coordinates }}</td> --}}
-                                        <td>{{ $feedbackMap->noise_level }}</td>
-                                        <td>{{ $feedbackMap->temperature_level }}</td>
-                                        <td>{{ $feedbackMap->air_quality_level }}</td>                  
-                                        <td>{{ $feedbackMap->higge_level }}</td>
-                                        <td>{{ $feedbackMap->commentary }}</td>
-    
-                                        <!-- Add more table cells for other fields as needed -->
-                                        <td>
-                                            @if (Auth::check() && Auth::user()->permissions_level === 'level3')
-                                                <!-- Delete button -->
-                                                <form action="{{ route('feedback.destroy', $feedbackMap) }}" method="POST">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#successModal">Delete</button>
-                                                </form>
-                                            @endif
-                                        </td>
-                                        
+                                        <th>Datum</th>
+                                        <th style="display:none;">x-coordinates</th>
+                                        <th style="display:none;">y-coordinates</th>
+                                        <th>Wärme-Behaglichkeit</th>
+                                        <th>Lärmempfinden</th>
+                                        <th>Raumluftempfinden</th>
+                                        <th>Gesamtwahrnehmung</th>
+                                        <th>Kommentar</th>
                                     </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    @foreach ($feedbackMaps as $feedbackMap)
+                                        <tr>
+                                            <td>{{ $feedbackMap->created_at }}</td>
+                                            <td style="display:none;">{{ $feedbackMap->x_coordinates }}</td>
+                                            <td style="display:none;">{{ $feedbackMap->y_coordinates }}</td>
+                                            <td>{{ $feedbackMap->temperature_level }}</td>
+                                            <td>{{ $feedbackMap->noise_level }}</td>
+                                            <td>{{ $feedbackMap->air_quality_level }}</td>
+                                            <td>{{ $feedbackMap->higge_level }}</td>
+                                            <td>{{ $feedbackMap->commentary }}</td>
+                                            <td>
+                                                @if (Auth::check() && Auth::user()->permissions_level === 'level3')
+                                                    <!-- Delete button -->
+                                                    <form action="{{ route('feedback.destroy', $feedbackMap) }}"
+                                                        method="POST">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-danger"
+                                                            data-bs-toggle="modal" data-bs-target="#successModal">
+                                                            Delete
+                                                        </button>
+                                                    </form>
+                                                @endif
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 @endsection
 
 <script>
+    function filterEntriesByDate() {
+        // Get the start and end dates from the input fields
+        var startDateInput = document.getElementById('start-date-input');
+        var endDateInput = document.getElementById('end-date-input');
+        var startDate = new Date(startDateInput.value);
+        var endDate = new Date(endDateInput.value);
 
-    // Fetch the feedback map entries from the server-side
-    var feedbackMapEntries = {!! json_encode($feedbackMaps) !!};
-    
+        // Get the table body element
+        var tableBody = document.querySelector('.tableOwn tbody');
+
+        // Get all rows from the table body
+        var rows = tableBody.querySelectorAll('tr');
+
+        var mapNoiseContainer = document.getElementById('mapNoise');
+        var mapTemperatureContainer = document.getElementById('mapTemperature');
+        var mapAirQualityContainer = document.getElementById('mapAirQuality');
+        var mapHiggeContainer = document.getElementById('mapHigge');
+
+        // Clear the previous icons from the map
+        mapNoiseContainer.innerHTML = '';
+        mapTemperatureContainer.innerHTML = '';
+        mapAirQualityContainer.innerHTML = '';
+        mapHiggeContainer.innerHTML = '';
+
+        // Insert the map images back into the map containers
+        mapNoiseContainer.innerHTML =
+            '<img class="img-fluid" id="imgNoise" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan"><input id="x-coordinates-noise" type="hidden" name="x_coordinates"><input id="y-coordinates-noise" type="hidden" name="y_coordinates">';
+        mapTemperatureContainer.innerHTML =
+            '<img class="img-fluid" id="imgTemperature" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan"><input id="x-coordinates-temperature" type="hidden" name="x_coordinates"><input id="y-coordinates-temperature" type="hidden" name="y_coordinates">';
+        mapAirQualityContainer.innerHTML =
+            '<img class="img-fluid" id="imgAirQuality" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan"><input id="x-coordinates-air-quality" type="hidden" name="x_coordinates"><input id="y-coordinates-air-quality" type="hidden" name="y_coordinates">';
+        mapHiggeContainer.innerHTML =
+            '<img class="img-fluid" id="imgHigge" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan"><input id="x-coordinates-higge" type="hidden" name="x_coordinates"><input id="y-coordinates-higge" type="hidden" name="y_coordinates">';
+
+        // Loop through each row in the table and check if it falls within the specified date range
+        rows.forEach(function(row) {
+            var dateCell = row.querySelector('td:first-child');
+            var rowDate = new Date(dateCell.textContent);
+
+            if (rowDate >= startDate && rowDate <= endDate) {
+                row.style.display = 'table-row';
+
+                // Get the values from the row
+                var xCoordinates = row.querySelector('td:nth-child(2)').textContent;
+                var yCoordinates = row.querySelector('td:nth-child(3)').textContent;
+                var temperatureLevel = row.querySelector('td:nth-child(4)').textContent;
+                var noiseLevel = row.querySelector('td:nth-child(5)').textContent;
+                var airQualityLevel = row.querySelector('td:nth-child(6)').textContent;
+                var higgeLevel = row.querySelector('td:nth-child(7)').textContent;
+
+                // Create an icon element
+                var createIcon = function(level, x, y) {
+                    var icon = document.createElement('i');
+                    icon.classList.add('fa', 'fa-solid');
+
+                    // Set the emoji based on the level
+                    switch (level) {
+                        case '1':
+                            icon.classList.add('fa-frown', 'frownie');
+                            break;
+                        case '2':
+                            icon.classList.add('fa-frown-open', 'frownopen');
+                            break;
+                        case '3':
+                            icon.classList.add('fa-meh', 'mehie');
+                            break;
+                        case '4':
+                            icon.classList.add('fa-face-laugh', 'laugh');
+                            break;
+                        case '5':
+                            icon.classList.add('fa-laugh-squint', 'squint');
+                            break;
+                        default:
+                            icon.classList.add('fa-comment-medical', 'comment-medical');
+                            break;
+                    }
+
+                    icon.classList.add('adminView');
+                    icon.classList.add('tooltip-icon');
+                    // Set the position and z-index of the icon
+                    icon.style.position = 'absolute';
+                    icon.style.left = xCoordinates +
+                        '%'; // Use xCoordinates variable instead of 'x-coordinates'
+                    icon.style.top = yCoordinates +
+                        '%'; // Use yCoordinates variable instead of 'y-coordinates'
+                    icon.style.zIndex = '10';
+
+                    return icon;
+                };
+
+                // Add the icons after the image containers
+                mapNoiseContainer.appendChild(createIcon(noiseLevel, xCoordinates, yCoordinates));
+                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates));
+                mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
+                mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+
+    $(function() {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+
+    });
+
+    $(function() {
+        $('[data-bs-toggle="popover"]').popover({
+            html: true
+        })
+
+    });
 </script>

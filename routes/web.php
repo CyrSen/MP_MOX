@@ -33,8 +33,12 @@ Route::get('/tips/{feedbackMapId?}', function () {
     return view('tips');
 });
 
-Route::get('/danke', function () {
+Route::get('/danke/{feedbackMapId?}', function () {
     return view('danke');
+})->name('feedback.danke');
+
+Route::get('/impressum', function () {
+    return view('impressum');
 });
 
 Auth::routes();
