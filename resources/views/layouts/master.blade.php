@@ -84,9 +84,7 @@
                 z-index: 1;
                 padding-top: 10%;
             }
-        }
-
-        @media (min-width: 767px) {
+        }'resources/js/custom.js'
             #contact {
                 align-items: center;
                 justify-content: center;

@@ -9,7 +9,7 @@
  */
 namespace PHPUnit\Event;
 
-use function version_compare;
+use function gc_status;
 use PHPUnit\Event\Telemetry\HRTime;
 use PHPUnit\Event\Telemetry\Php81GarbageCollectorStatusProvider;
 use PHPUnit\Event\Telemetry\Php83GarbageCollectorStatusProvider;
@@ -91,8 +91,8 @@ final class Facade
             new Telemetry\System(
                 new Telemetry\SystemStopWatchWithOffset($offset),
                 new Telemetry\SystemMemoryMeter,
-                $this->garbageCollectorStatusProvider()
-            )
+                $this->garbageCollectorStatusProvider(),
+            ),
         );
 
         $this->sealed = true;
@@ -126,7 +126,7 @@ final class Facade
     {
         return new DispatchingEmitter(
             $this->deferredDispatcher(),
-            $this->createTelemetrySystem()
+            $this->createTelemetrySystem(),
         );
     }
 
@@ -135,7 +135,7 @@ final class Facade
         return new Telemetry\System(
             new Telemetry\SystemStopWatch,
             new Telemetry\SystemMemoryMeter,
-            $this->garbageCollectorStatusProvider()
+            $this->garbageCollectorStatusProvider(),
         );
     }
 
@@ -143,7 +143,7 @@ final class Facade
     {
         if ($this->deferringDispatcher === null) {
             $this->deferringDispatcher = new DeferringDispatcher(
-                new DirectDispatcher($this->typeMap())
+                new DirectDispatcher($this->typeMap()),
             );
         }
 
@@ -169,6 +169,8 @@ final class Facade
             Application\Started::class,
             Application\Finished::class,
 
+            Test\DataProviderMethodCalled::class,
+            Test\DataProviderMethodFinished::class,
             Test\MarkedIncomplete::class,
             Test\AfterLastTestMethodCalled::class,
             Test\AfterLastTestMethodFinished::class,
@@ -240,14 +242,14 @@ final class Facade
         foreach ($defaultEvents as $eventClass) {
             $typeMap->addMapping(
                 $eventClass . 'Subscriber',
-                $eventClass
+                $eventClass,
             );
         }
     }
 
     private function garbageCollectorStatusProvider(): Telemetry\GarbageCollectorStatusProvider
     {
-        if (version_compare('8.3.0', PHP_VERSION, '>')) {
+        if (!isset(gc_status()['running'])) {
             return new Php81GarbageCollectorStatusProvider;
         }
 
