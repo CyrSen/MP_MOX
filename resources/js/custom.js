@@ -95,7 +95,7 @@ function addOverlayIcon(event, category) {
   const overlayIcon = document.createElement('img');
   overlayIcon.classList.add('overlay-icon');
   overlayIcon.classList.add('animate__animated');
-  overlayIcon.classList.add('animate__zoomIn');
+  overlayIcon.classList.add('animate__bounceIn');
   overlayIcon.src = './assets/img/icons_var/checkmark_small_001.svg';
 
   // Append the overlay icon element as a child of the clicked icon

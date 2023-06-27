@@ -12,6 +12,10 @@ body {
 
 /*---FEEDBACKMAP/ADMINMAP--ICONS__MAPS START---------------------------------------------------------------*/
 
+.feedbackEmojis {
+    width: 85%;
+}
+
 #image-container {
     width: 70%;
     height: auto;
@@ -53,6 +57,15 @@ body {
     /* text-decoration: none !important; */
     font-size:1em;
     
+}
+
+#adminParagraph {
+    position: relative;
+    bottom: 3rem; 
+}
+
+.cardAdmiTable {
+    --bs-card-title-spacer-y: -2.5rem;
 }
 
 .btn-reload {

@@ -66,21 +66,21 @@
                         <!-- Filter/Select Div -->
                         <div class="row justify-content-center">
                             <div class="card col-sm-10 m-3 me-n5 text-center">
-                                <label for="" class="mt-2 text-center">Choose Date Range</label>
+                                <label class="form-label mt-2 mb-0 pt-2  text-center" for=""><p class="lead">Zeitspanne angeben</p></label>
                                 <div class="row justify-content-center">
                                     <div class="col-sm-6">
-                                        <label for="start-date-input" class="form-label">Start Date:</label>
+                                        <label for="start-date-input" class="form-label">Startdatum:</label>
                                         <input type="date" class="form-control bg-dark text-white" id="start-date-input"
                                             required>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label for="end-date-input" class="form-label">End Date:</label>
+                                        <label for="end-date-input" class="form-label">Enddatum:</label>
                                         <input type="date" class="form-control bg-dark text-white" id="end-date-input"
                                             required>
                                     </div>
                                 </div>
                                 <div class="text-center mt-3 mb-2">
-                                    <button class="btn btn-primary" onclick="filterEntriesByDate()">Apply Filter</button>
+                                    <button class="btn btn-primary" onclick="filterEntriesByDate()">Filter anwenden</button>
                                 </div>
                             </div>
                         </div>
@@ -90,12 +90,13 @@
                     <div class="card p-3 me-md-4 mt-3">
                         <!-- Table -->
                         <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
-                            <h1 class="text-center">
+                            <h3 class="cardAdmiTable card-title text-center">Übersicht Admin/FM alle Feedbacks.</h3>
                                 <a href="{{ url('/admin') }}" class="btn btn-reload reloadAdmin mt-0 mb-2 p-1"
                                     id="refresh-button" class="refresh-end" onclick="refreshContent()">
                                     <i class="fa fa-sync fa-spin-hover fa-3x"></i>
-                                </a>Feedback Admin
-                            </h1>
+                                    <p class="small" style="font-family:Roboto, sans-serif; font-size:12px;">Synch Now</p>
+                                </a>
+                            <p id="adminParagraph" class="small text-center pt-0">Zum Aktualisiren bitte Synch-Button drücken</p>
 
                             @if (session('success'))
                                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -109,14 +110,14 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Date</th>
+                                        <th>Datum</th>
                                         <th style="display:none;">x-coordinates</th>
                                         <th style="display:none;">y-coordinates</th>
-                                        <th>Temperature Level</th>
-                                        <th>Noise Level</th>
-                                        <th>Air Quality Level</th>
-                                        <th>Higge Level</th>
-                                        <th>Commentary</th>
+                                        <th>Wärme-Behaglichkeit</th>
+                                        <th>Lärmempfinden</th>
+                                        <th>Raumluftempfinden</th>
+                                        <th>Gesamtwahrnehmung</th>
+                                        <th>Kommentar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
