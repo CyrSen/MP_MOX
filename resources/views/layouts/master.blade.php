@@ -89,11 +89,17 @@
                 padding-top: 10%;
                 background-size: cover;
             }
-
-            .page-footer {
-                bottom: -2rem;
+            
+            .footer {
+                position: sticky;
+                bottom: 0;
+                margin-bottom: -2rem;
+                /* background-color: #3949ab; */
+                background-color: #3f51b5;
+                z-index: 2;
             }
         }
+
 
         @media (max-width: 800px) and (orientation: landscape) {
             #contact {
@@ -134,6 +140,15 @@
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
                 z-index: 1;
                 padding-top: 10%;
+            }
+
+            .footer {
+                position: sticky;
+                bottom: 0;
+                margin-bottom: -2rem;
+                /* background-color: #3949ab; */
+                background-color: #3f51b5;
+                z-index: 2;
             }
         }
 
