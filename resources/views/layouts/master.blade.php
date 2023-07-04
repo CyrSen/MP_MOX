@@ -90,11 +90,9 @@
                 background-size: cover;
             }
             
-            .footer {
+            .page-footer {
                 position: sticky;
                 bottom: 0;
-                margin-bottom: -2rem;
-                /* background-color: #3949ab; */
                 background-color: #3f51b5;
                 z-index: 2;
             }
@@ -142,11 +140,9 @@
                 padding-top: 10%;
             }
 
-            .footer {
+            .page-footer {
                 position: sticky;
                 bottom: 0;
-                margin-bottom: -2rem;
-                /* background-color: #3949ab; */
                 background-color: #3f51b5;
                 z-index: 2;
             }
