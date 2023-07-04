@@ -71,12 +71,12 @@
                             </label>
                             <div class="row justify-content-center">
                                 <div class="col-sm-6">
-                                    <label for="start-date-input" class="form-label">Startdatum:</label>
+                                    <label for="start-date-input" class="form-label px-1">Startdatum:</label>
                                     <input type="date" class="form-control bg-dark text-white" id="start-date-input"
                                         required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <label for="end-date-input" class="form-label">Enddatum:</label>
+                                    <label for="end-date-input" class="form-label px-1">Enddatum:</label>
                                     <input type="date" class="form-control bg-dark text-white" id="end-date-input"
                                         required>
                                 </div>
@@ -113,7 +113,7 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>Datum</th>
+                                        <th>Zeitstempel</th>
                                         <th style="display:none;">x-coordinates</th>
                                         <th style="display:none;">y-coordinates</th>
                                         <th>Wärme-Behaglichkeit</th>
