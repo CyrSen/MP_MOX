@@ -33,10 +33,38 @@
                                     href="{{ asset('assets/documents/whitepaper.pdf') }}">PDF</a>
                             </div>
 
-                        @guest
+                        @endguest
 
-                 
+                        @auth
+                            <div class="text-center pt-3">
+                                <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" aria-current="page"
+                                    href="{{ url('/feedback') }}">
+                                    <button class="btn btn-lg btn-indigo text-white" style="display:none">
+                                        Umfrage Wiederholen
+                                    </button>
+                                </a>
+                            </div>
+                        @endauth
 
+                        <div class=" mt-3">
+                            {{--  <ul class="navbar-nav me-auto">
+                  @if (Route::has('login'))
+                  @auth
+                  <li class="nav-item">
+                      <a href="{{ url('/  ') }}" class="nav-link waves-effect waves-light">Home</a>
+                  </li>        
+                  @else
+                  <li class="nav-item">
+                      <a href="{{ route('login') }}" class="nav-item">Log in</a>
+                  </li>
+                  @if (Route::has('register'))
+                  <li class="nav-item">
+                      <a href="{{ route('register') }}" class="nav-item">Register</a>
+                  </li>
+                  @endif
+                  @endauth
+                  @endif
+                </ul> --}}
                         </div>
                     </div>
                     <div class="arrow-circle mb-5">
