@@ -86,6 +86,20 @@
             }
         }
 
+        @media (min-width: 768px) {
+            #contact {
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                background-size: 100% 100%;
+                position: relative;
+                min-width: 100vw;
+                background-image: url("./assets/img/panorama-3094696_1920.jpg");
+                z-index: 1;
+                padding-top: 10%;
+            }
+        }
+
         #indexPLACEHOLDER {
             /*  DAMIT MAN ETWAS SIEHT !!!*/
             background: url("assets/img/matthieu-gouiffes.jpg") no-repeat center center;
