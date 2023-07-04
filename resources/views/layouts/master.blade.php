@@ -89,6 +89,10 @@
                 padding-top: 10%;
                 background-size: cover;
             }
+
+            .page-footer {
+                bottom: -2rem;
+            }
         }
 
         @media (max-width: 800px) and (orientation: landscape) {
