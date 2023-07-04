@@ -90,12 +90,12 @@
                 background-size: cover;
             }
             
-            .page-footer {
+            /* .page-footer {
                 position: sticky;
                 bottom: 0;
                 background-color: #3f51b5;
                 z-index: 2;
-            }
+            } */
         }
 
 
@@ -140,12 +140,12 @@
                 padding-top: 10%;
             }
 
-            .page-footer {
+            /* .page-footer {
                 position: sticky;
                 bottom: 0;
                 background-color: #3f51b5;
                 z-index: 2;
-            }
+            } */
         }
 
         #indexPLACEHOLDER {
