@@ -84,18 +84,6 @@
                 z-index: 1;
                 padding-top: 10%;
             }
-        }'resources/js/custom.js'
-            #contact {
-                align-items: center;
-                justify-content: center;
-                min-height: 100vh;
-                background-size: 100% 100%;
-                position: relative;
-                min-width: 100vw;
-                background-image: url("./assets/img/panorama-3094696_1920.jpg");
-                z-index: 1;
-                padding-top: 10%;
-            }
         }
 
         #indexPLACEHOLDER {
