@@ -71,13 +71,13 @@
                             </label>
                             <div class="row justify-content-center">
                                 <div class="col-sm-6">
-                                    <label for="start-date-input" class="form-label px-1">Startdatum:</label>
-                                    <input type="date" class="form-control bg-dark text-white" id="start-date-input"
+                                    <label for="start-date-input" class="form-label">Startdatum:</label>
+                                    <input type="date" class="form-control bg-dark text-white px-1" id="start-date-input"
                                         required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <label for="end-date-input" class="form-label px-1">Enddatum:</label>
-                                    <input type="date" class="form-control bg-dark text-white" id="end-date-input"
+                                    <label for="end-date-input" class="form-label">Enddatum:</label>
+                                    <input type="date" class="form-control bg-dark text-white px-1" id="end-date-input"
                                         required>
                                 </div>
                             </div>
