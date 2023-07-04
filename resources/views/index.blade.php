@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                         </div><br>
-                        @guest
+                        @auth
                             {{-- <h3 class="lead text-white"><strong>Einloggen und an der Umfrage teilnehmen</strong></h3> --}}
                             <div class="wow fadeInLeft" data-wow-delay="0.3s">
                                 <a class="btn btn-white dark-grey-text font-weight-bold ml-0" href="{{ route('login') }}"
@@ -33,7 +33,7 @@
                                     href="{{ asset('assets/documents/whitepaper.pdf') }}">PDF</a>
                             </div>
 
-                        @endguest
+                        @auth
 
                         @auth
                             <div class="text-center pt-3">
