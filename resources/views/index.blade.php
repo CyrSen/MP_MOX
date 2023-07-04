@@ -36,14 +36,23 @@
                         @endguest
 
                         @auth
-                            <div class="text-center pt-3">
+                            <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                                <a class="btn btn-white dark-grey-text font-weight-bold ml-0" href="{{ route('login') }}"
+                                    target="">
+                                    <i class="fa fa-play mr-1"></i>{{ __(' App nutzen') }}
+                                </a>
+                                <a class="btn btn-outline-white font-weight-bold"
+                                    href="{{ asset('assets/documents/whitepaper.pdf') }}">PDF</a>
+                            </div>
+
+                            {{-- <div class="text-center pt-3">
                                 <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" aria-current="page"
                                     href="{{ url('/feedback') }}">
                                     <button class="btn btn-lg btn-indigo text-white" style="display:none">
                                         Umfrage Wiederholen
                                     </button>
                                 </a>
-                            </div>
+                            </div> --}}
                         @endauth
 
                         <div class=" mt-3">
