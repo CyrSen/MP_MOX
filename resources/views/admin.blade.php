@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="text-center mt-3 mb-2">
-                                <button class="btn btn-primary" onclick="filterEntriesByDate()">Filter anwenden</button>
+                                <button class="btn btn-indigo text-white" onclick="filterEntriesByDate()">Filter anwenden</button>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                                                         method="POST">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger"
+                                                        <button type="submit" class="btn btn-danger text-white"
                                                             data-bs-toggle="modal" data-bs-target="#successModal">
                                                             Delete
                                                         </button>

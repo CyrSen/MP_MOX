@@ -59,20 +59,24 @@
             z-index: 1;
         }
 
-        #admin {
-            margin-top: -8.5rem;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            position: relative;
-            min-width: 100vw;
-            background-image: url("./assets/img/panorama-3094696_1920.jpg");
-            background-size: cover;
-            z-index: 1;
-            padding-top: 10%;
-        }
+        
 
         @media (max-width: 480px) {
+
+            #admin {
+                margin-top: -8.5rem;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                position: relative;
+                min-width: 100vw;
+                background-image: url("./assets/img/panorama-3094696_1920.jpg");
+                background-size: cover;
+                z-index: 1;
+                padding-top: 10%;
+                background-size: cover;
+            }
+
             #contact {
                 align-items: center;
                 justify-content: center;
@@ -102,6 +106,20 @@
         }
 
         @media (min-width: 800px)  and (orientation: landscape) {
+
+            #admin {
+                margin-top: -8.5rem;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                position: relative;
+                min-width: 100vw;
+                background-image: url("./assets/img/panorama-3094696_1920.jpg");
+                background-size: cover;
+                z-index: 1;
+                padding-top: 10%;
+            }
+
             #contact {
                 align-items: center;
                 justify-content: center;
