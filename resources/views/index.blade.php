@@ -13,7 +13,7 @@
                     <div class="col-md-10 col-lg-6 text-md-left margins">
                         <div class="white-text">
                             <div class="wow fadeInLeft" data-wow-delay="0.3s">
-                                <h1 class="h1-responsive font-weight-bold mt-sm-5">Unser Ziel: Dein Komfort</h1>
+                                <h1 class="h1-responsive font-weight-bold mt-sm-5">Unser Ziel: Dein Komfort Jaja</h1>
                                 <div class="h6">
                                     Du hast genug von Lärm, unangenehmen Temperaturen und schlechter Luft? Mit myOfficeX
                                     gibst du anonym Feedback zu deinem Arbeitsplatzkomfort. Die App nutzt dieses Feedback
