@@ -66,7 +66,7 @@
             min-height: 100vh;
             position: relative;
             min-width: 100vw;
-            background-image: url("./assets/img/panorama-3094696_1920.jpg");
+            background-image: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
             background-size: cover;
             z-index: 1;
             padding-top: 10%;
@@ -80,7 +80,7 @@
                 background-size: 100% 100%;
                 position: relative;
                 min-width: 100vw;
-                background-image: url("./assets/img/panorama-3094696_1920.jpg");
+                background-image: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
                 z-index: 1;
                 padding-top: 10%;
             }
@@ -94,7 +94,7 @@
                 background-size: 100% 100%;
                 position: relative;
                 min-width: 100vw;
-                background-image: url("./assets/img/panorama-3094696_1920.jpg");
+                background-image: url("./assets/img/panorama-3094696_1920.jpg") no-repeat center center;
                 z-index: 1;
                 padding-top: 10%;
             }
