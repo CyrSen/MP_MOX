@@ -65,9 +65,9 @@
 
                     <!-- Filter/Select Div -->
                     <div class="row justify-content-center">
-                        <div class="card col-sm-10 m-3 me-n5 text-center">
+                        <div class="card col-sm-10 m-3 me-n5 px-4 px-md-2 text-center">
                             <label class="form-label mt-2 mb-0 pt-2  text-center" for="">
-                                <p class="lead">Zeitspanne angeben</p>
+                                <p class="lead mx-3">Zeitspanne angeben</p>
                             </label>
                             <div class="row justify-content-center">
                                 <div class="col-sm-6">
