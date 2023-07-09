@@ -85,7 +85,7 @@
             #contact {
                 align-items: center;
                 justify-content: center;
-                min-height: 120vh;
+                min-height: 123vh;
                 background-size: 100% 100%;
                 position: relative;
                 min-width: 100vw;
