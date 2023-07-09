@@ -195,15 +195,15 @@
             <div class="container">
                 <div class="wow fadeIn">
                     <h2 class="h1 text-white pt-5 pb-3 text-center">Kontakt</h2>
-                    <p class="text-white mb-5 pb-3 lead text-center">
+                    <p class="text-white md-1 mb-md-5 pb-0 pb-md-3 lead text-center">
                         Wir freuen uns über dein Interesse! Bitte hinterlasse uns deine Kontaktdaten und eine kurze
                         Nachricht. Wir melden uns so schnell wie möglich bei dir zurück.
                     </p>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="card col-10 col-md-8 py-md-3">
-                        <div class="card-body px-4">
+                    <div class="card col-10 col-md-7 py-md-3">
+                        <div class="card-body py-1 px-md-4">
                             <div class="row">
                                 <div class="col-md-6 px-md-5">
                                     <form action="https://formspree.io/f/xdovqjnd" method="POST">
@@ -235,7 +235,7 @@
                                     </form>
                                 </div>
                                 <div class="col-md-6 my-3 my-md-5{{--  d-none d-md-block --}}">
-                                    <div class="text-center pt-3">
+                                    <div class="text-center pt-0 pt-md-3">
                                        <div>
                                         <i class="fa fa-map-marker indigo-text fa-2x"></i>
                                        </div>
@@ -251,7 +251,7 @@
                                             <p class="mt-2">079 947 10 17</p>
                                         </div>
                                     </div> --}}
-                                    <div class="text-center mt-4 pt-3">
+                                    <div class="text-center mt-2 mt-md-4 pt-1 pt-md-3">
                                         <div>
                                             <i class="fa fa-envelope indigo-text fa-2x"></i>
                                         </div>
