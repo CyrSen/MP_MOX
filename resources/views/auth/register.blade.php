@@ -5,7 +5,7 @@
 <section id="register">
     <div class="rgba-black-strong"></div>
         <div class="container py-5">
-            <div class="animate__animated animate__fadeInDown">
+            <div class="animate__animated animate__fadeInDown animate__delay-1s">
                 <h2 class="h1 text-white pt-5 pb-3 text-center">Registrierung</h2>
                 <p class="text-white px-5 mb-4 pb-3 lead text-center">
                 Die Nutzung von myOfficeX ist anonym.
