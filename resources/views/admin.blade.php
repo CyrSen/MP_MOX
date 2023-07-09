@@ -7,7 +7,7 @@
 
     <section id="admin" class="">
         <div class="rgba-black-strong"></div>
-        <div class="container-fluid" style="margin-top:3vh;">
+        <div class="container-fluid mt-4 mt-md-0">
             <div class="row justify-content-evenly">
                 <!-- Map Views -->
                 <div class="col-sm-12 col-md-3 px-0">
