@@ -71,16 +71,13 @@
   @endsection 
 
   <script>
-      window.addEventListener('load', function() {
-    var element = document.getElementById('animationUp');
-    element.classList.add('animate__animated', 'animate__fadeInUp');
-  });
+    window.addEventListener('load', function() {
+        var element = document.getElementById('animationUp');
+        element.classList.add('animate__animated', 'animate__fadeInUp');
+    });
 
-  window.addEventListener('load', function() {
-    var element = document.getElementById('animationDown');
-    element.classList.add('animate__animated', 'animate__fadeInDown');
-  });
-
-
-  
+    window.addEventListener('load', function() {
+        var element = document.getElementById('animationDown');
+        element.classList.add('animate__animated', 'animate__fadeInDown');
+    });
   </script>
