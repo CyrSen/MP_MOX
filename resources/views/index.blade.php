@@ -202,7 +202,7 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="card col-9 py-md-3">
+                    <div class="card col-9 px-md-4 py-md-3">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6 px-md-5">
