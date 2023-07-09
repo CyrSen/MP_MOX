@@ -94,8 +94,7 @@
                         <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
                             <h3 class="cardAdmiTable card-title text-center">Übersicht Admin/FM alle Feedbacks.</h3>
                             
-                            <p id="adminParagraph" class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button
-                                drücken</p>
+                            <p class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button drücken</p>
 
                             <p>
                                 <a href="{{ url('/admin') }}" class="btn btn-reload reloadAdmin mt-0 mb-2 p-1"

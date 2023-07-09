@@ -58,11 +58,6 @@ body {
     font-size: 1em;
 }
 
-#adminParagraph {
-    position: relative;
-    bottom: 3rem;
-}
-
 .cardAdmiTable {
     --bs-card-title-spacer-y: -2.5rem;
 }
