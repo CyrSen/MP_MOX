@@ -13,7 +13,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                <div class="card mb-5 animate__animated animate__fadeInUp  animate__delay-.4s" style="max-width: 800px;">
+                <div class="card mb-5 animate__animated animate__fadeInUp" style="max-width: 800px;">
                     <div class="card-body p-3 pb-5 pt-5">
                 <!-- Form start-->
                 <div class="row justify-content-center">
