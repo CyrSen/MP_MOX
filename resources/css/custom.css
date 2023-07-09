@@ -291,7 +291,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#intro {
+/* #intro {
     background: url("img/panorama-3094696_1920.jpg") no-repeat center center;
     background-size: cover;
 }
@@ -305,7 +305,7 @@ html {
     background-size: cover;
     position: relative;
     z-index: 1;
-}
+} */
 
 /* #admin {
     background-size: cover;
@@ -324,6 +324,12 @@ html {
 }
 
 @media (max-width: 768px) {
+
+    .top-nav-collapse {
+        /* background-color: #3949ab; */
+        background-color: #3f51b5;
+    }
+
     .navbar:not(.top-nav-collapse) {
         /* background-color: #3949ab; */
         background-color: #3f51b5;
@@ -564,16 +570,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#info {
-    display: flex;
-    align-items: stretch;
-    min-height: 100vh;
-    background: url("img/open-window.jpg") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
 }
 
 .rgba-black-strong {
