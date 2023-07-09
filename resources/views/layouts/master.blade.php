@@ -60,8 +60,8 @@
         }
 
         .navbar.collapsing-bg {
-  background-color: red;
-}
+        background-color: #303f9f !important;
+        }
 
 
         
