@@ -224,7 +224,7 @@
                                 <textarea class="md-textarea" id="message" name="message" required="required" style="width: 100%;"></textarea>
                                 </div>
                                 <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit"
-                                                        style="color:white"><i class="fa fa-paper-plane-o mr-2"></i>
+                                                        style="color:rgb(251, 2, 2)"><i class="fa fa-paper-plane-o mr-2"></i>
                                                         Senden</button>
                           </form>
                         </div>
@@ -255,7 +255,77 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+
+                <div class="card col-12 mb-5 wow fadeInUp" data-wow-delay=".4s" style="">
+                    <div class="card-body p-5 d-flex align-items-center" style="background-color: transparent;">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <form action="https://formspree.io/f/xdovqjnd" method="POST">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="md-form">
+                                                <input class="form-control" id="name" type="text" name="name"
+                                                    required="required" />
+                                                <label for="name">Dein Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="md-form">
+                                                <input class="form-control" id="email" type="text"
+                                                    name="_replyto" required="required" />
+                                                <label for="email">Deine Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="md-form">
+                                                <input class="form-control" id="subject" type="text" name="subject"
+                                                    required="required" />
+                                                <label for="subject">Betreff</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="md-form">
+                                                <textarea class="md-textarea" id="message" name="message" required="required" style="width: 100%;"></textarea>
+                                                <label for="message">Deine Nachricht</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="text-center text-md-start">
+                                            <div class="center-on-small-only mb-4">
+                                                <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit"
+                                                    style="color:white"><i class="fa fa-paper-plane-o mr-2"></i>
+                                                    Senden</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="adressTelNoContact col-md-4" style="position: relative;left: 6rem;">
+                                <ul class="list-unstyled text-center">
+                                    <li class="mt-4"><i class="fa fa-map-marker indigo-text fa-2x"></i>
+                                        <p class="mt-2">Dufoustrasse 49<br> 8008 Zürich</p>
+                                    </li>
+                                        {{-- <li class="mt-4"><i class="fa fa-phone indigo-text fa-2x"></i>
+                    <p class="mt-2">079 947 10 17</p>
+                    </li> --}}
+                                    <li class="mt-4" style="position: relative; top: 3.7rem;"><i
+                                            class="fa fa-envelope indigo-text fa-2x"></i>
+                                        <p class="mt-2">contact@myofficex.ch</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+
+
             </div>
         </div>
 {{--         <div class="arrow-circle">
