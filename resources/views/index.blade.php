@@ -190,8 +190,8 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-3 py-md-5" id="contact" style="">
-        <div class="rgba-black-strong py-3 py-md-5">
+    <section class="py-5 py-md-5" id="contact" style="">
+        <div class="rgba-black-strong py-5 py-md-5">
             <div class="container">
                 <div class="wow fadeIn">
                     <h2 class="h1 text-white mb-0 mb-md-2 pt-3 pt-md-5 pb-3 text-center">Kontakt</h2>
