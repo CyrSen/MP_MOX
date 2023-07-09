@@ -96,7 +96,7 @@
                             
                             <p class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button drücken</p>
 
-                            <p>
+                            <p class="text-center">
                                 <a href="{{ url('/admin') }}" class="btn btn-reload reloadAdmin mt-0 mb-2 p-1"
                                     id="refresh-button" class="refresh-end" onclick="refreshContent()">
                                     <i class="fa fa-sync fa-spin-hover fa-3x" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
