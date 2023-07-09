@@ -15,7 +15,7 @@
                 <div class="row justify-content-center mt-5 mt-md-3 pt-4 pt-md-0">
                     <div id="{{-- animationLeft --}}" class="col-md-6 mb-5 animate__animated animate__fadeInLeft animate__delay-1s">
                         <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0 px-1 px-md-3">
                                 <!-- Content of Card 1 -->
                                 <div class="col">
                                     <h2 class="h1 mb-3 px-3 pt-3">Feedback geben</h2>
@@ -43,7 +43,7 @@
         </div>
         <div id="{{-- animationRight --}}" class="col-md-6 mb-5 animate__animated animate__fadeInRight animate__delay-1s">
             <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
-                <div class="card-body px-5 py-3">
+                <div class="card-body px-3 px-md-5 py-3">
                     <div class="form-group mt-3">
                         <label class="feedback-font" for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
