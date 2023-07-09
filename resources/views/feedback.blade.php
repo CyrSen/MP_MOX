@@ -236,12 +236,12 @@
 @endsection
 
 <script>
-      window.addEventListener('load', function() {
+   document.addEventListener('DOMContentLoaded', function() {
     var element = document.getElementById('animationLeft');
     element.classList.add('animate__animated', 'animate__fadeInLeft');
   });
 
-  window.addEventListener('load', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     var element = document.getElementById('animationRight');
     element.classList.add('animate__animated', 'animate__fadeInRight');
   });
