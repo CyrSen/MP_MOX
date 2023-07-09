@@ -202,8 +202,8 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="card col-9 px-md-4 py-md-3">
-                        <div class="card-body">
+                    <div class="card col-10 col-md-8 py-md-3">
+                        <div class="card-body px-4">
                             <div class="row">
                                 <div class="col-md-6 px-md-5">
                                     <form action="https://formspree.io/f/xdovqjnd" method="POST">
