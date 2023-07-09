@@ -14,7 +14,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                 <div id="animationUpReg" class="card mb-5" style="max-width: 800px;">
-                    <div class="card-body p-3 py-5">
+                    <div class="card-body p-3 py-5 pb-3">
                 <!-- Form start-->
                 <div class="row justify-content-center">
                     <form class="col-11 col-md-10" method="POST" action="{{ route('register') }}">
@@ -69,7 +69,7 @@
 
                         <div class="row mb-0 text-center">
                             <div class="">
-                                <button type="submit" class="btn btn-indigo mt-4 mb-0" style="color:white"><i class="fa fa-paper-plane-o mr-2"></i>
+                                <button type="submit" class="btn btn-indigo mt-2 mb-0" style="color:white"><i class="fa fa-paper-plane-o mr-2"></i>
                                     {{ __('Senden') }}
                                 </button>   
                             </div>
