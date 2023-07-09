@@ -240,7 +240,7 @@
                                         <i class="fa fa-map-marker indigo-text fa-2x"></i>
                                        </div>
                                        <div>
-                                        <p class="mt-2">Dufoustrasse 50<br>8008 Zürich</p>
+                                        <p class="mt-2 text-center">Dufoustrasse 50<br>8008 Zürich</p>
                                        </div>      
                                     </div>
                                    {{--  <div class="text-center mt-4">
@@ -256,7 +256,7 @@
                                             <i class="fa fa-envelope indigo-text fa-2x"></i>
                                         </div>
                                         <div>
-                                            <p class="mt-2">contact@myofficex.ch</p>
+                                            <p class="mt-2 text-center">contact@myofficex.ch</p>
                                         </div>
                                     </div>
                                 </div>
