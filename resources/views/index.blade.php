@@ -136,7 +136,7 @@
     </section>
 
     <!-- Partner Section -->
-    <section class="py-5" id="partner">
+    <section class="py-2 py-md-5" id="partner">
         <div class="container">
             <div class="wow fadeIn">
                 <h2 class="text-center h1 my-4">Unsere Partner</h2>
@@ -194,9 +194,9 @@
         <div class="rgba-black-strong py-5">
             <div class="container">
                 <div class="wow fadeIn">
-                    <h2 class="h1 text-white pt-5 pb-3 text-center">Kontakt</h2>
-                    <p class="text-white md-1 mb-md-5 pb-0 pb-md-3 lead text-center">
-                        Wir freuen uns über dein Interesse! Bitte hinterlasse uns deine Kontaktdaten und eine kurze
+                    <h2 class="h1 text-white mb-0 mb-md-2 pt-3 pt-md-5 pb-3 text-center">Kontakt</h2>
+                    <p class="text-white md-1 mb-md-5 pb-0 pb-md-3 mx-3 mx-md-0 lead text-center">
+                        Bei Interesse hinterlasse uns deine Kontaktdaten und eine kurze
                         Nachricht. Wir melden uns so schnell wie möglich bei dir zurück.
                     </p>
                 </div>
