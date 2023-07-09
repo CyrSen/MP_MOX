@@ -49,7 +49,7 @@
     </div>
 
     <!-- Footer-->
-    <footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
+    <footer class="page-footer fixed-bottom indigo darken-2 center-on-small-only p-3 mt-0">
         <div class="footer-copyright text-center py-3 font-small">
             <div class="container-fluid">
                 <div>&copy; myOffice<span class="highlight2">X</span></div>

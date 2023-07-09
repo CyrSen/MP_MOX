@@ -60,7 +60,7 @@
         }
 
         .navbar.collapsing-bg {
-        background-color: #303f9f !important;
+        background-color: #3f51b5 !important;
         }
 
 
@@ -231,7 +231,7 @@
     </div>
 
     <!-- Footer-->
-    <footer class="page-footer indigo darken-2 center-on-small-only p-3 mt-0">
+    <footer class="page-footer fixed-bottom indigo darken-2 center-on-small-only p-3 mt-0">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
