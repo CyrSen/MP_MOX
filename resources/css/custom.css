@@ -586,10 +586,6 @@ footer {
     z-index: -1;
 }
 
-.card.mb-5.wow.fadeInUp[data-wow-delay=".4s"] {
-    flex: 1;
-}
-
 .card-body.p-5 {
     height: 100%;
     display: flex;
