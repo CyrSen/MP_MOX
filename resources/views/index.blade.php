@@ -203,7 +203,7 @@
 
                 <div class="row justify-content-center">
                     <div class="card col-10 col-md-7 py-md-3">
-                        <div class="card-body py-1 px-md-4">
+                        <div class="card-body py-1 py-md-4 px-md-4">
                             <div class="row">
                                 <div class="col-md-6 px-md-5">
                                     <form action="https://formspree.io/f/xdovqjnd" method="POST">
