@@ -60,7 +60,7 @@
                 </div>
             </div>
             <!-- Filter and Table -->
-            <div class="row mt-3">
+            <div class="row mt-3 mx-2 mx-md-0">
                 <div class="col-sm-12 col-md-3 px-0">
 
                     <!-- Filter/Select Div -->
