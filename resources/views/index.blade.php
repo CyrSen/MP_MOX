@@ -236,13 +236,13 @@
                                 </div>
                                 <div class="col-md-6 my-5{{--  d-none d-md-block --}}">
                                     <div class="text-center">
-                                        <div>
+                                       
                                             <i class="fa fa-map-marker indigo-text fa-2x"></i>
                                        
                                             <p class="mt-2">Dufoustrasse 49<br>8008 Zürich</p>
                                         
                                             <p class="mt-2">079 947 10 17</p>
-                                        </div>
+                                       
                                         {{-- <div class="">
                                             <i class="fa fa-phone indigo-text fa-2x"></i>
                                         </div> --}}
