@@ -6,8 +6,8 @@
     <div class="rgba-black-strong"></div>
         <div class="container py-5">
             <div id="animationDown" class="">
-                <h2 class="h1 text-white pt-5 pb-3 text-center">Login</h2>
-                <p class="text-white px-5 mb-4 pb-3 lead text-center">
+                <h2 class="h1 text-white mt-2 mt-md-0 pt-3 pt-md-5 pb-3 text-center">Login</h2>
+                <p class="text-white px-3 px-md-5 mb-4 pb-1pb-md-3 lead text-center">
                 Bitte loge dich ein, um myOffice<span class="">X</span> zu nutzen.
                 </p>
             </div>
