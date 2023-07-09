@@ -76,7 +76,7 @@
                                 </ul>
                         </div> --}}
                     </div>
-                    <div class="arrow-circle mb-5">
+                    <div class="arrow-circle mb-5 d-none d-md-block">
                         <a class="arrow-link" href="#nutzen">
                             <i class="fa fa-arrow-down"></i>
                         </a>
