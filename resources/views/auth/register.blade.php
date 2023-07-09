@@ -5,7 +5,7 @@
 <section id="register">
     <div class="rgba-black-strong"></div>
         <div class="container py-5">
-            <div id="animationDownReg" class="">
+            <div id="{{-- animationDownReg --}}" class=" animate__animated animate__fadeInDown animate__delay-.5s">
                 <h2 class="h1 text-white mt-2 mt-md-0 pt-3 pt-md-5 pb-3 text-center">Registrierung</h2>
                 <p class="text-white px-3 px-md-5 mb-4 pb-1pb-md-3 lead text-center">
                 Die Nutzung von myOfficeX ist anonym.
@@ -13,7 +13,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                <div id="animationUpReg" class="card mb-5" style="max-width: 800px;">
+                <div id="{{-- animationUpReg --}}" class="card mb-5 animate__animated animate__fadeInUp animate__delay-.5s" style="max-width: 800px;">
                     <div class="card-body p-3 py-5 pb-3">
                 <!-- Form start-->
                 <div class="row justify-content-center">
@@ -85,7 +85,7 @@
 @endsection
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+/*     document.addEventListener('DOMContentLoaded', function() {
         var element = document.getElementById('animationUpReg');
         element.classList.add('animate__animated', 'animate__fadeInUp');
     });
@@ -93,5 +93,5 @@
     document.addEventListener('DOMContentLoaded', function() {
         var element = document.getElementById('animationDownReg');
         element.classList.add('animate__animated', 'animate__fadeInDown');
-    });
-  </script>
+    }); */
+</script>
