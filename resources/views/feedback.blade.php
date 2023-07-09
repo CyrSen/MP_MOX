@@ -13,7 +13,7 @@
             <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
                 @csrf
                 <div class="row justify-content-center">
-                    <div class="col-md-6 mb-5 wow fadeInRight" data-wow-delay="1s">
+                    <div class="col-md-6 mb-5 animate__animated animate__fadeInRight">
                         <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0">
                                 <!-- Content of Card 1 -->
@@ -41,7 +41,7 @@
         </div>
         </div>
         </div>
-        <div class="col-md-6 mb-5 wow fadeInLeft" data-wow-delay="1s">
+        <div class="col-md-6 mb-5 animate__animated animate__fadeInLeft">
             <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                 <div class="card-body px-5 py-3">
                     <div class="form-group mt-3">
@@ -234,3 +234,5 @@
     </section>
 
 @endsection
+
+
