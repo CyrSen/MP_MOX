@@ -24,7 +24,7 @@
                                         sie im Grundriss anklickst.
                                     </div>
                                 </div>
-                                <div id="image-container" class="map-container tooltip-icon">
+                                <div id="image-container" class="map-container tooltip-icon mb-4 mb-md-5">
                                     <img class="img-fluid mapFeedback" id="image"
                                         src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                                     <input id="x-coordinates" type="hidden" name="x_coordinates">
