@@ -239,7 +239,7 @@
                                        
                                             <i class="fa fa-map-marker indigo-text fa-2x"></i>
                                        
-                                            <p class="mt-2">Dufoustrasse 49<br>8008 Zürich</p>
+                                            <p class="mt-2">Dufoustrasse 50<br>8008 Zürich</p>
                                         
                                             <p class="mt-2">079 947 10 17</p>
                                        
