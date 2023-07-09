@@ -201,64 +201,69 @@
                     </p>
                 </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <form action="https://formspree.io/f/xdovqjnd" method="POST">
-                                    <div class="md-form">
-                                        <label for="name" class="form-label">Dein Name</label>
-                                        <input type="text" class="form-control" id="name"
-                                            placeholder="Enter your name">
-                                    </div>
-                                    <div class="md-form">
-                                        <label for="email" class="form-label">Deine Email</label>
-                                        <input type="email" class="form-control" id="email"
-                                            placeholder="Enter your email">
-                                    </div>
-                                    <div class="md-form">
-                                        <input class="form-control" id="subject" type="text" name="subject"
-                                            required="required" />
-                                        <label for="subject">Betreff</label>
-                                    </div>
-                                    <div class="md-form">
-                                        <label for="message" class="form-label">Deine Nachricht</label>
-                                        <textarea class="md-textarea" id="message" name="message" required="required" style="width: 100%;"></textarea>
-                                    </div>
-                                    <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit"
-                                        style="color:rgb(251, 2, 2)"><i class="fa fa-paper-plane-o mr-2"></i>
-                                        Senden</button>
-                                </form>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text-center">
-                                    <div>
-                                        <i class="fa fa-map-marker indigo-text fa-2x"></i>
-                                    </div>
-                                    <div>
-                                        <p class="mt-2">Dufoustrasse 49<br>8008 Zürich</p>
-                                    </div>
-
-                                    <div class="">
-                                        <p class="mt-2">079 947 10 17</p>
-                                        <i class="fa fa-phone indigo-text fa-2x"></i>
-                                    </div>
-                                    <div class="">
-                                        <i class="fa fa-phone indigo-text fa-2x"></i>
-                                    </div>
+                <div class="row justify-content-center">
+                    <div class="card col-9">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form action="https://formspree.io/f/xdovqjnd" method="POST">
+                                        <div class="md-form">
+                                            <label for="name" class="form-label">Dein Name</label>
+                                            <input type="text" class="form-control" id="name"
+                                                placeholder="Enter your name">
+                                        </div>
+                                        <div class="md-form">
+                                            <label for="email" class="form-label">Deine Email</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter your email">
+                                        </div>
+                                        <div class="md-form">
+                                            <input class="form-control" id="subject" type="text" name="subject"
+                                                required="required" />
+                                            <label for="subject">Betreff</label>
+                                        </div>
+                                        <div class="md-form">
+                                            <label for="message" class="form-label">Deine Nachricht</label>
+                                            <textarea class="md-textarea" id="message" name="message" required="required" style="width: 100%;"></textarea>
+                                        </div>
+                                        <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit"
+                                            style="color:rgb(251, 2, 2)"><i class="fa fa-paper-plane-o mr-2"></i>
+                                            Senden</button>
+                                    </form>
                                 </div>
-                                <div class="text-center mt-4">
-                                    <div>
-                                        <i class="fa fa-envelope indigo-text fa-2x"></i>
+                                <div class="col-md-6">
+                                    <div class="text-center">
+                                        <div>
+                                            <i class="fa fa-map-marker indigo-text fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <p class="mt-2">Dufoustrasse 49<br>8008 Zürich</p>
+                                        </div>
+    
+                                        <div class="">
+                                            <p class="mt-2">079 947 10 17</p>
+                                            <i class="fa fa-phone indigo-text fa-2x"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa fa-phone indigo-text fa-2x"></i>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p class="mt-2">contact@myofficex.ch</p>
+                                    <div class="text-center mt-4">
+                                        <div>
+                                            <i class="fa fa-envelope indigo-text fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <p class="mt-2">contact@myofficex.ch</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+                
             </div>
         </div>
         {{--         <div class="arrow-circle">
