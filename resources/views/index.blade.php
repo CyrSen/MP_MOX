@@ -234,8 +234,8 @@
                                         
                                     </form>
                                 </div>
-                                <div class="col-md-6 my-5{{--  d-none d-md-block --}}">
-                                    <div class="text-center">
+                                <div class="col-md-6 my-3 my-md-5{{--  d-none d-md-block --}}">
+                                    <div class="text-center pt-3">
                                        <div>
                                         <i class="fa fa-map-marker indigo-text fa-2x"></i>
                                        </div>
@@ -251,7 +251,7 @@
                                             <p class="mt-2">079 947 10 17</p>
                                         </div>
                                     </div> --}}
-                                    <div class="text-center mt-4">
+                                    <div class="text-center mt-4 pt-3">
                                         <div>
                                             <i class="fa fa-envelope indigo-text fa-2x"></i>
                                         </div>
