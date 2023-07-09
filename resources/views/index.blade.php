@@ -226,12 +226,15 @@
                                             <label for="message" class="form-label">Deine Nachricht</label>
                                             <textarea class="md-textarea" id="message" name="message" required="required" style="width: 100%;"></textarea>
                                         </div>
-                                        <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit"
+                                        <div class="col sm-text-center md-text-start">
+                                            <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit"
                                             style="color:rgb(255, 255, 255)"><i class="fa fa-paper-plane-o mr-2"></i>
                                             Senden</button>
+                                        </div>
+                                        
                                     </form>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 my-5{{--  d-none d-md-block --}}">
                                     <div class="text-center">
                                         <div>
                                             <i class="fa fa-map-marker indigo-text fa-2x"></i>
