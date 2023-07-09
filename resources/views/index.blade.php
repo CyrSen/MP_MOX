@@ -234,7 +234,7 @@
                                         
                                     </form>
                                 </div>
-                                <div class="col-md-6 my-3 my-md-5{{--  d-none d-md-block --}}">
+                                <div class="col-md-6 my-2 my-md-5{{--  d-none d-md-block --}}">
                                     <div class="text-center pt-0 pt-md-3">
                                        <div>
                                         <i class="fa fa-map-marker indigo-text fa-2x"></i>
