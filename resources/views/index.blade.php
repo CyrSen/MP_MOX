@@ -202,10 +202,10 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="card col-9">
+                    <div class="card col-9 py-md-3">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 px-md-5">
                                     <form action="https://formspree.io/f/xdovqjnd" method="POST">
                                         <div class="md-form">
                                             <input class="form-control" id="name" type="text" name="name"
@@ -239,14 +239,12 @@
                                         <div>
                                             <p class="mt-2">Dufoustrasse 49<br>8008 Zürich</p>
                                         </div>
-    
-                                        <div class="">
+                                        <div>
                                             <p class="mt-2">079 947 10 17</p>
-                                            <i class="fa fa-phone indigo-text fa-2x"></i>
                                         </div>
-                                        <div class="">
+                                        {{-- <div class="">
                                             <i class="fa fa-phone indigo-text fa-2x"></i>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <div class="text-center mt-4">
                                         <div>
