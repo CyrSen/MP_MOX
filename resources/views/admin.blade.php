@@ -8,7 +8,7 @@
     <section id="admin" class="">
         <div class="rgba-black-strong"></div>
         <div class="container-fluid mt-4 mt-md-0">
-            <div class="row justify-content-evenly mt-0 mt-md-5">
+            <div class="row justify-content-evenly mt-0 mt-md-4">
                 <!-- Map Views -->
                 <div class="col-sm-12 col-md-3 px-0">
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
