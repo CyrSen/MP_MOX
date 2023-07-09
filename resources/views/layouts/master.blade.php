@@ -59,7 +59,10 @@
             z-index: 1;
         }
 
-        
+        .navbar.collapsing-bg {
+  background-color: red;
+}
+
 
         
 
@@ -294,6 +297,11 @@
             document.getElementById('higge-level-input').value = value;
             console.log('Higge Level:', value);
         }
+
+        function toggleNavbarBackground() {
+    const navbarCollapse = document.getElementById('navbar');
+    navbarCollapse.classList.toggle('collapsing-bg');
+  }
     </script>
 
 </body>
