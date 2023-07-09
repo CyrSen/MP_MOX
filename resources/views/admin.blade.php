@@ -92,7 +92,7 @@
                     <div class="card p-3 me-md-4 mt-3">
                         <!-- Table -->
                         <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
-                            <h3 class="cardAdmiTable card-title text-center">Übersicht Admin/FM alle Feedbacks.</h3>
+                            <h3 class="card-title text-center">Übersicht Admin/FM alle Feedbacks.</h3>
                             
                             <p class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button drücken</p>
 
