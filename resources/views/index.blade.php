@@ -208,14 +208,14 @@
                                 <div class="col-md-6">
                                     <form action="https://formspree.io/f/xdovqjnd" method="POST">
                                         <div class="md-form">
-                                            <label for="name" class="form-label">Dein Name</label>
-                                            <input type="text" class="form-control" id="name"
-                                                placeholder="Enter your name">
+                                            <input class="form-control" id="name" type="text" name="name"
+                                                required="required" />
+                                            <label for="name">Dein Name</label>
                                         </div>
                                         <div class="md-form">
-                                            <label for="email" class="form-label">Deine Email</label>
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Enter your email">
+                                            <input class="form-control" id="email" type="text"
+                                                name="_replyto" required="required" />
+                                            <label for="email">Deine Email</label>
                                         </div>
                                         <div class="md-form">
                                             <input class="form-control" id="subject" type="text" name="subject"
@@ -227,7 +227,7 @@
                                             <textarea class="md-textarea" id="message" name="message" required="required" style="width: 100%;"></textarea>
                                         </div>
                                         <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit"
-                                            style="color:rgb(251, 2, 2)"><i class="fa fa-paper-plane-o mr-2"></i>
+                                            style="color:rgb(255, 255, 255)"><i class="fa fa-paper-plane-o mr-2"></i>
                                             Senden</button>
                                     </form>
                                 </div>
