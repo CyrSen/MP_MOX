@@ -59,9 +59,15 @@
             z-index: 1;
         }
 
+
+
         
 
         @media (max-width: 480px) {
+
+            .navbar-collapse.collapsing-bg {
+  background-color: red;
+}
 
             #admin {
                 margin-top: -8.5rem;
@@ -292,6 +298,13 @@
             document.getElementById('higge-level-input').value = value;
             console.log('Higge Level:', value);
         }
+
+
+
+        function toggleNavbarBackground() {
+    const navbarCollapse = document.getElementById('navbarContent');
+    navbarCollapse.classList.toggle('collapsing-bg');
+  }
     </script>
 
 </body>
