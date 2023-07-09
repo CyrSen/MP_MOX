@@ -11,7 +11,7 @@
             <div class="row justify-content-evenly">
                 <!-- Map Views -->
                 <div class="col-sm-12 col-md-3 px-0">
-                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center">
+                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for temperature_level -->
                         <p class="lead text-center">Wärme-Behaglichkeit</p>
                         <div id="mapTemperature" class="myContainer mapAdmin tooltip-icon">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 px-0">
-                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center">
+                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for noise_level -->
                         <p class="lead text-center">Lärmempfinden</p>
                         <div id="mapNoise" class="myContainer mapAdmin tooltip-icon">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 px-0">
-                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center">
+                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for air_quality_level -->
                         <p class="lead text-center">Raumluftempfinden</p>
                         <div id="mapAirQuality" class="myContainer mapAdmin tooltip-icon">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 px-0">
-                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center">
+                    <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for higge_level -->
                         <p class="lead text-center">Gesamtwahrnehmung (Higge)</p>
                         <div id="mapHigge" class="myContainer mapAdmin tooltip-icon">
