@@ -99,7 +99,7 @@
                             <p class="text-center">
                                 <a href="{{ url('/admin') }}" class="btn btn-reload reloadAdmin mt-0 mb-2 p-1"
                                     id="refresh-button" class="refresh-end" onclick="refreshContent()">
-                                    <i class="fa fa-sync fa-spin-hover fa-3x" data-bs-custom-class="popover" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    <i class="fa fa-sync fa-spin-hover fa-3x" data-bs-custom-class="tooltip" data-bs-toggle="tooltip" data-bs-placement="right"
                                     title="Synch Now"></i>
                                 </a>
                             </p>
