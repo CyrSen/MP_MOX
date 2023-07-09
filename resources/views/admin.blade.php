@@ -93,13 +93,17 @@
                         <!-- Table -->
                         <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
                             <h3 class="cardAdmiTable card-title text-center">Übersicht Admin/FM alle Feedbacks.</h3>
-                            <a href="{{ url('/admin') }}" class="btn btn-reload reloadAdmin mt-0 mb-2 p-1"
-                                id="refresh-button" class="refresh-end" onclick="refreshContent()">
-                                <i class="fa fa-sync fa-spin-hover fa-3x"></i>
-                                <p class="small" style="font-family:Roboto, sans-serif; font-size:12px;">Synch Now</p>
-                            </a>
+                            
                             <p id="adminParagraph" class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button
                                 drücken</p>
+
+                            <p>
+                                <a href="{{ url('/admin') }}" class="btn btn-reload reloadAdmin mt-0 mb-2 p-1"
+                                    id="refresh-button" class="refresh-end" onclick="refreshContent()">
+                                    <i class="fa fa-sync fa-spin-hover fa-3x" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Synch Now"></i>
+                                </a>
+                            </p>
 
                             @if (session('success'))
                                 <div class="alert alert-success alert-dismissible fade show" role="alert">
