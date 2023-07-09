@@ -69,7 +69,7 @@
         @media (max-width: 480px) {
 
             #admin {
-                margin-top: -8.5rem;
+                margin-top: 0rem;
                 align-items: center;
                 justify-content: center;
                 min-height: 100vh;
