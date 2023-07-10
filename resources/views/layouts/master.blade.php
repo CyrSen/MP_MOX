@@ -205,9 +205,6 @@
             padding-top: 10%;
         }
 
-        #top {
-            z-index: 2;
-        }
     </style>
 
 </head>
@@ -237,7 +234,7 @@
     </div>
 
     <!-- Footer-->
-    <footer class="page-footer fixed-bottom indigo darken-2 center-on-small-only p-3 mt-0" style="z-index:1;">
+    <footer class="page-footer fixed-bottom indigo darken-2 center-on-small-only p-3 mt-0">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
