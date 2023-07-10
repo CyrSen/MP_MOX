@@ -90,7 +90,7 @@
  lighten-4" id="nutzen">
         <div class="container">
             <div class="wow fadeIn">
-                <h2 class="h1 pt-5 pb-3">Welchen Nutzen hat myOfficeX für dich?</h2>
+                <h2 class="h1 pt-5 pb-3">Dein Nutzen von myOfficeX</h2>
                 <p class="mb-5 pb-3 lead dark-grey-text custom-font-weight">
                     Die myOfficeX-App ermöglicht es dir, anonym Feedback zu deinem Arbeitsplatzkomfort zu geben. Das
                     Feedback und Informationen über das Gebäude werden genutzt, um verschiedene Verbesserungen zu
