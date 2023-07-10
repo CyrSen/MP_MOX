@@ -157,7 +157,7 @@
                             <h5 class="font-weight-bold">Stadt Zürich - Pilotpartner</h5>
                             <p class="blue-grey-text custom-font-weight">
                                 Im Sommer 2023 wird myOfficeX in einem neu bezogenen Verwaltungsgebäude der Stadt Zürich
-                                eingesetzt. Diess Pilotprojekt ermöglicht es uns, die App in einem echten Büroumfeld zu
+                                eingesetzt. Dieses Pilotprojekt ermöglicht es uns, die App in einem echten Büroumfeld zu
                                 testen. <br><br> Durch Feedbacksammlung, gezielte Verbesserungen und Bewertung der
                                 Ergebnisse streben wir an, den Komfort, das Wohlbefinden und die Produktivität im
                                 Bürogebäude zusätzlich zu verbessern.

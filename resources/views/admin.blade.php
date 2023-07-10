@@ -13,7 +13,7 @@
                 <div class="col-sm-12 col-md-3 px-0">
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for temperature_level -->
-                        <p class="lead text-center">Wärme-Behaglichkeit</p>
+                        <p class="lead text-center">Temperatur-Komfort</p>
                         <div id="mapTemperature" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid" id="imgTemperature"
                                 src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
@@ -25,7 +25,7 @@
                 <div class="col-sm-12 col-md-3 px-0">
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for noise_level -->
-                        <p class="lead text-center">Lärmempfinden</p>
+                        <p class="lead text-center">Geräusch-Komfort</p>
                         <div id="mapNoise" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid" id="imgNoise" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
                                 alt="Office room plan">
@@ -37,7 +37,7 @@
                 <div class="col-sm-12 col-md-3 px-0">
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for air_quality_level -->
-                        <p class="lead text-center">Raumluftempfinden</p>
+                        <p class="lead text-center">Luft-Komfort</p>
                         <div id="mapAirQuality" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid" id="imgAirQuality"
                                 src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
@@ -49,7 +49,7 @@
                 <div class="col-sm-12 col-md-3 px-0">
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for higge_level -->
-                        <p class="lead text-center">Gesamtwahrnehmung (Higge)</p>
+                        <p class="lead text-center">Gesamt-Komfort {{-- (Higge) --}}</p>
                         <div id="mapHigge" class="myContainer mapAdmin tooltip-icon">
                             <img class="img-fluid" id="imgHigge" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
                                 alt="Office room plan">
@@ -92,7 +92,7 @@
                     <div class="card p-3 me-md-4 mt-3">
                         <!-- Table -->
                         <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
-                            <h3 class="card-title text-center">Übersicht Admin/FM alle Feedbacks.</h3>
+                            <h3 class="card-title text-center">Alle Feedbacks.</h3>
                             
                             <p class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button drücken</p>
 
@@ -119,10 +119,10 @@
                                         <th>Zeitstempel</th>
                                         <th style="display:none;">x-coordinates</th>
                                         <th style="display:none;">y-coordinates</th>
-                                        <th>Wärme-Behaglichkeit</th>
-                                        <th>Lärmempfinden</th>
-                                        <th>Raumluftempfinden</th>
-                                        <th>Gesamtwahrnehmung</th>
+                                        <th>Temperatur-Komfort</th>
+                                        <th>Geräusch-Komfort</th>
+                                        <th>Luft-Komfort</th>
+                                        <th>Gesamt-Komfort</th>
                                         <th>Kommentar</th>
                                     </tr>
                                 </thead>
