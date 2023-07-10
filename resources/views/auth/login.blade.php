@@ -73,11 +73,11 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         var element = document.getElementById('animationUp');
-        element.classList.add('animate__animated', 'animate__fadeInUp');
+        element.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-1s');
     });
 
     document.addEventListener('DOMContentLoaded', function() {
         var element = document.getElementById('animationDown');
-        element.classList.add('animate__animated', 'animate__fadeInDown');
+        element.classList.add('animate__animated', 'animate__fadeInDown', 'animate__delay-1s');
     });
   </script>
