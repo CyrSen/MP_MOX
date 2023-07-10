@@ -205,7 +205,7 @@
                     <div class="card col-10 col-md-7 py-md-3">
                         <div class="card-body py-1 py-md-4 px-md-4">
                             <div class="row">
-                                <div class="col-md-6 px-md-5">
+                                <div class="col-md-7 px-md-4">
                                     <form action="https://formspree.io/f/xdovqjnd" method="POST">
                                         <div class="md-form">
                                             <input class="form-control" id="name" type="text" name="name"
@@ -227,14 +227,14 @@
                                             <textarea class="md-textarea" id="message" name="message" required="required" style="width: 100%;"></textarea>
                                         </div>
                                         <div class="text-center text-md-start">
-                                            <button class="btn btn-indigo m-0 mt-3 ml-0" type="submit"
+                                            <button class="btn btn-indigo m-0 mt-3 ml-0 mb-3" type="submit"
                                             style="color:rgb(255, 255, 255)"><i class="fa fa-paper-plane-o mr-2"></i>
                                             Senden</button>
                                         </div>
                                         
                                     </form>
                                 </div>
-                                <div class="col-md-6 my-2 my-md-5{{--  d-none d-md-block --}}">
+                                <div class="col-md-5 my-2 my-md-5{{--  d-none d-md-block --}}">
                                     <div class="text-center pt-0 pt-md-3">
                                        <div>
                                         <i class="fa fa-map-marker indigo-text fa-2x"></i>
