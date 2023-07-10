@@ -69,10 +69,10 @@
                             <label class="form-label mt-2 mb-0 pt-2  text-center" for="">
                                 <p class="lead mx-3">Zeitspanne angeben</p>
                             </label>
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center px-4 px-md-0">
                                 <div class="col-sm-6 col-md-5">
                                     <label for="start-date-input" class="form-label">Startdatum:</label>
-                                    <input type="date" class="form-control bg-dark text-white px-1" id="start-date-input"
+                                    <input type="date" class="col-sm-3 form-control bg-dark text-white mb-3 mb-md-0 px-1" id="start-date-input"
                                         required>
                                 </div>
                                 <div class="col-sm-6 col-md-5">
@@ -81,7 +81,7 @@
                                         required>
                                 </div>
                             </div>
-                            <div class="text-center mt-3 mb-2">
+                            <div class="text-center mt-3 mb-3 mb-md-2">
                                 <button class="btn btn-indigo text-white" onclick="filterEntriesByDate()">Filter anwenden</button>
                             </div>
                         </div>
