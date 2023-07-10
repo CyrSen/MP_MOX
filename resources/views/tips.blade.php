@@ -15,7 +15,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay="1s">
+                <div class="col-lg-6 col-md-12 mb-5 animate__animated animate__fadeInLeft animate__delay-1s">
                     <div class="card transparent">
                         <div class="row">
                             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay="1s">
+                <div class="col-lg-6 col-md-12 mb-5 animate__animated animate__fadeInRight animate__delay-1s">
                     <div class="card transparent">
                         <div class="row">
                             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay="1s">
+                <div class="col-lg-6 col-md-12 mb-5 animate__animated animate__fadeInLeft animate__delay-1s">
                     <div class="card transparent">
                         <div class="row">
                             <div class="col-md-4 loudCol d-flex align-items-center justify-content-end left-container">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12 mb-5 wow fadeInRight" data-wow-delay="1s">
+                <div class="col-lg-6 col-md-12 mb-5 animate__animated animate__fadeInRight animate__delay-1s">
                     <div class="card transparent">
                         <div class="row">
                             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
