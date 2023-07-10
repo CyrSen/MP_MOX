@@ -266,7 +266,7 @@
                 </div>
             </div>
         </div>
-        <div class="arrow-circle mb-3 d-none d-md-block">
+        <div class="arrow-circle mb-3">
             <a class="arrow-link" href="#intro">
                 <i class="fa fa-arrow-up"></i>
             </a>
