@@ -190,7 +190,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-5 py-md-5" id="contact" style="">
+    <section class="py-5 py-md-5" id="contact" style="background-color: rgba(0,0,0,0.6);">
         <div class="rgba-black-strong py-5 py-md-5">
             <div class="container">
                 <div class="wow fadeIn">
