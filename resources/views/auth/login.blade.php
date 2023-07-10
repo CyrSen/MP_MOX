@@ -5,7 +5,7 @@
 <section id="login">
     <div class="rgba-black-strong"></div>
         <div class="container py-5">
-            <div id="{{-- animationDown --}}" class="animate__animated animate__fadeInDown animate__delay-1s">
+            <div id="animationDown" class="">
                 <h2 class="h1 text-white mt-2 mt-md-0 pt-3 pt-md-5 pb-3 text-center">Login</h2>
                 <p class="text-white px-3 px-md-5 mb-4 pb-1pb-md-3 lead text-center">
                 Bitte loge dich ein, um myOffice<span class="">X</span> zu nutzen.
@@ -13,7 +13,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                <div id="{{-- animationUp --}}" class="card mb-5 animate__animated animate__fadeInUp animate__delay-1s" style="max-width: 800px;">
+                <div id="animationUp" class="card mb-5 " style="max-width: 800px;">
                     <div class="card-body p-3 pb-5 pt-5">
                 <!-- Form start-->
                 <div class="row justify-content-center">
@@ -71,7 +71,7 @@
   @endsection 
 
   <script>
-/*     document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         var element = document.getElementById('animationUp');
         element.classList.add('animate__animated', 'animate__fadeInUp');
     });
@@ -79,5 +79,5 @@
     document.addEventListener('DOMContentLoaded', function() {
         var element = document.getElementById('animationDown');
         element.classList.add('animate__animated', 'animate__fadeInDown');
-    }); */
+    });
   </script>
