@@ -186,13 +186,13 @@
             display: flex;
             align-items: stretch;
             min-height: 100vh;
-            background: url("{{ asset('assets/img/open-window.jpg') }}") no-repeat center center;
+            background: url("{{ asset('assets/img/open-window_lowres.jpg') }}") no-repeat center center;
             background-size: cover;
             position: relative;
             z-index: 1;
         }
 
-        {{ asset('assets/img/open-window.jpg') }} #tips {
+        {{ asset('assets/img/open-window_lowres.jpg') }} #tips {
             align-items: center;
             justify-content: center;
             min-height: 100vh;
