@@ -267,11 +267,11 @@
                 </div>
             </div>
         </div>
-        <div class="arrow-circle d-none d-md-block">
+                        <div class="arrow-circle">
             <a class="arrow-link" href="#intro">
                 <i class="fa fa-arrow-up"></i>
             </a>
-        </div> 
+        </div>
     </section>
 
 @endsection
