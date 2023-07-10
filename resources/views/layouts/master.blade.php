@@ -166,7 +166,7 @@
             display: flex;
             align-items: stretch;
             min-height: 100vh;
-            background: url("./assets/img/skyscraper-with-clouds-reflection.jpg") no-repeat center center;
+            background: url("./assets/img/skyscraper-with-clouds-reflection_lowres.jpg") no-repeat center center;
             background-size: cover;
             position: relative;
             z-index: 1;
