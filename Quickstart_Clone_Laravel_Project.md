@@ -1,29 +1,129 @@
-<div align="center" style="width:100%; background-size: cover;background-position: center;background-color: #FFFFFF;
-  background-repeat: no-repeat; ">
-
-![ChapsChatLogo]
-</div>
-<div align="center" style="background-color:#FFffff; height:28.2px">
-
-[![Gaudenz77@Krakatoom-Design - CHaps-CHat-App](https://img.shields.io/badge/Gaudenz77%40Krakatoom--Design-CHaps--CHat--App-ffffff?style=for-the-badge&logo=laravel)](https://github.com/Gaudenz77/CHapsCHat-App-Mark1)
+<div align="center">
+<a href="https://www.myofficex.ch/" title="Unser Ziel: Dein Komfort: Besuch das Projekt!"><img src="https://github.com/CyrSen/MP_MOX/blob/main/public/assets/img/readme_intro_pic.png?raw=true" alt="Sample screenshot"></a>
 
 </div>
+
+
+
 
 ---
-# MP_MOX - myOffice X: Unser Ziel - Dein Komfort
+# myOffice<span style="font-weight:bold;">X</span>: Unser Ziel - Dein Komfort
 
 
-### Project context
-Text
+## Introduction (Ausgangslage)
+<p style="color:red">Text</p>
 
-<!-- ## Task / Assignment --> 
-<!-- * Create a website with blog feature and use the <b>Laravel</b>-framework with Breeze, all other avaliable Web-Dev-Techniques (Html, Css, Js, Php, Bs5), [Github](https://github.com/svenbledt/Palaver-Laravel), [FIGMA](https://www.figma.com/file/mf3TBislNFLZhHvvs3TifW/Palaver-Blog?node-id=3%3A4&t=OZFy40E2QIRxL6ik-1)
-* Build the website as a team. The site should look good on phones (mobile first) and on a desktop. -->
-----
-<!-- sail  -->
+## Research significance (Why do this?) 
+<p style="color:red">Text</p>
+
+## Methodology (How do this?) 
+<p style="color:red">Text</p>
+
+## Result/Conclusion (myofficeX-Application) 
+<p style="color:red">Text</p>
+
+
+## Manual: How use the application
+* TBC
+* <p style="color:red">Text</p>
+<p style="color:red">Text</p><p style="color:red">Text</p><p style="color:red">Text</p><p style="color:red">Text</p>
+<!-- * open [localhost](http://127.0.0.1/)
+* choose login with your or register top right of screen
+* when already registered fill in credentials  => enter
+* if not, register new account, fill in inputs required => enter
+* back on main blog page (localhost) either chose blog to read by mouse-click or tab-key => enter
+* or create own new blogpost => bottom center button "create"
+* on create-post-page: choose image, choose title, write blog-text =>submit => back on localhost see new post
+* read post by select on mousclick or tab-key
+* use like or dislike buttons for reaction and/or 
+* comment on post: press comments-link (yellow-center)
+* write commentary
+* happy blogging yalls! -->
+
+
 ------------------------------
 
-### Setup / Installation Docker/Npm
+## Setup from Github (LAMP / Docker-Sail)
+### Setup / Installation with LAMP Stack
+
+### Prerequisites
+
+* LAMP Stack (Linux/Apache/Mysql/Php) or XAMPP-setup (Windows)
+* Composer
+* PHP 8.1
+* Mysql or Mariadb Database
+
+### Setup LAMP
+<ul>
+<li>get github code for cloning</li>
+<li>Open repository in editor of your choice</li>
+<li>Open terminal</li>
+<li>Start Database<br>
+
+```bash
+sudo systemctl start mariadb
+```
+</li>
+<li>Create Databse<br>
+
+```bash
+CREATE DATABASE <name database>;
+```
+</li>
+<li>Create User (these are the Env.variables afterwards)<br>
+
+```bash
+CREATE USER 'DB_USERNAME'@'localhost' IDENTIFIED BY 'DB_PASSWORD';
+```
+</li>
+<li>Grant user previleges<br>
+
+```bash
+GRANT ALL PRIVILEGES ON <name database>.* TO 'DB_USERNAME'@'localhost';
+FLUSH PRIVILEGES;
+```
+</li>
+<li>Install Node/NPM if needed<br>
+
+```
+npm install
+```
+</li>
+<li>If installed, update<br>
+
+```
+npm update 
+```
+</li>
+<li>Update Composer<br>
+
+```
+composer update 
+```
+</li>
+
+<li>If no composer, install guide (Ubuntu)*<br>
+
+</li>
+<li>Generate Key:<br>
+
+```
+php artisan key: generate
+```
+</li>
+<li>Run Database<br>
+
+```
+php artisan serve
+```
+</li>
+
+</ul>
+
+* *[Get Composer]('https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04')
+
+
+### Setup / Installation Docker-Sail
 <ul>
 <li>get github code for cloning</li>
 <li>Open repository in editor of your choice</li>
@@ -61,44 +161,30 @@ sail npm install --save-dev
 
 </ul>
 
----
-
-## Usage: CHaps-CHat-App
-* TBC
-<!-- * open [localhost](http://127.0.0.1/)
-* choose login with your or register top right of screen
-* when already registered fill in credentials  => enter
-* if not, register new account, fill in inputs required => enter
-* back on main blog page (localhost) either chose blog to read by mouse-click or tab-key => enter
-* or create own new blogpost => bottom center button "create"
-* on create-post-page: choose image, choose title, write blog-text =>submit => back on localhost see new post
-* read post by select on mousclick or tab-key
-* use like or dislike buttons for reaction and/or 
-* comment on post: press comments-link (yellow-center)
-* write commentary
-* happy blogging yalls! -->
+<p style="color:red">Hier kannst anpassen</p>
 
 
 ## Thank you for your time.
 ---
-### Any feedback or assisting constructive critique is welcome.<br> Feel free to reach out or text via [Mail@Me](mailto:gaudenzraiber@yahoo.de).
+### Any feedback or assisting constructive critique is welcome.<br> Feel free to reach out or text via [Cyrill Senger](mailto:cvsenger@gmail).
 ----
 ----
 ## License:
 * none, free use
 ----
 ## Tools Used:
-* [Laravel/Breeze](https://laravel.com/docs/10.x/starter-kits#breeze-and-blade)
-* [Github](https://github.com/svenbledt/Palaver-Laravel) (for file repo/sharing/workflow)
-* [Notion Organizer](//https://www.notion.so/)
-* HTML, CSS, Javascript, PHP PDO, Heidisql, Nginx, Mysql
-* [Font](https://fonts.google.com/specimen/Poppins)
+* [Laravel/Breeze](https://laravel.com/docs/10.x/
+* [Laravel - Sail](https://laravel.com/)
+* [Bootstrap_5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+* [MDB](https://mdbootstrap.com/)
+* [Google Fonts](https://fonts.google.com/)
 * [Fontawesome](https://fontawesome.com/)
 * [Animate.css](https://animate.style/)
 * [AOS](https://michalsnik.github.io/aos/)<br>[AOS-Git]('https://github.com/michalsnik/aos')
+starter-kits#breeze-and-blade)
+* [Github](https://github.com/CyrSen/MP_MOX) (for file repo/sharing/workflow)
+* HTML, CSS, Javascript, PHP
 * [Visual Studio Code](https://code.visualstudio.com/)
-* [Bootstrap_5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-
 * Internet for research
 * imagination 
 * feeling for details
@@ -107,11 +193,12 @@ sail npm install --save-dev
 ## Main Content:
 <div style="text-align:center; font-size:20px">
 
-[Github](https://github.com/Gaudenz77/CHapsCHat-App-Mark1)<br>
-[Figma](https://www.figma.com/file/EQlfkQ1kCVGsY77tNYVzPH/CHapsChat-App-Draft?type=design&node-id=34%3A3&t=Xmty5PKXN2n6I9qL-1)<br>
+[Github](https://github.com/CyrSen/MP_MOX)<br>
+[Figma](https://www.figma.com/file/drTHVleCW6wAmzNCIj9ziu/MP_MOX%2FMyOfficeUX?type=design&node-id=0%3A1&mode=design&t=JBNcIBa54Qim9ga1-1)<br>
 <!-- [UML-DB-Scheme](https://plantuml.github.io/plantuml-core/raw.html?VO-nQiD038PtFuNgFNc2aA7jq2KGqj0b62Fx5FVgisLEIZCKltklzXqS13f9-d_n_TAJVj9081EsvB0fGksn8oYFwF2RF3mxxahuAG3UpkSZRE3omgDwTevy5THyXDrskuVBWGsvnLixs6tsy8gA3Gfbyh9yufj6KcoNzVzI_kmFI_Ugc0iJiL2cWFNOApiJhYyFD3IXdi9pIcRr0kucvAM2TPXGvCxUr9w4j5RkQPGgUc6FHtGrjYs9PEQSfRnRfOUCYKKJnjcUwbneUHXer4XAdFJ30-kArf6flxX9WC5s7jLoEcR-1G00) -->
 </div>
 
 ----
-### 20230511 1st rm: 
-A production by [Krakatoom-Design Inc.](https://github.com/Gaudenz77) 
+### 20230710 1st rm: 
+A production by Cyrill Senger [CyrSen/MP_MOX](https://github.com/CyrSen/MP_MOX) 
+and Gaudenz Raiber [Gaudenz77](https://github.com/Gaudenz77)
