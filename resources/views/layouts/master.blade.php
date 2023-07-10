@@ -228,6 +228,10 @@
         <div class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
             <i class="fa fa-arrow-up"></i>
         </div>
+        <div class="d-inline-block">
+            <span style="font-weight: 400">&copy; myOfficeX</span> | <a href="{{ url('/impressum') }}"
+                style="font-weight: 400;">Impressum</a>
+        </div>
         <div class="scroll-button" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
             <i class="fa fa-arrow-down"></i>
         </div>
@@ -238,10 +242,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <div class="d-inline-block">
+                    {{-- <div class="d-inline-block">
                         <span style="font-weight: 400">&copy; myOfficeX</span> | <a href="{{ url('/impressum') }}"
                             style="font-weight: 400;">Impressum</a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
