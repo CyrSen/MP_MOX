@@ -346,7 +346,7 @@ html {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 3;
+        z-index: 1;
         width: 100%;
         padding: 0 1rem;
         box-sizing: border-box;
@@ -659,7 +659,7 @@ h6 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 3;
+        z-index: 1;
         width: 100%;
         padding: 0 1rem;
         box-sizing: border-box;
