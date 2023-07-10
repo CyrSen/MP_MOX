@@ -256,7 +256,7 @@
                                             <i class="fa fa-envelope indigo-text fa-2x"></i>
                                         </div>
                                         <div>
-                                            <p class="mt-2 text-center">contact@myofficex.ch</p>
+                                            <p class="mt-2 text-center"><a href="mailto:contact@myofficex.ch">contact@myofficex.ch</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -265,27 +265,8 @@
                     </div>
 
                 </div>
-
-                
             </div>
         </div>
-        {{--         <div class="arrow-circle">
-            <a class="arrow-link" href="#intro">
-                <i class="fa fa-arrow-up"></i>
-            </a>
-        </div> --}}
     </section>
-
-
-    {{-- <div class="scroll-buttons">
-  <div class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-    <i class="fa fa-arrow-up"></i>
-  </div>
-  <div class="scroll-button" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
-    <i class="fa fa-arrow-down"></i>
-  </div>
-</div> --}}
-
-
 
 @endsection
