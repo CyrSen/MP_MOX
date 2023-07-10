@@ -286,27 +286,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* #intro {
-    background: url("img/panorama-3094696_1920.jpg") no-repeat center center;
-    background-size: cover;
-}
-
-#feedback {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url("./assets/img/architecture-4000.jpg");
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-} */
-
-/* #admin {
-    background-size: cover;
-    margin-top:-10%;
-    padding-top:10%;
-} */
 
 .top-nav-collapse {
     /* background-color: #3949ab; */

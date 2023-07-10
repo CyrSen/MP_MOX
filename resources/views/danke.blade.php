@@ -12,7 +12,7 @@
   background-size: 100% 100%;
   position: relative;
   min-width: 100vw;
-  background-image: url('{{ asset('assets/img/architecture-4000.jpg') }}');">
+  background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');">
   
       <div class="rgba-black-strong" style="z-index:0"></div>
           <div class="vh-100 d-flex justify-content-center align-items-center">
