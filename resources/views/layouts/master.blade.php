@@ -40,7 +40,6 @@
 
         body {
             background-image: url("./assets/img/architecture.jpg") no-repeat center center;
-            overflow: hidden;
         }
 
         #intro {
