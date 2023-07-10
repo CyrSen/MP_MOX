@@ -204,6 +204,10 @@
             margin-top: -10%;
             padding-top: 10%;
         }
+
+        #top {
+            z-index: 2;
+        }
     </style>
 
 </head>
@@ -233,14 +237,13 @@
     </div>
 
     <!-- Footer-->
-    <footer class="page-footer fixed-bottom indigo darken-2 center-on-small-only p-3 mt-0">
+    <footer class="page-footer fixed-bottom indigo darken-2 center-on-small-only p-3 mt-0" style="z-index:1;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="d-inline-block">
                         <span style="font-weight: 400">&copy; myOfficeX</span> | <a href="{{ url('/impressum') }}"
-                            style="font-weight: 400; position: relative;
-                            z-index: 99999;">Impressum</a>
+                            style="font-weight: 400;">Impressum</a>
                     </div>
                 </div>
             </div>
