@@ -228,6 +228,10 @@
         <div class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
             <i class="fa fa-arrow-up"></i>
         </div>
+        <div class="d-inline-block">
+            <span style="color:transparent;">&copy; myOfficeX</span> | <a href="{{ url('/impressum') }}"
+                style="color:transparent;">Impressum</a>
+        </div>
         <div class="scroll-button" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
             <i class="fa fa-arrow-down"></i>
         </div>
