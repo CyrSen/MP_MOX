@@ -63,7 +63,9 @@
         background-color: #3f51b5 !important;
         }
 
-
+        input[type=date]::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+        }
         
 
         @media (max-width: 480px) {
