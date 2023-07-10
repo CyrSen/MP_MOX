@@ -239,7 +239,8 @@
                 <div class="col-md-12 text-center">
                     <div class="d-inline-block">
                         <span style="font-weight: 400">&copy; myOfficeX</span> | <a href="{{ url('/impressum') }}"
-                            style="font-weight: 400">Impressum</a>
+                            style="font-weight: 400; position: relative;
+                            z-index: 99999;">Impressum</a>
                     </div>
                 </div>
             </div>
