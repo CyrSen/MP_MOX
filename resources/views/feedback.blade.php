@@ -198,11 +198,9 @@
                                                 data-bs-placement="top" title="Mässig" data-bs-value="2" onclick="setHiggeLevel(2)">
                                         </div>
                                         <div class="icon-wrapper icon-element">
-                                            <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                            <img class="feedbackEmojis img-fluid  p-2 tooltip"
                                                 src="./assets/img/icons_var/smiley_new_worst.svg" alt="smiley-mask"
-                                                data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                                                data-bs-placement="top" title="Schlecht" data-bs-value="1"
-                                                onclick="setHiggeLevel(1)">
+                                                class="tooltip" title="This is my image's tooltip message!">
                                         </div>
                                     </div>
                                     <input type="hidden" name="higge_level" id="higge-level-input">
