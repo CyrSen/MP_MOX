@@ -218,6 +218,7 @@ sail npm install --save-dev
 * The use, reproduction, modification, publication, distribution, sublicensing, and/or sale of the copyrighted material (e.g., software) is prohibited without explicit written permission.
 ----
 ## Tools Used:
+* [Github](https://github.com/CyrSen/MP_MOX) (for file repo/sharing/workflow)
 * [Laravel - Breeze](https://laravel.com/docs/10.x/)
 * [Laravel - Sail](https://laravel.com/)
 * [Bootstrap_5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
@@ -225,8 +226,8 @@ sail npm install --save-dev
 * [Google Fonts](https://fonts.google.com/)
 * [Fontawesome](https://fontawesome.com/)
 * [Animate.css](https://animate.style/)
-* [AOS](https://michalsnik.github.io/aos/)<br>[AOS-Git]('https://github.com/michalsnik/aos')
-* [Github](https://github.com/CyrSen/MP_MOX) (for file repo/sharing/workflow)
+* [AOS](https://michalsnik.github.io/aos/)
+* [AOS-Git]('https://github.com/michalsnik/aos')
 * [Visual Studio Code](https://code.visualstudio.com/)
 * HTML, CSS, Javascript, PHP
 * Internet for research
