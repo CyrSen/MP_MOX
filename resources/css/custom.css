@@ -224,7 +224,8 @@ body {
     --bs-tooltip-tooltip-arrow-width: 1.2rem !important;
     --bs-tooltip-tooltip-arrow-height: 1rem !important;
     position:relative !important;
-    top:100px !important;
+    top:2rem !important;
+    width:1rem !important;  
 }
 
 .custom-popover {
