@@ -270,7 +270,7 @@
     {{-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> --}}
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-    {{-- <script type="text/javascript" src="{{ asset('/js/popper.min.js') }}"></script> --}}
+    <script type="text/javascript" src="{{ asset('/js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/wow.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script>
 
@@ -279,7 +279,7 @@
         new WOW().init();
 
         $(function() {
-            $('[data-bs-toggle="tooltip"]').tooltip();
+            $('[data-bs-toggle="mytooltip"]').tooltip();
             $('[data-bs-toggle="popover"]').popover({
                 html: true
             })
