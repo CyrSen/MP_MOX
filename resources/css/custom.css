@@ -218,11 +218,11 @@ body {
 }
 
 .custom-tooltip {
-    --bs-tooltip-color: #110080;
+    /* --bs-tooltip-color: #110080;
     --bs-tooltip-bg: #ffffff;
     --bs-tooltip-border-radius: 10px;
     --bs-tooltip-tooltip-arrow-width: 1.2rem;
-    --bs-tooltip-tooltip-arrow-height: 1rem;
+    --bs-tooltip-tooltip-arrow-height: 1rem; */
 }
 
 .custom-popover {
