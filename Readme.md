@@ -151,9 +151,8 @@ composer update
 ```
 </li>
 
-<li>If no composer, install guide (Ubuntu)*<br>
+<li>If no composer, install guide (Ubuntu)*</li>
 
-</li>
 <li>Generate Key:<br>
 
 ```
@@ -169,7 +168,7 @@ php artisan serve
 
 </ul>
 
-* *[Get Composer]('https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04')
+[<h4>* Get Composer]('https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04')
 
 
 ### Setup / Installation Docker-Sail
