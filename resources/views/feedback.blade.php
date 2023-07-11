@@ -45,7 +45,7 @@
             <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                 <div class="card-body px-3 px-md-5 py-3">
                     <div class="form-group mt-3">
-                        <label class="feedback-font" for="timely">Schritt 2: Wärme-Behaglichkeit angeben.</label>
+                        <label class="feedback-font" for="timely">Schritt 2: Temperatur-Komfort.</label>
                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
                             style="background-color: rgba(233, 228, 224, 0.8);  border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
@@ -83,7 +83,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="feedback-font" for="timely">Schritt 3: Akustische Behaglichkeit angeben.</label>
+                        <label class="feedback-font" for="timely">Schritt 3: Geräusch-Komfort.</label>
                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
                             style="background-color: rgba(233, 228, 224, 0.8);  border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
@@ -126,7 +126,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="feedback-font" for="timely">Schritt 4: Luft-Behaglichkeit angeben.</label>
+                        <label class="feedback-font" for="timely">Schritt 4: Luft-Komfort.</label>
                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
                             style="background-color: rgba(233, 228, 224, 0.8);  border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
@@ -169,7 +169,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="feedback-font" for="timely">Schritt 5: Gesamt-Behaglichkeit angeben.</label>
+                        <label class="feedback-font" for="timely">Schritt 5: Gesamt-Komfort.</label>
                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
                             style="background-color: rgba(233, 228, 224, 0.8);  border-radius: 4px; display: flex; justify-content: space-between;">
                             <div class="icon-wrapper icon-element">
