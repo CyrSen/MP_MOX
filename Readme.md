@@ -211,14 +211,14 @@ sail npm install --save-dev
 
 ## Thank you for your time.
 
-### Any feedback or assisting constructive critique is welcome.<br> Feel free to reach out or text via [Cyrill Senger](mailto:contact@myofficex.ch).
+### Any feedback or assisting constructive critique is welcome.<br> Feel free to reach out or text via [contact@myofficeX](mailto:contact@myofficex.ch).
 
 
 # License:
 * The use, reproduction, modification, publication, distribution, sublicensing, and/or sale of the copyrighted material (e.g., software) is prohibited without explicit written permission.
 ----
 ## Tools Used:
-* [Github](https://github.com/CyrSen/MP_MOX) (for file repo/sharing/workflow)
+* [Github](https://github.com/CyrSen/MP_MOX)
 * [Laravel - Breeze](https://laravel.com/docs/10.x/)
 * [Laravel - Sail](https://laravel.com/)
 * [Bootstrap_5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
