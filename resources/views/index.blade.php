@@ -76,11 +76,13 @@
                                 </ul>
                         </div> --}}
                     </div>
-                    <div class="arrow-circle mb-5 d-none d-md-block">
-                        <a class="arrow-link" href="#nutzen">
-                            <i class="fa fa-arrow-down"></i>
-                        </a>
-                    </div>
+                    <div class="d-none d-md-block">
+                        <div class="arrow-circle mb-5 ">
+                            <a class="arrow-link" href="#nutzen">
+                                <i class="fa fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div> 
                 </div>
             </div>
     </section>
