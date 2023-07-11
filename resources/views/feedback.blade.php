@@ -52,7 +52,7 @@
                                             <div class="icon-wrapper icon-element">
                                                 <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
                                                     src="./assets/img/icons_var/smiley_new_cold.svg" alt="smiley-great"
-                                                    data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="" data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Zu kalt" data-bs-value="1" onclick="setTempLevel(1)">
                                             </div>
                                             <div class="icon-wrapper icon-element">
