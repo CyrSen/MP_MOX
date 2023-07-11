@@ -59,7 +59,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('/tips') ? 'active' : '' }}" aria-current="page"
-                            href="{{ url('/tips') . '/' . session('feedbackMapId') }}">Tips</a>
+                            href="{{ url('/tips') . '/' . session('feedbackMapId') }}">Tipps</a>
                     </li>
                     @auth
                         @if (Auth::check() && in_array(Auth::user()->permissions_level, ['level2', 'level3']))
