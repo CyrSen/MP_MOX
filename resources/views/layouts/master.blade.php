@@ -100,21 +100,9 @@
                 --bs-tooltip-bg:  #ffffff !important;
                 --bs-tooltip-border-radius: 10px! important;
                 --bs-tooltip-tooltip-arrow-width: 1.2rem !important;
-                --bs-tooltip-tooltip-arrow-height: 1rem !important;
-                /* position:relative !important;
-                top:10px !important; */
-                
+                --bs-tooltip-tooltip-arrow-height: 1rem !important;                
             }
-
-            
-            /* .page-footer {
-                position: sticky;
-                bottom: 0;
-                background-color: #3f51b5;
-                z-index: 2;
-            } */
         }
-
 
         @media (max-width: 800px) and (orientation: landscape) {
             #contact {
@@ -175,25 +163,14 @@
                 --bs-tooltip-border-radius: 10px! important;
                 --bs-tooltip-tooltip-arrow-width: 1.2rem !important;
                 --bs-tooltip-tooltip-arrow-height: 1rem !important;
-                /* position:relative !important;
-                top:10px !important; */
-                
             }
 
-
-            /* .page-footer {
-                position: sticky;
-                bottom: 0;
-                background-color: #3f51b5;
-                z-index: 2;
-            } */
         }
 
         .feedbackPanels {
             position: relative;
             top: 2rem;
         }
-
 
         #indexPLACEHOLDER {
             /*  DAMIT MAN ETWAS SIEHT !!!*/
