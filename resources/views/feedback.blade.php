@@ -222,10 +222,11 @@
                                             class="fa fa-paper-plane-o mr-2"></i> Senden</button>
                                 </div>
                                 </fieldset>
-        </form>
+        
                     </div>
                 </div>
             </div>
+        </form>
         </div>
     </section>
 
