@@ -94,6 +94,18 @@
                 padding-top: 10%;
                 background-size: cover;
             }
+
+            .custom-tooltip {
+                --bs-tooltip-color: #110080 !important;
+                --bs-tooltip-bg: #fbfb02 !important;
+                --bs-tooltip-border-radius: 10px! important;
+                --bs-tooltip-tooltip-arrow-width: 1.2rem !important;
+                --bs-tooltip-tooltip-arrow-height: 1rem !important;
+                /* position:relative !important;
+                top:10px !important; */
+                
+            }
+
             
             /* .page-footer {
                 position: sticky;
@@ -156,6 +168,18 @@
                 z-index: 1;
                 padding-top: 10%;
             }
+
+            .custom-tooltip {
+                --bs-tooltip-color: #110080 !important;
+                --bs-tooltip-bg: #ffffff !important;
+                --bs-tooltip-border-radius: 10px! important;
+                --bs-tooltip-tooltip-arrow-width: 1.2rem !important;
+                --bs-tooltip-tooltip-arrow-height: 1rem !important;
+                /* position:relative !important;
+                top:10px !important; */
+                
+            }
+
 
             /* .page-footer {
                 position: sticky;
