@@ -62,7 +62,7 @@
         
         @media (max-width: 480px) {
 
-            #feedbacksmall {
+            #feedback {
                 display: flex;
                 align-items: center;
                 justify-content: center;
