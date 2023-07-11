@@ -217,7 +217,7 @@ body {
     fill: red;
 }
 
-.tooltip {
+.custom-tooltip {
     --bs-tooltip-color: #110080 !important;
     --bs-tooltip-bg: #ffffff !important;
     --bs-tooltip-border-radius: 10px! important;
