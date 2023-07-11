@@ -296,7 +296,7 @@
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/wow.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script> --}}
 
 
     <script>
