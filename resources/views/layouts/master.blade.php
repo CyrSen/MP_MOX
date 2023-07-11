@@ -100,9 +100,7 @@
                 --bs-tooltip-bg:  #ffffff !important;
                 --bs-tooltip-border-radius: 10px! important;
                 --bs-tooltip-tooltip-arrow-width: 1.2rem !important;
-                --bs-tooltip-tooltip-arrow-height: 1rem !important;    
-                border-color: red !important;
-                border-width: 3px !important;            
+                --bs-tooltip-tooltip-arrow-height: 1rem !important;                
             }
         }
 
