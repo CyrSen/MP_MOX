@@ -65,7 +65,7 @@
                         @if (Auth::check() && in_array(Auth::user()->permissions_level, ['level2', 'level3']))
                             <li class="nav-item">
                                 <a class="nav-link {{ request()->is('admin*') ? 'active' : '' }}"
-                                    href="{{ url('/admin') }}">Administration</a>
+                                    href="{{ url('/admin') }}">Report</a>
                             </li>
                         @endif
                     @endauth
