@@ -279,7 +279,7 @@
         new WOW().init();
 
         $(function() {
-            $('[data-bs-toggle="custom-tooltip"]').tooltip();
+            /* $('[data-bs-toggle="custom-tooltip"]').tooltip(); */
             $('[data-bs-toggle="popover"]').popover({
                 html: true
             })
