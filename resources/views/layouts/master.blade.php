@@ -47,32 +47,9 @@
             background-size: cover;
         }
 
-        #feedback {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 97vh;
-            margin-top: ;
-            background: url("./assets/img/architecture-4000_lowres.jpg") no-repeat center center;
-            background-size: cover;
-            position: relative;
-            z-index: 1;
-        }
+        
 
-        /* #feedbacksmall {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 105vh;
-            margin-top: ;
-            justify-content: center;
-            min-height: 105vh;
-            margin-top: ;
-            background: url("./assets/img/architecture-4000_lowres.jpg") no-repeat center center;
-            background-size: cover;
-            position: relative;
-            z-index: 1;
-        } */
+        
 
         .navbar.collapsing-bg {
         background-color: #3f51b5 !important;
@@ -84,6 +61,18 @@
         }
         
         @media (max-width: 480px) {
+
+            #feedbacksmall {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 105vh;
+                margin-top: ;
+                background: url("./assets/img/architecture-4000_lowres.jpg") no-repeat center center;
+                background-size: cover;
+                position: relative;
+                z-index: 1;
+            }
 
             #admin {
                 margin-top: 0rem;
@@ -136,6 +125,18 @@
         }
 
         @media (min-width: 800px)  and (orientation: landscape) {
+
+            #feedback {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 97vh;
+                margin-top: ;
+                background: url("./assets/img/architecture-4000_lowres.jpg") no-repeat center center;
+                background-size: cover;
+                position: relative;
+                z-index: 1;
+            }
 
             #admin {
                 margin-top: -8.5rem;
