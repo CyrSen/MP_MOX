@@ -53,7 +53,7 @@
             justify-content: center;
             min-height: 105vh;
             margin-top: ;
-            background: url("./assets/img/architecture-4000_lowres.jpg") no-repeat center center;
+            background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
             background-size: cover;
             position: relative;
             z-index: 1;
