@@ -13,8 +13,36 @@
         <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
             @csrf
                 <div class="row justify-content-center mt-1 mt-md-3 pt-4 pt-md-0">
+                    <div id="{{-- animationLeft --}}" class="feedbackPanels col-md-6 mt-3 mb-1 mb-md-5 animate__animated animate__fadeInLeft animate__delay-1s">
+                            <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0 px-1 px-md-3">
+                                    <!-- Content of Card 1 -->
+                                    <div class="col">
+                                        <h2 class="h1 mb-3 px-3 pt-3">Feedback geben</h2>
+                                        <div class="feedback-font px-3">
+                                            Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
+                                            sie im Grundriss anklickst.
+                                        </div>
+                                    </div>
+                                    <div id="image-container" class="map-container tooltip-icon mb-4 mb-md-5">
+                                        <img class="img-fluid mapFeedback" id="image"
+                                            src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
+                                        <input id="x-coordinates" type="hidden" name="x_coordinates">
+                                        <input id="y-coordinates" type="hidden" name="y_coordinates">
+                                    </div>
+            
 
-                    <div id="{{-- animationRight --}}" class="feedbackPanels order-2 col-md-6 mt-3 mb-5 animate__animated animate__fadeInRight animate__delay-1s">
+                        <!--ADMIN USE -->
+                            <div class="col-sm-3" style="display:none;">
+                                    <p id="x-display"></p>
+                                    <p id="y-display"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="{{-- animationRight --}}" class="feedbackPanels col-md-6 mt-3 mb-5 animate__animated animate__fadeInRight animate__delay-1s">
                         <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                             <div class="card-body px-3 px-md-5 py-3">
                                 <div class="form-group mt-3">
@@ -194,42 +222,10 @@
                                             class="fa fa-paper-plane-o mr-2"></i> Senden</button>
                                 </div>
                                 </fieldset>
-        
+        </form>
                     </div>
-
-                    <div id="{{-- animationLeft --}}" class="feedbackPanels order-1 col-md-6 mt-3 mb-1 mb-md-5 animate__animated animate__fadeInLeft animate__delay-1s">
-                            <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
-                                <div
-                                    class="card-body d-flex flex-column justify-content-center align-items-center pt-1 pb-0 px-1 px-md-3">
-                                    <!-- Content of Card 1 -->
-                                    <div class="col">
-                                        <h2 class="h1 mb-3 px-3 pt-3">Feedback geben</h2>
-                                        <div class="feedback-font px-3">
-                                            Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
-                                            sie im Grundriss anklickst.
-                                        </div>
-                                    </div>
-                                    <div id="image-container" class="map-container tooltip-icon mb-4 mb-md-5">
-                                        <img class="img-fluid mapFeedback" id="image"
-                                            src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
-                                        <input id="x-coordinates" type="hidden" name="x_coordinates">
-                                        <input id="y-coordinates" type="hidden" name="y_coordinates">
-                                    </div>
-            
-
-                        <!--ADMIN USE -->
-                            <div class="col-sm-3" style="display:none;">
-                                    <p id="x-display"></p>
-                                    <p id="y-display"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
                 </div>
             </div>
-        </form>
         </div>
     </section>
 
