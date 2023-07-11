@@ -50,31 +50,31 @@
                                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
                                             style="background-color: rgba(233, 228, 224, 0.8);  border-radius: 4px; display: flex; justify-content: space-between;">
                                             <div class="icon-wrapper icon-element">
-                                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                                <img class="feedbackEmojis img-fluid  p-2 "
                                                     src="./assets/img/icons_var/smiley_new_cold.svg" alt="smiley-great"
                                                     data-bs-custom-class="{{--  --}}" data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Zu kalt" data-bs-value="1" onclick="setTempLevel(1)">
                                             </div>
                                             <div class="icon-wrapper icon-element">
-                                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                                <img class="feedbackEmojis img-fluid  p-2 "
                                                     src="./assets/img/icons_var/smiley_new_nottoocold.svg" alt="smiley-nice"
                                                     data-bs-custom-class="" data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Kühl" data-bs-value="3" onclick="setTempLevel(3)">
                                             </div>
                                             <div class="icon-wrapper icon-element">
-                                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                                <img class="feedbackEmojis img-fluid  p-2 "
                                                     src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-ok"
                                                     data-bs-custom-class="" data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Optimal" data-bs-value="5" onclick="setTempLevel(5)">
                                             </div>
                                             <div class="icon-wrapper icon-element">
-                                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                                <img class="feedbackEmojis img-fluid  p-2 "
                                                     src="./assets/img/icons_var/smiley_new_nottoohot.svg" alt="smiley-meh"
                                                     data-bs-custom-class="" data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Warm" data-bs-value="3" onclick="setTempLevel(3)">
                                             </div>
                                             <div class="icon-wrapper icon-element">
-                                                <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
+                                                <img class="feedbackEmojis img-fluid  p-2 "
                                                     src="./assets/img/icons_var/smiley_new_hot_red.svg" alt="smiley-mask"
                                                     data-bs-custom-class="" data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Zu heiss" data-bs-value="1" onclick="setTempLevel(1)">
