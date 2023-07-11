@@ -22,9 +22,6 @@
     <!-- Fonts -->
 
     <!-- Styles -->
-
-    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
-
     <link href="{{ asset('./css/mdb.min.css') }}" rel="stylesheet">
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
@@ -273,7 +270,6 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-     <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
     <script type="text/javascript" src="{{ asset('/js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/wow.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script>
