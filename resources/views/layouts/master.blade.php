@@ -22,9 +22,9 @@
     <!-- Fonts -->
 
     <!-- Styles -->
-    {{-- <link href="{{ asset('./css/mdb.min.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('./css/mdb.min.css') }}" rel="stylesheet">
     <!-- MDB -->
-    {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" /> --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Scripts -->
     <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/latest/date-picker.min.js"></script>
@@ -62,7 +62,7 @@
                 justify-content: center;
                 min-height: 105vh;
                 margin-top: ;
-                background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
+                background: url("./assets/img/panorama-3094696_1920_mobile.jpg") no-repeat center center;
                 background-size: cover;
                 position: relative;
                 z-index: 1;
