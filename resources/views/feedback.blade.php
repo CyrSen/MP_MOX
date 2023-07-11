@@ -42,8 +42,7 @@
                         </div>
                     </div>
 
-                    <div id="{{-- animationRight --}}"
-                        class="feedbackPanels col-md-6 mt-3 mb-5 animate__animated animate__fadeInRight animate__delay-1s">
+                    <div id="{{-- animationRight --}}" class="feedbackPanels col-md-6 mt-3 mb-5 animate__animated animate__fadeInRight animate__delay-1s">
                         <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                             <div class="card-body px-3 px-md-5 py-3">
                                 <div class="form-group mt-3">
