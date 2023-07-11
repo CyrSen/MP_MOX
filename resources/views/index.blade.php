@@ -77,7 +77,7 @@
                         </div> --}}
                     </div>
                     <div class="mb-5 d-none d-md-block">
-                        <div class="arrow-circle>
+                        <div class="arrow-circle">
                             <a class="arrow-link" href="#nutzen">
                                 <i class="fa fa-arrow-down"></i>
                             </a>
