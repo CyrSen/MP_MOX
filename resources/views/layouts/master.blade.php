@@ -155,6 +155,12 @@
             } */
         }
 
+        .feedbackPanels {
+            position: relative;
+            top: 2rem;
+        }
+
+
         #indexPLACEHOLDER {
             /*  DAMIT MAN ETWAS SIEHT !!!*/
             background: url("assets/img/matthieu-gouiffes_lowres.jpg") no-repeat center center;
