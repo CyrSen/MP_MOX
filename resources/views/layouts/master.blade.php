@@ -47,9 +47,24 @@
             background-size: cover;
         }
 
-        
+        #feedback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 105vh;
+            margin-top: ;
+            background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+        }
 
-        
+        /* .feedbackPanels {
+            position: relative;
+            top: 2rem;
+        } */
+
+
 
         .navbar.collapsing-bg {
         background-color: #3f51b5 !important;
@@ -62,7 +77,7 @@
         
         @media (max-width: 480px) {
 
-            #feedback {
+            /* #feedback {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -72,7 +87,7 @@
                 background-size: cover;
                 position: relative;
                 z-index: 1;
-            }
+            } */
 
             #admin {
                 margin-top: 0rem;
@@ -126,7 +141,7 @@
 
         @media (min-width: 800px)  and (orientation: landscape) {
 
-            #feedback {
+            /* #feedback {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -136,7 +151,7 @@
                 background-size: cover;
                 position: relative;
                 z-index: 1;
-            }
+            } */
 
             #admin {
                 margin-top: -8.5rem;
@@ -170,12 +185,6 @@
                 z-index: 2;
             } */
         }
-
-        .feedbackPanels {
-            position: relative;
-            top: 2rem;
-        }
-
 
         #indexPLACEHOLDER {
             /*  DAMIT MAN ETWAS SIEHT !!!*/
