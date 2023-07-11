@@ -222,8 +222,8 @@
                                 </div>
         </form>
                 
+                    </div>
             </div>
-        </div>
     </section>
 
 @endsection
