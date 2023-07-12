@@ -60,19 +60,19 @@
                                                 <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
                                                     src="./assets/img/icons_var/smiley_new_nottoocold.svg" alt="smiley-nice"
                                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    title="Kühl" data-bs-value="2" onclick="setTempLevel(2)">
+                                                    title="Kühl" data-bs-value="3" onclick="setTempLevel(3)">
                                             </div>
                                             <div class="icon-wrapper icon-element">
                                                 <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
                                                     src="./assets/img/icons_var/smiley_new_excellent.svg" alt="smiley-ok"
                                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    title="Optimal" data-bs-value="3" onclick="setTempLevel(3)">
+                                                    title="Optimal" data-bs-value="5" onclick="setTempLevel(5)">
                                             </div>
                                             <div class="icon-wrapper icon-element">
                                                 <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
                                                     src="./assets/img/icons_var/smiley_new_nottoohot.svg" alt="smiley-meh"
                                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    title="Warm" data-bs-value="4" onclick="setTempLevel(4)">
+                                                    title="Warm" data-bs-value="3" onclick="setTempLevel(3)">
                                             </div>
                                             <div class="icon-wrapper icon-element">
                                                 <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
