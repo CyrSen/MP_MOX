@@ -215,8 +215,8 @@
                 var airQualityLevel = row.querySelector('td:nth-child(6)').textContent;
                 var higgeLevel = row.querySelector('td:nth-child(7)').textContent;
 
-                // Create an icon element
-                var createIcon = function(level, x, y) {
+                 // Create an icon element
+                 var createIcon = function(level, x, y) {
                     var icon = document.createElement('i');
                     icon.classList.add('fa', 'fa-solid');
 
