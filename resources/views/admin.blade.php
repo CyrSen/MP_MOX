@@ -223,19 +223,19 @@
             if (category === 'temperature') {
                 switch (level) {
                     case '1':
-                        icon.classList.add('fa-temperature-low', 'templow');
+                        icon.classList.add('fa-temperature-low');
                         break;
                     case '2':
-                        icon.classList.add('fa-meh', 'mehie');
+                        icon.classList.add('fa-frown-open', 'frownopen');
                         break;
                     case '3': 
-                        icon.classList.add('fa-face-laugh', 'laugh');
-                        break;
-                    case '4':
                         icon.classList.add('fa-meh', 'mehie');
                         break;
+                    case '4':
+                        icon.classList.add('fa-face-laugh', 'laugh');
+                        break;
                     case '5':
-                        icon.classList.add('fa-temperature-high', 'temphigh');
+                        icon.classList.add('fa-temperature-high');
                         break;
                     default:
                         icon.classList.add('fa-comment-medical', 'comment-medical');
