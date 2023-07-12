@@ -241,7 +241,7 @@
                             icon.classList.add('fa-temperature-low', 'templow');
                             break;
                         case '7':
-                            icon.classList.add('fa-laugh-squint', 'temphigh');
+                            icon.classList.add('fa-temperature-high', 'temphigh');
                             break;
                             
                         default:
@@ -249,7 +249,24 @@
                             break;
                     }
 
-                    icon.classList.add('adminView');
+                        // Set the temperature icon class
+    if (level === 'temperature') {
+        icon.classList.add(level);
+    }
+
+    icon.classList.add('adminView');
+    icon.classList.add('tooltip-icon');
+    // Set the position and z-index of the icon
+    icon.style.position = 'absolute';
+    icon.style.left = xCoordinates +
+        '%'; // Use xCoordinates variable instead of 'x-coordinates'
+    icon.style.top = yCoordinates +
+        '%'; // Use yCoordinates variable instead of 'y-coordinates'
+    icon.style.zIndex = '10';
+
+    return icon;
+
+                    /* icon.classList.add('adminView');
                     icon.classList.add('tooltip-icon');
                     // Set the position and z-index of the icon
                     icon.style.position = 'absolute';
@@ -259,7 +276,7 @@
                         '%'; // Use yCoordinates variable instead of 'y-coordinates'
                     icon.style.zIndex = '10';
 
-                    return icon;
+                    return icon; */
                 };
 
                 // Add the icons after the image containers
