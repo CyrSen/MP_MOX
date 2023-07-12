@@ -4,7 +4,6 @@
 
 @section('content')
 
-
     <!-- Intro Section -->
     <section class="view hm-gradient" id="intro">
         <div class="site-bg-img d-flex align-items-center">
@@ -88,8 +87,7 @@
     </section>
 
     <!-- Nutzen Section -->
-    <section class="text-center py-5 grey
- lighten-4" id="nutzen">
+    <section class="text-center py-5 grey lighten-4" id="nutzen">
         <div class="container">
             <div class="wow fadeIn">
                 <h2 class="h1 pt-5 pb-3">Dein Nutzen von myOfficeX</h2>
