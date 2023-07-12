@@ -227,22 +227,27 @@
         switch (level) {
             case '1':
                 icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                icon.class = 'imageIcons';
                 icon.alt = 'Temperature Low';
                 break;
             case '2':
                 icon.src = 'path-to-meh-image';
+                icon.class = 'imageIcons';
                 icon.alt = 'Meh';
                 break;
             case '3':
                 icon.src = 'path-to-laugh-image';
+                icon.class = 'imageIcons';
                 icon.alt = 'Laugh';
                 break;
             case '4':
                 icon.src = 'path-to-meh-image';
+                icon.class = 'imageIcons';
                 icon.alt = 'Meh';
                 break;
             case '5':
                 icon.src = './assets/img/icons_var/smiley_new_hot_red.svg';
+                icon.class = 'imageIcons';
                 icon.alt = 'Temperature High';
                 break;
             default:

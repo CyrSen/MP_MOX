@@ -190,6 +190,11 @@
             font-size: 125%;
         }
 
+        .imageIcons {
+            height: 20px;
+            width: auto;
+        }
+
         #indexPLACEHOLDER {
             /*  DAMIT MAN ETWAS SIEHT !!!*/
             background: url("assets/img/matthieu-gouiffes_lowres.jpg") no-repeat center center;
