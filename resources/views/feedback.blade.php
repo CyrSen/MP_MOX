@@ -32,15 +32,13 @@
                                             <input id="x-coordinates" type="hidden" name="x_coordinates">
                                             <input id="y-coordinates" type="hidden" name="y_coordinates">
                                         </div>
-                
-
-                            <!--ADMIN USE -->
-                                <div class="col-sm-3" style="display:block;">
+                            <!--ADMIN USE CALIBRATE POSITION -->
+                                <div class="col-sm-3" style="display:none;">
                                         <p id="x-display"></p>
                                         <p id="y-display"></p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>   
                         </div>
 
                         <div id="{{-- animationRight --}}" class="feedbackPanels col-md-6 mt-3 mb-5 animate__animated animate__fadeInRight animate__delay-1s">
@@ -217,7 +215,7 @@
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
-                                    {{-- <input type="hidden" name="_subject" id="email-subject" value="Survey Responses"> --}}
+
                                 <div class="text-center mt-5">
                                     <button class="btn btn-indigo text-white p-3" type="submit"><i
                                             class="fa fa-paper-plane-o mr-2"></i> Senden</button>
@@ -231,7 +229,7 @@
 @endsection
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    /* document.addEventListener('DOMContentLoaded', function() {
         var element = document.getElementById('animationLeft');
         element.classList.add('animate__animated', 'animate__fadeInLeft');
     });
@@ -239,5 +237,5 @@
     document.addEventListener('DOMContentLoaded', function() {
         var element = document.getElementById('animationRight');
         element.classList.add('animate__animated', 'animate__fadeInRight');
-    });
+    }); */
 </script>
