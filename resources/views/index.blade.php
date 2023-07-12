@@ -100,10 +100,10 @@
                 </p>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-5 wow fadeInUp" data-wow-delay=".3s">
+                <div class="mx-2 mx-md-0 col-md-4 mb-5 wow fadeInUp" data-wow-delay=".3s">
                     <i class="fa fa-user fa-3x orange-text"></i>
                     <h3 class="h4 mt-3">Individualkomfort</h3>
-                    <p class="mx-2 mx-md-0 mt-3 blue-grey-text custom-font-weight">
+                    <p class="mt-3 blue-grey-text custom-font-weight">
                         Basierend auf deinem Feedback erhältst du massgeschneiderte Empfehlungen zur Verbesserung deines
                         Arbeitsplatzkomforts.
                     </p>
@@ -113,7 +113,7 @@
                 </div>
                 <div class="col-md-4 mb-5 wow fadeInUp" data-wow-delay=".4s">
                     <i class="fa fa-users fa-3x cyan-text"></i>
-                    <h3 class="mx-2 mx-md-0 h4 mt-3">Gesamtkomfort</h3>
+                    <h3 class="h4 mt-3">Gesamtkomfort</h3>
                     <p class="mt-3 blue-grey-text custom-font-weight">
                         Durch Zusammenführung aller Feedbacks erkennt das Management, wenn es ein breiteres Problem mit dem
                         Arbeitsplatzkomfort gibt.
@@ -125,7 +125,7 @@
                 <div class="col-md-4 mb-5 wow fadeInUp" data-wow-delay=".5s">
                     <i class="fa fa-leaf fa-3x green-text"></i>
                     <h3 class="h4 mt-3">Energieeffizienz</h3>
-                    <p class="mx-2 mx-md-0 mt-3 blue-grey-text custom-font-weight">
+                    <p class="mt-3 blue-grey-text custom-font-weight">
                         Durch Abgleich von Feedback- und Messdaten aus dem Gebäude werden Potenziale zur Verbesserung der
                         Energieeffizienz aufgedeckt.
                     </p>
