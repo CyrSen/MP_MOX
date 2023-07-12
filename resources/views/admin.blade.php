@@ -228,35 +228,35 @@
             case '1':
                 icon.src = './assets/img/icons_var/smiley_new_cold.svg';
                 icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-50%)";
+                icon.style.transform = "translate(-50%,-60%)";
                 icon.alt = 'Temperature Low';
                 break;
             case '2':
                 icon.src = './assets/img/icons_var/smiley_new_nottoocold.svg';
                 icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-50%)";
-                icon.alt = 'nottoocold';
+                icon.style.transform = "translate(-50%,-60%)"
+                icon.alt = 'Not Too Cold';
                 break;
             case '3':
                 icon.src = './assets/img/icons_var/smiley_new_excellent.svg';
                 icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-50%)";
+                icon.style.transform = "translate(-50%,-60%)"
                 icon.alt = 'Laugh';
                 break;
             case '4':
                 icon.src = './assets/img/icons_var/smiley_new_nottoohot.svg';
                 icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-50%)";
-                icon.alt = 'nottoohot';
+                icon.style.transform = "translate(-50%,-60%)"
+                icon.alt = 'Not Too Hot';
                 break;
             case '5':
                 icon.src = './assets/img/icons_var/smiley_new_hot_red.svg';
                 icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-50%)";
+                icon.style.transform = "translate(-50%,-60%)"
                 icon.alt = 'Temperature High';
                 break;
             default:
-                icon.src = 'path-to-default-image';
+                icon.src = './assets/img/icons_var/default_icon.svg';
                 icon.alt = 'Default Image';
                 break;
         }
@@ -266,30 +266,35 @@
                         case '1':
                             icon.src = './assets/img/icons_var/smiley_new_worst.svg';
                             icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-50%)";
+                            icon.style.transform = "translate(-50%,-60%)"
+                            icon.alt = 'Bad';
                             break;
                         case '2':
                             icon.src = './assets/img/icons_var/smiley_new_poor';
                             icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-50%)";
+                            icon.style.transform = "translate(-50%,-60%)"
+                            icon.alt = 'Poor';
                             break;
                         case '3':
                             icon.src = './assets/img/icons_var/smiley_new_average.svg';
                             icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-50%)";
+                            icon.style.transform = "translate(-50%,-60%)"
+                            icon.alt = 'Meh';
                             break;
                         case '4':
                             icon.src = './assets/img/icons_var/smiley_new_good.svg';
                             icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-50%)";
+                            icon.style.transform = "translate(-50%,-60%)"
+                            icon.alt = 'Good';
                             break;
                         case '5':
                             icon.src = './assets/img/icons_var/smiley_new_excellent.svg';
                             icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-50%)";
+                            icon.style.transform = "translate(-50%,-60%)"
+                            icon.alt = 'Excellent';
                             break;
                         default:
-                        icon.src = 'path-to-default-image';
+                        icon.src = './assets/img/icons_var/default_icon.svg';
                         icon.alt = 'Default Image';
                             break;
                         }
