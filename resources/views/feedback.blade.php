@@ -35,7 +35,7 @@
                 
 
                             <!--ADMIN USE -->
-                                <div class="col-sm-3" style="display:none;">
+                                <div class="col-sm-3" style="display:block;">
                                         <p id="x-display"></p>
                                         <p id="y-display"></p>
                                     </div>
