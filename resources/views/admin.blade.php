@@ -220,7 +220,7 @@
             icon.classList.add('fa', 'fa-solid');
 
             // Set the emoji based on the level and category
-            if (category === 'temperature') {
+            if (level === temperatureLevel) {
                 switch (level) {
                     case '1':
                         icon.classList.add('fa-temperature-low');
