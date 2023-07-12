@@ -258,27 +258,27 @@
                         // For other categories, use the existing logic
                         switch (level) {
                         case '1':
-                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.src = './assets/img/icons_var/smiley_new_worst.svg';
                             icon.style.width = '1.5rem';
                             icon.style.transform = "translate(-50%,-50%)";
                             break;
                         case '2':
-                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.src = './assets/img/icons_var/smiley_new_poor';
                             icon.style.width = '1.5rem';
                             icon.style.transform = "translate(-50%,-50%)";
                             break;
                         case '3':
-                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.src = './assets/img/icons_var/smiley_new_average.svg';
                             icon.style.width = '1.5rem';
                             icon.style.transform = "translate(-50%,-50%)";
                             break;
                         case '4':
-                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.src = './assets/img/icons_var/smiley_new_good.svg';
                             icon.style.width = '1.5rem';
                             icon.style.transform = "translate(-50%,-50%)";
                             break;
                         case '5':
-                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.src = './assets/img/icons_var/smiley_new_excellent.svg';
                             icon.style.width = '1.5rem';
                             icon.style.transform = "translate(-50%,-50%)";
                             break;
