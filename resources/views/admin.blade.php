@@ -217,39 +217,32 @@
 
                 // Create an icon element
                 var createIcon = function(level, x, y) {
-                    var icon = document.createElement('i');
-                    icon.classList.add('fa', 'fa-solid');
+    var icon = document.createElement('i');
+    icon.classList.add('fa', 'fa-solid');
 
-                    // Set the emoji based on the level
-                    switch (level) {
-                        case '1':
-                            icon.classList.add('fa-frown', 'frownie');
-                            break;
-                        case '2':
-                            icon.classList.add('fa-frown-open', 'frownopen');
-                            break;
-                        case '3':
-                            icon.classList.add('fa-meh', 'mehie');
-                            break;
-                        case '4':
-                            icon.classList.add('fa-face-laugh', 'laugh');
-                            break;
-                        case '5':
-                            icon.classList.add('fa-laugh-squint', 'squint');
-                            break;
-                        case '6':
-                            icon.classList.add('fa-temperature-low', 'templow');
-                            break;
-                        case '7':
-                            icon.classList.add('fa-temperature-high', 'temphigh');
-                            break;
-                            
-                        default:
-                            icon.classList.add('fa-comment-medical', 'comment-medical');
-                            break;
-                    }
+    // Set the emoji based on the level
+    switch (level) {
+        case '1':
+            icon.classList.add('fa-frown', 'frownie');
+            break;
+        case '2':
+            icon.classList.add('fa-frown-open', 'frownopen');
+            break;
+        case '3':
+            icon.classList.add('fa-meh', 'mehie');
+            break;
+        case '4':
+            icon.classList.add('fa-face-laugh', 'laugh');
+            break;
+        case '5':
+            icon.classList.add('fa-laugh-squint', 'squint');
+            break;
+        default:
+            icon.classList.add('fa-comment-medical', 'comment-medical');
+            break;
+    }
 
-                        // Set the temperature icon class
+    // Set the temperature icon class
     if (level === 'temperature') {
         icon.classList.add(level);
     }
@@ -265,19 +258,7 @@
     icon.style.zIndex = '10';
 
     return icon;
-
-                    /* icon.classList.add('adminView');
-                    icon.classList.add('tooltip-icon');
-                    // Set the position and z-index of the icon
-                    icon.style.position = 'absolute';
-                    icon.style.left = xCoordinates +
-                        '%'; // Use xCoordinates variable instead of 'x-coordinates'
-                    icon.style.top = yCoordinates +
-                        '%'; // Use yCoordinates variable instead of 'y-coordinates'
-                    icon.style.zIndex = '10';
-
-                    return icon; */
-                };
+};
 
                 // Add the icons after the image containers
                 mapNoiseContainer.appendChild(createIcon(noiseLevel, xCoordinates, yCoordinates));
