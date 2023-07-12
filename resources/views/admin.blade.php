@@ -65,7 +65,7 @@
 
                     <!-- Filter/Select Div -->
                     <div class="row justify-content-center">
-                        <div class="card col-sm-10 m-3 px-4 px-md-2 text-center">
+                        <div class="card col-sm-10 mt-3 px-4 px-md-2 text-center">
                             <label class="form-label mt-2 mb-0 pt-2  text-center" for="">
                                 <p class="lead mx-3">Zeitspanne angeben</p>
                             </label>
@@ -88,8 +88,8 @@
                     </div>
 
                 </div>
-                <div class="col-sm-12 col-md-9 mt-n3 px-0">
-                    <div class="card p-3 me-md-4 mt-3">
+                <div class="col-sm-12 col-md-9 mt-0 px-0">
+                    <div class="card p-3 mt-3">
                         <!-- Table -->
                         <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
                             <h3 class="card-title text-center">Alle Feedbacks.</h3>
