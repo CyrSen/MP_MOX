@@ -111,7 +111,7 @@
                         Bürozone auf der Südseite des Gebäudes vor, wenn du angibst dir sei kalt.
                     </p>
                 </div>
-                <div class="col-md-4 mb-5 wow fadeInUp" data-wow-delay=".4s">
+                <div class="mx-2 mx-md-0 col-md-4 mb-5 wow fadeInUp" data-wow-delay=".4s">
                     <i class="fa fa-users fa-3x cyan-text"></i>
                     <h3 class="h4 mt-3">Gesamtkomfort</h3>
                     <p class="mt-3 blue-grey-text custom-font-weight">
@@ -122,7 +122,7 @@
                         angenehmere Raumtemperatur, wenn viele Mitarbeitende angeben, dass sie frieren.
                     </p>
                 </div>
-                <div class="col-md-4 mb-5 wow fadeInUp" data-wow-delay=".5s">
+                <div class="mx-2 mx-md-0 col-md-4 mb-5 wow fadeInUp" data-wow-delay=".5s">
                     <i class="fa fa-leaf fa-3x green-text"></i>
                     <h3 class="h4 mt-3">Energieeffizienz</h3>
                     <p class="mt-3 blue-grey-text custom-font-weight">
