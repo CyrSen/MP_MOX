@@ -47,3 +47,7 @@
 <i class="fa-solid fa-temperature-half"></i>
 
 <i class="fa-solid fa-filter"></i>
+
+<i class="fa-solid fa-temperature-low"></i>
+
+<i class="fa-solid fa-temperature-high"></i>

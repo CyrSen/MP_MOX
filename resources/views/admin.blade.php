@@ -237,6 +237,13 @@
                         case '5':
                             icon.classList.add('fa-laugh-squint', 'squint');
                             break;
+                        case '6':
+                            icon.classList.add('fa-temperature-low', 'templow');
+                            break;
+                        case '7':
+                            icon.classList.add('fa-laugh-squint', 'temphigh');
+                            break;
+                            
                         default:
                             icon.classList.add('fa-comment-medical', 'comment-medical');
                             break;
