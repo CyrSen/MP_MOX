@@ -197,7 +197,7 @@
             <div class="container">
                 <div class="wow fadeIn">
                     <h2 class="h1 text-white mb-0 mb-md-2 pt-3 pt-md-5 pb-3 text-center">Kontakt</h2>
-                    <p class="text-white md-1 mb-md-5 pb-0 pb-md-3 mx-3 mx-md-0 lead text-center">
+                    <p class="small text-white md-1 mb-md-5 pb-0 pb-md-3 mx-3 mx-md-0 lead text-center">
                         Bei Interesse hinterlasse uns deine Kontaktdaten und eine kurze
                         Nachricht. Wir melden uns so schnell wie möglich bei dir zurück.
                     </p>
