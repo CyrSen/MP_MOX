@@ -3,7 +3,8 @@
         <a class="navbar-brand" href="{{ url('/') }}"><span class="myoffice-text">myOffice</span>
             <span class="myoffice-x"> X</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbarBackground()">
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+            onclick="toggleNavbarBackground()">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
@@ -13,7 +14,6 @@
                     <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" aria-current="page"
                         href="{{ url('/') }}">Home</a>
                 </li>
-
                 <!-- Authentication Links -->
                 @guest
                     @if (Route::has('login'))

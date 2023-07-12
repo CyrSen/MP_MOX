@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+
     <section id="login">
         <div class="rgba-black-strong"></div>
         <div class="container py-5">
@@ -66,7 +67,6 @@
 
                                 </form>
                             </div>
-
                             <!-- Form end-->
                         </div>
                     </div>
@@ -74,6 +74,7 @@
             </div>
         </div>
     </section>
+    
 @endsection
 
 <script>
