@@ -235,7 +235,7 @@
                         icon.classList.add('fa-face-laugh', 'laugh');
                         break;
                     case '5':
-                        icon.classList.add('fa-temperature-high');
+                        icon.classList.add('fa-temperature-low');
                         break;
                     default:
                         icon.classList.add('fa-comment-medical', 'comment-medical');
@@ -280,7 +280,7 @@
 
                 // Add the icons after the image containers
                 mapNoiseContainer.appendChild(createIcon(noiseLevel, xCoordinates, yCoordinates));
-                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates, 'temperature'));
+                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates));
                 mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
                 mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
             } else {

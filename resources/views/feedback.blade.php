@@ -78,7 +78,7 @@
                                                 <img class="feedbackEmojis img-fluid  p-2 tooltip-icon"
                                                     src="./assets/img/icons_var/smiley_new_hot_red.svg" alt="smiley-mask"
                                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    title="Zu heiss" data-bs-value="5" onclick="setTempLevel(5)">
+                                                    title="Zu heiss" data-bs-value="1" onclick="setTempLevel(1)">
                                             </div>
                                         </div>
                                         <input type="hidden" name="temperature_level" id="temperature-level-input">
