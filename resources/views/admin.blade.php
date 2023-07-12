@@ -221,31 +221,56 @@
                     icon.classList.add('fa', 'fa-solid');
 
                     // Set the emoji based on the level
-                    switch (level) {
-                        case '1':
-                            icon.classList.add('fa-frown', 'frownie');
-                            break;
-                        case '2':
-                            icon.classList.add('fa-frown-open', 'frownopen');
-                            break;
-                        case '3':
-                            icon.classList.add('fa-meh', 'mehie');
-                            break;
-                        case '4':
-                            icon.classList.add('fa-face-laugh', 'laugh');
-                            break;
-                        case '5':
-                            icon.classList.add('fa-laugh-squint', 'squint');
-                            break;
-                        default:
-                            icon.classList.add('fa-comment-medical', 'comment-medical');
-                            break;
-                    }
-
-                    if (level === 'temperature') {
-        var temperatureLevelInput = document.getElementById('temperature-level-input').value;
-        icon.classList.add(temperatureLevelInput);
+                        // Set the emoji based on the category and level
+    switch (category) {
+        case 'temperature':
+            switch (level) {
+                case '1':
+                    icon.classList.add('fa-lowtemp');
+                    break;
+                case '2':
+                    icon.classList.add('fa-frown-open', 'frownopen');
+                    break;
+                case '3':
+                    icon.classList.add('fa-meh', 'mehie');
+                    break;
+                case '4':
+                    icon.classList.add('fa-face-laugh', 'laugh');
+                    break;
+                case '5':
+                    icon.classList.add('fa-hightemp');
+                    break;
+                default:
+                    icon.classList.add('fa-comment-medical', 'comment-medical');
+                    break;
+            }
+            break;
+        default:
+            // For other categories, use the existing logic
+            switch (level) {
+                case '1':
+                    icon.classList.add('fa-frown', 'frownie');
+                    break;
+                case '2':
+                    icon.classList.add('fa-frown-open', 'frownopen');
+                    break;
+                case '3':
+                    icon.classList.add('fa-meh', 'mehie');
+                    break;
+                case '4':
+                    icon.classList.add('fa-face-laugh', 'laugh');
+                    break;
+                case '5':
+                    icon.classList.add('fa-laugh-squint', 'squint');
+                    break;
+                default:
+                    icon.classList.add('fa-comment-medical', 'comment-medical');
+                    break;
+            }
+            break;
     }
+
+                    
 
                     icon.classList.add('adminView');
                     icon.classList.add('tooltip-icon');
@@ -262,11 +287,11 @@
 
                 // Add the icons after the image containers
                 mapNoiseContainer.appendChild(createIcon(noiseLevel, xCoordinates, yCoordinates));
-                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates));
+                /* mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates)); */
+                mapTemperatureContainer.appendChild(createIcon('temperature', temperatureLevel, xCoordinates, yCoordinates));
+
                 mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
                 mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
-                mapTemperatureContainer.appendChild(createIcon('temperature', xCoordinates, yCoordinates));
-
             } else {
                 row.style.display = 'none';
             }

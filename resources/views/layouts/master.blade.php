@@ -307,29 +307,9 @@
         /* TEMP-LEVEL -------------------------------- */
 
         function setTempLevel(value) {
-    var temperatureIconClass = '';
-
-    switch (value) {
-        case 1:
-            temperatureIconClass = 'fa-temperature-low';
-            break;
-        case 2:
-        case 3:
-            temperatureIconClass = 'fa-temperature-mid';
-            break;
-        case 4:
-        case 5:
-            temperatureIconClass = 'fa-temperature-high';
-            break;
-        default:
-            temperatureIconClass = 'fa-comment-medical';
-            break;
-    }
-
-    document.getElementById('temperature-level-input').value = temperatureIconClass;
-    console.log('Temperature Level:', value);
-}
-
+            document.getElementById('temperature-level-input').value = value;
+            console.log('Temperature Level:', value);
+        }
         /* AIRQ-LEVEL -------------------------------- */
 
         function setAirQLevel(value) {
