@@ -307,8 +307,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="d-inline-block">
-                        <span style="font-weight: 400">&copy; myOfficeX</span>
-                        <p class="text-white">|</p><a href="{{ url('/impressum') }}"
+                        <span style="font-weight: 400">&copy; myOfficeX</span> | <a href="{{ url('/impressum') }}"
                             style="font-weight: 400;">Impressum</a>
                     </div>
                 </div>
