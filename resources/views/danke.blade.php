@@ -3,18 +3,10 @@
   @section('title', 'myOfficeX')
 
   @section('content')
-
-  <div class="container" 
-  style="
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-size: 100% 100%;
-  position: relative;
-  min-width: 100vw;
-  background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');">
   
-      <div class="rgba-black-strong" style="z-index:0"></div>
+  <section id="danke">
+    <div class="rgba-black-strong" style="z-index:0"></div>
+    <div class="container" style="">
           <div class="vh-100 d-flex justify-content-center align-items-center">
               <div class="col-lg-4 col-md-6 col-sm-8 bg-secondary p-4 text-white animate__animated animate__rotateIn  animate__delay-1s">
                   <!-- Content goes here -->
@@ -37,5 +29,8 @@
               </div>
           </div>
       </div>
+    </div>
+  </section>
+      
 
   @endsection

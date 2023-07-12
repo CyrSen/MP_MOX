@@ -82,6 +82,16 @@
                 background-size: cover;
             }
 
+            #danke  {
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                background-size: 100% 100%;
+                position: relative;
+                min-width: 100vw;
+                background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');
+            }
+
             #contact {
                 align-items: center;
                 justify-content: center;
@@ -143,6 +153,16 @@
                 background-size: cover;
                 z-index: 1;
                 padding-top: 10%;
+            }
+
+            #danke  {
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                background-size: 100% 100%;
+                position: relative;
+                min-width: 100vw;
+                background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');
             }
 
             #contact {
