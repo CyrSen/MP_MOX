@@ -142,7 +142,7 @@
         <div class="container">
             <div class="wow fadeIn">
                 <h2 class="text-center h1 my-4">Unsere Partner</h2>
-                <p class="mb-5 pb-3 lead blue-grey-text text-center custom-font-weight">
+                <p class="mx-2 mx-md-0 mb-5 pb-3 lead blue-grey-text text-center custom-font-weight">
                     Mit Unterstützung unserer Partner entwickeln wir innovative Lösungen und erfüllen individuelle
                     Bedürfnisse der Arbeitsplatz-Nutzenden. Diese offenen Kooperationen ohne formelle Verpflichtungen
                     basieren auf dem Austausch von Know-how sowie dem gemeinsamen Ziel, positive Veränderungen in der
