@@ -72,8 +72,8 @@
                             <div class="row justify-content-center px-4 px-md-0">
                                 <div class="col-sm-3 col-md-5">
                                     <label for="start-date-input" class="form-label">Startdatum:</label>
-                                    <input type="date" class="col-sm-3 form-control bg-dark text-white mb-3 mb-md-0 px-1" id="start-date-input"
-                                        required>
+                                    <input type="date" class="col-sm-3 form-control bg-dark text-white mb-3 mb-md-0 px-1"
+                                        id="start-date-input" required>
                                 </div>
                                 <div class="col-sm-3 col-md-5">
                                     <label for="end-date-input" class="form-label">Enddatum:</label>
@@ -82,7 +82,8 @@
                                 </div>
                             </div>
                             <div class="text-center mt-3 mb-3 mb-md-2">
-                                <button class="btn btn-indigo text-white" onclick="filterEntriesByDate()">Filter anwenden</button>
+                                <button class="btn btn-indigo text-white" onclick="filterEntriesByDate()">Filter
+                                    anwenden</button>
                             </div>
                         </div>
                     </div>
@@ -93,14 +94,14 @@
                         <!-- Table -->
                         <div class="table-responsive tableOwn" style="max-height: 400px; overflow-y: scroll;">
                             <h3 class="card-title text-center">Alle Feedbacks.</h3>
-                            
+
                             <p class="small text-center pt-0">Zum Aktualisieren bitte Synch-Button drücken</p>
 
                             <p class="text-center">
                                 <a href="{{ url('/admin') }}" class="btn btn-reload reloadAdmin mt-0 mb-2 p-1"
                                     id="refresh-button" class="refresh-end" onclick="refreshContent()">
-                                    <i class="fa fa-sync fa-spin-hover fa-3x" data-bs-custom-class="tooltip" data-bs-toggle="tooltip" data-bs-placement="right"
-                                    title="Synch Now"></i>
+                                    <i class="fa fa-sync fa-spin-hover fa-3x" data-bs-custom-class="tooltip"
+                                        data-bs-toggle="tooltip" data-bs-placement="right" title="Synch Now"></i>
                                 </a>
                             </p>
 
@@ -216,54 +217,55 @@
                 var higgeLevel = row.querySelector('td:nth-child(7)').textContent;
 
                 var createIcon = function(level, x, y, category) {
-            var icon = document.createElement('i');
-            icon.classList.add('fa', 'fa-solid');
 
-            // Set the emoji based on the level and category
-            if (category === 'temperature') {
-                switch (level) {
-                    case '1':
-                        icon.classList.add('fa-temperature-low', 'templow');
-                        break;
-                    case '2':
-                        icon.classList.add('fa-meh', 'mehie');
-                        break;
-                    case '3': 
-                        icon.classList.add('fa-face-laugh', 'laugh');
-                        break;
-                    case '4':
-                        icon.classList.add('fa-meh', 'mehie');
-                        break;
-                    case '5':
-                        icon.classList.add('fa-temperature-high', 'temphigh');
-                        break;
-                    default:
-                        icon.classList.add('fa-comment-medical', 'comment-medical');
-                        break;
-                }
-            } else {
-                // For other categories, use the existing logic
-                switch (level) {
-                    case '1':
-                        icon.classList.add('fa-frown', 'frownie');
-                        break;
-                    case '2':
-                        icon.classList.add('fa-frown-open', 'frownopen');
-                        break;
-                    case '3':
-                        icon.classList.add('fa-meh', 'mehie');
-                        break;
-                    case '4':
-                        icon.classList.add('fa-face-laugh', 'laugh');
-                        break;
-                    case '5':
-                        icon.classList.add('fa-laugh-squint', 'squint');
-                        break;
-                    default:
-                        icon.classList.add('fa-comment-medical', 'comment-medical');
-                        break;
-                }
-            }
+                    var icon = document.createElement('i');
+                    icon.classList.add('fa', 'fa-solid');
+
+                    // Set the emoji based on the level and category
+                    if (category === 'temperature') {
+                        switch (level) {
+                        case '1':
+                            icon.classList.add('fa-temperature-low', 'templow');
+                            break;
+                        case '2':
+                            icon.classList.add('fa-meh', 'mehie');
+                            break;
+                        case '3':
+                            icon.classList.add('fa-face-laugh', 'laugh');
+                            break;
+                        case '4':
+                            icon.classList.add('fa-meh', 'mehie');
+                            break;
+                        case '5':
+                            icon.classList.add('fa-temperature-high', 'temphigh');
+                            break;
+                        default:
+                            icon.classList.add('fa-comment-medical', 'comment-medical');
+                            break;
+                        }
+                    } else {
+                        // For other categories, use the existing logic
+                        switch (level) {
+                        case '1':
+                            icon.classList.add('fa-frown', 'frownie');
+                            break;
+                        case '2':
+                            icon.classList.add('fa-frown-open', 'frownopen');
+                            break;
+                        case '3':
+                            icon.classList.add('fa-meh', 'mehie');
+                            break;
+                        case '4':
+                            icon.classList.add('fa-face-laugh', 'laugh');
+                            break;
+                        case '5':
+                            icon.classList.add('fa-laugh-squint', 'squint');
+                            break;
+                        default:
+                            icon.classList.add('fa-comment-medical', 'comment-medical');
+                            break;
+                        }
+                    }
 
                     icon.classList.add('adminView');
                     icon.classList.add('tooltip-icon');
@@ -280,11 +282,12 @@
 
                 // Add the icons after the image containers
                 mapNoiseContainer.appendChild(createIcon(noiseLevel, xCoordinates, yCoordinates));
-                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates, 'temperature'));
+                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates,
+                    'temperature'));
                 mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
                 mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
-            } else {
-                row.style.display = 'none';
+                } else {
+                    row.style.display = 'none';
             }
         });
     }
@@ -300,6 +303,4 @@
         })
 
     });
-
-    
 </script>

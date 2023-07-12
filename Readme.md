@@ -83,7 +83,7 @@ In conclusion, the myOfficeX Feedback App offers a practical and effective solut
 
 4) Access the "Report" page to view feedback data:
 
-    a) Specify the desired time range for the report.
+    a) Specify the desired time range for the report, ensuring that start and end date are not the same.
 
     b) The feedback for each category will be displayed on the floor plan corresponding to that specific category.
 
