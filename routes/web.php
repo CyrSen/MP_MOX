@@ -47,7 +47,7 @@ Route::post('/feedback/{feedbackMapId?}', [FeedbackController::class, 'store'])-
 Route::delete('/feedback/{feedbackMap}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
 Route::get('/tips/{feedbackMapId?}', [FeedbackController::class, 'createCommentary'])->name('feedback.tips');
 Route::post('/tips/{feedbackMapId?}', [FeedbackController::class, 'storeCommentary'])->name('feedback.storeCommentary');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Routes accessible to level3 and level2 users
 Route::middleware(['auth', 'permission:level3,level2'])->group(function () {
