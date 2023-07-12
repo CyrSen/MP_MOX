@@ -107,6 +107,19 @@
                 background-size: cover;
             }
 
+            #impressum {
+                align-items: center;
+                justify-content: center;
+                min-height: 128vh;
+                background-size: 100% 100%;
+                position: relative;
+                min-width: 100vw;
+                background-image: url("./assets/img/panorama-3094696_1920_mobile.jpg");
+                z-index: 1;
+                padding-top: 10%;
+                background-size: cover;
+            }
+
             .custom-tooltip {
                 --bs-tooltip-color: #110080 !important;
                 --bs-tooltip-bg:  #ffffff !important;
@@ -180,6 +193,20 @@
                 z-index: 1;
                 padding-top: 10%;
             }
+
+            #impressum {
+                align-items: center;
+                justify-content: center;
+                min-height: 128vh;
+                background-size: 100% 100%;
+                position: relative;
+                min-width: 100vw;
+                background-image: url("./assets/img/panorama-3094696_1920_mobile.jpg");
+                z-index: 1;
+                padding-top: 10%;
+                background-size: cover;
+            }
+
 
             .custom-tooltip {
                 --bs-tooltip-color: #110080 !important;
