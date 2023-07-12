@@ -280,7 +280,7 @@
 
                 // Add the icons after the image containers
                 mapNoiseContainer.appendChild(createIcon(noiseLevel, xCoordinates, yCoordinates));
-                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates));
+                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates, 'temperature'));
                 mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
                 mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
             } else {
