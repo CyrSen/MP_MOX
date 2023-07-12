@@ -172,6 +172,24 @@
             top: 2rem;
         }
 
+        .templow {
+            color: #37f2ff;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            font-size: 125%;
+        }
+
+        .temphigh {
+            color: #fd0d0d;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            font-size: 125%;
+        }
+
         #indexPLACEHOLDER {
             /*  DAMIT MAN ETWAS SIEHT !!!*/
             background: url("assets/img/matthieu-gouiffes_lowres.jpg") no-repeat center center;
