@@ -223,7 +223,7 @@
             if (category === 'temperature') {
                 switch (level) {
                     case '1':
-                        icon.classList.add('fa-lowtemp');
+                        icon.classList.add('fa-temperature-low');
                         break;
                     case '2':
                         icon.classList.add('fa-frown-open', 'frownopen');
@@ -235,7 +235,7 @@
                         icon.classList.add('fa-face-laugh', 'laugh');
                         break;
                     case '5':
-                        icon.classList.add('fa-hightemp');
+                        icon.classList.add('fa-temperature-high');
                         break;
                     default:
                         icon.classList.add('fa-comment-medical', 'comment-medical');
