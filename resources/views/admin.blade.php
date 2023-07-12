@@ -228,8 +228,6 @@
             case '1':
                 icon.src = './assets/img/icons_var/smiley_new_cold.svg';
                 icon.style.width = '1.5rem';
-                icon.style.top: '50' + '%';
-                icon.style.left: '50' + '%';
                 icon.alt = 'Temperature Low';
                 break;
             case '2':
@@ -247,8 +245,6 @@
             case '5':
                 icon.src = './assets/img/icons_var/smiley_new_hot_red.svg';
                 icon.style.width = '1.5rem';
-                icon.style.top: '50' + '%';
-                icon.style.left: '50' + '%';
                 icon.alt = 'Temperature High';
                 break;
             default:
