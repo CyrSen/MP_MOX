@@ -242,6 +242,11 @@
                             break;
                     }
 
+                    if (level === 'temperature') {
+        var temperatureLevelInput = document.getElementById('temperature-level-input').value;
+        icon.classList.add(temperatureLevelInput);
+    }
+
                     icon.classList.add('adminView');
                     icon.classList.add('tooltip-icon');
                     // Set the position and z-index of the icon
@@ -260,6 +265,8 @@
                 mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates));
                 mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
                 mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
+                mapTemperatureContainer.appendChild(createIcon('temperature', xCoordinates, yCoordinates));
+
             } else {
                 row.style.display = 'none';
             }
