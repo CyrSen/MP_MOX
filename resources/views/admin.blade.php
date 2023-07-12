@@ -222,33 +222,27 @@
                     icon.classList.add('fa', 'fa-solid');
 
                     // Set the emoji based on the level and category
-                    icon = document.createElement('img');
-        switch (level) {
-            case '1':
-                icon.src = './assets/img/icons_var/smiley_new_cold.svg';
-                icon.alt = 'Temperature Low';
-                break;
-            case '2':
-                icon.src = 'path-to-meh-image';
-                icon.alt = 'Meh';
-                break;
-            case '3':
-                icon.src = 'path-to-laugh-image';
-                icon.alt = 'Laugh';
-                break;
-            case '4':
-                icon.src = 'path-to-meh-image';
-                icon.alt = 'Meh';
-                break;
-            case '5':
-                icon.src = './assets/img/icons_var/smiley_new_hot_red.svg';
-                icon.alt = 'Temperature High';
-                break;
-            default:
-                icon.src = 'path-to-default-image';
-                icon.alt = 'Default Image';
-                break;
-        }
+                    if (category === 'temperature') {
+                        switch (level) {
+                        case '1':
+                            icon.classList.add('fa-temperature-low', 'templow');
+                            break;
+                        case '2':
+                            icon.classList.add('fa-meh', 'mehie');
+                            break;
+                        case '3':
+                            icon.classList.add('fa-face-laugh', 'laugh');
+                            break;
+                        case '4':
+                            icon.classList.add('fa-meh', 'mehie');
+                            break;
+                        case '5':
+                            icon.classList.add('fa-temperature-high', 'temphigh');
+                            break;
+                        default:
+                            icon.classList.add('fa-comment-medical', 'comment-medical');
+                            break;
+                        }
                     } else {
                         // For other categories, use the existing logic
                         switch (level) {
