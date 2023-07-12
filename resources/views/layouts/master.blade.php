@@ -89,7 +89,9 @@
                 background-size: 100% 100%;
                 position: relative;
                 min-width: 100vw;
+                z-index: 1;
                 background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');
+                display: flex;
             }
 
             #contact {
@@ -162,7 +164,9 @@
                 background-size: 100% 100%;
                 position: relative;
                 min-width: 100vw;
+                z-index: 1;
                 background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');
+                display: flex;
             }
 
             #contact {
