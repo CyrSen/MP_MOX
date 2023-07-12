@@ -233,14 +233,20 @@
                 break;
             case '2':
                 icon.src = './assets/img/icons_var/smiley_new_nottoocold.svg';
+                icon.style.width = '1.5rem';
+                icon.style.transform = "translate(-50%,-50%)";
                 icon.alt = 'nottoocold';
                 break;
             case '3':
                 icon.src = './assets/img/icons_var/smiley_new_excellent.svg';
+                icon.style.width = '1.5rem';
+                icon.style.transform = "translate(-50%,-50%)";
                 icon.alt = 'Laugh';
                 break;
             case '4':
                 icon.src = './assets/img/icons_var/smiley_new_nottoohot.svg';
+                icon.style.width = '1.5rem';
+                icon.style.transform = "translate(-50%,-50%)";
                 icon.alt = 'nottoohot';
                 break;
             case '5':
