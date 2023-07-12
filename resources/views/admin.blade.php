@@ -62,7 +62,6 @@
             <!-- Filter and Table -->
             <div class="row mt-3 mx-2 mx-md-0">
                 <div class="col-sm-12 col-md-3 px-0">
-
                     <!-- Filter/Select Div -->
                     <div class="row justify-content-center">
                         <div class="card col-sm-10 mt-3 px-4 px-md-2 text-center">
@@ -87,7 +86,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-sm-12 col-md-9 mt-0 px-0">
                     <div class="card p-3 mt-3">
@@ -219,84 +217,83 @@
                 var createIcon = function(level, x, y, category) {
 
                     var icon = document.createElement('img');
-                    /* icon.classList.add('fa', 'fa-solid'); */
 
                     // Create an image element
-    if (category === 'temperature') {
-        /* icon = document.createElement('img'); */
-        switch (level) {
-            case '1':
-                icon.src = './assets/img/icons_var/smiley_new_cold.svg';
-                icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-60%)";
-                icon.alt = 'Temperature Low';
-                break;
-            case '2':
-                icon.src = './assets/img/icons_var/smiley_new_nottoocold.svg';
-                icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-60%)"
-                icon.alt = 'Not Too Cold';
-                break;
-            case '3':
-                icon.src = './assets/img/icons_var/smiley_new_excellent.svg';
-                icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-60%)"
-                icon.alt = 'Laugh';
-                break;
-            case '4':
-                icon.src = './assets/img/icons_var/smiley_new_nottoohot.svg';
-                icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-60%)"
-                icon.alt = 'Not Too Hot';
-                break;
-            case '5':
-                icon.src = './assets/img/icons_var/smiley_new_hot_red.svg';
-                icon.style.width = '1.5rem';
-                icon.style.transform = "translate(-50%,-60%)"
-                icon.alt = 'Temperature High';
-                break;
-            default:
-                icon.src = './assets/img/icons_var/default_icon.svg';
-                icon.alt = 'Default Image';
-                break;
-        }
+                    if (category === 'temperature') {
+                        /* icon = document.createElement('img'); */
+                        switch (level) {
+                            case '1':
+                                icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)";
+                                icon.alt = 'Temperature Low';
+                                break;
+                            case '2':
+                                icon.src = './assets/img/icons_var/smiley_new_nottoocold.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Not Too Cold';
+                                break;
+                            case '3':
+                                icon.src = './assets/img/icons_var/smiley_new_excellent.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Laugh';
+                                break;
+                            case '4':
+                                icon.src = './assets/img/icons_var/smiley_new_nottoohot.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Not Too Hot';
+                                break;
+                            case '5':
+                                icon.src = './assets/img/icons_var/smiley_new_hot_red.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Temperature High';
+                                break;
+                            default:
+                                icon.src = './assets/img/icons_var/default_icon.svg';
+                                icon.alt = 'Default Image';
+                                break;
+                        }
                     } else {
                         // For other categories, use the existing logic
                         switch (level) {
-                        case '1':
-                            icon.src = './assets/img/icons_var/smiley_new_worst.svg';
-                            icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-60%)"
-                            icon.alt = 'Bad';
-                            break;
-                        case '2':
-                            icon.src = './assets/img/icons_var/smiley_new_poor';
-                            icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-60%)"
-                            icon.alt = 'Poor';
-                            break;
-                        case '3':
-                            icon.src = './assets/img/icons_var/smiley_new_average.svg';
-                            icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-60%)"
-                            icon.alt = 'Meh';
-                            break;
-                        case '4':
-                            icon.src = './assets/img/icons_var/smiley_new_good.svg';
-                            icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-60%)"
-                            icon.alt = 'Good';
-                            break;
-                        case '5':
-                            icon.src = './assets/img/icons_var/smiley_new_excellent.svg';
-                            icon.style.width = '1.5rem';
-                            icon.style.transform = "translate(-50%,-60%)"
-                            icon.alt = 'Excellent';
-                            break;
-                        default:
-                        icon.src = './assets/img/icons_var/default_icon.svg';
-                        icon.alt = 'Default Image';
-                            break;
+                            case '1':
+                                icon.src = './assets/img/icons_var/smiley_new_worst.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Bad';
+                                break;
+                            case '2':
+                                icon.src = './assets/img/icons_var/smiley_new_poor';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Poor';
+                                break;
+                            case '3':
+                                icon.src = './assets/img/icons_var/smiley_new_average.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Meh';
+                                break;
+                            case '4':
+                                icon.src = './assets/img/icons_var/smiley_new_good.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Good';
+                                break;
+                            case '5':
+                                icon.src = './assets/img/icons_var/smiley_new_excellent.svg';
+                                icon.style.width = '1.5rem';
+                                icon.style.transform = "translate(-50%,-60%)"
+                                icon.alt = 'Excellent';
+                                break;
+                            default:
+                                icon.src = './assets/img/icons_var/default_icon.svg';
+                                icon.alt = 'Default Image';
+                                break;
                         }
                     }
 
@@ -319,12 +316,12 @@
                     'temperature'));
                 mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
                 mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
-                } else {
-                    row.style.display = 'none';
+            } else {
+                row.style.display = 'none';
             }
         });
     }
-
+    // Emable tooltips and popovers
     $(function() {
         $('[data-bs-toggle="tooltip"]').tooltip();
 
