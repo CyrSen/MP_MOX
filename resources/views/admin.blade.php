@@ -218,12 +218,12 @@
 
                 var createIcon = function(level, x, y, category) {
 
-                    var icon = document.createElement('i');
-                    icon.classList.add('fa', 'fa-solid');
+                    var icon = document.createElement('img');
+                    /* icon.classList.add('fa', 'fa-solid'); */
 
                     // Create an image element
     if (category === 'temperature') {
-        icon = document.createElement('img');
+        /* icon = document.createElement('img'); */
         switch (level) {
             case '1':
                 icon.src = './assets/img/icons_var/smiley_new_cold.svg';
@@ -258,22 +258,33 @@
                         // For other categories, use the existing logic
                         switch (level) {
                         case '1':
-                            icon.classList.add('fa-frown', 'frownie');
+                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.style.width = '1.5rem';
+                            icon.style.transform = "translate(-50%,-50%)";
                             break;
                         case '2':
-                            icon.classList.add('fa-frown-open', 'frownopen');
+                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.style.width = '1.5rem';
+                            icon.style.transform = "translate(-50%,-50%)";
                             break;
                         case '3':
-                            icon.classList.add('fa-meh', 'mehie');
+                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.style.width = '1.5rem';
+                            icon.style.transform = "translate(-50%,-50%)";
                             break;
                         case '4':
-                            icon.classList.add('fa-face-laugh', 'laugh');
+                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.style.width = '1.5rem';
+                            icon.style.transform = "translate(-50%,-50%)";
                             break;
                         case '5':
-                            icon.classList.add('fa-laugh-squint', 'squint');
+                            icon.src = './assets/img/icons_var/smiley_new_cold.svg';
+                            icon.style.width = '1.5rem';
+                            icon.style.transform = "translate(-50%,-50%)";
                             break;
                         default:
-                            icon.classList.add('fa-comment-medical', 'comment-medical');
+                        icon.src = 'path-to-default-image';
+                        icon.alt = 'Default Image';
                             break;
                         }
                     }
