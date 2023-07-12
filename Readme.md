@@ -226,8 +226,8 @@ sail npm install --save-dev
 * [Google Fonts](https://fonts.google.com/)
 * [Fontawesome](https://fontawesome.com/)
 * [Animate.css](https://animate.style/)
-* [AOS-Git]('https://github.com/michalsnik/aos')
 * [AOS](https://michalsnik.github.io/aos/)
+* [ChatGPT](https://openai.com/chatgpt)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * HTML, CSS, Javascript, PHP
 * Internet for research
