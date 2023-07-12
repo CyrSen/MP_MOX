@@ -13,7 +13,7 @@
             <!-- FORM START-->
             <form action="{{ route('feedback.store', ['feedbackMapId' => $feedbackMapId]) }}" method="POST">
                 @csrf
-                    <div class="row justify-content-center mt-1 mt-md-3 pt-4 pt-md-0">
+                    <div class="row justify-content-center mt-0 mt-md-3 pt-3 pt-md-0 pb-3">
                         <div id="{{-- animationLeft --}}" class="feedbackPanels col-md-6 mt-3 mb-1 mb-md-5 animate__animated animate__fadeInLeft animate__delay-1s">
                                 <div class="card mx-auto h-100" style="background-color: rgba(233, 228, 224, 0.8);">
                                     <div
