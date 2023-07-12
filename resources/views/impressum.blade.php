@@ -4,10 +4,9 @@
 
 @section('content')
 
-
     <!-- Impressum-Inhalt -->
     <section class="py-5" id="impressum">
-        <div class="container">
+        <div class="container bg-light mt-5 px-4 py-2">
             <div class="wow fadeIn">
                 <h1 class="h1 pt-4 my-4">Impressum</h1>
 
@@ -108,7 +107,5 @@
             </div>
         </div>
     </section>
-
-
 
 @endsection
