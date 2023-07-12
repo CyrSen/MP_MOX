@@ -220,7 +220,7 @@
             icon.classList.add('fa', 'fa-solid');
 
             // Set the emoji based on the level and category
-            if (level === temperatureLevel) {
+            if (category === 'temperature') {
                 switch (level) {
                     case '1':
                         icon.classList.add('fa-temperature-low');
@@ -280,7 +280,7 @@
 
                 // Add the icons after the image containers
                 mapNoiseContainer.appendChild(createIcon(noiseLevel, xCoordinates, yCoordinates));
-                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates));
+                mapTemperatureContainer.appendChild(createIcon(temperatureLevel, xCoordinates, yCoordinates, 'temperature'));
                 mapAirQualityContainer.appendChild(createIcon(airQualityLevel, xCoordinates, yCoordinates));
                 mapHiggeContainer.appendChild(createIcon(higgeLevel, xCoordinates, yCoordinates));
             } else {
