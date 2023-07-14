@@ -267,7 +267,7 @@
                                 icon.alt = 'Bad';
                                 break;
                             case '2':
-                                icon.src = './assets/img/icons_var/smiley_new_poor';
+                                icon.src = './assets/img/icons_var/smiley_new_poor.svg';
                                 icon.style.width = '1.5rem';
                                 icon.style.transform = "translate(-50%,-60%)"
                                 icon.alt = 'Poor';
