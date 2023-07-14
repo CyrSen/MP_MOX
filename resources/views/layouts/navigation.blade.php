@@ -72,21 +72,9 @@
                 @endauth
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/') }}#contact" onclick="scrollToSection('contact')">Kontakt</a>
+                    <a class="nav-link" href="{{ url('/') }}#contact">Kontakt</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<script>
-  function scrollToSection(sectionId) {
-    var section = document.querySelector(sectionId);
-    if (section) {
-      var offset = section.offsetTop;
-      var height = section.offsetHeight;
-      var scrollTo = offset + height;
-      window.scrollTo({ top: scrollTo, behavior: 'smooth' });
-    }
-  }
-  </script>
