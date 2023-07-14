@@ -85,7 +85,7 @@
                                                     title="Zu heiss" data-bs-value="5" onclick="setTempLevel(5)">
                                             </div>
                                         </div>
-                                        <input type="hidden" name="temperature_level" id="temperature-level-input">
+                                        <input type="hidden" name="temperature_level" id="temperature-level-input" value="{{ old('temperature_level') }}">
                                         @error('temperature_level')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -131,7 +131,7 @@
                                                     style="position: relative;left: 10px;">
                                             </div>
                                         </div>
-                                        <input type="hidden" name="noise_level" id="noise-level-input">
+                                        <input type="hidden" name="noise_level" id="noise-level-input" value="{{ old('noise_level') }}">
                                         @error('noise_level')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -175,7 +175,7 @@
                                                     onclick="setAirQLevel(1)">
                                             </div>
                                         </div>
-                                        <input type="hidden" name="air_quality_level" id="air-quality-level-input">
+                                        <input type="hidden" name="air_quality_level" id="air-quality-level-input" value="{{ old('air_quality_level') }}">
                                         @error('air_quality_level')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -219,7 +219,7 @@
                                                     onclick="setHiggeLevel(1)">
                                             </div>
                                         </div>
-                                        <input type="hidden" name="higge_level" id="higge-level-input">
+                                        <input type="hidden" name="higge_level" id="higge-level-input" value="{{ old('higge_level') }}">
                                         @error('higge_level')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
