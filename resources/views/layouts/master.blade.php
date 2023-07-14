@@ -67,7 +67,6 @@
             }
 
             #feedback {
-                display: flex;
                 align-items: center;
                 justify-content: center;
                 min-height: 105vh;
