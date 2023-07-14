@@ -40,7 +40,7 @@
             background-image: url("./assets/img/architecture.jpg") no-repeat center center;
             width: 100%;
             /* overflow:auto; */
-            overflow-x:hidden;
+            overflow-x:auto;
         }
 
         #intro {
