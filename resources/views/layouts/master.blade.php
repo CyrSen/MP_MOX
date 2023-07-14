@@ -88,7 +88,7 @@
                 min-height: 100vh;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
-                background-size: 100% 100%;
+                /* background-size: 100% 100%; */
                 /* background-size: cover; */
                 z-index: 1;
                 padding-top: 10%;
