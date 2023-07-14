@@ -32,7 +32,7 @@
                                             <input id="x-coordinates" type="hidden" name="x_coordinates">
                                             <input id="y-coordinates" type="hidden" name="y_coordinates">
                                         </div>
-                                        @error('location')
+                                        @error('x_coordinates', 'y_coordinates')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                             <!--ADMIN USE CALIBRATE POSITION -->
@@ -83,7 +83,7 @@
                                             </div>
                                         </div>
                                         <input type="hidden" name="temperature_level" id="temperature-level-input">
-                                        @error('x_coordinates')
+                                        @error('temperature_level')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
@@ -129,7 +129,7 @@
                                             </div>
                                         </div>
                                         <input type="hidden" name="noise_level" id="noise-level-input">
-                                        @error('x_coordinates')
+                                        @error('noise_level')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
@@ -173,7 +173,7 @@
                                             </div>
                                         </div>
                                         <input type="hidden" name="air_quality_level" id="air-quality-level-input">
-                                        @error('x_coordinates')
+                                        @error('air_quality_level')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
@@ -217,7 +217,7 @@
                                             </div>
                                         </div>
                                         <input type="hidden" name="higge_level" id="higge-level-input">
-                                        @error('x_coordinates')
+                                        @error('higge_level')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
