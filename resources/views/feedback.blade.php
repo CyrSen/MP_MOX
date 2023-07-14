@@ -29,8 +29,8 @@
                                         <div id="image-container" class="map-container tooltip-icon mb-4 mb-md-5">
                                             <img class="img-fluid mapFeedback" id="image"
                                                 src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
-                                            <input id="x-coordinates" type="hidden" name="x_coordinates">
-                                            <input id="y-coordinates" type="hidden" name="y_coordinates">
+                                            <input id="x-coordinates" type="hidden" name="x_coordinates" value="{{ old('x_coordinates') }}">
+                                            <input id="y-coordinates" type="hidden" name="y_coordinates" value="{{ old('x_coordinates') }}">
                                         </div>
                                         @error('x_coordinates')
                                             <div class="alert alert-danger">{{ $message }}</div>

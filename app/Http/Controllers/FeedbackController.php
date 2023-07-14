@@ -69,7 +69,9 @@ class FeedbackController extends Controller
         // Store the feedbackMapId in the session
         session(['feedbackMapId' => $feedbackMap->id]);
 
-    
+        // Store the validated input in the session
+        session()->flashInput($validatedData);
+
         // Redirect or perform any additional actions as needed
         /* return redirect()->route('feedback.danke', ['feedbackMapId' => $feedbackMap->id]); */
         return redirect('/danke/' . $feedbackMap->id);
