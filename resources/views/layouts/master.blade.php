@@ -67,67 +67,73 @@
             }
 
             #feedback {
+                display: flex;
+                position: relative;
                 align-items: center;
                 justify-content: center;
                 min-height: 105vh;
                 min-width: 100vw;
-                margin-top: ;
                 background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
                 background-size: 100% 100%;
-                position: relative;
                 z-index: 1;
+                margin-top: ;
             }
 
             #admin {
+                display: flex;
+                position: relative;
                 margin-top: 0rem;
                 align-items: center;
                 justify-content: center;
                 min-height: 100vh;
-                position: relative;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
-                background-size: cover;
+                background-size: 100% 100%;
+                /* background-size: cover; */
                 z-index: 1;
                 padding-top: 10%;
-                background-size: 100% 100%;
             }
 
             #danke  {
+                display: flex;
+                position: relative;
                 align-items: center;
                 justify-content: center;
                 min-height: 100vh;
-                background-size: 100% 100%;
-                position: relative;
                 min-width: 100vw;
+                background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');  
+                background-size: 100% 100%;
+                /* background-size: cover; */
                 z-index: 1;
-                background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');
-                display: flex;
+
             }
 
             #contact {
+                position: relative;
                 align-items: center;
                 justify-content: center;
                 min-height: 128vh;
-                background-size: 100% 100%;
-                position: relative;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920_mobile.jpg");
+                background-size: 100% 100%;
+                /* background-size: cover; */
                 z-index: 1;
                 padding-top: 10%;
-                background-size: cover;
             }
 
             #impressum {
                 align-items: center;
                 justify-content: center;
                 min-height: 128vh;
-                background-size: 100% 100%;
+
                 position: relative;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
+                background-size: 100% 100%;
+                /* background-size: cover; */
                 z-index: 1;
                 padding-top: 10%;
-                background-size: cover;
+
             }
 
             .custom-tooltip {
