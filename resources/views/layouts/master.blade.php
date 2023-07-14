@@ -69,6 +69,7 @@
             #feedback {
                 display: flex;
                 position: relative;
+                overflow: hidden;
                 align-items: center;
                 justify-content: center;
                 min-height: 105vh;
