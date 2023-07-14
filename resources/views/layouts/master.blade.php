@@ -57,6 +57,10 @@
         
         @media (max-width: 480px) {
 
+            body {
+                overflow-x: hidden;
+            }
+
             .dropdown-menu-end {
                 right: 6rem !important;
                 left: auto !important;
