@@ -41,7 +41,7 @@
             width: 100%;
             /* overflow:auto; */
             overflow-x:hidden;
-            overflow-y:auto;
+            /* overflow-y:auto; */
         }
 
         #intro {
