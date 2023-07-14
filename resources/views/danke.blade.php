@@ -14,12 +14,11 @@
                         <img class="img-fluid rounded mb-3 d-flex align-items-center justify-content-end" src="{{ asset('assets/img/office_happy_one.png') }}" alt="Emoji suffering from bad air" style="width: 80%;">
                     </div>
                 
-                    <h1 class="text-center">Vielen Dank
+                    <h2 class="text-center">Vielen Dank
                         @if (Auth::check() && Auth::user()->name)
                             <strong>{{ Auth::user()->name }}</strong>
-                        @endif
-                        !
-                    </h1>
+                        @endif                        
+                    </h2>
 
                     <h5 class="text-center">Dein Feedback wurde weitergeleitet.
                         <a href="{{ url('/tips') . '/' . session('feedbackMapId') }}" style="display:none;">
