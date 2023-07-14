@@ -81,11 +81,11 @@
                                                     data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Zu heiss" data-bs-value="5" onclick="setTempLevel(5)">
                                             </div>
-                                            @error('x_coordinates')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                            @enderror
                                         </div>
                                         <input type="hidden" name="temperature_level" id="temperature-level-input">
+                                        @error('x_coordinates')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
 
                                     <div class="form-group">
@@ -127,11 +127,11 @@
                                                     data-bs-placement="top" title="Zu laut" data-bs-value="1" onclick="setNoiseLevel(1)"
                                                     style="position: relative;left: 10px;">
                                             </div>
-                                            @error('x_coordinates')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                            @enderror
                                         </div>
                                         <input type="hidden" name="noise_level" id="noise-level-input">
+                                        @error('x_coordinates')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
 
                                     <div class="form-group">
@@ -171,11 +171,11 @@
                                                     data-bs-placement="top" title="Schlecht" data-bs-value="1"
                                                     onclick="setAirQLevel(1)">
                                             </div>
-                                            @error('x_coordinates')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                            @enderror
                                         </div>
                                         <input type="hidden" name="air_quality_level" id="air-quality-level-input">
+                                        @error('x_coordinates')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
 
                                     <div class="form-group">
@@ -215,11 +215,11 @@
                                                     data-bs-placement="top" title="Schlecht" data-bs-value="1"
                                                     onclick="setHiggeLevel(1)">
                                             </div>
-                                            @error('x_coordinates')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                            @enderror
                                         </div>
                                         <input type="hidden" name="higge_level" id="higge-level-input">
+                                        @error('x_coordinates')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
 
                                     <div class="form-group">
