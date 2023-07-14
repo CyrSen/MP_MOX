@@ -84,6 +84,7 @@
             #admin {
                 display: flex;
                 position: relative;
+                overflow: hidden;
                 margin-top: 0rem;
                 align-items: center;
                 justify-content: center;
@@ -99,6 +100,7 @@
             #danke  {
                 display: flex;
                 position: relative;
+                overflow: hidden;
                 align-items: center;
                 justify-content: center;
                 min-height: 100vh;
@@ -112,6 +114,7 @@
 
             #contact {
                 position: relative;
+                overflow: hidden;
                 align-items: center;
                 justify-content: center;
                 min-height: 128vh;
@@ -127,8 +130,8 @@
                 align-items: center;
                 justify-content: center;
                 min-height: 128vh;
-
                 position: relative;
+                overflow: hidden;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
                 background-size: 100% 100%;
@@ -154,6 +157,7 @@
                 min-height: 120vh;
                 background-size: 100% 100%;
                 position: relative;
+                overflow: hidden;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
                 z-index: 1;
@@ -177,11 +181,12 @@
             }
 
             #admin {
+                position: relative;
+                overflow: hidden;
                 margin-top: -8.5rem;
                 align-items: center;
                 justify-content: center;
                 min-height: 100vh;
-                position: relative;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
                 background-size: cover;
@@ -190,23 +195,25 @@
             }
 
             #danke  {
+                position: relative;
+                overflow: hidden;
                 align-items: center;
                 justify-content: center;
                 min-height: 100vh;
                 background-size: 100% 100%;
-                position: relative;
                 min-width: 100vw;
                 z-index: 1;
                 background-image: url('{{ asset('assets/img/architecture-4000_lowres.jpg') }}');
                 display: flex;
             }
 
-            #contact {
+            #contact  {
+                position: relative;
+                overflow: hidden;
                 align-items: center;
                 justify-content: center;
                 min-height: 93vh;
                 background-size: 100% 100%;
-                position: relative;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
                 z-index: 1;
@@ -214,11 +221,12 @@
             }
 
             #impressum {
+                position: relative;
+                overflow: hidden;
                 align-items: center;
                 justify-content: center;
                 min-height: 128vh;
                 background-size: 100% 100%;
-                position: relative;
                 min-width: 100vw;
                 background-image: url("./assets/img/panorama-3094696_1920.jpg");
                 z-index: 1;
