@@ -32,7 +32,7 @@
                                             <input id="x-coordinates" type="hidden" name="x_coordinates">
                                             <input id="y-coordinates" type="hidden" name="y_coordinates">
                                         </div>
-                                        @error('x_coordinates')
+                                        @error('location')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                             <!--ADMIN USE CALIBRATE POSITION -->
