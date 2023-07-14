@@ -56,6 +56,12 @@
         
         @media (max-width: 480px) {
 
+            .dropdown-menu-end {
+                right: 6rem !important;
+                left: auto !important;
+                top: 2rem !important;
+            }
+
             #feedback {
                 display: flex;
                 align-items: center;
