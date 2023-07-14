@@ -38,8 +38,6 @@
 
         body {
             background-image: url("./assets/img/architecture.jpg") no-repeat center center;
-            width:100%;
-            overflow-x: hidden;
         }
 
         #intro {
@@ -76,7 +74,7 @@
                 min-width: 100vw;
                 margin-top: ;
                 background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
-                background-size: cover;
+                background-size: 100% 100%;
                 position: relative;
                 z-index: 1;
             }
