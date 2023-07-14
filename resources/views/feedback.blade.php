@@ -25,20 +25,19 @@
                                                 Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
                                                 sie im Grundriss anklickst.
                                             </div>
-
                                             @error('x_coordinates')
                                             <p class="text-primary mb-0">{{ $message }}</p>
                                             @enderror
                                             @error('_coordinates')
                                             <p class="text-primary mb-0">{{ $message }}</p>
                                             @enderror
-                                            
                                         </div>
                                         <div id="image-container" class="map-container tooltip-icon mb-4 mb-md-5">
                                             <img class="img-fluid mapFeedback" id="image"
                                                 src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                                             <input id="x-coordinates" type="hidden" name="x_coordinates" value="{{ old('x_coordinates') }}">
                                             <input id="y-coordinates" type="hidden" name="y_coordinates" value="{{ old('x_coordinates') }}">
+                                        </div>
 
                             <!--ADMIN USE CALIBRATE POSITION -->
                                 <div class="col-sm-3" style="display:none;">
@@ -191,7 +190,7 @@
 
                                     <div class="form-group">
                                         <label class="feedback-font" for="timely">Schritt 5: Gesamt-Komfort.</label>
-
+                                        
                                         @error('higge_level')
                                         <p class="text-primary mb-0">{{ $message }}</p>
                                         @enderror
