@@ -80,14 +80,13 @@
 </nav>
 
 <script>
-    function scrollToSection(sectionId) {
-      var section = document.querySelector(sectionId);
-      if (section) {
-        var offset = section.offsetTop;
-        var height = section.offsetHeight;
-        var windowHeight = window.innerHeight;
-        var scrollTo = offset + height / 2 - windowHeight / 2;
-        window.scrollTo({ top: scrollTo, behavior: 'smooth' });
-      }
+  function scrollToSection(sectionId) {
+    var section = document.querySelector(sectionId);
+    if (section) {
+      var offset = section.offsetTop;
+      var height = section.offsetHeight;
+      var scrollTo = offset + height;
+      window.scrollTo({ top: scrollTo, behavior: 'smooth' });
     }
+  }
   </script>
