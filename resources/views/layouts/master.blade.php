@@ -71,7 +71,8 @@
                 min-height: 105vh;
                 min-width: 100vw;
                 background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
-                background-size: 100% 100%;
+                /* background-size: 100% 100%; */
+                background-size: cover;
                 z-index: 1;
                 margin-top: ;
             }
