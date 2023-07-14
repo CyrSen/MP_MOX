@@ -70,7 +70,7 @@
                 align-items: center;
                 justify-content: center;
                 min-height: 105vh;
-                width: 100%;
+                width: 100vw;
                 background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
                 /* background-size: 100% 100%; */
                 background-size: cover;
@@ -162,13 +162,14 @@
 
             #feedback {
                 display: flex;
+                position: relative;
+                overflow: hidden;
                 align-items: center;
                 justify-content: center;
                 min-height: 97vh;
                 margin-top: ;
                 background: url("./assets/img/architecture-4000_lowres.jpg") no-repeat center center;
                 background-size: cover;
-                position: relative;
                 z-index: 1;
             }
 
