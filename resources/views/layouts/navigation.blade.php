@@ -72,7 +72,7 @@
                 @endauth
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/') }}#contact" onclick="scrollToSection('contact')>Kontakt</a>
+                    <a class="nav-link" href="{{ url('/') }}#contact" onclick="scrollToSection('contact')">Kontakt</a>
                 </li>
             </ul>
         </div>
