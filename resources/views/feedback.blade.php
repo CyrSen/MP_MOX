@@ -25,25 +25,21 @@
                                                 Schritt 1: Wähle die Bürozone aus, für die du Feedback geben möchtest, indem du
                                                 sie im Grundriss anklickst.
                                             </div>
+
                                             @error('x_coordinates')
-                                            <div class="alert alert-danger">{{ $message }}</div>
+                                            <p class="text-primary mb-0">{{ $message }}</p>
                                             @enderror
                                             @error('_coordinates')
-                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            <p class="text-primary mb-0">{{ $message }}</p>
                                             @enderror
+                                            
                                         </div>
                                         <div id="image-container" class="map-container tooltip-icon mb-4 mb-md-5">
                                             <img class="img-fluid mapFeedback" id="image"
                                                 src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                                             <input id="x-coordinates" type="hidden" name="x_coordinates" value="{{ old('x_coordinates') }}">
                                             <input id="y-coordinates" type="hidden" name="y_coordinates" value="{{ old('x_coordinates') }}">
-                                        </div>
-                                        @error('x_coordinates')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
-                                        @error('_coordinates')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
+
                             <!--ADMIN USE CALIBRATE POSITION -->
                                 <div class="col-sm-3" style="display:none;">
                                         <p id="x-display"></p>
@@ -153,7 +149,7 @@
                                         @error('air_quality_level')
                                         <p class="text-primary mb-0">{{ $message }}</p>
                                         @enderror
-
+                                        
                                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
                                             style="background-color: rgba(233, 228, 224, 0.8);  border-radius: 4px; display: flex; justify-content: space-between;">
                                             <div class="icon-wrapper icon-element">
@@ -196,10 +192,10 @@
                                     <div class="form-group">
                                         <label class="feedback-font" for="timely">Schritt 5: Gesamt-Komfort.</label>
 
-                                        @error('commentary')
+                                        @error('higge_level')
                                         <p class="text-primary mb-0">{{ $message }}</p>
                                         @enderror
-                                        
+
                                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
                                             style="background-color: rgba(233, 228, 224, 0.8);  border-radius: 4px; display: flex; justify-content: space-between;">
                                             <div class="icon-wrapper icon-element">
@@ -237,15 +233,15 @@
                                             </div>
                                         </div>
                                         <input type="hidden" name="higge_level" id="higge-level-input" value="{{ old('higge_level') }}">
-                                        @error('higge_level')
-                                        <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
                                     </div>
 
                                     <div class="form-group">
                                         <label class="feedback-font" for="message">Schritt 6: Nachricht senden (optional).</label>
                                         <textarea rows="3" name="commentary" id="message" class="form-control mt-2"
                                             placeholder="Deine Mitteilung"{{--  required="" --}}></textarea>
+                                        @error('commentary')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
 
                                 <div class="text-center mt-5">
