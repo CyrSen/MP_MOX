@@ -57,6 +57,10 @@
         input[type=date]::-webkit-calendar-picker-indicator {
         filter: invert(1);
         }
+
+        .errorFeedback {
+            font-weight: bold;
+        }
         
         @media (max-width: 480px) {
 

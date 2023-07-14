@@ -28,12 +28,12 @@
                                         </div>
 
                                         @error('x_coordinates')
-                                        <p class="text-primary mb-0">{{ $message }}</p>
+                                        <p class="errorFeedback text-danger mb-0">{{ $message }}</p>
                                         @enderror
                                         @error('_coordinates')
-                                        <p class="text-primary mb-0">{{ $message }}</p>
+                                        <p class="errorFeedback text-danger mb-0">{{ $message }}</p>
                                         @enderror
-                                        
+
                                         <div id="image-container" class="map-container tooltip-icon mb-4 mb-md-5">
                                             <img class="img-fluid mapFeedback" id="image"
                                                 src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
@@ -57,7 +57,7 @@
                                         <label class="feedback-font" for="timely">Schritt 2: Temperatur-Komfort.</label>
 
                                         @error('temperature_level')
-                                        <p class="text-primary mb-0">{{ $message }}</p>
+                                        <p class="errorFeedback text-danger mb-0">{{ $message }}</p>
                                         @enderror
 
                                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
@@ -100,7 +100,7 @@
                                         <label class="feedback-font" for="timely">Schritt 3: Geräusch-Komfort.</label>
 
                                         @error('noise_level')
-                                        <p class="text-primary mb-0">{{ $message }}</p>
+                                        <p class="errorFeedback text-danger mb-0">{{ $message }}</p>
                                         @enderror
 
                                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
@@ -148,7 +148,7 @@
                                         <label class="feedback-font" for="timely">Schritt 4: Luft-Komfort.</label>
 
                                         @error('air_quality_level')
-                                        <p class="text-primary mb-0">{{ $message }}</p>
+                                        <p class="errorFeedback text-danger mb-0">{{ $message }}</p>
                                         @enderror
                                         
                                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
@@ -194,7 +194,7 @@
                                         <label class="feedback-font" for="timely">Schritt 5: Gesamt-Komfort.</label>
                                         
                                         @error('higge_level')
-                                        <p class="text-primary mb-0">{{ $message }}</p>
+                                        <p class="errorFeedback text-danger mb-0">{{ $message }}</p>
                                         @enderror
 
                                         <div class="emoji-selection mt-2 mb-2 px-2 mb-4"
