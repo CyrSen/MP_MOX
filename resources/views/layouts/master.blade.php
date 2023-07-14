@@ -38,6 +38,8 @@
 
         body {
             background-image: url("./assets/img/architecture.jpg") no-repeat center center;
+            width:100%;
+            overflow-x: hidden;
         }
 
         #intro {
@@ -55,6 +57,10 @@
         }
         
         @media (max-width: 480px) {
+
+            body {
+
+            }
 
             .dropdown-menu-end {
                 right: 6rem !important;
