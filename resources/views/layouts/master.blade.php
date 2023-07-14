@@ -90,7 +90,7 @@
                 background-size: cover;
                 z-index: 1;
                 padding-top: 10%;
-                background-size: cover;
+                background-size: 100% 100%;
             }
 
             #danke  {
