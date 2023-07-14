@@ -73,6 +73,7 @@
                 align-items: center;
                 justify-content: center;
                 min-height: 105vh;
+                min-width: 100vw;
                 margin-top: ;
                 background: url("./assets/img/architecture-4000.jpg") no-repeat center center;
                 background-size: cover;
