@@ -304,6 +304,7 @@
             display: flex;
             align-items: stretch;
             min-height: 100vh;
+            overflow: hidden;
             background: url("{{ asset('assets/img/open-window_lowres.jpg') }}") no-repeat center center;
             background-size: cover;
             position: relative;
