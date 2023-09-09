@@ -11,12 +11,6 @@
             <div class="wow fadeIn">
                 <h1 class="h1 pt-4 my-4">Impressum</h1>
 
-                <h4 class="mt-5 mb-3"><strong>Entwickler</strong></h4>
-                <p class="blue-grey-text custom-font-weight">
-                    Cyrill Senger: Frontend<br>
-                    Gaudenz Raiber: Backend<br>
-                </p>
-
                 <h4 class="mt-5 mb-3"><strong>Datenschutzerklärung</strong></h4>
 
                 <p class="blue-grey-text custom-font-weight">
@@ -102,8 +96,17 @@
                     Vielen Dank für Ihr Vertrauen und Ihr Interesse an unserem Unternehmen.
                 </p>
 
+                <h4 class="mt-5 mb-3"><strong>Entwickler</strong></h4>
                 <p class="blue-grey-text custom-font-weight">
-                    Letzte Aktualisierung: 28. Juni 2023
+                    <h5><b><i>Cyrill Senger:</i></b></h5>
+                    Projektmanagment, Konzeption, UX-Research und Frontend-Design
+                    <br><br>
+                    <h5><b><i>Gaudenz Raiber:</i></b></h5>
+                    Fullstack Produktion und Verarbeitung, Database-Konzeption, -Produktion und -Managment, Authentication und Usermanagment, Deployment.<br>
+                </p>
+
+                <p class="blue-grey-text custom-font-weight">
+                    Letzte Aktualisierung: 9. September 2023
                 </p>
             </div>
         </div>
