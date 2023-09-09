@@ -328,6 +328,33 @@
             padding-top: 10%;
         }
 
+        /* tipps emojis animations */
+        .img-containercold {
+        display: inline-block;
+        position: relative;
+        }
+
+        .img-containercold:hover .img-fluid {
+        animation: shakeX 0.5s infinite; /* Adjust the duration as needed */
+        }
+
+        .img-containerhot {
+        display: inline-block;
+        position: relative;
+        }
+
+        .img-containerhot:hover .img-fluid {
+        animation: pulse 0.5s infinite; /* Adjust the duration as needed */
+        }
+
+        .img-containerloud {
+        display: inline-block;
+        position: relative;
+        }
+
+        .img-containerloud:hover .img-fluid {
+        animation: wobble 0.5s infinite; /* Adjust the duration as needed */animate__wobble
+        }
     </style>
 
 </head>

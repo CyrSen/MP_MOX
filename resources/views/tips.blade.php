@@ -18,10 +18,13 @@
                 <div class="col-lg-6 col-md-12 mb-5 animate__animated animate__fadeInLeft animate__delay-1s">
                     <div class="card transparent">
                         <div class="row">
-                            <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
-                                <img class="img-fluid rounded mb-3 emoji-tips"
-                                    src="{{ asset('assets/img/icons_var/smiley_new_cold.svg') }}"
-                                    alt="Emoji suffering from cold" style="max-width: 100px;">
+                            <div class="col-md-4 d-flex align-items-center justify-content-end left-container{{--  animate__animated animate__shakeX animate__delay-4s --}}">
+                                <div class="img-containercold">
+                                    <img class="img-fluid rounded mb-3 emoji-tips"
+                                      src="{{ asset('assets/img/icons_var/emoji_toocold_soft2.png') }}"
+                                      alt="Emoji suffering from cold"
+                                      style="max-width: 100px;">
+                                  </div>                         
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -40,9 +43,12 @@
                     <div class="card transparent">
                         <div class="row">
                             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
-                                <img class="img-fluid rounded mb-3 emoji-tips"
-                                    src="{{ asset('assets/img/icons_var/smiley_new_hot_red.svg') }}"
+                                <div class="img-containerhot">
+                                    <img class="img-fluid rounded mb-3 emoji-tips"
+                                    src="{{ asset('assets/img/icons_var/emoji_toohot_soft2.png') }}"
                                     alt="Emoji suffering from heat" style="max-width: 100px;">
+                                </div>
+                                
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -61,9 +67,11 @@
                     <div class="card transparent">
                         <div class="row">
                             <div class="col-md-4 loudCol d-flex align-items-center justify-content-end left-container">
-                                <img class="img-fluid rounded mb-3 emoji-tipsLoud"
-                                    src="{{ asset('assets/img/icons_var/smiley_new_loud_red.svg') }}"
-                                    alt="Emoji suffering from noise" style="position:relative;left:22px;">
+                                <div class="img-containerloud">
+                                    <img class="img-fluid rounded mb-3 emoji-tipsLoud"
+                                    src="{{ asset('assets/img/icons_var/emoji_noise_soft.png') }}"
+                                    alt="Emoji suffering from noise" style="">
+                                </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -83,7 +91,7 @@
                         <div class="row">
                             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
                                 <img class="img-fluid rounded mb-3 emoji-tips"
-                                    src="{{ asset('assets/img/icons_var/smiley_new_smelly.svg') }}"
+                                    src="{{ asset('assets/img/icons_var/emoji_stinks_soft2.png') }}"
                                     alt="Emoji suffering from bad air" style="max-width: 100px;">
                             </div>
                             <div class="col-md-8">
@@ -397,3 +405,8 @@
     </section>
 
 @endsection
+    
+    
+    
+    
+    
