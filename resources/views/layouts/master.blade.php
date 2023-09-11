@@ -355,6 +355,19 @@
         .img-containerloud:hover .img-fluid {
         animation: wobble 0.5s infinite; /* Adjust the duration as needed */animate__wobble
         }
+        /*  Include into main CSS and run build if final decision ok.*/
+        .btn {
+            font-weight: 500;
+            margin: .375rem;
+            text-transform: uppercase;
+            word-wrap: break-word;
+            white-space: normal;
+            border: 0;
+            border-radius: .125rem;
+            box-shadow: 0 2px 5px #00000029,0 2px 10px #000000d6;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            font-size: .81rem;
+        }
     </style>
 
 </head>

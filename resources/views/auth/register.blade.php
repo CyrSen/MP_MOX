@@ -31,7 +31,7 @@
                                             </span>
                                         @enderror
                                     </div>
-
+                                    {{-- ORIGINAL EMAIL FRONTEND --}}
                                     <div class="form-group py-2">
                                         <label class="mb-1" for="email"
                                             class="">{{ __('Email-Adresse*') }}</label>
@@ -44,6 +44,19 @@
                                             </span>
                                         @enderror
                                     </div>
+                                    {{-- OPTIONAL EMAIL FRONTEND --}}
+                                    {{-- <div class="form-group py-2">
+                                        <label class="mb-1" for="email">{{ __('Email-Adresse') }}</label>
+                                        <input id="email" type="email"
+                                            class="form-control @error('email') is-invalid @enderror" name="email"
+                                            value="{{ old('email') }}" autocomplete="email">
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div> --}}
+                                    
 
                                     <div class="form-group py-2">
                                         <label class="mb-1" for="password" class="">{{ __('Passwort') }}</label>
