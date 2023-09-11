@@ -187,7 +187,7 @@
             #admin {
                 position: relative;
                 overflow: hidden;
-                margin-top: -8.5rem;
+                margin-top: -8rem;
                 align-items: center;
                 justify-content: center;
                 min-height: 100vh;
