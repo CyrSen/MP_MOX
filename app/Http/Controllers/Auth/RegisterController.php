@@ -28,33 +28,33 @@ class RegisterController extends Controller
         $welcome = DB::table('welcome')->first();
         $onetimer = $welcome->onetimer;
         // ORIGINAL VALIDATION BACKEND
-        return Validator::make($data, [
+        /* return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'onetimer' => ['required', 'string', Rule::in([$onetimer])],
-        ]);
+        ]); */
         // OPTIONAL VALIDATION BACKEND
-        /* return Validator::make($data, [
+        return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['nullable', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'onetimer' => ['required', 'string', Rule::in([$onetimer])],
-        ]); */
+        ]);
         
     }
 
     protected function create(array $data)
     {
         // ORIGINAL CREATE BACKEND
-        return User::create([
+        /* return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
+        ]); */
 
         // OPTIONAL CREATE BACKEND
-        /* $userData = [
+        $userData = [
             'name' => $data['name'],
             'password' => Hash::make($data['password']),
         ];
@@ -63,6 +63,6 @@ class RegisterController extends Controller
             $userData['email'] = $data['email'];
         }
     
-        return User::create($userData); */
+        return User::create($userData);
     }
 }

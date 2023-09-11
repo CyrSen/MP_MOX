@@ -31,8 +31,8 @@
                                             </span>
                                         @enderror
                                     </div>
-                                    {{-- ORIGINAL EMAIL FRONTEND --}}
-                                    <div class="form-group py-2">
+                                    {{-- ORIGINAL EMAIL FRONTEND , DATABASE REQUIRES EMAIL AS NULL NOT NONE--}}
+                                    {{-- <div class="form-group py-2">
                                         <label class="mb-1" for="email"
                                             class="">{{ __('Email-Adresse*') }}</label>
                                         <input id="email" type="email"
@@ -43,10 +43,15 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                    </div>
+                                    </div> --}}
                                     {{-- OPTIONAL EMAIL FRONTEND --}}
-                                    {{-- <div class="form-group py-2">
-                                        <label class="mb-1" for="email">{{ __('Email-Adresse') }}</label>
+                                    <div class="form-group py-2">
+                                        <label class="mb-1" for="email">{{ __('Email-Adresse') }} (optional
+                                            <i class="fa fa-info-circle tooltip-icon" data-bs-toggle="popover"
+                                            data-bs-placement="right"
+                                            data-bs-content="Personen, die Zugriff auf den Report erhalten sollen, melden sich entweder beim Setup oder  nachträglich 
+                                            per <a href='http://localhost/#contact'>Kontaktformular</a>, um den nötigen Zugriff abzuklären und zu autorisieren."></i>
+                                        )</label>
                                         <input id="email" type="email"
                                             class="form-control @error('email') is-invalid @enderror" name="email"
                                             value="{{ old('email') }}" autocomplete="email">
@@ -55,7 +60,7 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                    </div> --}}
+                                    </div>
                                     
 
                                     <div class="form-group py-2">

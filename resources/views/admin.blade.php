@@ -14,7 +14,7 @@
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for temperature_level -->
                         <p class="lead text-center">Temperatur-Komfort</p>
-                        <div id="mapTemperature" class="myContainer mapAdmin tooltip-icon">
+                        <div id="mapTemperature" class="myContainer mapAdmin tooltip-icon" style="cursor:default;">
                             <img class="img-fluid" id="imgTemperature"
                                 src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                             <input id="x-coordinates-temperature" type="hidden" name="x_coordinates">
@@ -26,7 +26,7 @@
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for noise_level -->
                         <p class="lead text-center">Geräusch-Komfort</p>
-                        <div id="mapNoise" class="myContainer mapAdmin tooltip-icon">
+                        <div id="mapNoise" class="myContainer mapAdmin tooltip-icon" style="cursor:default;">
                             <img class="img-fluid" id="imgNoise" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
                                 alt="Office room plan">
                             <input id="x-coordinates-noise" type="hidden" name="x_coordinates">
@@ -38,7 +38,7 @@
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for air_quality_level -->
                         <p class="lead text-center">Luft-Komfort</p>
-                        <div id="mapAirQuality" class="myContainer mapAdmin tooltip-icon">
+                        <div id="mapAirQuality" class="myContainer mapAdmin tooltip-icon" style="cursor:default;">
                             <img class="img-fluid" id="imgAirQuality"
                                 src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}" alt="Office room plan">
                             <input id="x-coordinates-air-quality" type="hidden" name="x_coordinates">
@@ -50,7 +50,7 @@
                     <div class="card mx-3 py-2 ml-4 d-flex align-items-center mb-2 mb-md-0">
                         <!-- Map for higge_level -->
                         <p class="lead text-center">Gesamt-Komfort {{-- (Higge) --}}</p>
-                        <div id="mapHigge" class="myContainer mapAdmin tooltip-icon">
+                        <div id="mapHigge" class="myContainer mapAdmin tooltip-icon" style="cursor:default;">
                             <img class="img-fluid" id="imgHigge" src="{{ asset('assets/img/Raeffel_Legendincl_new.svg') }}"
                                 alt="Office room plan">
                             <input id="x-coordinates-higge" type="hidden" name="x_coordinates">
