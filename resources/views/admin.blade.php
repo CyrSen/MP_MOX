@@ -104,11 +104,13 @@
                             </p>
 
                             @if (session('success'))
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <div class=" d-flex justify-content-center">
+                                <div class="col-4 alert alert-success alert-dismissible fade show" role="alert">
                                     {{ session('success') }}
                                     <button type="button" class="btn-close" data-bs-dismiss="alert"
                                         aria-label="Close"></button>
                                 </div>
+                            </div>
                             @endif
 
                             <!-- Table to display filtered data -->
