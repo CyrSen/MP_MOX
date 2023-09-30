@@ -166,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            <hr />
+            <hr style="display:none" />
             <div class="row pt-5 wow fadeInRight" data-wow-delay=".3s" style="display: none">
                 <div class="col-lg-6 col-xl-7 mb-3">
                     <div class="row mb-3">
