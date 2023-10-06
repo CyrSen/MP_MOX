@@ -92,7 +92,7 @@
                             <div class="col-md-4 d-flex align-items-center justify-content-end left-container">
                                 <img class="img-fluid rounded mb-3 emoji-tips"
                                     src="{{ asset('assets/img/icons_var/emoji_stinks_soft2.png') }}"
-                                    alt="Emoji suffering from bad air" style="max-width: 100px;">
+                                    alt="Emoji suffering from bad air" style="max-width: 100px;padding:.3rem">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">

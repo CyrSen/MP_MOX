@@ -170,7 +170,7 @@
             <div class="row pt-5 wow fadeInRight" data-wow-delay=".3s" style="display: none">
                 <div class="col-lg-6 col-xl-7 mb-3">
                     <div class="row mb-3">
-                        <div class="col-1 mr-1"><i class="fa fa-flask fa-2x indigo-text"></i></div>
+                        <div class="col-1 mr-1"><i class="fa fa-flask fa-2x indigo-text"></i></div> 
                         <div class="col-10">
                             <h5 class="font-weight-bold">ZHAW - Wissenschaftlicher Partner</h5>
                             <p class="blue-grey-text custom-font-weight">
