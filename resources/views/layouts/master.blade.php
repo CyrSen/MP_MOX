@@ -350,7 +350,7 @@
         .img-containerloud {
         display: inline-block;
         position: relative;
-        left:1rem;
+        left:15px;
         }
 
         .img-containerloud:hover .img-fluid {
@@ -360,7 +360,6 @@
         .img-containersmelly {
             display: inline-block;
             position: relative;
-            left:1rem;
         }
 
         .img-containersmelly:hover .img-fluid {
