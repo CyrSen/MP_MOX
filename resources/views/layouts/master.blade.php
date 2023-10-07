@@ -354,8 +354,19 @@
         }
 
         .img-containerloud:hover .img-fluid {
-        animation: wobble 0.5s infinite; /* Adjust the duration as needed */animate__wobble
+        animation: wobble 0.5s infinite; /* Adjust the duration as needed */
         }
+
+        .img-containersmelly {
+            display: inline-block;
+            position: relative;
+            left:1rem;
+        }
+
+        .img-containersmelly:hover .img-fluid {
+            animation: rubberBand 3s; /* Adjust the duration as needed */
+        }
+
         /*  Include into main CSS and run build if final decision ok.*/
         .btn {
             font-weight: 500;
