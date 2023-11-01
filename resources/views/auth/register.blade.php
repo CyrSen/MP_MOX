@@ -31,7 +31,7 @@
                                             </span>
                                         @enderror
                                     </div>
-                                    {{-- ORIGINAL EMAIL FRONTEND , DATABASE REQUIRES EMAIL AS NULL NOT NONE--}}
+                                    {{-- ORIGINAL EMAIL REQUIRED FRONTEND , DATABASE REQUIRES EMAIL AS NONE NOT NULL--}}
                                     {{-- <div class="form-group py-2">
                                         <label class="mb-1" for="email"
                                             class="">{{ __('Email-Adresse*') }}</label>
@@ -44,7 +44,7 @@
                                             </span>
                                         @enderror
                                     </div> --}}
-                                    {{-- OPTIONAL EMAIL FRONTEND --}}
+                                    {{-- OPTIONAL EMAIL FRONTEND, DATABASE REQUIRES EMAIL AS NULL NOT NONE --}}
                                     <div class="form-group py-2">
                                         <label class="mb-1" for="email">{{ __('Email-Adresse') }} (optional
                                             <i class="fa fa-info-circle tooltip-icon" data-bs-toggle="popover"
