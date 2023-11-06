@@ -107,7 +107,7 @@
                 </p> --}}
 
                 <p>
-                    <h5 class=""><b><i>KRAKATOOM DESIGN STUDIO</i></b></h5>
+                    <h5 class=""><a href="https://www.google.com/search?q=Krakatoom-Design-Studio" target="_blank" style="border-bottom: none;"><b>Krakatoom-Design-Studio</b></a></h5>
                     Projektmanagment, Konzeption, Head of Information
                     <br><br>
                 </p>
