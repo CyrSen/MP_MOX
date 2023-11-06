@@ -107,7 +107,7 @@
                 </p> --}}
 
                 <p>
-                    <h5 class="d-none"><b><i>KRAKATOOM DESIGN STUDIO</i></b></h5>
+                    <h5 class=""><b><i>KRAKATOOM DESIGN STUDIO</i></b></h5>
                     Projektmanagment, Konzeption, Head of Information
                     <br><br>
                 </p>
