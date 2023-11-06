@@ -97,14 +97,14 @@
                 </p>
 
                 <h4 class="mt-5 mb-3"><strong>Entwickler</strong></h4>
-                <p class="blue-grey-text custom-font-weight" style="display:none;">
+                {{-- <p class="blue-grey-text custom-font-weight" style="display:none;">
                     <h5 class=""><b><i>Cyrill Senger:</i></b></h5>
                     Projektmanagment, Konzeption, UX-Research und Frontend-Design
                     <br><br>
                     <h5 class=""><b><i>Gaudenz Raiber:</i></b></h5>
                     Fullstack Produktion und Verarbeitung, Database-Konzeption, -Produktion und -Managment, Authentication und Usermanagment, Deployment.<br>
                     
-                </p>
+                </p> --}}
 
                 <p>
                     <h5 class="d-none"><b><i>KRAKATOOM DESIGN STUDIO</i></b></h5>
