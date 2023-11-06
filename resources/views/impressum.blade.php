@@ -97,7 +97,7 @@
                 </p>
 
                 <h4 class="mt-5 mb-3"><strong>Entwickler</strong></h4>
-                <p class="blue-grey-text custom-font-weight d-none">
+                <p class="blue-grey-text custom-font-weight" style="display:none;">
                     <h5 class=""><b><i>Cyrill Senger:</i></b></h5>
                     Projektmanagment, Konzeption, UX-Research und Frontend-Design
                     <br><br>
