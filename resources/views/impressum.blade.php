@@ -113,7 +113,7 @@
                 </p>
 
                 <p class="blue-grey-text custom-font-weight">
-                    Letzte Aktualisierung: 10. September 2023
+                    Letzte Aktualisierung: 6. November 2023
                 </p>
             </div>
         </div>
