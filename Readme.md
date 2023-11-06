@@ -244,5 +244,6 @@ sail npm install --save-dev
 
 ----
 ### 20230710 1st rm: 
-A production by Cyrill Senger [CyrSen/MP_MOX](https://github.com/CyrSen/MP_MOX) 
+<div style="display:none;">Cyrill Senger [CyrSen/MP_MOX](https://github.com/CyrSen/MP_MOX) </div>
+A production by 
 and Gaudenz Raiber [Gaudenz77](https://github.com/Gaudenz77)

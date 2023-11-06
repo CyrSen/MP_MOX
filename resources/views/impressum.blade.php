@@ -98,11 +98,14 @@
 
                 <h4 class="mt-5 mb-3"><strong>Entwickler</strong></h4>
                 <p class="blue-grey-text custom-font-weight">
-                    <h5><b><i>Cyrill Senger:</i></b></h5>
+                    <h5 class="d-none"><b><i>Cyrill Senger:</i></b></h5>
                     Projektmanagment, Konzeption, UX-Research und Frontend-Design
                     <br><br>
-                    <h5><b><i>Gaudenz Raiber:</i></b></h5>
+                    <h5 class="d-none"><b><i>Gaudenz Raiber:</i></b></h5>
                     Fullstack Produktion und Verarbeitung, Database-Konzeption, -Produktion und -Managment, Authentication und Usermanagment, Deployment.<br>
+                    <h5 class="d-none"><b><i>KRAKATOOM DESIGN STUDIO</i></b></h5>
+                    Projektmanagment, Konzeption, Head of Information
+                    <br><br>
                 </p>
 
                 <p class="blue-grey-text custom-font-weight">
