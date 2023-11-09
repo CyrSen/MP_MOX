@@ -82,14 +82,21 @@
                     Die aktualisierte Datenschutzerklärung wird auf unserer Webseite veröffentlicht.
                 </p>
 
+                <h6><strong>Testversuch Nov/Dez 2023 TBC</strong></h6>
+                <p class="blue-grey-text custom-font-weight d-none">
+                    Die während des Testversuchs erhobenen Nutzerdaten dienen ausschließlich der formalen Evaluierung unserer App “myOfficeX”. 
+                    Alle gesammelten Nutzernamen, E-Mailadressen und Formulardaten werden nach abschließender Auswertung von uns gelöscht.
+                </p>
+                <br>
+
                 <h6><strong>Kontakt</strong></h6>
                 <p class="blue-grey-text custom-font-weight">
                     Wenn Sie Fragen zur Verarbeitung Ihrer personenbezogenen Daten oder zur Datenschutzerklärung haben,
                     können Sie sich jederzeit an uns wenden:<br>
-                    myOfficeX<br>
-                    Dufoustrasse 49<br>
-                    8008 Zürich<br>
-                    contact@myofficex.ch<br>
+                    <h4><strong>myOfficeX</strong></h4>
+                    {{-- Dufoustrasse 49<br>
+                    8008 Zürich<br> --}}
+                    <a href="mailto:contact@myofficex.ch">contact@myofficex.ch</a><br>
                 </p>
 
                 <p class="blue-grey-text custom-font-weight">

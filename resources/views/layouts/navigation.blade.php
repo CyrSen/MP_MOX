@@ -28,7 +28,7 @@
                     @endif
                 @else
                     @auth
-                        @if (Auth::check() && in_array(Auth::user()->permissions_level, ['level2', 'level3']))
+                        @if (Auth::check() && in_array(Auth::user()->permissions_level, ['level1', 'level2', 'level3']))
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
