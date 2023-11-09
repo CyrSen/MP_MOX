@@ -20,7 +20,7 @@
                         @endif                        
                     </h2>
 
-                    <h5 class="text-center">Dein Feedback wurde weitergeleitet.
+                    <h5 class="text-center">Dein Feedback wurde weitergeleitet.<br>Du kannst den Browser schliessen.
                         <a href="{{ url('/tips') . '/' . session('feedbackMapId') }}" style="display:none;">
                             <strong>Tips-Seite</strong>
                         </a>
