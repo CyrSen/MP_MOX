@@ -20,7 +20,7 @@ return [
     'user' => "We can't find a user with that email address.", */
     'reset' => 'Dein Passwort wurde zurückgesetzt.',
     'sent' => 'Wir haben dir einen Link zum Zurücksetzen des Passworts per E-Mail gesendet.',
-    'throttled' => 'Versuchensie es in fünf Minuten erneut',
+    'throttled' => 'Versuche es in fünf Minuten erneut',
     'token' => 'Dieser Token zum Zurücksetzen des Passworts ist ungültig.',
     'user' => "Wir können keinen Benutzer mit dieser E-Mail-Adresse finden.",
 

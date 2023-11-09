@@ -46,12 +46,12 @@
                                     </div> --}}
                                     {{-- OPTIONAL EMAIL FRONTEND, DATABASE REQUIRES EMAIL AS NULL NOT NONE --}}
                                     <div class="form-group py-2">
-                                        <label class="mb-1" for="email">{{ __('Email-Adresse') }} (optional
+                                        <label class="mb-1" for="email">{{ __('Email-Adresse') }}  <small>(optional
                                             <i class="fa fa-info-circle tooltip-icon" data-bs-toggle="popover"
                                             data-bs-placement="right"
                                             data-bs-content="Personen, die Zugriff auf den Report erhalten sollen, melden sich entweder beim Setup oder  nachträglich 
                                             per <a href='http://localhost/#contact'>Kontaktformular</a>, um den nötigen Zugriff abzuklären und zu autorisieren."></i>
-                                        )</label>
+                                        )</small></label>
                                         <input id="email" type="email"
                                             class="form-control @error('email') is-invalid @enderror" name="email"
                                             value="{{ old('email') }}" autocomplete="email">
@@ -64,7 +64,7 @@
                                     
 
                                     <div class="form-group py-2">
-                                        <label class="mb-1" for="password" class="">{{ __('Passwort') }}</label>
+                                        <label class="mb-1" for="password" class="">{{ __('Passwort') }} <small>(min. 8-stellig)</small></label>
                                         <input id="password" type="password"
                                             class="form-control @error('password') is-invalid @enderror" name="password"
                                             required autocomplete="new-password">
